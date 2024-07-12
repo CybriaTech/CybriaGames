@@ -15,6 +15,7 @@ body {
     color: #fff;
     box-shadow: 0 0 5px #fff;
     align-items: center;
+    box-sizing: border-box;
     padding: 0 20px;
     justify-content: space-between;
     height: 85px;
@@ -22,12 +23,12 @@ body {
 
   .header-img {
     width: 450px;
-    display: flex;
   }
 
   .header-links {
    display: flex;
    gap: 10px;
+   margin-left: auto;
   }
 
   .header-link {
