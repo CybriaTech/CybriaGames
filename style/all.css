@@ -36,13 +36,13 @@ body {
   .header-links {
    display: flex;
    align-items: center;
-   gap: 20px;
+   gap: 18px;
    justify-content: flex-end;
   }
 
   .header-link {
    color: #fff;
-   font-size: 2.2em;
+   font-size: 2.7em;
    font-weight: bold;
    text-decoration: none;
    transition: color 0.3s ease;
