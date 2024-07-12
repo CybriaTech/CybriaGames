@@ -15,29 +15,25 @@ body {
     color: #fff;
     box-shadow: 0 0 5px #fff;
     align-items: center;
+    padding: 0 20px;
     justify-content: space-between;
     height: 85px;
   }
 
   .header-img {
     width: 450px;
-    align-items: center;
     display: flex;
-    padding: 10px;
-    right: 0;
   }
 
   .header-links {
    display: flex;
-   justify-content: flex-end;
-   align-items: center;
+   gap: 10px;
   }
 
   .header-link {
    color: #fff;
    font-size: 2.7em;
    font-weight: bold;
-   padding: 8px;
    text-decoration: none;
    transition: color 0.3s ease;
   }
