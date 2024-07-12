@@ -11,6 +11,13 @@
   cursor: pointer;
 }
 
+.subtitle {
+  color: #fff;
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: bold;
+}
+
 .homebtn {
   height: 9vh;
   margin-top: 10px;
