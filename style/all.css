@@ -15,20 +15,22 @@ body {
     color: #fff;
     box-shadow: 0 0 5px #fff;
     align-items: center;
-    box-sizing: border-box;
-    padding: 0 20px;
+    padding: 5px 20px;
+    display: flex;
     justify-content: space-between;
     height: 85px;
   }
 
   .header-img {
     display: flex;
+    align-items: center;
     width: 450px;
     justify-content: flex-start;
   }
 
   .header-links {
    display: flex;
+   align-items: center;
    gap: 10px;
    justify-content: flex-end;
   }
