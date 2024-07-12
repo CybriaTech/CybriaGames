@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .main-area {
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%, -50px);
+  margin-top: 50px;
 }
 
 .title-img {
