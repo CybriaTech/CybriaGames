@@ -18,26 +18,26 @@ body {
     padding: 5px 20px;
     display: flex; /* SO IS THAT WHY THE HEADER WAS TWEAKING BRU */
     justify-content: space-between;
-    height: 75px;
+    height: 50px;
   }
 
   .header-img {
     display: flex;
     align-items: center;
-    width: 450px;
+    width: 250px;
     justify-content: flex-start;
   }
 
   .header-links {
    display: flex;
    align-items: center;
-   gap: 10px;
+   gap: 20px;
    justify-content: flex-end;
   }
 
   .header-link {
    color: #fff;
-   font-size: 2.7em;
+   font-size: 2.2em;
    font-weight: bold;
    text-decoration: none;
    transition: color 0.3s ease;
