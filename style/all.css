@@ -17,7 +17,7 @@ body {
   header {
     background-color: #1C2128;
     color: #fff;
-    box-shadow: 0 0 7px #d9dcde;
+    box-shadow: 0 0 7px #000;
     align-items: center;
     padding: 5px 20px;
     display: flex; /* SO IS THAT WHY THE HEADER WAS TWEAKING BRU */
