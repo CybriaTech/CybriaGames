@@ -24,6 +24,7 @@ body {
   .header-img {
     display: flex;
     align-items: center;
+    cursor: pointer;
     width: 310px;
     justify-content: flex-start;
   }
