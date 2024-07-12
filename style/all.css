@@ -18,13 +18,13 @@ body {
     padding: 5px 20px;
     display: flex; /* SO IS THAT WHY THE HEADER WAS TWEAKING BRU */
     justify-content: space-between;
-    height: 50px;
+    height: 57px;
   }
 
   .header-img {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 280px;
     justify-content: flex-start;
   }
 
