@@ -22,13 +22,15 @@ body {
   }
 
   .header-img {
+    display: flex;
     width: 450px;
+    justify-content: flex-start;
   }
 
   .header-links {
    display: flex;
    gap: 10px;
-   margin-left: auto;
+   justify-content: flex-end;
   }
 
   .header-link {
