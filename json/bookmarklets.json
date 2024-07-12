@@ -22,6 +22,13 @@
     "properties": ["Useful"],
     "source": "https://x-ray-goggles.mouse.org/",
     "asset": "javascript:(function () {var script=document.createElement('script');script.src='https://cdn.jsdelivr.net/gh/CybriaTech/CybriaGames@master/external/bookmarklets/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())"
+  },
+  {
+    "name": "Skip YT Ad",
+    "author": "HyperTabs Proxy (Converted by X-88!)",
+    "properties": ["Useful"],
+    "source": "null",
+    "asset": "javascript:(function(){    function skipAd() {        while (document.getElementsByClassName('video-ads')[0].innerHTML !== '') {            var banner = false;            for (var i = 0; i < document.getElementsByClassName('ytp-ad-overlay-close-button').length; i++) {                document.getElementsByClassName('ytp-ad-overlay-close-button')[i].click();                banner = true;            }            if (banner === false) {                document.getElementsByClassName('html5-main-video')[0].currentTime = document.getElementsByClassName('html5-main-video')[0].duration;                document.getElementsByClassName('ytp-ad-skip-button')[0].click();            }        }    }    skipAd();})();"
   }
 ]
 
