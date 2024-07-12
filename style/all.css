@@ -16,7 +16,7 @@ body {
     box-shadow: 0 0 5px #fff;
     align-items: center;
     padding: 5px 20px;
-    display: flex;
+    display: flex; /* SO IS THAT WHY THE HEADER WAS TWEAKING BRU */
     justify-content: space-between;
     height: 85px;
   }
