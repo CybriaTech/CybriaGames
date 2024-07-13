@@ -1,11 +1,11 @@
-// flagged, Ludicrous, scott check it pls my wifi is ass
+// Devnote, make sure the proxy works, no malicious shit is in it etc
 
 [
   {
-    "Interstellar": ["https://gointerstellar.app/"],
+    "Interstellar": ["https://gointerstellar.app/", "https://skibidi-biden.vercel.app/", "https://miniature-spoon-chi.vercel.app/"],
     "Rammerhead": ["https://r.achievementnetwork.gq/", "https://browser.rammerhead.org", "https://www.pleaseinput.html-5.me/"],
     "Astroid": ["https://englishclass.us.to/"],
-    "Ludicrous": ["https://foundphysics.com/", "https://ludiub.com/"]
+    "MyTurtle": ["https://myturtle.net"]
   }
 ]
     
