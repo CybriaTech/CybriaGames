@@ -7,5 +7,14 @@
     "location": "2048",
     "source": "/games/2048",
     "keys": ["WASD/Arrows - Move Tiles", "R - Restart Game"]
+  },
+  {
+    "title": "Subway Surfers Singapore",
+    "logo": "/images/games/subway-surfers-1.png",
+    "creator": "SYBO",
+    "description": "In the Singapore stop of the Subway Surfers World Tour, Jake, Tricky, and the crew trade their usual stomping grounds for a thrilling ride through the Lion City's subway system. Skyscrapers whiz by as they dodge trains and grumpy inspectors.  A new surfer, Jia, joins the crew, and players can unlock her along with a wild outfit and a special Lion board. Colorful orchids scattered along the tracks offer exciting rewards during the Weekly Hunt.",
+    "location": "Subway+Surfers+Singapore",
+    "source": "/games/subway-singapore",
+    "keys": ["WASD/Arrows - Move", "Up Arrow - Jump", "Down Arrow - Slide/Roll", "Space - Hoverboard"]
   }
 ]
