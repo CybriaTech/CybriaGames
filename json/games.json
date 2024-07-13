@@ -1,0 +1,11 @@
+[
+  {
+    "title": "2048",
+    "logo": "/images/games/2048.png",
+    "creator": "Gabriele Cirulli",
+    "description": "2048 is a single-player puzzle game played on a grid. You slide numbered tiles around, merging them together when they touch and have the same value. Your goal is to create a tile with the number 2048, but you can keep playing for a higher score after that by creating even bigger numbers. It's a simple concept, but it gets challenging as the grid fills up and you need to strategically plan your moves.",
+    "location": "2048",
+    "source": "/games/2048",
+    "keys": ["WASD/Arrows - Move Tiles", "R - Restart Game"]
+  }
+]
