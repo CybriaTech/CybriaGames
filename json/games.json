@@ -34,6 +34,7 @@ CybriaGames Tags
     "location": "2048",
     "source": "/games/2048",
     "keywords": ["Puzzle", "Idle", "Singleplayer"],
+    "technology": "HTML5",
     "keys": ["WASD/Arrows - Move Tiles", "R - Restart Game"]
   },
   {
@@ -44,6 +45,18 @@ CybriaGames Tags
     "location": "Subway+Surfers+Singapore",
     "source": "/games/subway-singapore",
     "keywords": ["Action", "Singleplayer", "Casual", "Platformer"],
+    "technology": "HTML5",
     "keys": ["WASD/Arrows - Move", "Up Arrow - Jump", "Down Arrow - Slide/Roll", "Space - Hoverboard"]
+  },
+  {
+    "title": "Slope",
+    "logo": "/images/games/slope.png",
+    "creator": "Rob Kay",
+    "description": "Slope is a fast-paced arcade game that throws you down a never-ending slope. You control a ball, tilting it left and right to avoid obstacles and stay on the path. The challenge is in the constantly changing terrain and increasing speed",
+    "location": "Slope",
+    "source": "/games/slope",
+    "keywords": ["Action", "Singleplayer", "Casual", "Arcade", "Platformer"],
+    "technology": "Unity/WebGL",
+    "keys": ["AD/QE/Arrows - Move"]
   }
 ]
