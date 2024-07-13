@@ -1,3 +1,30 @@
+/*
+CybriaGames Tags
+
+- Action
+- Singleplayer
+- Multiplayer
+- Idle
+- Puzzle
+- Driving
+- Horror
+- Adventure
+- RPG
+- Sports
+- Strategy
+- Platformer
+- Shooter
+- Casual
+- Fighting
+- Music
+- Card Games
+- Board Games
+- Word Game
+- Educational
+- Arcade
+- Racing
+*/
+
 [
   {
     "title": "2048",
@@ -6,6 +33,7 @@
     "description": "2048 is a single-player puzzle game played on a grid. You slide numbered tiles around, merging them together when they touch and have the same value. Your goal is to create a tile with the number 2048, but you can keep playing for a higher score after that by creating even bigger numbers. It's a simple concept, but it gets challenging as the grid fills up and you need to strategically plan your moves.",
     "location": "2048",
     "source": "/games/2048",
+    "keywords": ["Puzzle", "Idle", "Singleplayer"],
     "keys": ["WASD/Arrows - Move Tiles", "R - Restart Game"]
   },
   {
@@ -15,6 +43,7 @@
     "description": "In the Singapore stop of the Subway Surfers World Tour, Jake, Tricky, and the crew trade their usual stomping grounds for a thrilling ride through the Lion City's subway system. Skyscrapers whiz by as they dodge trains and grumpy inspectors.  A new surfer, Jia, joins the crew, and players can unlock her along with a wild outfit and a special Lion board. Colorful orchids scattered along the tracks offer exciting rewards during the Weekly Hunt.",
     "location": "Subway+Surfers+Singapore",
     "source": "/games/subway-singapore",
+    "keywords": ["Action", "Singleplayer", "Casual", "Platformer"],
     "keys": ["WASD/Arrows - Move", "Up Arrow - Jump", "Down Arrow - Slide/Roll", "Space - Hoverboard"]
   }
 ]
