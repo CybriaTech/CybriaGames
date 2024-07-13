@@ -29,6 +29,20 @@
     "properties": ["Useful"],
     "source": "null",
     "asset": "javascript:(function(){    function skipAd() {        while (document.getElementsByClassName('video-ads')[0].innerHTML !== '') {            var banner = false;            for (var i = 0; i < document.getElementsByClassName('ytp-ad-overlay-close-button').length; i++) {                document.getElementsByClassName('ytp-ad-overlay-close-button')[i].click();                banner = true;            }            if (banner === false) {                document.getElementsByClassName('html5-main-video')[0].currentTime = document.getElementsByClassName('html5-main-video')[0].duration;                document.getElementsByClassName('ytp-ad-skip-button')[0].click();            }        }    }    skipAd();})();"
+  },
+  {
+    "name": "Enable Edit",
+    "author": "null",
+    "properties": ["Useful"],
+    "source": "null",
+    "asset": "javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0"
+  },
+  {
+    "name": "Disable Edit",
+    "author": "null",
+    "properties": ["Useful"],
+    "source": "null",
+    "asset": "javascript:document.body.contentEditable = 'false'; document.designMode='on'; void 0"
   }
 ]
 
