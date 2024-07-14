@@ -62,3 +62,7 @@ form {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #22272E;
 }
+
+.filter:active {
+  outline: none;
+}
