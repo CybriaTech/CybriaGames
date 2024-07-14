@@ -69,5 +69,16 @@ CybriaGames Tags
     "keywords": ["Horror", "Singleplayer", "Casual", "Adventure", "Puzzle"],
     "technology": "HTML5",
     "keys": ["Click - Interact"]
+  },
+  {
+    "title": "Time Shooter",
+    "logo": "/images/games/time-shooter.png",
+    "creator": "GoGoMan",
+    "description": "Time Shooter is an FPS amusement where time as it were moves after you move. Once you are dormant, the world slows down nearly to a halt, like in SUPERHOT. You'll see around and arrange your advance activities. Evade bullets in moderate movement and smash all the foes without taking harm! Check out Time Shooter 2 for the continuation. ",
+    "location": "time+shooter",
+    "source": "/games/time-shooter",
+    "keywords": ["Singleplayer", "Action", "Shooter", "Casual"],
+    "technology": "HTML5/Unity WebGL",
+    "keys": ["WASD - Move", "Left Click - Use/Get weapon", "Right Click - Toss Weapon", "F - Pick Up"]
   }
 ]
