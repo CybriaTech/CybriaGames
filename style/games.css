@@ -48,12 +48,12 @@ form {
   width: 3vw;
 }
 
-#select {
+#filters {
   margin-top: 10px;
   text-align: center;
 }
 
-.select {
+.filter {
   border: none;
   border-radius: 6px;
   height: 40px;
