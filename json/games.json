@@ -44,7 +44,7 @@ CybriaGames Tags
     "description": "In the Singapore stop of the Subway Surfers World Tour, Jake, Tricky, and the crew trade their usual stomping grounds for a thrilling ride through the Lion City's subway system. Skyscrapers whiz by as they dodge trains and grumpy inspectors.  A new surfer, Jia, joins the crew, and players can unlock her along with a wild outfit and a special Lion board. Colorful orchids scattered along the tracks offer exciting rewards during the Weekly Hunt.",
     "location": "subway+surfers+singapore",
     "source": "/games/subway-singapore",
-    "keywords": ["Action", "Singleplayer", "Casual", "Platformer"],
+    "keywords": ["Action", "Singleplayer", "Platformer"],
     "technology": "HTML5",
     "keys": ["WASD/Arrows - Move", "Up Arrow - Jump", "Down Arrow - Slide/Roll", "Space - Hoverboard"]
   },
@@ -55,7 +55,7 @@ CybriaGames Tags
     "description": "Slope is a fast-paced arcade game that throws you down a never-ending slope. You control a ball, tilting it left and right to avoid obstacles and stay on the path. The challenge is in the constantly changing terrain and increasing speed",
     "location": "slope",
     "source": "/games/slope",
-    "keywords": ["Action", "Singleplayer", "Casual", "Arcade", "Platformer"],
+    "keywords": ["Action", "Singleplayer", "Arcade", "Platformer"],
     "technology": "Unity/WebGL",
     "keys": ["AD/QE/Arrows - Move"]
   },
@@ -66,7 +66,7 @@ CybriaGames Tags
     "description": "You're in the shoes of someone taking a job interview for a mysterious organization called the Authenticity Assessment Department. The interview takes the form of a series of increasingly unsettling questions and tasks presented through a pre-recorded video.",
     "location": "assessment+examination",
     "source": "/games/assessment-examination",
-    "keywords": ["Horror", "Singleplayer", "Casual", "Adventure", "Puzzle"],
+    "keywords": ["Horror", "Singleplayer", "Adventure", "Puzzle"],
     "technology": "HTML5",
     "keys": ["Click - Interact"]
   },
@@ -77,8 +77,19 @@ CybriaGames Tags
     "description": "Time Shooter is an FPS amusement where time as it were moves after you move. Once you are dormant, the world slows down nearly to a halt, like in SUPERHOT. You'll see around and arrange your advance activities. Evade bullets in moderate movement and smash all the foes without taking harm! Check out Time Shooter 2 for the continuation. ",
     "location": "time+shooter",
     "source": "/games/time-shooter",
-    "keywords": ["Singleplayer", "Action", "Shooter", "Casual"],
+    "keywords": ["Singleplayer", "Action", "Shooter"],
     "technology": "HTML5/Unity WebGL",
     "keys": ["WASD - Move", "Left Click - Use/Get weapon", "Right Click - Toss Weapon", "F - Pick Up"]
+  },
+  {
+    "title": "Getaway Shootout",
+    "logo": "/images/games/getaway-shootout.png",
+    "creator": "New Eich Games",
+    "description": "Getaway Shootout is a wild four-player game where you jump left and right to win. Grab weapons and blast your opponents to reach the escape zone first!",
+    "location": "getaway+shootout",
+    "source": "/games/getaway-shootout",
+    "keywords": ["Multiplayer", "Shooter", "Adventure", "Action"],
+    "technology": "HTML5/Unity WebGL",
+    "keys": ["(Player 1) W - Jump Left", "(Player 1) E - Jump Right", "(Player 1) R - Use Power Up", "(Player 2) I - Jump Left", "(Player 2) O - Jump Right", "(Player 2) P - Use Power Up"]
   }
 ]
