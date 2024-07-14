@@ -58,5 +58,16 @@ CybriaGames Tags
     "keywords": ["Action", "Singleplayer", "Casual", "Arcade", "Platformer"],
     "technology": "Unity/WebGL",
     "keys": ["AD/QE/Arrows - Move"]
+  },
+  {
+    "title": "Assessment Examination",
+    "logo": "/images/games/assessment-exam.png",
+    "creator": "Wenderly Games",
+    "description": "You're in the shoes of someone taking a job interview for a mysterious organization called the Authenticity Assessment Department. The interview takes the form of a series of increasingly unsettling questions and tasks presented through a pre-recorded video.",
+    "location": "assessment+examination",
+    "source": "/games/assessment-examination",
+    "keywords": ["Horror", "Singleplayer", "Casual", "Adventure", "Puzzle"],
+    "technology": "HTML5",
+    "keys": ["Click - Interact"]
   }
 ]
