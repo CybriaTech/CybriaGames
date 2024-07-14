@@ -56,9 +56,9 @@ form {
 .filter {
   border: none;
   border-radius: 6px;
-  height: 80px;
+  height: 65px;
   color: #fff;
-  font-size: 2.9em;
+  font-size: 1.9em;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #22272E;
 }
