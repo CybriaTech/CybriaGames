@@ -61,6 +61,7 @@ form {
   font-size: 1.9em;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #22272E;
+  outline: none;
 }
 
 .filter:active {
