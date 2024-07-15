@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .link {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .name {
+            font-weight: bold;
+        }
+        .links {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+        <div id="output"></div>
+    </div>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const output = document.getElementById('output');
+
+    fetch('/json/proxy.json')
+        .then(response => response.json())
+        .then(data => {
+            for (const [name, links] of Object.entries(data[0])) {
+                const link = document.createElement('div');
+                link.classList.add('link');
+
+                const displayname = document.createElement('div');
+                displayname.classList.add('name');
+                displayname.textContent = name;
+
+                const displaylink = document.createElement('div');
+                displaylink.classList.add('links');
+                displaylink.textContent = `Number of Links: ${links.length}`;
+
+                link.appendChild(displayname);
+                link.appendChild(displaylink);
+                output.appendChild(link);
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching JSON data:', error);
+        });
+});
+
+    </script>
+</body>
+</html>
