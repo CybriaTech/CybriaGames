@@ -48,6 +48,35 @@ body {
    transition: color 0.3s ease;
   }
 
+  footer {
+   background-color: #1C2128;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   box-shadow: 0 0 7px #000;
+  }
+
+  .footer-links {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   margin-top: 10px;
+  }
+
+  .footer-link {
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.2em;
+   transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+   color: #0095ff;
+  }
+
   .header-link:hover {
    color: #0095ff;
   }
