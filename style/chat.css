@@ -1,5 +1,5 @@
 #chatroom {
-  width: 100vw;
+  max-width: calc(100% - 30px);
   height: 75vh;
   align-items: center;
   justify-content: center;
@@ -8,4 +8,5 @@
   background-color: #363d47;
   border: none;
   border-radius: 15px;
+  overflow: hidden;
 }
