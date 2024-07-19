@@ -1,10 +1,8 @@
 #chatroom {
-  width: 100%;
+  width: 100vw;
   height: 75vh;
   margin-right: 10%;
   margin-left: 10%;
-  display: flex;
-  justify-content: center;
   background-color: #363d47;
   border: none;
   border-radius: 15px;
