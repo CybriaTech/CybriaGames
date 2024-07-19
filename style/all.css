@@ -10,10 +10,6 @@ body {
     min-height: 100vh;
   }
 
-  main {
-    min-height: 100vh;
-  }
-
   header {
     background-color: #1C2128;
     color: #fff;
