@@ -1,9 +1,9 @@
 #chatroom {
   max-width: calc(100% - 30px);
-  height: 75vh;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  margin: 2%;
+  margin: 1.5%;
   background-color: #363d47;
   border: none;
   border-radius: 15px;
