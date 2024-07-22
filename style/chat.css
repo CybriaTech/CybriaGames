@@ -17,9 +17,9 @@
   height: 10vh;
   margin-left: 1.5%;
   margin-right: 1.5%;
-  text-align: center;
   font-size: 3.2em;
   background-color: #22272E;
+  overflow: hidden;
   border: none;
   border-radius: 12px;
 }
