@@ -29,6 +29,7 @@
   color: #ADB0B7;
 }
 
-.chatbar:active {
+.chatbar::active {
   outline: none;
+  border: none;
 }
