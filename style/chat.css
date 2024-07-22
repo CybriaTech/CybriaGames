@@ -19,6 +19,7 @@
   margin-right: 1.5%;
   font-size: 3.5em;
   background-color: #22272E;
+  padding-left: 10px;
   overflow: hidden;
   border: none;
   border-radius: 12px;
@@ -27,4 +28,8 @@
 
 .chatbar::placeholder {
   color: #ADB0B7;
+}
+
+.chatbar:active {
+  outline: none;
 }
