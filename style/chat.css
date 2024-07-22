@@ -11,7 +11,7 @@
 }
 
 .chatbar {
-  max-width: calc(100% - 100vw);
+  width: 75vw;
   margin-top: 0.2%;
   display: flex;
   height: 10vh;
