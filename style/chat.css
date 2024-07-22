@@ -1,6 +1,6 @@
 #chatroom {
   max-width: calc(100% - 30px);
-  height: 100vh;
+  height: 80vh;
   align-items: center;
   justify-content: center;
   margin: 1.8%;
