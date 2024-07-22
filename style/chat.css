@@ -11,18 +11,18 @@
 }
 
 .chatbar {
-  width: 75vw;
+  width: 100vw;
   margin-top: 0.2%;
   display: flex;
   height: 10vh;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
+  margin-left: 1.8%;
+  margin-right: 1.8%;
   font-size: 3.5em;
   background-color: #22272E;
   padding-left: 10px;
   overflow: hidden;
   border: none;
-  border-radius: 12px;
+  border-radius: 15px;
   color: #fff;
 }
 
