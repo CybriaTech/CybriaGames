@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   margin: 1.8%;
+  margin-bottom: 2px;
   background-color: #363d47;
   border: none;
   border-radius: 15px;
@@ -14,7 +15,6 @@
   width: 95vw;
   display: flex;
   margin: 1.8%;
-  margin-top: 2px;
   height: 10vh;
   font-size: 3.5em;
   background-color: #363d47;
