@@ -13,6 +13,7 @@
 .chatbar {
   width: 95vw;
   display: flex;
+  margin: 1.8%;
   height: 10vh;
   font-size: 3.5em;
   background-color: #363d47;
