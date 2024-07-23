@@ -15,6 +15,7 @@
   width: 95vw;
   display: flex;
   margin: 1.8%;
+  margin-top: 2px;
   height: 10vh;
   font-size: 3.5em;
   background-color: #363d47;
@@ -29,7 +30,7 @@
   color: #ADB0B7;
 }
 
-.chatbar::active {
+.chatbar:active, .chatbar:focus {
   outline: none;
   border: none;
 }
