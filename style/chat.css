@@ -12,7 +12,6 @@
 }
 
 .chatbar {
-  width: 95vw;
   flex-grow: 1;
   display: flex;
   margin: 1.8%;
