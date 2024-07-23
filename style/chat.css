@@ -34,3 +34,21 @@
   outline: none;
   border: none;
 }
+
+.btn-emoji, .btn-send {
+  height: 10vh;
+  font-size: 3.5em;
+  background-color: #363d47;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-img {
+  height: 1em;
+}
