@@ -11,10 +11,15 @@
   overflow: hidden;
 }
 
+#chat-options {
+  display: flex;
+  align-items: center;
+  margin: 1.8%;
+  width: 95vw;
+}
+
 .chatbar {
   flex-grow: 1;
-  display: flex;
-  margin: 1.8%;
   margin-top: 10px;
   height: 10vh;
   font-size: 3.5em;
