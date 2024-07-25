@@ -41,7 +41,7 @@
   border: none;
 }
 
-.btn-emoji, .btn-send {
+.btn-config, .btn-send {
   height: 10vh;
   width: 10vh;
   background-color: #363d47;
