@@ -43,6 +43,7 @@
 
 .btn-emoji, .btn-send {
   height: 10vh;
+  width: 10vh;
   background-color: #363d47;
   border: none;
   border-radius: 15px;
