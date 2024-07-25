@@ -1,0 +1,7 @@
+[
+  {
+    "Name": "CybriaGames Mod",
+    "Scripts": "/scripts/chat/mod.js",
+    "Desc": "CybriaGames Chat Room Moderation"
+  }
+]
