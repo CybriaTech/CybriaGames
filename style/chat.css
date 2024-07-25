@@ -54,8 +54,14 @@
   margin-top: 10px;
   justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn-img {
   width: 56px;
+}
+
+.btn-config:hover,
+.btn-send:hover {
+  background-color: #444b57;
 }
