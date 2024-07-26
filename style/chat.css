@@ -109,12 +109,9 @@
   transition: color 0.3s ease;
 }
 
-.close-btn:hover {
-  color: #0095ff;
-}
-
 .closesvg {
-  width: 30px;
+  width: 27px;
+  width: 27px;
 }
 
 .input {
@@ -129,16 +126,26 @@
 
 .nameinput {
   width: 370px;
-  height: 30px;
+  height: 50px;
   background: none;
   border: none;
-  font-size: 1.7em;
+  font-size: 2.2em;
   color: #fff;
-  margin-left: 10px;
-  margin-right: auto;
+  margin: 10px;
 }
 
 .nameinput:focus {
   outline: none;
   border: none;
 }
+
+.agre {
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
+}
+
+.agre a {
+  color: #0095ff;
+}
+  
