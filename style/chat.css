@@ -131,7 +131,8 @@
   border: none;
   font-size: 2.2em;
   color: #fff;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: auto;
 }
 
 .nameinput:focus {
