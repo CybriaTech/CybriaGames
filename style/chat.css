@@ -116,3 +116,29 @@
 .closesvg {
   width: 27px;
 }
+
+.input {
+  background-color: #353D47;
+  border-radius: 6px;
+  width: 443.938px;
+  height: 50px;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.nameinput {
+  width: 370px;
+  height: 30px;
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.nameinput:focus {
+  outline: none;
+  border: none;
+}
