@@ -111,7 +111,7 @@
 
 .closesvg {
   width: 27px;
-  width: 27px;
+  height: 27px;
 }
 
 .input {
@@ -125,7 +125,7 @@
 }
 
 .nameinput {
-  width: 100%;
+  width: 100vw;
   height: 50px;
   background: none;
   border: none;
@@ -143,6 +143,7 @@
   font-size: 1.5em;
   color: #fff;
   text-align: center;
+  margin-bottom: 0px;
 }
 
 .agre a {
