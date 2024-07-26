@@ -13,6 +13,7 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app-check.js"></script>
     </head>
     <body>
     <header>
@@ -26,12 +27,13 @@
         </nav>
     </header>
   <main>
-  <div id="selectname" class="selectname">
+  <div id="b2" class="b2">
     <div id="namemain" class="namemain">
       <p class="nametitle">Enter A Name To Begin Chatting</p>
       <div class="input">
-      <input class="nameinput" id="nameinput" type="text" placeholder="Example: Mari">
+      <input class="a1" id="a1" type="text" placeholder="Example: Mari">
       </div>
+      <p class="errtxt">Please Enter A Name</p>
       <p class="agre">By entering a name, you agree with the <a href="/tos.html/#chat" target="_blank">Chat Terms Of Service (TOS)</a>
   </div>
 </div>
@@ -50,5 +52,32 @@
 </main>
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
         <script src="/scripts/chat/fbchat.js"></script>
+        <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const a1 = document.querySelector('.nameinput');
+        const b2 = document.querySelector('.selectname');
+        const c3 = document.querySelector('.error-msg');
+
+        if (localStorage.getItem('reqname') === 'true') {
+            b2.style.display = 'none';
+        }
+
+        a1.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                const nameValue = a1.value.trim();
+                if (nameValue) {
+                    b2.style.display = 'none';
+                    localStorage.setItem('reqname', 'true');
+                } else {
+                    c3.style.display = 'block';
+                }
+            }
+        });
+
+        a1.addEventListener('input', function() {
+            c3.style.display = 'none';
+        });
+    });
+</script>
     </body>
 </html>
