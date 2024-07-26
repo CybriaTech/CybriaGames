@@ -27,6 +27,7 @@ body {
     align-items: center;
     cursor: pointer;
     width: 310px;
+    z-index: 999999;
     justify-content: flex-start;
   }
 
@@ -34,6 +35,7 @@ body {
    display: flex;
    align-items: center;
    gap: 18px;
+   z-index: 999999;
    justify-content: flex-end;
   }
 
