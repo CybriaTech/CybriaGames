@@ -134,4 +134,12 @@
 .agre a {
   color: #0095ff;
 }
+
+.errtxt {
+  font-size: 1.5em;
+  color: #ff0000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
   
