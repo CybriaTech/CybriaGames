@@ -33,7 +33,6 @@
       <div class="input">
       <input class="nameinput" id="nameinput" type="text" placeholder="Example: Mari">
       </div>
-      <p class="errtxt">Please Enter A Name</p>
       <p class="agre">By entering a name, you agree with the <a href="/tos.html/#chat" target="_blank">Chat Terms Of Service (TOS)</a>
   </div>
 </div>
@@ -56,7 +55,6 @@
     document.addEventListener('DOMContentLoaded', (event) => {
         const a1 = document.querySelector('.nameinput');
         const b2 = document.querySelector('.selectname');
-        const c3 = document.querySelector('.error-msg');
 
         if (localStorage.getItem('reqname') === 'true') {
             b2.style.display = 'none';
@@ -69,13 +67,8 @@
                     b2.style.display = 'none';
                     localStorage.setItem('reqname', 'true');
                 } else {
-                    c3.style.display = 'block';
                 }
             }
-        });
-
-        a1.addEventListener('input', function() {
-            c3.style.display = 'none';
         });
     });
 </script>
