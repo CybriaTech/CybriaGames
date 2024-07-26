@@ -1,7 +1,6 @@
 {
   apiKey: "AIzaSyCIwUYRW5rn5l0Ai6Wtjl_QJJHTkvGHgdY",
   authDomain: "cybriagameschat.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
   projectId: "cybriagameschat",
   storageBucket: "cybriagameschat.appspot.com",
   messagingSenderId: "538529640219",
