@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="/style/all.css">
         <link rel="icon" href="/images/cybriagames/favicon-circle.png">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app-check.js"></script>
     </head>
     <body>
@@ -52,9 +52,31 @@
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
         <script src="/scripts/chat/fbchat.js"></script>
         <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
+    document.addEventListener('DOMContentLoaded', async (event) => {
+
+        const response = await fetch('/json/firebase.config.json');
+        const firebaseConfig = await response.json();
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+        
         const a1 = document.querySelector('.nameinput');
-        const b2 = document.querySelector('.selectname');
+        const b2 = document.querySelector('.selectname');    
+
+        function genid() {
+            const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+            let key = '';
+            for (let i = 0; i < 6; i++) {
+            key += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return key;
+        }
+
+        async function identical(name) {
+            const snapshot = await db.ref('Users').orderByChild('name').equalTo(name).once('value');
+            return snapshot.exists();
+        }
+            
 
         if (localStorage.getItem('reqname') === 'true') {
             b2.style.display = 'none';
@@ -62,11 +84,21 @@
 
         a1.addEventListener('keydown', function(event) {
             if (event.key === 'Enter') {
-                const nameValue = a1.value.trim();
-                if (nameValue) {
+                const userNAME = a1.value.trim();
+                if (userNAME) {
+                    const nameExists = await identical(userNAME);
+                    if (nameExists) {
+                        document.querySelector('.123').style.display = 'block';
+                    } else {
+                        const userID = genid();
+                        await db.ref('Users').push({
+                            name: userNAME,
+                            id: userID
+                        });
                     b2.style.display = 'none';
                     localStorage.setItem('reqname', 'true');
                 } else {
+                    document.querySelector('.632').style.display = 'block';
                 }
             }
         });
