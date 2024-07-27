@@ -54,7 +54,7 @@
         <script>
     document.addEventListener('DOMContentLoaded', async (event) => {
 
-        const response = await fetch('/json/firebase.config.json');
+        const response = await fetch('json/firebase.config.json');
         const firebaseConfig = await response.json();
 
         firebase.initializeApp(firebaseConfig);
