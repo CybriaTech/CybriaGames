@@ -52,16 +52,15 @@
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
         <script src="/scripts/chat/fbchat.js"></script>
         <script>
-            $(document).ready(async function() {
-                
+            document.addEventListener("DOMContentLoaded", async function() {
                 const response = await fetch('/json/firebase.config.json');
                 const firebaseConfig = await response.json();
 
                 firebase.initializeApp(firebaseConfig);
                 const db = firebase.database();
 
-                const a1 = $('.nameinput');
-                const b2 = $('.selectname');
+                const a1 = document.querySelector('.nameinput');
+                const b2 = document.querySelector('.selectname');
 
                 function genid() {
                     const chars = '0123456789';
@@ -77,33 +76,10 @@
                     return snapshot.exists();
                 }
 
-                if (localStorage.getItem('reqname') === 'true') {
-                    b2.hide();
+                if (localStorage.getItem('reqname') === 'false') {
+                    b2.style.display = 'flex';
+                } else {
+                    b2.style.display = 'none';
                 }
-
-                a1.on('keydown', async function(event) {
-                    if (event.key === 'Enter') {
-                        const userNAME = a1.val().trim();
-                        if (userNAME) {
-                            const nameExists = await identical(userNAME);
-                            if (nameExists) {
-                                $('.123').show();
-                            } else {
-                                const userID = genid();
-                                await db.ref('Users').push({
-                                    name: userNAME,
-                                    id: userID
-                                });
-                                b2.hide();
-                                localStorage.setItem('reqname', 'true');
-                            }
-                        } else {
-                            $('.632').show();
-                        }
-                    }
-                });
-            });
-                
-</script>
     </body>
 </html>
