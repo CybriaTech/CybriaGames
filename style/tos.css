@@ -9,3 +9,29 @@
   border-radius: 15px;
   margin-bottom: 15px;
 }
+
+.tos-title,
+.tos-paragraph,
+.tos-subtitle, 
+.tos-subtitle-paragraph {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.tos-title {
+  font-size: 2.8em;
+}
+
+.tos-paragraph {
+  font-size: 2.3em;
+}
+
+.tos-subtitle {
+  font-size: 2.6em;
+  margin-right: 25px;
+}
+
+.tos-subtitle-paragraph {
+  font-size: 2.6em;
+}
