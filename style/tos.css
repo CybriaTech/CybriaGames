@@ -19,6 +19,7 @@
 }
 
 .tos-title {
+  text-align: center;
   font-weight: bold;
   font-size: 2.8em;
 }
@@ -40,4 +41,5 @@
 .toc-a {
   color: #0095ff;
   font-size: 2.3em;
+  margin: none;
 }
