@@ -68,7 +68,7 @@
 
 .selectname {
   position: fixed;
-  display: none;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
