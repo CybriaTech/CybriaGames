@@ -12,17 +12,23 @@
 .tos-title,
 .tos-paragraph,
 .tos-subtitle, 
-.tos-subtitle-paragraph {
+.tos-subtitle-paragraph,
+.tos-comp-title {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
 
-.tos-title {
+.tos-title,
+.tos-comp-title {
   text-align: center;
   font-weight: bold;
   font-size: 2.8em;
+}
+
+.tos-title {
+  color: #0095ff;
 }
 
 .tos-paragraph {
