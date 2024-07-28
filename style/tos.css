@@ -4,14 +4,16 @@
 #conduct {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 15px 15px 15px;
+  max-width: 800px;
 }
 
 .tos-title,
 .tos-paragraph,
 .tos-subtitle, 
 .tos-subtitle-paragraph,
-.tos-comp-title {
+.tos-comp-title,
+.tos-small {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,23 +22,24 @@
 
 .tos-title,
 .tos-comp-title {
-  font-size: 2.8em;
   color: #0095ff;
 }
 
 .tos-comp-title {
+  font-size: 1.5em;
   border-bottom: 2px solid #0095ff;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
 .tos-title {
+  font-size: 2.8em;
   font-weight: bold;
   color: #0095ff;
 }
 
 .tos-paragraph {
-  font-size: 2.3em;
+  font-size: 1em;
 }
 
 .tos-subtitle {
@@ -51,6 +54,10 @@
 
 .toc-a {
   color: #0095ff;
-  font-size: 2.3em;
+  font-size: 1em;
   margin: none;
+}
+
+.tos-small {
+  font-size: 0.9em;
 }
