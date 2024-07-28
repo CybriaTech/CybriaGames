@@ -4,7 +4,7 @@
 #conduct {
   display: flex;
   flex-direction: column;
-  margin: 0 15px 15px 15px;
+  margin: 0 auto;
   max-width: 800px;
 }
 
@@ -39,25 +39,25 @@
 }
 
 .tos-paragraph {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .tos-subtitle {
   font-weight: bold;
-  font-size: 2.6em;
+  font-size: 1.4em;
   margin-right: 25px;
 }
 
 .tos-subtitle-paragraph {
-  font-size: 2.3em;
+  font-size: 1.2em;
 }
 
 .toc-a {
   color: #0095ff;
-  font-size: 1em;
+  font-size: 1.3em;
   margin: none;
 }
 
 .tos-small {
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
