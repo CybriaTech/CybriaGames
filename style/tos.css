@@ -23,11 +23,13 @@
   text-align: center;
   font-weight: bold;
   font-size: 2.8em;
+  color: #0095ff;
 }
 
 .tos-comp-title {
-  color: #0095ff;
   border-bottom: 2px solid #0095ff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .tos-title {
