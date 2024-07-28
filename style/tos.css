@@ -4,7 +4,7 @@
 #conduct {
   display: flex;
   flex-direction: column;
-  margin: 0 15px 15px 15px;
+  margin: 0 auto;
 }
 
 .tos-title,
