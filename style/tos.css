@@ -16,6 +16,7 @@
 .tos-subtitle-paragraph {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #fff;
 }
 
