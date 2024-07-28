@@ -20,6 +20,7 @@
 }
 
 .tos-title {
+  font-weight: bold;
   font-size: 2.8em;
 }
 
@@ -28,6 +29,7 @@
 }
 
 .tos-subtitle {
+  font-weight: bold;
   font-size: 2.6em;
   margin-right: 25px;
 }
