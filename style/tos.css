@@ -20,8 +20,6 @@
 
 .tos-title,
 .tos-comp-title {
-  text-align: center;
-  font-weight: bold;
   font-size: 2.8em;
   color: #0095ff;
 }
@@ -33,6 +31,7 @@
 }
 
 .tos-title {
+  font-weight: bold;
   color: #0095ff;
 }
 
