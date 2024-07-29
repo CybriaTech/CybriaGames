@@ -4,7 +4,7 @@
 #conduct {
   display: flex;
   flex-direction: column;
-  margin: 0 15px 15px 15px;
+  margin: 15px 15px 15px;
   max-width: 900px;
 }
 
@@ -26,8 +26,8 @@
 }
 
 .tos-comp-title {
-  font-size: 1.5em;
-  border-bottom: 2px solid #0095ff;
+  font-size: 2em;
+  border-bottom: 4px solid #0095ff;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
