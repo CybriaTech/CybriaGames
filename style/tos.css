@@ -56,7 +56,7 @@
   font-size: 1.3em;
 }
 
-.tos-link {
+#tos-link {
   display: block;
   margin: 0;
   text-decoration: underline;
