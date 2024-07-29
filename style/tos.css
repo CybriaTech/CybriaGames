@@ -4,7 +4,9 @@
 #conduct,
 #privacy,
 #intellectual, 
-#user-bans {
+#user-bans,
+#contact, 
+#tos-changes {
   display: flex;
   align-items: center;
   flex-direction: column;
