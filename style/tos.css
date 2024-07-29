@@ -15,8 +15,7 @@
 .tos-subtitle, 
 .tos-subtitle-paragraph,
 .tos-comp-title,
-.tos-small,
-.tos-link {
+.tos-small {
   width: 100%;
   text-align: center;
   display: flex;
@@ -57,10 +56,9 @@
   font-size: 1.3em;
 }
 
-.tos-link {
+#tos-link {
   text-decoration: underline;
   cursor: pointer;
-  display: inline;
   color: #0095ff;
 }
 
