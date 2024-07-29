@@ -58,11 +58,9 @@
 }
 
 .tos-link {
-  display: block;
   margin: 20px 0;
   text-decoration: underline;
   cursor: pointer;
-  text-align: center;
   color: #0095ff;
 }
 
