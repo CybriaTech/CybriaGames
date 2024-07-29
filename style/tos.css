@@ -2,7 +2,9 @@
 #toc,
 #users,
 #conduct,
-#privacy {
+#privacy,
+#intellectual, 
+#user-bans {
   display: flex;
   align-items: center;
   flex-direction: column;
