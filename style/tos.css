@@ -56,9 +56,11 @@
   font-size: 1.3em;
 }
 
-.tos-subtitle-paragraph a {
-  display: flex;
+.tos-link {
+  display: block;
   margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
   text-align: center;
   color: #0095ff;
 }
