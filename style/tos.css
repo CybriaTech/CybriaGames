@@ -46,9 +46,9 @@
 }
 
 .tos-subtitle {
+  margin-bottom: 0;
   font-weight: bold;
-  font-size: 1.4em;
-  margin-right: 25px;
+  font-size: 1.5em;
 }
 
 .tos-subtitle-paragraph {
