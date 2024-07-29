@@ -3,6 +3,7 @@
 #users,
 #conduct {
   display: flex;
+  align-items: center;
   flex-direction: column;
   margin: 0 15px 15px 15px;
   max-width: 900px;
@@ -13,8 +14,9 @@
 .tos-subtitle, 
 .tos-subtitle-paragraph,
 .tos-comp-title,
-.tos-small,
-.tos-a {
+.tos-small {
+  width: 100%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +56,8 @@
 }
 
 .tos-a {
+  display: block;
+  text-align: center;
   color: #0095ff;
 }
 
