@@ -57,7 +57,7 @@
 }
 
 .tos-subtitle-paragraph a {
-  display: block;
+  display: inline-block;
   margin: 0;
   text-align: center;
   color: #0095ff;
