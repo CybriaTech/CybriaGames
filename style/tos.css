@@ -15,8 +15,8 @@
 .tos-subtitle, 
 .tos-subtitle-paragraph,
 .tos-comp-title,
-.tos-small,
-.tos-link {
+.tos-small {
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -57,7 +57,8 @@
 }
 
 .tos-link {
-  margin: 0;
+  text-align: center;
+  margin: 20px 0;
   text-decoration: underline;
   cursor: pointer;
   color: #0095ff;
