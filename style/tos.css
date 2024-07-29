@@ -60,6 +60,7 @@
 .tos-link {
   text-decoration: underline;
   cursor: pointer;
+  display: inline;
   color: #0095ff;
 }
 
