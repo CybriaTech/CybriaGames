@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   margin: 0 15px 15px 15px;
-  text-align: center;
   max-width: 900px;
 }
 
@@ -14,7 +13,8 @@
 .tos-subtitle, 
 .tos-subtitle-paragraph,
 .tos-comp-title,
-.tos-small {
+.tos-small,
+.tos-a {
   display: flex;
   justify-content: center;
   align-items: center;
