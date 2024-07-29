@@ -15,12 +15,10 @@
 .tos-subtitle, 
 .tos-subtitle-paragraph,
 .tos-comp-title,
-.tos-small {
+.tos-small,
+.tos-link {
   width: 100%;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
 }
 
@@ -54,13 +52,15 @@
 
 .tos-subtitle-paragraph {
   margin: 0;
-  text-align: center;
   font-size: 1.3em;
 }
 
-#tos-link {
+.tos-link {
+  text-align: left;
   cursor: pointer;
   color: #0095ff;
+  display: inline;
+  text-decoration: underline;
 }
 
 .tos-small {
