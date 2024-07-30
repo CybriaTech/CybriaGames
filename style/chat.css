@@ -143,4 +143,26 @@
   margin-bottom: 5px;
   text-align: center;
 }
+
+#user {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+  
   
