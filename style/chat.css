@@ -177,5 +177,12 @@
 .message-content {
   margin: 2.5px 0;
 }
+
+.timestamp {
+  text-align: left;
+  font-size: 0.9em;
+  color: #888;
+  margin: 0;
+}
   
   
