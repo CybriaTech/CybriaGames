@@ -21,7 +21,7 @@
     "author": "Mozilla (Mouse)",
     "properties": ["Useful"],
     "source": "https://x-ray-goggles.mouse.org/",
-    "asset": "javascript:(function () {var script=document.createElement('script');script.src='https://cdn.jsdelivr.net/gh/CybriaTech/CybriaGames@master/external/bookmarklets/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())"
+    "asset": "javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())"
   },
   {
     "name": "Skip YT Ad",
