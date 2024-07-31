@@ -179,7 +179,7 @@
 }
 
 .timestamp {
-  display: inline;
+  display: inline-block;
   text-align: left;
   font-size: 0.9em;
   color: #888;
