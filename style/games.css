@@ -94,3 +94,9 @@ form {
   margin-left: 2%;
   margin-right: 2%;
 }
+
+.game-title {
+  font-size: 2.2em;
+  text-align: left;
+  color: #fff;
+}
