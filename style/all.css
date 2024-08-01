@@ -50,3 +50,42 @@ body {
   .header-link:hover {
    color: #0095ff;
   }
+
+  footer {
+   background-color: #1C2128;
+   box-shadow: 0 0 7px #000;
+   display: flex;
+   justify-content: space-around;
+   padding: 20px 0;
+  }
+
+  .footer-title {
+   font-size: 1.2em;
+   font-weight: bold;
+   margin-bottom: 10px;
+  }
+
+  .footer-a {
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   margin-bottom: 8px;
+   transition: color 0.3s ease;
+  }
+
+  .footer-a:hover {
+   color: #0095ff;
+  }
+
+  .footer-1, .footer-2, .footer-3, .footer-4 {
+   max-width: 200px;
+  }
+
+  .footer-4 {
+   position: relative;
+  }
+
+  .footer-4 .footer-a {
+   display: flex;
+   align-items: center;
+  }
