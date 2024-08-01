@@ -62,7 +62,7 @@ form {
         
 .game:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgb(0, 149, 255);
+  box-shadow: 4px 4px 8px rgb(0, 149, 255);
 }
         
 .g-icon {
