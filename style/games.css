@@ -47,3 +47,45 @@ form {
 .fa {
   width: 3vw;
 }
+
+.game {
+  width: 300px;
+  border: 1px solid #ccc;
+  background-color: #353D47;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease-in-out;  
+}
+        
+.game:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgb(0, 149, 255);
+}
+        
+.g-icon {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+        
+.meta {
+  padding: 20px;
+  padding-top: 2px;
+  text-align: left;
+}
+        
+.title {
+  font-size: 1.7em;
+  margin: 0.5em 0;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.creator {
+  margin-top: 5px;
+  font-size: 1.3em;
+  color: #AAA;
+}
