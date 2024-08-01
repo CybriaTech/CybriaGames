@@ -55,7 +55,7 @@ form {
   background-color: #353D47;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   cursor: pointer;
   transition: box-shadow 0.3s ease, transform 0.3s ease-in-out;  
@@ -63,7 +63,7 @@ form {
         
 .game:hover {
   transform: scale(1.05);
-  box-shadow: 4px 4px 8px rgb(0, 149, 255);
+  box-shadow: 0 0 10px rgb(0, 149, 255);
 }
         
 .g-icon {
