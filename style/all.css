@@ -60,13 +60,14 @@ body {
   }
 
   .footer-title {
-   font-size: 1.2em;
+   font-size: 1.7em;
    font-weight: bold;
    margin-bottom: 10px;
   }
 
   .footer-a {
    color: #fff;
+   font-size: 1.4em;
    text-decoration: none;
    display: block;
    margin-bottom: 8px;
@@ -78,7 +79,7 @@ body {
   }
 
   .footer-1, .footer-2, .footer-3, .footer-4 {
-   max-width: 200px;
+   max-width: 175px;
   }
 
   .footer-4 {
