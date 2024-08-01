@@ -49,8 +49,9 @@ form {
 }
 
 .game {
-  width: 275px;
+  width: 250px;
   border: 1px solid #ccc;
+  margin-top: 8px;
   background-color: #353D47;
   border-radius: 20px;
   overflow: hidden;
