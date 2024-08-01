@@ -89,3 +89,8 @@ form {
   font-size: 1.3em;
   color: #AAA;
 }
+
+.game-section {
+  margin-left: 2%;
+  margin-right: 2%;
+}
