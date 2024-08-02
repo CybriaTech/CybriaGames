@@ -32,5 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 all_games.appendChild(game_button);
             });
         })
-        .catch(error => console.error(error));
+        .catch(error => console.error('Err:', error));
 });
