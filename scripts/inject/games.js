@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 const game_button = document.createElement('div');
                 game_button.className = 'game';
 
-                const game_logo = document.createElement('game_logo');
+                const game_logo = document.createElement('img');
                 game_logo.className = 'g-icon';
                 game_logo.src = game.logo;
-                game_logo.alt = game.game_title;
+                game_logo.alt = game.title;
 
                 const meta = document.createElement('div');
                 meta.className = 'meta';
 
                 const game_title = document.createElement('div');
                 game_title.className = 'title';
-                game_title.textContent = game.game_title;
+                game_title.textContent = game.title;
 
                 const creator = document.createElement('div');
                 creator.className = 'creator';
