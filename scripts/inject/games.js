@@ -10,20 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 const game_logo = document.createElement('game_logo');
                 game_logo.className = 'g-icon';
                 game_logo.src = game.logo;
-                game_logo.alt = game.title;
+                game_logo.alt = game.game_title;
 
                 const meta = document.createElement('div');
                 meta.className = 'meta';
 
-                const title = document.createElement('div');
-                title.className = 'title';
-                title.textContent = game.title;
+                const game_title = document.createElement('div');
+                game_title.className = 'title';
+                game_title.textContent = game.game_title;
 
                 const creator = document.createElement('div');
                 creator.className = 'creator';
                 creator.textContent = `By: ${game.creator}`;
 
-                meta.appendChild(title);
+                meta.appendChild(game_title);
                 meta.appendChild(creator);
 
                 game_button.appendChild(game_logo);
