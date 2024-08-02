@@ -29,6 +29,7 @@ CybriaGames Tags
   {
     "title": "2048",
     "logo": "/images/games/2048.png",
+    "gamepage": "/images/gamepage/2048.png",
     "creator": "Gabriele Cirulli",
     "description": "2048 is a single-player puzzle game played on a grid. You slide numbered tiles around, merging them together when they touch and have the same value. Your goal is to create a tile with the number 2048, but you can keep playing for a higher score after that by creating even bigger numbers. It's a simple concept, but it gets challenging as the grid fills up and you need to strategically plan your moves.",
     "location": "2048",
@@ -40,6 +41,7 @@ CybriaGames Tags
   {
     "title": "Subway Surfers Singapore",
     "logo": "/images/games/subway-surfers-1.png",
+    "gamepage": "/images/gamepage/subway-singapore.png",
     "creator": "SYBO",
     "description": "In the Singapore stop of the Subway Surfers World Tour, Jake, Tricky, and the crew trade their usual stomping grounds for a thrilling ride through the Lion City's subway system. Skyscrapers whiz by as they dodge trains and grumpy inspectors.  A new surfer, Jia, joins the crew, and players can unlock her along with a wild outfit and a special Lion board. Colorful orchids scattered along the tracks offer exciting rewards during the Weekly Hunt.",
     "location": "subway+surfers+singapore",
@@ -51,6 +53,7 @@ CybriaGames Tags
   {
     "title": "Slope",
     "logo": "/images/games/slope.png",
+    "gamepage": "/images/gamepage/slope.webp",
     "creator": "Rob Kay",
     "description": "Slope is a fast-paced arcade game that throws you down a never-ending slope. You control a ball, tilting it left and right to avoid obstacles and stay on the path. The challenge is in the constantly changing terrain and increasing speed",
     "location": "slope",
@@ -62,6 +65,7 @@ CybriaGames Tags
   {
     "title": "Assessment Examination",
     "logo": "/images/games/assessment-exam.png",
+    "gamepage": "/images/gamepage/assessment-exam.png",
     "creator": "Wenderly Games",
     "description": "You're in the shoes of someone taking a job interview for a mysterious organization called the Authenticity Assessment Department. The interview takes the form of a series of increasingly unsettling questions and tasks presented through a pre-recorded video.",
     "location": "assessment+examination",
@@ -73,6 +77,7 @@ CybriaGames Tags
   {
     "title": "Time Shooter",
     "logo": "/images/games/time-shooter.png",
+    "gamepage": "/images/gamepage/time-shooter.jpg",
     "creator": "GoGoMan",
     "description": "Time Shooter is an FPS amusement where time as it were moves after you move. Once you are dormant, the world slows down nearly to a halt, like in SUPERHOT. You'll see around and arrange your advance activities. Evade bullets in moderate movement and smash all the foes without taking harm! Check out Time Shooter 2 for the continuation. ",
     "location": "time+shooter",
@@ -84,6 +89,7 @@ CybriaGames Tags
   {
     "title": "Getaway Shootout",
     "logo": "/images/games/getaway-shootout.png",
+    "gamepage": "/images/gamepage/getaway-shootout.webp",
     "creator": "New Eich Games",
     "description": "Getaway Shootout is a wild four-player game where you jump left and right to win. Grab weapons and blast your opponents to reach the escape zone first!",
     "location": "getaway+shootout",
