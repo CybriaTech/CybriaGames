@@ -13,3 +13,5 @@ If you have any concerns, write an issue!
 - https://skobbody-cooked.vercel.app/en/room
 - https://rage-elixr.vercel.app/
 - https://12-feet.vercel.app/
+- https://friendly-adventure-chi.vercel.app/
+- https://my-name-is-shadow.vercel.app/ (Yes im an Eminence in Shadow fan)
