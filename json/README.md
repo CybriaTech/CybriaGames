@@ -1,0 +1,15 @@
+# Proxy Cloining
+
+Im cloning proxies into Vercel using my own proxy for sites that don't have much links and closed-sourced sites.
+
+If you have any concerns, write an issue!
+
+# X-88 Managed Links
+
+- https://skibidi-biden.vercel.app
+- https://miniature-spoon-chi.vercel.app/
+- https://bug-free-octo-dollop.vercel.app/
+- https://blackity-toilet.vercel.app/
+- https://skobbody-cooked.vercel.app/en/room
+- https://rage-elixr.vercel.app/
+- https://12-feet.vercel.app/
