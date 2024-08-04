@@ -1,4 +1,4 @@
-# Proxy Cloining
+# Proxy Cloning
 
 Im cloning proxies into Vercel using my own proxy for sites that don't have much links and closed-sourced sites or because i'm bored.
 
