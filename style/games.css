@@ -51,7 +51,6 @@ form {
 .game {
   width: 250px;
   display: flex;
-  height: 375px;
   border: 1px solid #ccc;
   background-color: #353D47;
   border-radius: 20px;
