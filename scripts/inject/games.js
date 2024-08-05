@@ -1,36 +1,41 @@
-document.addEventListener('DOMContentLoaded', function() {
-    gamegen();
-});
+async function inject() {
+    try {
+        const response = await fetch('/json/games.json');
+        const games = await response.json();
 
-function gamegen() {
-    fetch('/json/games.json')
-    .then(response => response.json())
-    .then(data => {
         const allsec = document.getElementById('all');
-        const injected = new Set();
-        data.forEach(game => {
-            if (game.tags && game.tags.length > 0) {
-                game.tags.forEach(tag => {
-                    if (categoryDiv && !injected.has(game.title)) {
-                        const gamebtn = document.createElement('div');
-                        gamebtn.classList.add('game');
-                        gamebtn.innerHTML = `
-                        <div class="game">
-                            <img class="g-icon" src="${game.logo}" alt="${game.title}">
-                            <div class="meta">
-                                <div class="title">${game.title}</div>
-                                <div class="creator">By: ${game.creator}</div>
-                            </div>
-                        </div>
-                        `;
-                        allsec.appendChild(gamebtn);
-                        injected.add(game.title);
-                    }
-                });
-            }
+
+        games.forEach(game => {
+            const gamebtn = document.createElement('div');
+            gamebtn.classList.add('game');
+
+            const img = document.createElement('img');
+            img.classList.add('g-icon');
+            img.src = game.logo;
+            img.alt = game.title;
+
+            const metaspin = document.createElement('div');
+            metaspin.classList.add('meta');
+
+            const titlesec = document.createElement('div');
+            titlesec.classList.add('title');
+            titlesec.textContent = game.title;
+
+            const creatorsec = document.createElement('div');
+            creatorsec.classList.add('creator');
+            creatorsec.textContent = `By: ${game.creator}`;
+
+            metaspin.appendChild(titlesec);
+            metaspin.appendChild(creatorsec);
+
+            gamebtn.appendChild(img);
+            gamebtn.appendChild(metaspin);
+
+            allsec.appendChild(gamebtn);
         });
-    })
-    .catch(error => {
-        console.error('404:', error);
-    });
+    } catch (error) {
+        console.error('Err:', error);
+    }
 }
+
+inject();
