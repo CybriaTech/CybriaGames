@@ -109,6 +109,6 @@ form {
 #recommended, #favorited, #all {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 10px;
+  gap: 12px;
 }
 
