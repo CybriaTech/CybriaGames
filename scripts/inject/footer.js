@@ -5,7 +5,7 @@ document.write(`
             <a class="footer-a" href="/tos.html">Chat TOS</a>
             <a class="footer-a" href="/privacy-policy.html">Privacy Policy</a>
             <a class="footer-a" href="/issue.html">Report Issues</a>
-            <a class="footer-a" href="/links.html">Alt Links</a>
+            <a class="footer-a" href="/links.html">More Links</a>
         </div>
         <div class="footer-2">
             <p class="footer-title">Developers</p>
