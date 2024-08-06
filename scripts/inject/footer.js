@@ -19,9 +19,10 @@ document.write(`
         </div>
         <div class="footer-4">
             <p class="footer-title">Sources</p>
-            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames" target="_blank">Source Code (PC)</a>
-            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Mobile" target="_blank">Source Code (Mobile)</a>
+            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames" target="_blank">Github (PC)</a>
+            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Mobile" target="_blank">Github (Mobile)</a>
             <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Assets" target="_blank">Game Assets</a>
         </div>
+        <p style="color: #fff; font-size: 1.5em; text-align: center;">${this.getFullYear()} CybriaTech</p>
     </footer>
 `);
