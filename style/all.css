@@ -55,7 +55,6 @@ body {
    background-color: #1C2128;
    box-shadow: 0 0 7px #000;
    display: flex;
-   flex-direction: column;
    justify-content: space-around;
    padding: 20px 0;
   }
@@ -82,7 +81,6 @@ body {
 
   .footer-1, .footer-2, .footer-3, .footer-4 {
    max-width: 200px;
-   margin-bottom: 10px;
   }
 
   .footer-4 {
@@ -92,11 +90,4 @@ body {
   .footer-4 .footer-a {
    display: flex;
    align-items: center;
-  }
-
-  .copyright {
-   color: #888;
-   text-align: center;
-   font-size: 1.2em;
-   margin-top: 20px;
   }
