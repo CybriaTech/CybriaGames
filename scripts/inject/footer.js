@@ -23,6 +23,6 @@ document.write(`
             <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Mobile" target="_blank">Github (Mobile)</a>
             <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Assets" target="_blank">Game Assets</a>
         </div>
-        <p class="copyright">&copy; ${new Date().getFullYear()} CybriaTech</p>
+        <div class="copyright">&copy; ${new Date().getFullYear()} CybriaTech</div>
     </footer>
 `);
