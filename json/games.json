@@ -95,5 +95,17 @@
     "keywords": ["Shooter"],
     "technology": "Flash",
     "keys": ["Up Arrow Key - Move", "Left/Right Arrow Keys - Rotate", "Space - Fire"]
+  },
+  {
+    "title": "The Impossible Quiz",
+    "logo": "/images/games/the-impossible-quiz.png",
+    "gamepage": "/images/gamepage/impossible-quiz.png",
+    "creator": "Splapp-me-do",
+    "description": "The Impossible Quiz is a point-and-click quiz game that consists of 110 questions. Notorious for its difficulty, the quiz mixes multiple-choice trick questions similar to riddles, along with various challenges and puzzles.",
+    "location": "the impossible quiz",
+    "source": "/games/the-impossible-quiz",
+    "keywords": ["Puzzle"],
+    "technology": "Flash",
+    "keys": ["Click - Interact"]
   }
 ]
