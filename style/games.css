@@ -120,14 +120,14 @@ form {
 .fire-icon {
   background-color: #22272E;
   border-radius: 7px;
-  bottom: 0;
-  left: 0;
-  width: 64px;
-  height: 64px;
-  padding: 10px;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  margin: 10px;
 }
 
 .fire-icon svg {
-  width: 56px;
+  width: 48px;
 }
 
