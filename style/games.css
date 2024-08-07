@@ -50,7 +50,7 @@ form {
 
 .game {
   width: 250px;
-  height: 356px;
+  height: 370px;
   border: 1px solid #ccc;
   background-color: #353D47;
   border-radius: 20px;
@@ -91,7 +91,7 @@ form {
 
 .creator {
   margin-top: 5px;
-  font-size: 1em;
+  font-size: 1.3em;
   color: #AAA;
 }
 
