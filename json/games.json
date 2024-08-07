@@ -83,5 +83,17 @@
     "keywords": ["Singleplayer", "Multiplayer", "Adventure", "Action"],
     "technology": "Unity/WebGL",
     "keys": ["W A S D/Arrow Keys - Move", "Space - Jump", "Right Click/Double Tap on Touchpad - Interact", "Left CTRL - Crouch", "E - Inventory", "Left Click/Tap on Touchpad - Attack/Break", "Q - Drop Item"]
+  },
+  {
+    "title": "Asteroids",
+    "logo": "/images/games/asteroids.png",
+    "gamepage": "/images/gamepage/asteroid.webp",
+    "creator": "Neave Games",
+    "description": "Spread peace and harmony across the galaxy by blasting everything in sight (including the occasional alien).",
+    "location": "asteroids",
+    "source": "/games/asteroids",
+    "keywords": ["Shooter"],
+    "technology": "HTML5",
+    "keys": ["W Key - Move", "Click/Touch Mousepad - Fire"]
   }
 ]
