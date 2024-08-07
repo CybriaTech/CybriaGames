@@ -32,8 +32,6 @@ async function inject() {
             gamebtn.appendChild(metaspin);
 
             allsec.appendChild(gamebtn);
-
-            gamebtn.window.location.href = '/games?g=${game.location}';
         });
     } catch (error) {
         console.error('Err:', error);
