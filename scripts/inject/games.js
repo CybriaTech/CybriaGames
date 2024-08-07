@@ -32,7 +32,7 @@ async function inject() {
             gamebtn.appendChild(metaspin);
 
             gamebtn.addEventListener('click', () => {
-                window.location.href = `/?g=${encodeURIComponent(game.location)}`;
+                window.location.href = `?g=${encodeURIComponent(game.location)}`;
             });
 
             allsec.appendChild(gamebtn);
