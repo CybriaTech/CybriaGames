@@ -75,7 +75,7 @@
     "source": "/games/eagler-1.3",
     "keywords": ["Singleplayer", "Multiplayer", "Adventure", "Action"],
     "technology": "Unity/WebGL",
-    "keys": ["W A S D/Arrow Keys - Move", "Space - Jump", "Right Click/Double Tap on Touchpad - Interact", "Left CTRL - Crouch", "E - Inventory", "Left Click/Tap on Touchpad - Attack/Break", "Q - Drop Item"]
+    "keys": ["W A S D/Arrow Keys - Move", "Space - Jump", "Right Click/Double Tap - Interact", "Left CTRL - Crouch", "E - Inventory", "Left Click/Tap - Attack/Break", "Q - Drop Item"]
   },
   {
     "title": "Asteroids",
@@ -109,5 +109,27 @@
     "keywords": ["Horror", "Action", "Shooter", "Singeplayer"],
     "technology": "Flash",
     "keys": ["A & D Keys/← & → - Movement", "S Key/↓ - Pick items up", "W Key/↑: Send airstrike", "Space - Attack", "Shift - Pause"]
+  },
+  {
+    "title": "Zombocalypse",
+    "logo": "/images/games/zombocalypse.png",
+    "creator": "John Funtanilla",
+    "description": "Zombocalypse is a classic flash game that places you in the heart of a zombie-infested world. It's a survival horror experience where you fight off hordes of undead creatures to stay alive.",
+    "location": "zombocalypse",
+    "source": "/games/zombocalypse",
+    "keywords": ["Horror", "Action", "Shooter", "Singeplayer"],
+    "technology": "Flash",
+    "keys": ["A & D Keys/← & → - Movement", "S Key/↓ - Pick items up", "W Key/↑: Send airstrike", "Space - Attack", "Shift - Pause"]
+  },
+  {
+    "title": "Creative Kill Chamber",
+    "logo": "/images/games/ckc.png",
+    "creator": "John Funtanilla",
+    "description": "Creative Kill Chamber is a point-and-click adventure game where you're trapped in a secure facility filled with heavily armed enemies. Your goal? Escape with your life. But it won't be easy.",
+    "location": "ckc",
+    "source": "/games/ckc",
+    "keywords": ["Adventure", "Action", "Singeplayer"],
+    "technology": "Flash",
+    "keys": ["Click/Tap - Interact"]
   }
 ]
