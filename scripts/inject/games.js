@@ -31,6 +31,10 @@ async function inject() {
             gamebtn.appendChild(img);
             gamebtn.appendChild(metaspin);
 
+            gamebtn.addEventListener('click', () => {
+                window.location.href = `/games?g=${encodeURIComponent(game.location)}`;
+            });
+
             allsec.appendChild(gamebtn);
         });
     } catch (error) {
