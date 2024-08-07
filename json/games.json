@@ -3,7 +3,6 @@
   {
     "title": "2048",
     "logo": "/images/games/2048.png",
-    "gamepage": "/images/gamepage/2048.png",
     "creator": "Gabriele Cirulli",
     "description": "2048 is a single-player puzzle game played on a grid. You slide numbered tiles around, merging them together when they touch and have the same value. Your goal is to create a tile with the number 2048, but you can keep playing for a higher score after that by creating even bigger numbers. It's a simple concept, but it gets challenging as the grid fills up and you need to strategically plan your moves.",
     "location": "2048",
@@ -15,19 +14,17 @@
   {
     "title": "Subway Surfers Singapore",
     "logo": "/images/games/subway-surfers-1.png",
-    "gamepage": "/images/gamepage/subway-singapore.png",
     "creator": "SYBO",
     "description": "In the Singapore stop of the Subway Surfers World Tour, Jake, Tricky, and the crew trade their usual stomping grounds for a thrilling ride through the Lion City's subway system. Skyscrapers whiz by as they dodge trains and grumpy inspectors.  A new surfer, Jia, joins the crew, and players can unlock her along with a wild outfit and a special Lion board. Colorful orchids scattered along the tracks offer exciting rewards during the Weekly Hunt.",
     "location": "subway surfers singapore",
     "source": "/games/subway-singapore",
     "keywords": ["Action", "Singleplayer", "Platformer"],
     "technology": "HTML5",
-    "keys": ["WASD/Arrows - Move", "Up Arrow - Jump", "Down Arrow - Slide/Roll", "Space - Hoverboard"]
+    "keys": ["WASD/Arrows - Move", "↑ - Jump", "↓ - Slide/Roll", "Space - Hoverboard"]
   },
   {
     "title": "Slope",
     "logo": "/images/games/slope.png",
-    "gamepage": "/images/gamepage/slope.webp",
     "creator": "Rob Kay",
     "description": "Slope is a fast-paced arcade game that throws you down a never-ending slope. You control a ball, tilting it left and right to avoid obstacles and stay on the path. The challenge is in the constantly changing terrain and increasing speed",
     "location": "slope",
@@ -39,7 +36,6 @@
   {
     "title": "Assessment Examination",
     "logo": "/images/games/assessment-exam.png",
-    "gamepage": "/images/gamepage/assessment-exam.png",
     "creator": "Wenderly Games",
     "description": "You're in the shoes of someone taking a job interview for a mysterious organization called the Authenticity Assessment Department. The interview takes the form of a series of increasingly unsettling questions and tasks presented through a pre-recorded video.",
     "location": "assessment examination",
@@ -51,7 +47,6 @@
   {
     "title": "Time Shooter",
     "logo": "/images/games/time-shooter.png",
-    "gamepage": "/images/gamepage/time-shooter.jpg",
     "creator": "GoGoMan",
     "description": "Time Shooter is an FPS amusement where time as it were moves after you move. Once you are dormant, the world slows down nearly to a halt, like in SUPERHOT. You'll see around and arrange your advance activities. Evade bullets in moderate movement and smash all the foes without taking harm! Check out Time Shooter 2 for the continuation. ",
     "location": "time shooter",
@@ -63,7 +58,6 @@
   {
     "title": "Getaway Shootout",
     "logo": "/images/games/getaway-shootout.png",
-    "gamepage": "/images/gamepage/getaway-shootout.webp",
     "creator": "New Eich Games",
     "description": "Getaway Shootout is a wild four-player game where you jump left and right to win. Grab weapons and blast your opponents to reach the escape zone first!",
     "location": "getaway shootout",
@@ -75,7 +69,6 @@
   {
     "title": "EaglercraftX 1.3",
     "logo": "/images/games/eagler-1.3.png",
-    "gamepage": "/images/gamepage/eagler-1.3.jpg",
     "creator": "LAX1DUDE and ayunami2000",
     "description": "Eaglercraft is an awesome browser-based voxel game that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It even supports multiplayer, so you can game with players from around the world.",
     "location": "eagler 1.3",
@@ -87,25 +80,34 @@
   {
     "title": "Asteroids",
     "logo": "/images/games/asteroids.png",
-    "gamepage": "/images/gamepage/asteroids.jpg",
     "creator": "Neave Games",
     "description": "Spread peace and harmony across the galaxy by blasting everything in sight (including the occasional alien).",
     "location": "asteroids",
     "source": "/games/asteroids",
-    "keywords": ["Shooter"],
+    "keywords": ["Shooter", "Singeplayer"],
     "technology": "Flash",
-    "keys": ["Up Arrow Key - Move", "Left/Right Arrow Keys - Rotate", "Space - Fire"]
+    "keys": ["↑ Key - Move", "←/→ Keys - Rotate", "Space - Fire"]
   },
   {
     "title": "The Impossible Quiz",
     "logo": "/images/games/the-impossible-quiz.png",
-    "gamepage": "/images/gamepage/impossible-quiz.png",
     "creator": "Splapp-me-do",
     "description": "The Impossible Quiz is a point-and-click quiz game that consists of 110 questions. Notorious for its difficulty, the quiz mixes multiple-choice trick questions similar to riddles, along with various challenges and puzzles.",
     "location": "the impossible quiz",
     "source": "/games/the-impossible-quiz",
-    "keywords": ["Puzzle"],
+    "keywords": ["Puzzle", "Singeplayer"],
     "technology": "Flash",
     "keys": ["Click - Interact"]
+  },
+  {
+    "title": "Zombocalypse",
+    "logo": "/images/games/zombocalypse.png",
+    "creator": "John Funtanilla",
+    "description": "Zombocalypse is a classic flash game that places you in the heart of a zombie-infested world. It's a survival horror experience where you fight off hordes of undead creatures to stay alive.",
+    "location": "zombocalypse",
+    "source": "/games/zombocalypse",
+    "keywords": ["Horror", "Action", "Shooter", "Singeplayer"],
+    "technology": "Flash",
+    "keys": ["A & D Keys/← & → - Movement", "S Key/↓ - Pick items up", "W Key/↑: Send airstrike", "Space - Attack", "Shift - Pause"]
   }
 ]
