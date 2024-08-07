@@ -130,6 +130,6 @@
     "source": "/games/a-small-world-cup",
     "keywords": ["Sports", "Action", "Singleplayer"],
     "technology": "HTML5",
-    "keys": ["Drag/Hold Click - Move"]
+    "keys": ["Drag/Click - Move"]
   }
 ]
