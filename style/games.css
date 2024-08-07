@@ -54,6 +54,7 @@ form {
   border: 1px solid #ccc;
   background-color: #353D47;
   border-radius: 20px;
+  position: relative;
   overflow: hidden;
   display: flex;
   z-index: 24;
