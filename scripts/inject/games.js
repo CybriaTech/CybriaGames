@@ -33,7 +33,7 @@ async function inject() {
 
             allsec.appendChild(gamebtn);
 
-            gamebtn.location.href = '/games?g=${game.location}';
+            gamebtn.window.location.href = '/games?g=${game.location}';
         });
     } catch (error) {
         console.error('Err:', error);
