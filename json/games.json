@@ -73,7 +73,7 @@
     "description": "Eaglercraft is an awesome browser-based voxel game that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It even supports multiplayer, so you can game with players from around the world.",
     "location": "eagler 1.3",
     "source": "/games/eagler-1.3",
-    "keywords": ["Singleplayer", "Multiplayer", "Adventure", "Action"],
+    "keywords": ["Multiplayer", "Adventure", "Action"],
     "technology": "Unity/WebGL",
     "keys": ["W A S D/Arrow Keys - Move", "Space - Jump", "Right Click/Double Tap - Interact", "Left CTRL - Crouch", "E - Inventory", "Left Click/Tap - Attack/Break", "Q - Drop Item"]
   },
@@ -120,5 +120,16 @@
     "keywords": ["Adventure", "Action", "Singeplayer"],
     "technology": "Flash",
     "keys": ["Click/Tap - Interact"]
+  },
+  {
+    "title": "A Small World Cup",
+    "logo": "/images/games/a-small-world-cup.png",
+    "creator": "Rujo Games",
+    "description": "A Small World Cup is a fun and addicting football game. You can select a team, controlling your player, defeat one by one opponent to win the tournament.",
+    "location": "a small world cup",
+    "source": "/games/a-small-world-cup",
+    "keywords": ["Sports", "Action", "Singleplayer"],
+    "technology": "HTML5",
+    "keys": ["Drag/Hold Click - Move"]
   }
 ]
