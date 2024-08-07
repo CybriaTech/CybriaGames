@@ -56,7 +56,6 @@ form {
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  z-index: 15;
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
@@ -70,6 +69,7 @@ form {
 }
         
 .g-icon {
+  z-index: 24;
   width: 100%;
   border-radius: 5px;
   height: 257px;
