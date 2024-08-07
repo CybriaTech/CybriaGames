@@ -118,6 +118,7 @@ form {
 }
 
 .fire-icon {
+  position: absolute;
   background-color: #22272E;
   border-radius: 7px;
   top: 0;
@@ -125,9 +126,10 @@ form {
   width: 56px;
   height: 56px;
   margin: 10px;
+  z-index: 10;
 }
 
 .fire-icon svg {
-  width: 48px;
+  width: 32px;
 }
 
