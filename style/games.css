@@ -50,12 +50,13 @@ form {
 
 .game {
   width: 250px;
-  height: 372px;
+  height: 356px;
   border: 1px solid #ccc;
   background-color: #353D47;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
+  z-index: 15;
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
@@ -90,7 +91,7 @@ form {
 
 .creator {
   margin-top: 5px;
-  font-size: 1.3em;
+  font-size: 1em;
   color: #AAA;
 }
 
@@ -129,7 +130,7 @@ form {
   align-items: center;
   display: flex;
   justify-content: center;
-  z-index: 10;
+  z-index: 25;
 }
 
 .fire-icon svg {
