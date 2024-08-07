@@ -126,10 +126,13 @@ form {
   width: 56px;
   height: 56px;
   margin: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   z-index: 10;
 }
 
 .fire-icon svg {
-  width: 32px;
+  width: 40px;
 }
 
