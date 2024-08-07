@@ -94,6 +94,6 @@
     "source": "/games/asteroids",
     "keywords": ["Shooter"],
     "technology": "Flash",
-    "keys": ["Up/Down Arrow Keys - Move", "Left/Right Arrow Keys - Rotate", "Space - Fire"]
+    "keys": ["Up Arrow Key - Move", "Left/Right Arrow Keys - Rotate", "Space - Fire"]
   }
 ]
