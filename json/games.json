@@ -111,17 +111,6 @@
     "keys": ["A & D Keys/← & → - Movement", "S Key/↓ - Pick items up", "W Key/↑: Send airstrike", "Space - Attack", "Shift - Pause"]
   },
   {
-    "title": "Zombocalypse",
-    "logo": "/images/games/zombocalypse.png",
-    "creator": "John Funtanilla",
-    "description": "Zombocalypse is a classic flash game that places you in the heart of a zombie-infested world. It's a survival horror experience where you fight off hordes of undead creatures to stay alive.",
-    "location": "zombocalypse",
-    "source": "/games/zombocalypse",
-    "keywords": ["Horror", "Action", "Shooter", "Singeplayer"],
-    "technology": "Flash",
-    "keys": ["A & D Keys/← & → - Movement", "S Key/↓ - Pick items up", "W Key/↑: Send airstrike", "Space - Attack", "Shift - Pause"]
-  },
-  {
     "title": "Creative Kill Chamber",
     "logo": "/images/games/ckc.png",
     "creator": "ESP Animations",
