@@ -112,3 +112,7 @@ form {
   gap: 13px;
 }
 
+#favorited {
+  display: none;
+}
+
