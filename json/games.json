@@ -93,7 +93,7 @@
     "location": "asteroids",
     "source": "/games/asteroids",
     "keywords": ["Shooter"],
-    "technology": "HTML5",
-    "keys": ["W Key - Move", "Click/Touch Mousepad - Fire"]
+    "technology": "Flash",
+    "keys": ["Up/Down Arrow Keys - Move", "Left/Right Arrow Keys - Rotate", "Space - Fire"]
   }
 ]
