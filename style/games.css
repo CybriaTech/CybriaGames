@@ -112,7 +112,8 @@ form {
   gap: 13px;
 }
 
-#favorited {
+#favorited,
+#all-title {
   display: none;
 }
 
