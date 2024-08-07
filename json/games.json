@@ -131,5 +131,16 @@
     "keywords": ["Sports", "Action", "Singleplayer"],
     "technology": "HTML5",
     "keys": ["Drag/Click - Move"]
+  },
+  {
+    "title": "FNAF (Scratch)",
+    "logo": "/images/games/fnaf-scratch.png",
+    "creator": "PurpleLover1219 and BotConBoy",
+    "description": "FNAF is a survival horror game designed with simple gameplay. In Five Nights At Freddy's, the player takes the role of a night-time security employee, trying to escape from the scary bears and stay alive.",
+    "location": "fnaf scratch",
+    "source": "/games/fnaf-scratch",
+    "keywords": ["Horror", "Singleplayer"],
+    "technology": "HTML5",
+    "keys": ["Move Mouse/Touchpad - Move", "Click Door Button - Close/Open Door", "Click Light Button - Turn On/Off Lights", "Hover Over Arrow Tab - Open/Close Cameras"]
   }
 ]
