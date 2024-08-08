@@ -91,3 +91,8 @@ body {
    display: flex;
    align-items: center;
   }
+
+  .profile-pic {
+   width: 24px;
+   border-radius: 50%;
+  }
