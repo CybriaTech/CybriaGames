@@ -142,5 +142,16 @@
     "keywords": ["Horror", "Singleplayer"],
     "technology": "HTML5",
     "keys": ["Move Mouse/Touchpad - Move", "Click Door Button - Close/Open Door", "Click Light Button - Turn On/Off Lights", "Hover Over Arrow Tab - Open/Close Cameras"]
+  },
+  {
+    "title": "OvO",
+    "logo": "/images/games/ovo.png",
+    "creator": "Dedra Games",
+    "description": "OvO is a fast-paced skill-based platform game where the goal is to go as swiftly as possible through the levels",
+    "location": "ovo",
+    "source": "/games/ovo",
+    "keywords": ["Adventure", "Singleplayer", "Platformer"],
+    "technology": "HTML5",
+    "keys": ["Arrow Keys - Move"]
   }
 ]
