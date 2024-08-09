@@ -107,7 +107,8 @@
   display: flex;
 }
 
-.nameinput {
+.nameinput,
+.passwordinput {
   width: 715px;
   height: 60px;
   background: none;
@@ -118,7 +119,8 @@
   margin-right: 10px;
 }
 
-.nameinput:focus {
+.nameinput:focus,
+.passwordinput:focus {
   outline: none;
   border: none;
 }
