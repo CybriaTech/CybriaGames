@@ -64,7 +64,6 @@
 
                 const a1 = $('.nameinput');
                 const b2 = $('.selectname');
-                const c3 = $('.passwordinput');
 
                 function genid() {
                     const chars = '0123456789';
@@ -87,7 +86,6 @@
                 a1.on('keydown', async function(event) {
                     if (event.key === 'Enter') {
                         const userNAME = a1.val().trim();
-                        const password = c3.val().trim();
                         if (userNAME && password) {
                             const nameExists = await identical(userNAME);
                             if (nameExists) {
@@ -96,7 +94,6 @@
                                 const userID = genid();
                                 await db.ref('Users').push({
                                     name: userNAME,
-                                    password: password,
                                     id: userID
                                 });
                                 b2.hide();
