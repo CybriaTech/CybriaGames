@@ -109,6 +109,14 @@
   display: flex;
 }
 
+.input a {
+  color: #0095ff;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .nameinput,
 .passwordinput {
   width: 715px;
