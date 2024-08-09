@@ -7,7 +7,7 @@ document.write(`
             <a class="header-link" href="/proxies.html">Proxies</a>
             <a class="header-link" href="/bookmarklets.html">Bookmarklets</a>
             <a class="header-link" href="/chat.html">Chat</a>
-            <a class="header-link" style="cursor: pointer;"><img src="/images/chat/placeholder.png" class="profile-pic" alt="Profile"></a>
+            <a class="header-profile" style="cursor: pointer;"><img src="/images/chat/placeholder.png" class="profile-pic" alt="Profile"></a>
         </nav>
     </header>
 `);
