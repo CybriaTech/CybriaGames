@@ -97,6 +97,7 @@ body {
    border-radius: 50%;
    align-items: center;
    margin-top: 8px;
+   object-fit: cover;
   }
 
   .header-profile {
@@ -106,5 +107,7 @@ body {
    align-items: center;
    margin-top: 8px;
    background-color: #888;
+   display: flex;
+   justify-content: center;
   }
 
