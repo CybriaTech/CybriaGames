@@ -101,6 +101,7 @@
   background-color: #353D47;
   border-radius: 6px;
   width: 100%
+  flex-direction: column;
   height: 60px;
   position: relative;
   align-items: center;
