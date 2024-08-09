@@ -97,6 +97,7 @@ body {
    border-radius: 50%;
    align-items: center;
    margin: 8px;
+   display: block;
    object-fit: cover;
   }
 
