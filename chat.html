@@ -23,6 +23,7 @@
       <p class="nametitle">Enter A Name To Begin Chatting</p>
       <div class="input">
       <input class="nameinput" id="nameinput" type="text" placeholder="Example: Mari">
+      <input class="passwordinput" id="passwordinput" type="text" placeholder="Password">
       </div>
       <p class="agre">By entering a name, you agree with the <a href="/tos.html" target="_blank">Chat Terms Of Service (TOS)</a>
   </div>
@@ -63,6 +64,7 @@
 
                 const a1 = $('.nameinput');
                 const b2 = $('.selectname');
+                const c3 = $('.passwordinput');
 
                 function genid() {
                     const chars = '0123456789';
@@ -85,7 +87,8 @@
                 a1.on('keydown', async function(event) {
                     if (event.key === 'Enter') {
                         const userNAME = a1.val().trim();
-                        if (userNAME) {
+                        const password = c3.val().trim();
+                        if (userNAME && password) {
                             const nameExists = await identical(userNAME);
                             if (nameExists) {
                                 $('.123').show();
@@ -93,6 +96,7 @@
                                 const userID = genid();
                                 await db.ref('Users').push({
                                     name: userNAME,
+                                    password: password,
                                     id: userID
                                 });
                                 b2.hide();
