@@ -93,8 +93,15 @@ body {
   }
 
   .profile-pic {
-   width: 55px;
+   width: 45px;
    border-radius: 50%;
    align-items: center;
    margin-top: 8px;
   }
+
+  .header-profile {
+   width: 55px;
+   border-radius: 50%;
+   align-items: center;
+   margin-top: 8px;
+
