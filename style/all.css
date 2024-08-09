@@ -93,7 +93,7 @@ body {
   }
 
   .profile-pic {
-   width: 40px;
+   width: 43px;
    border-radius: 50%;
    align-items: center;
    margin-top: 8px;
@@ -101,6 +101,7 @@ body {
 
   .header-profile {
    width: 45px;
+   height: 45px;
    border-radius: 50%;
    align-items: center;
    margin-top: 8px;
