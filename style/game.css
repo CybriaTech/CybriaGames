@@ -3,6 +3,7 @@
 }
 
 #game-frame {
+  display: none;
   position: relative;
   float: left;
   margin-left: 15%;
