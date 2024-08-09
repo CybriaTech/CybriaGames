@@ -93,9 +93,10 @@ body {
   }
 
   .profile-pic {
-   width: 45px;
+   width: 40px;
    border-radius: 50%;
    align-items: center;
+   margin: 8px;
    object-fit: cover;
   }
 
@@ -104,8 +105,7 @@ body {
    height: 50px;
    border-radius: 50%;
    align-items: center;
-   margin-top: 8px;
-   background-color: #888;
+   background-color: #22272E;
    display: flex;
    justify-content: center;
   }
