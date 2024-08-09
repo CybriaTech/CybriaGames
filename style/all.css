@@ -55,6 +55,7 @@ body {
    background-color: #1C2128;
    box-shadow: 0 0 7px #000;
    display: flex;
+   bottom: 0;
    justify-content: space-around;
    padding: 20px 0;
   }
