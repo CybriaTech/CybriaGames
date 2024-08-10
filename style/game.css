@@ -62,7 +62,7 @@
 .embed {
   border: none;
   transition: color 0.3s ease;
-  height: 50px;
+  width: 50px;
   cursor: pointer;
   margin-left: 4px;
 }
@@ -70,7 +70,7 @@
 .like-btn,
 .dislike-btn {
   border: none;
-  height: 50px;
+  width: 50px;
   cursor: pointer;
   margin-left: 4px;
 }
@@ -149,7 +149,7 @@
   border: none;
   border-radius: 5px;
   width: auto;
-  height: 39px;
+  width: 39px;
   color: #fff;
   background-color: #1C2128;
   cursor: pointer;
