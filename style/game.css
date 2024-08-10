@@ -25,7 +25,7 @@
 .bar-divider {
   border-right-color: #3f415c;
   border-right-style: solid;
-  border-right-width: 1px;
+  border-right-width: 3px;
   margin: 15px;
   height: 60px;
   align-self: center;
@@ -67,6 +67,10 @@
   cursor: pointer;
   background-color: transparent;
   margin-left: 4px;
+}
+
+.embed {
+  width: 25px;
 }
 
 .like-btn,
