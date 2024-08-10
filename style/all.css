@@ -59,7 +59,7 @@ body {
    bottom: 0;
    width: 100%;
    flex-direction: row;
-   position: fixed;
+   position: relative;
    justify-content: space-around;
    padding: 20px 0;
   }
