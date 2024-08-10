@@ -68,12 +68,6 @@
   margin-left: 4px;
 }
 
-.full svg,
-.redir svg,
-.embed svg {
-  background-color: #fff;
-}
-
 .like-btn,
 .dislike-btn {
   border: none;
@@ -81,11 +75,6 @@
   cursor: pointer;
   background-color: transparent;
   margin-left: 4px;
-}
-
-.like-btn svg,
-.dislike-btn svg {
-  background-color: #fff;
 }
 
 .full {
