@@ -26,9 +26,8 @@
   border-right-color: #3f415c;
   border-right-style: solid;
   border-right-width: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 30px;
+  margin: 15px;
+  height: 60px;
   align-self: center;
 }
 
