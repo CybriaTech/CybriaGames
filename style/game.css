@@ -8,7 +8,7 @@
   position: relative;
   float: left;
   flex-direction: column;
-  left: 0;
+  justify-content: flex-start;
 }
 
 .frame {
