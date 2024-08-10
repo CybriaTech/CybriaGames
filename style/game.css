@@ -1,9 +1,8 @@
-body {
-  min-height: 100vh;
+#game-body {
+  flex: 1;
 }
 
 #game-frame {
-  display: none;
   position: relative;
   float: left;
   margin-left: 15%;
