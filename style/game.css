@@ -64,7 +64,14 @@
   transition: color 0.3s ease;
   width: 50px;
   cursor: pointer;
+  background-color: transparent;
   margin-left: 4px;
+}
+
+.full svg,
+.redir svg,
+.embed svg {
+  background-color: #fff;
 }
 
 .like-btn,
@@ -72,7 +79,13 @@
   border: none;
   width: 50px;
   cursor: pointer;
+  background-color: transparent;
   margin-left: 4px;
+}
+
+.like-btn svg,
+.dislike-btn svg {
+  background-color: #fff;
 }
 
 .full {
