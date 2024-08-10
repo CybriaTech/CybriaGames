@@ -7,7 +7,7 @@
 #game-frame {
   position: relative;
   float: left;
-  margin-left: 15%;
+  margin-left: 0;
 }
 
 .frame {
