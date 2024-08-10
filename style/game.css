@@ -73,6 +73,7 @@
 .embed {
   margin-left: 0;
   width: 65px;
+  padding-left: 0;
 }
 
 .like-btn,
