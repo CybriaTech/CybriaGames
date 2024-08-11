@@ -30,7 +30,7 @@ position: relative;
 box-shadow: 0 0 10px #242424;
 }
 
-h1 {
+.user-titles {
 text-align: center;
 margin-bottom: 30px;
 }
@@ -54,7 +54,8 @@ transition: background-color 0.3s ease;
   background-color: transparent;
 }
 
-input {
+#username,
+#password-input {
 width: 95%;
 margin-top: 10px;
 padding: 10px;
@@ -66,7 +67,8 @@ color: white;
 outline: none;
 }
 
-input:hover {
+#username:hover,
+#password-input:hover {
   border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
