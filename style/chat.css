@@ -19,6 +19,24 @@
   width: 95vw;
 }
 
+#username,
+#password-input {
+width: 95%;
+margin-top: 10px;
+padding: 10px;
+font-size: 16px;
+border: 2px solid rgba(255, 255, 255, 0.2);
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.2);
+color: white;
+outline: none;
+}
+
+#username:hover,
+#password-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
 .chatbar {
   flex-grow: 1;
   margin-top: 10px;
