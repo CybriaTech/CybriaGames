@@ -97,53 +97,13 @@
   font-size: 2.7em;
 }
 
-.input {
-  background-color: #353D47;
+.goto-btn {
   border-radius: 6px;
-  width: 100%
-  flex-direction: column;
-  height: 60px;
-  position: relative;
-  align-items: center;
-  display: flex;
-}
-
-.nameinput,
-.passwordinput {
-  width: 715px;
-  height: 60px;
-  background: none;
-  border: none;
-  font-size: 2.5em;
+  background-color: #353D47;
   color: #fff;
-  margin: 10px 0;
-}
-
-.nameinput:focus,
-.passwordinput:focus {
-  outline: none;
-  border: none;
-}
-
-.agre {
-  font-size: 1.5em;
-  color: #fff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.agre a {
-  color: #0095ff;
-}
-
-.errtxt {
-  font-size: 1.5em;
-  display: none;
-  color: #ff0000;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  text-align: center;
+  height: 50px;
+  width: 129px;
+  font-size: 1.3em;
 }
 
 #user {
