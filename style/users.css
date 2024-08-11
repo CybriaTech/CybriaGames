@@ -1,13 +1,13 @@
-body {
-font-family: 'Roboto Condensed', Arial, sans-serif;
-background-image: url("/images/background.jpg");
-color: #fff;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
-padding: 0;
+main {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  background-image: url("/images/background.jpg");
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 #cloud {
