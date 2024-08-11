@@ -1,0 +1,177 @@
+body {
+font-family: 'Roboto Condensed', Arial, sans-serif;
+background-image: url("/images/background.jpg");
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+padding: 0;
+}
+
+#cloud {
+background-color: #4f4f4f;
+width: 400px;
+padding: 20px;
+position: relative;
+box-shadow: 0 0 10px #242424;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.submit {
+border-radius: 5px;
+color: white;
+background-color: #00ccff;
+cursor: pointer;
+width: 100%;
+height: 50px;
+font-size: 20px;
+text-align: center;
+margin-top: 20px;
+transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  color: #00ccff;
+  border: 2px solid #00ccff;
+  background-color: transparent;
+}
+
+input {
+width: 95%;
+margin-top: 10px;
+padding: 10px;
+font-size: 16px;
+border: 2px solid rgba(255, 255, 255, 0.2);
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.2);
+color: white;
+outline: none;
+}
+
+input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.username-txt {
+font-size: 18px;
+font-weight: 500;
+color: #d1d1d1;
+margin-bottom: 0.5px;
+}
+
+#forgot-remember {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 15px;
+color: #d1d1d1;
+font-size: 14px;
+}
+
+#remember {
+  display: flex;
+  align-items: center;
+}
+
+#remember input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  width: 10px;
+  background-color: #4f4f4f;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-top: 1px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#remember input[type="checkbox"]:checked {
+  background-color: #00ccff;
+}
+
+#remember input[type="checkbox"]:before {
+  content: '\2713';
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#remember input[type="checkbox"]:checked:before {
+  opacity: 1;
+}
+
+
+#forgot-password {
+text-decoration: none;
+color: #d1d1d1;
+}
+
+.newacc-line {
+  height: 100%;
+  width: 1px;
+  background: #F2F2F2;
+  background: rgb(212 221 231 / 60%);
+  position: absolute;
+  right: 0;
+  margin-right: 325px;
+}
+
+.newacc {
+    position: relative;
+    margin: 27px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.newacc:before {
+    display: block;
+    width: 100%;
+    height: 1px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background-color: #eee;
+}
+
+.newacc span {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #ccc;
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+    background-color: #4f4f4f;
+}
+
+.signup {
+  border: 2px solid #00ccff;
+  border-radius: 5px;
+  color: #00ccff;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+  background-color: #00ccff;
+  color: white;
+}
