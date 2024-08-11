@@ -14,3 +14,7 @@
   font-size: 2.4em;
   font-weight: bold;
 }
+
+#main-area {
+  min-height: 100vh;
+}
