@@ -101,9 +101,10 @@
   border-radius: 6px;
   background-color: #353D47;
   color: #fff;
-  height: 95px;
-  width: 175px;
+  height: 3vh;
+  width: 7vw;
   font-size: 1.6em;
+  text-decoration: none;
 }
 
 #user {
