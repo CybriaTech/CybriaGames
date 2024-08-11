@@ -2,6 +2,7 @@
   {
     "Name": "CybriaTech",
     "Scripts": "/scripts/chat/mod.js",
-    "Desc": "CybriaGames Chat Room Moderation"
+    "Desc": "CybriaGames Chat Room Moderation",
+    "id": "692058103962"
   }
 ]
