@@ -89,7 +89,7 @@
                 }
 
                 if (localStorage.getItem('reqname') === 'true') {
-                    b2.hide();
+                    $('#selectname').hide();
                 }
 
                 a1.on('keydown', async function(event) {
@@ -109,7 +109,7 @@
                                     password: passWORD,
                                     ip: ipADDRESS
                                 });
-                                b2.hide();
+                                $('#selectname').hide();
                                 localStorage.setItem('reqname', 'true');
                             }
                         } else {
