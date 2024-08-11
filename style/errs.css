@@ -1,0 +1,16 @@
+.err-title,
+.err-txt {
+  text-align: center;
+  color: #fff;
+}
+
+
+
+.err-txt {
+  font-size: 1.8em;
+}
+
+.err-title {
+  font-size: 2.4em;
+  font-weight: bold;
+}
