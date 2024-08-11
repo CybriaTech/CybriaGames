@@ -30,7 +30,7 @@
 .homebtn:hover {
   border: 3px solid #0b9aff;
   background-color: #056cb6;
-  transform: scale(-3px);
+  transform: scale(3px);
 }
 
 form {
