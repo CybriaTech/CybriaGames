@@ -1,0 +1,46 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register | CybriaGames</title>
+        <meta name="description" content="🕹CybriaGames is an unblocked game site hosting over 100+ unblocked games where the danger of internet restrictions dosent apply.">
+        <meta name="keywords" content="games, game, gaming, unblocked games, ubg, unblocked game, cybriagames unblocked, cybria games, cyberia games, cybriagame, cyberiagames">
+        <meta name="author" content="CybriaTech">
+        <link rel="stylesheet" href="/style/users.css">
+        <link rel="stylesheet" href="/style/all.css">
+        <link rel="icon" href="/images/cybriagames/favicon-circle.png">
+    </head>
+    <body>
+        <script src="/scripts/inject/header.js"></script>
+  <main>
+    <div id="cloud">
+      <h1>Login</h1>
+      <label>
+        <p class="username-txt">Username</p>
+      </label>
+      <input placeholder="Username" id="username">
+      <label>
+        <p class="username-txt">Password</p>
+      </label>
+      <input placeholder="Password" type="password" readonly onfocus="this.removeAttribute('readonly');" id="password-input">
+      <div id="forgot-remember">
+        <div id="remember">
+          <input type="checkbox" id="remember-checkbox">
+          <label for="remember-checkbox">Remember Me</label>
+        </div>
+        <a href="#" id="forgot-password">Forgot Password?</a>
+      </div>
+      <button onclick="submit()" class="submit">Login</button>
+      <br>
+      <div class="newacc">
+        <span>Not Registered?</span>
+        <button class="signup" onclick="window.location.href='register.html';">Register</button>
+      </div>
+    </div>
+  </main>
+        <div class="space" style="margin-bottom: 5%;"></div>
+        <script src="/scripts/inject/footer.js"></script>
+    </body>
+</html>
