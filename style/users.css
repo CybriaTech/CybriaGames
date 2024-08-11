@@ -10,6 +10,18 @@ main {
   padding: 0;
 }
 
+.agre {
+  font-size: 1em;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.agre a {
+  color: #0095ff;
+}
+
 #cloud {
 background-color: #4f4f4f;
 width: 400px;
