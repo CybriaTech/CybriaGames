@@ -19,6 +19,13 @@
   width: 95vw;
 }
 
+.username-txt {
+font-size: 18px;
+font-weight: 500;
+color: #d1d1d1;
+margin-bottom: 0.5px;
+}
+
 #username,
 #password-input {
 width: 95%;
@@ -113,17 +120,6 @@ outline: none;
   margin-top: 6px;
   margin-bottom: 6px;
   font-size: 2.7em;
-}
-
-.goto-btn {
-  border-radius: 6px;
-  background-color: #353D47;
-  color: #fff;
-  height: 3vh;
-  padding: 15px;
-  width: 7vw;
-  font-size: 1.6em;
-  text-decoration: none;
 }
 
 #user {
