@@ -9,7 +9,7 @@ document.write(`
         </div>
         <div class="footer-2">
             <p class="footer-title">Developers</p>
-            <a class="footer-a" href="https://x88.cybriatech.dev" target="_blank">MyBooty165 (X-88)</a>
+            <a class="footer-a" href="https://github.com/MyBooty165" target="_blank">MyBooty165 (X-88)</a>
         </div>
         <div class="footer-3">
             <p class="footer-title">Community</p>
