@@ -11,6 +11,18 @@
   overflow: hidden;
 }
 
+.agre {
+  font-size: 1em;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.agre a {
+  color: #0095ff;
+}
+
 #chat-options {
   display: flex;
   align-items: center;
