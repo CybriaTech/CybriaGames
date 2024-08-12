@@ -11,6 +11,15 @@
   overflow: hidden;
 }
 
+.code123 {
+  color: #ff0000;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: none;
+}
+
 .agre {
   font-size: 1.3em;
   color: #fff;
