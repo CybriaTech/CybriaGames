@@ -109,6 +109,7 @@
                             if (nameExists) {
                                 $('.code123').show();
                             } else {
+                                $('.code123').hide();
                                 const userID = genid();
                                 await db.ref('Users').push({
                                     name: userNAME,
