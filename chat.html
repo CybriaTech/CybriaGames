@@ -25,6 +25,7 @@
         <p class="username-txt">Username</p>
       </label>
       <input placeholder="Username" id="username">
+        <p class="code123">Error 123 - Username already taken</p>
       <label>
         <p class="username-txt">Password</p>
       </label>
@@ -106,7 +107,7 @@
                         if (userNAME && passWORD) {
                             const nameExists = await identical(userNAME);
                             if (nameExists) {
-                                $('.123').show();
+                                $('.code123').show();
                             } else {
                                 const userID = genid();
                                 await db.ref('Users').push({
