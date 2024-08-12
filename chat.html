@@ -88,7 +88,13 @@
                     return snapshot.exists();
                 }
 
-                if (localStorage.getItem('reqname') === 'true') {
+                async function reviews(ip) {
+                    const snapshot = await db.ref('Users').orderByChild('ip').equalTo(ip).once('value');
+                    return snapshot.exists();
+                }
+
+                const ifexist = await reviews(ipAddress);
+                if (ifexist) {
                     $('#selectname').hide();
                 }
 
