@@ -101,6 +101,14 @@
                     $('#selectname').hide();
                 }
 
+                async function updata() {
+                    const userNAME = a1.val().trim();
+                    const passWORD = b2.val().trim();
+
+                    $('.code123').hide();
+                    $('.code632').hide();
+                }
+
                 $(document).on('keydown', async function(event) {
                     if (event.key === 'Enter') {
                         const userNAME = a1.val().trim();
@@ -126,6 +134,9 @@
                             $('.code632').show();
                         }
                     }
+                }
+                a1.on('input', updata);
+                b2.on('input', updata);
                 });
             });
         </script>
