@@ -127,7 +127,8 @@ outline: none;
 
 .namemain {
   max-width: 600px;
-  height: 310px;
+  height: auto;
+  max-height: 34vh;
   color: #fff;
   background-color: #1C2128;
   padding: 20px;
