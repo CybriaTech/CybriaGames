@@ -112,6 +112,7 @@
                                 $('.code123').show();
                             } else {
                                 $('.code123').hide();
+                                $('#selectname').hide();
                                 const userID = genid();
                                 await db.ref('Users').push({
                                     name: userNAME,
