@@ -54,6 +54,7 @@
 }
 
 .fa-svg path {
+  fill: #fff;
   transition: fill 0.3s ease;
 }
 
