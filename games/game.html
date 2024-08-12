@@ -50,5 +50,92 @@
             </div>
           <div class="spaces" style="margin: 5%;"></div>
     <script src="/scripts/inject/footer.js"></script>
+        <script>
+$("#full").on('click', function () {
+    requestFullScreen(document.getElementById('frame'));
+});
+
+$("#_exit_full_screen").on('click', cancelfull);
+
+function requestFullScreen(element) {
+    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+
+    if (requestMethod) {
+        requestMethod.call(element);
+    } else if (typeof window.ActiveXObject !== "undefined") {
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+function cancelfull() {
+    var requestMethod = document.cancelfull || document.webkitcancelfull || document.mozcancelfull || document.msExitFullscreen;
+
+    if (requestMethod) {
+        requestMethod.call(document);
+    } else if (typeof window.ActiveXObject !== "undefined") {
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+if (document.addEventListener) {
+    document.addEventListener('fullscreenchange', leavefull, false);
+    document.addEventListener('webkitfullscreenchange', leavefull, false);
+    document.addEventListener('mozfullscreenchange', leavefull, false);
+    document.addEventListener('MSFullscreenChange', leavefull, false);
+}
+
+function leavefull() {
+    if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+        cancelfull();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const embedbtn = document.getElementById('embed');
+  const closebtn = document.getElementById('close');
+  const embedscreen = document.getElementById('embed-screen');
+
+  embedbtn.addEventListener('click', function () {
+    embedscreen.style.display = 'flex';
+  });
+
+  closebtn.addEventListener('click', function () {
+    embedscreen.style.display = 'none';
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var gamelink = window.location.href;
+    
+    var embedbox = document.getElementById("embed-code");
+    
+    if(embedbox) {
+        var pagelink = gamelink + "game";
+        
+        var iframe = '<iframe src="' + pagelink + '" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>';
+
+        embedbox.value = iframe;
+    }
+});
+
+function copy() {
+  var linktocopy = document.getElementById("embed-code");
+  linktocopy.select();
+  document.execCommand("copy");
+
+  var copybtn = document.getElementById("copy-btn");
+  copybtn.innerHTML = '<svg class="fa-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>';
+
+  setTimeout(function() {
+    copybtn.innerHTML = '<svg class="fa-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"/></svg>';
+  }, 1000);
+}
+        </script>
     </body>
 </html>
