@@ -26,10 +26,12 @@
       </label>
       <input placeholder="Username" id="username">
         <p class="code123">Error 123 - Username already taken</p>
+        <p class="code632">Error 632 - Forms are required!</p>
       <label>
         <p class="username-txt">Password</p>
       </label>
       <input placeholder="Password" type="password" readonly onfocus="this.removeAttribute('readonly');" id="password-input">
+        <p class="code632">Error 632 - Forms are required!</p>
         <p class="agre">By registering, you agree with the <a href="/tos.html" target="_blank">Chat Terms Of Service (TOS)</a></p>
   </div>
 </div>
@@ -121,7 +123,7 @@
                                 localStorage.setItem('reqname', 'true');
                             }
                         } else {
-                            $('.632').show();
+                            $('.code632').show();
                         }
                     }
                 });
