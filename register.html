@@ -54,6 +54,7 @@
 
                 const a1 = $('#username');
                 const b2 = $('#password-input');
+                const d4 = $('.submit');
 
                 const ipoutpt = await fetch('https://api.ipify.org?format=json');
                 const output = await ipoutpt.json();
@@ -83,7 +84,7 @@
                     window.location.href="/";
                 }
 
-                $(document).on('keydown', async function(event) {
+                d4.on('keydown', async function(event) {
                     if (event.key === 'Enter') {
                         const userNAME = a1.val().trim();
                         const passWORD = b2.val().trim();
