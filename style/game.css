@@ -53,6 +53,14 @@
   margin-left: 10px;
 }
 
+.fa-svg path {
+  transition: fill 0.3s ease;
+}
+
+.fa-svg:hover path {
+  fill: #0095ff;
+}
+
 .right {
   display: flex;
   flex-direction: row;
