@@ -10,123 +10,19 @@
         <link rel="stylesheet" href="/style/chat.css">
         <link rel="stylesheet" href="/style/all.css">
         <link rel="icon" href="/images/cybriagames/favicon-circle.png">
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app-check.js"></script>
     </head>
     <body>
 <script src="/scripts/inject/header.js"></script>
   <main>
-  <div id="selectname" class="selectname">
-    <div id="namemain" class="namemain">
-      <p class="nametitle">Register/Login to begin chatting!</p>
-      <label>
-        <p class="username-txt">Username</p>
-      </label>
-      <input placeholder="Username" id="username">
-        <p class="code123">Error 123 - Username already taken</p>
-        <p class="code632">Error 632 - Forms are required!</p>
-      <label>
-        <p class="username-txt">Password</p>
-      </label>
-      <input placeholder="Password" type="password" readonly onfocus="this.removeAttribute('readonly');" id="password-input">
-        <p class="code632">Error 632 - Forms are required!</p>
-        <p class="agre">By registering, you agree with the <a href="/tos.html" target="_blank">Chat Terms Of Service (TOS)</a></p>
-  </div>
-</div>
-</div>
-      <div id="chatroom">
-          <div id="user">
-              <img src="/images/chat/cybriatech.jpg" alt="User" class="profile-pic">
-              <div id="profile-info">
-                  <p class="profile-name">CybriaTech</p>
-                  <p class="message-content">Welcome! This chatroom messages will be refreshed every day, happy chatting!</p>
-              </div>
-      </div>
-      </div>
-      <div id="chat-options">
-          <input type="text" class="chatbar" placeholder="Send A Message">
-          <button class="btn-config" title="Configure" onclick="configure()"><svg class="btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/></svg></button>
-          <button class="btn-send" title="Send Message" onclick="send()"><svg class="btn-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg></button>
-      </div>
-<!-- <widgetbot
+<widgetbot
     server="1154632402942050394"
     channel="1154632891310030878"
     width="100%"
     height="100vh"
-></widgetbot> -->
+></widgetbot>
 </main>
       <div class="spaces" style="margin: 5%;"></div>
     <script src="/scripts/inject/footer.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-        <script src="/scripts/chat/fbchat.js"></script>
-        <script>
-            $(document).ready(async function() {
-                
-                const response = await fetch('/json/firebase.config.json');
-                const firebaseConfig = await response.json();
-
-                firebase.initializeApp(firebaseConfig);
-                const db = firebase.database();
-
-                const a1 = $('#username');
-                const b2 = $('#password-input');
-
-                const ipoutpt = await fetch('https://api.ipify.org?format=json');
-                const output = await ipoutpt.json();
-                const c3 = output.ip;
-
-                function genid() {
-                    const chars = '0123456789';
-                    let key = '';
-                    for (let i = 0; i < 12; i++) {
-                        key += chars.charAt(Math.floor(Math.random() * chars.length));
-                    }
-                    return key;
-                }
-
-                async function identical(name) {
-                    const snapshot = await db.ref('Users').orderByChild('name').equalTo(name).once('value');
-                    return snapshot.exists();
-                }
-
-                async function reviews(ip) {
-                    const snapshot = await db.ref('Users').orderByChild('ip').equalTo(ip).once('value');
-                    return snapshot.exists();
-                }
-
-                const ifexist = await reviews(c3);
-                if (ifexist) {
-                    $('#selectname').hide();
-                }
-
-                $(document).on('keydown', async function(event) {
-                    if (event.key === 'Enter') {
-                        const userNAME = a1.val().trim();
-                        const passWORD = b2.val().trim();
-                        const ipADDRESS = c3;
-                        if (userNAME && passWORD) {
-                            const nameExists = await identical(userNAME);
-                            if (nameExists) {
-                                $('.code123').show();
-                            } else {
-                                $('.code123').hide();
-                                $('#selectname').hide();
-                                const userID = genid();
-                                await db.ref('Users').push({
-                                    name: userNAME,
-                                    id: userID,
-                                    password: passWORD,
-                                    ip: ipADDRESS
-                                });
-                            }
-                        } else {
-                            $('.code632').show();
-                        }
-                    }
-                });
-            });
-        </script>
     </body>
 </html>
