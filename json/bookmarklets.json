@@ -4,7 +4,14 @@
     "author": "DannyDan0167",
     "properties": ["Cheats", "Useful"],
     "source": "https://github.com/DannyDan0167/Blooket-Cheats-Plus",
-    "asset": "/external/bookmarklets/blooket-cheats.txt"
+    "asset": "/external/bookmarklets/blooket-cheats-plus.txt"
+  },
+  {
+    "name": "Blooket Cheats",
+    "author": "Blooket Council (05Konz)",
+    "properties": ["Cheats", "Useful"],
+    "source": "https://github.com/Blooket-Council/Blooket-Cheats",
+    "asset": "/external/bookmarklets/blooket-cheats-plus.txt"
   },
   {
     "name": "Edpuzzle Hacks",
