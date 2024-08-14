@@ -1,6 +1,7 @@
 [
   {
     "name": "Blooket Cheats Plus",
+    "description": "Blooket hacks with more features",
     "author": "DannyDan0167",
     "properties": ["Cheats", "Useful"],
     "source": "https://github.com/DannyDan0167/Blooket-Cheats-Plus",
@@ -8,6 +9,7 @@
   },
   {
     "name": "Blooket Cheats",
+    "description": "Absolutely broken Blooket cheats",
     "author": "Blooket Council (05Konz)",
     "properties": ["Cheats", "Useful"],
     "source": "https://github.com/Blooket-Council/Blooket-Cheats",
@@ -15,6 +17,7 @@
   },
   {
     "name": "Edpuzzle Hacks",
+    "description": "An auto answer hack for EdPuzzle.",
     "author": "ading2210",
     "properties": ["Cheats", "Useful"],
     "source": "https://github.com/ading2210/edpuzzle-answers",
@@ -22,6 +25,7 @@
   },
   {
     "name": "X-Ray Goggles",
+    "description": "View a page's HTML elements like inspect element",
     "author": "Mozilla (Mouse)",
     "properties": ["Useful"],
     "source": "https://x-ray-goggles.mouse.org/",
@@ -29,6 +33,7 @@
   },
   {
     "name": "Skip YT Ad",
+    "description": "Skip YouTube ads instantly",
     "author": "HyperTabs Proxy (Converted by X-88!)",
     "properties": ["Useful"],
     "source": "null",
@@ -36,6 +41,7 @@
   },
   {
     "name": "Enable Edit",
+    "description": "Temporarily edit the page",
     "author": "null",
     "properties": ["Useful"],
     "source": "null",
@@ -43,10 +49,27 @@
   },
   {
     "name": "Disable Edit",
+    "description": "Disables page editing",
     "author": "null",
     "properties": ["Useful"],
     "source": "null",
     "asset": "javascript:document.body.contentEditable = 'false'; document.designMode='on'; void 0"
+  },
+  {
+    "name": "Flashlight",
+    "description": "Creates a flashlight which illuminates your page like a spotlight",
+    "author": "Krazete",
+    "properties": ["Fun"],
+    "source": "https://github.com/Krazete/bookmarklets",
+    "asset": "javascript:(function(){var js=document.body.appendChild(document.createElement('script'));js.onerror=function(){alert('Sorry, the script could not be loaded.')};js.src='https://rawgit.com/Krazete/bookmarklets/master/mouselight.js'})();"
+  },
+  {
+    "name": "Flashlight",
+    "description": "Creates a flashlight which illuminates your page like a spotlight",
+    "author": "Krazete",
+    "properties": ["Fun"],
+    "source": "https://github.com/Krazete/bookmarklets",
+    "asset": "javascript:(function(){var js=document.body.appendChild(document.createElement('script'));js.onerror=function(){alert('Sorry, the script could not be loaded.')};js.src='https://rawgit.com/Krazete/bookmarklets/master/mouselight.js'})();"
   }
 ]
 
