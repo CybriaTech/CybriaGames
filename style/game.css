@@ -4,8 +4,8 @@
 }
 
 #game-frame {
-  margin-right: 80%;
-  margin-left: 20%;
+  margin-right: 20%;
+  margin-left: 80%;
   position: relative;
   float: left;
   flex-direction: column;
