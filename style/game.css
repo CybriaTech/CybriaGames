@@ -179,8 +179,12 @@
   top: 5px;
 }
 
-.copy-btn svg {
+.embed-fa svg {
   width: 28px;
+}
+
+.embed-fa path {
+  fill: #fff;
 }
 
 .copy-area {
