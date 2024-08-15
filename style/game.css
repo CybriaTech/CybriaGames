@@ -142,16 +142,23 @@
   margin-bottom: 0;
 }
 
-.close-btn {
+.fa-embed svg {
   position: absolute;
   top: 10px;
   right: 10px;
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 27px;
-  color: #fff;
-  transition: color 0.3s ease;
+  width: 27px;
+}
+
+.fa-embed path {
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.fa-embed:hover path {
+  fill: #ff0000;
 }
   
 @keyframes open {
