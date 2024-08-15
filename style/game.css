@@ -149,9 +149,6 @@
   background: none;
   border: none;
   cursor: pointer;
-}
-
-.fa-embed svg {
   width: 27px;
 }
 
@@ -179,7 +176,7 @@
   border: none;
   border-radius: 5px;
   width: auto;
-  width: 78px;
+  width: 50px;
   color: #fff;
   background-color: #1C2128;
   cursor: pointer;
