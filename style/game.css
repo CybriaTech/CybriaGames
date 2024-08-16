@@ -183,7 +183,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  top: 5px;
+  top: 10px;
 }
 
 .embed-fa svg {
