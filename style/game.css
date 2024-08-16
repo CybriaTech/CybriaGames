@@ -153,6 +153,8 @@
 }
 
 .close-btn {
+  border: none;
+  display: none;
   background: none;
 }
 
