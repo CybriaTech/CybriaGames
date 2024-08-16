@@ -2,8 +2,7 @@ document.write(`
     <footer>
         <div class="footer-1">
             <p class="footer-title">Other</p>
-            <a class="footer-a" href="/tos.html">Chat TOS</a>
-            <a class="footer-a" href="/privacy-policy.html">Privacy Policy</a>
+            <a class="footer-a" href="/tos.html">Changelog</a>
             <a class="footer-a" href="/issue.html">Report Issues</a>
             <a class="footer-a" href="/links.html">More Links</a>
         </div>
