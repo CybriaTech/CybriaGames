@@ -54,6 +54,10 @@
   margin-left: 10px;
 }
 
+.fa-svg {
+  background: none;
+}
+
 .fa-svg path {
   fill: #fff;
   transition: fill 0.3s ease;
