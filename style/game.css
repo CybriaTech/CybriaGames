@@ -142,7 +142,7 @@
   margin-bottom: 0;
 }
 
-.fa-embed {
+.close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -150,12 +150,6 @@
   border: none;
   cursor: pointer;
   width: 27px;
-}
-
-.close-btn {
-  border: none;
-  display: none;
-  background: none;
 }
 
 .fa-embed path {
