@@ -5,6 +5,7 @@
 
 #game-frame {
   margin-right: 90%;
+  background-color: #fff;
   margin-left: 10%;
   position: relative;
   float: left;
@@ -18,7 +19,6 @@
   width: 1250px;
   height: 750px;
   border: none;
-  background-color: #fff;
   position: relative;
   z-index: 1;
   margin: 0;
