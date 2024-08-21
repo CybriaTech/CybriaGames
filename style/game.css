@@ -221,6 +221,12 @@
 }
 
 #description-area {
+  margin-right: 90%;
+  margin-left: 10%;
+  position: relative;
+  float: left;
+  flex-direction: column;
+  justify-content: flex-start;
   max-width: 1200px;
   text-align: left;
   background-color: #0095FF;
