@@ -237,7 +237,7 @@
 }
 
 .information-list {
-  line-height: 1.6;
+  line-height: 1;
 }
 
 .info-list-component {
@@ -267,7 +267,7 @@
 
 .controls-list {
   margin: 0;
-  line-height: 1.2em;
+  line-height: 1.2;
 }
 
 .controls-list li {
