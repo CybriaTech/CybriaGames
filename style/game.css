@@ -221,7 +221,8 @@
 }
 
 #description-area {
-  margin: 20px 10% 20px 90%;
+  margin-top: 2%;
+  margin-bottom: 20px;
   max-width: 100vw;
   text-align: left;
   background-color: #0095FF;
