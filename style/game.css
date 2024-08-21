@@ -248,11 +248,11 @@
 
 .technology-tag,
 .keyword-tag {
-  color: #888;
+  color: #fff;
   cursor: pointer;
-  background-color: #22272E;
+  background-color: #888;
   border-radius: 10px;
-  padding: 7px;
+  padding: 3px;
   width: auto;
   height: auto;
   max-height: 100vh;
@@ -262,8 +262,7 @@
 
 .description-txt {
   color: #fff;
-  margin: 0px 10px 0px 10px;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 .controls-list {
