@@ -221,8 +221,6 @@
 }
 
 #description-area {
-  margin-right: 90%;
-  margin-left: 10%;
   position: relative;
   float: left;
   flex-direction: column;
