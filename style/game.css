@@ -222,7 +222,7 @@
 
 #description-area {
   margin-top: 2%;
-  max-width: 1200px;
+  max-width: 100vw;
   text-align: left;
   background-color: #0095FF;
   border-radius: 10px;
