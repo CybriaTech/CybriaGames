@@ -241,7 +241,7 @@
   line-height: 1.6;
 }
 
-.information-list p {
+.info-list-component {
   font-size: 1.1em;
   text-decoration: none;
   color: #fff;
@@ -270,9 +270,9 @@
   line-height: 1.2em;
 }
 
-.controls-list p {
+.controls-list li {
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #fff;
 }
 
