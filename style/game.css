@@ -253,14 +253,20 @@
 .keyword-tag {
   color: #fff;
   cursor: pointer;
-  background-color: #888;
-  border-radius: 10px;
+  background-color: #404040;
+  border-radius: 5px;
   padding: 5px;
   width: auto;
   height: auto;
   max-height: 100vh;
+  transition: background-color 0.3s ease;
   max-width: 100vw;
   margin: 0px 5px 0px 5px;
+}
+
+.technology-tag:hover,
+.keyword-tag:hover {
+  background-color: #525252;
 }
 
 .description-txt {
