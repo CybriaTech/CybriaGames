@@ -221,6 +221,7 @@
 }
 
 #description-area {
+  margin-top: 2%;
   position: relative;
   float: left;
   flex-direction: column;
