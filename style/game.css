@@ -238,12 +238,12 @@
 }
 
 .information-list {
-  text-decoration: none;
   line-height: 1.6;
 }
 
 .information-list li {
   font-size: 1.1em;
+  text-decoration: none;
   color: #fff;
 }
 
@@ -267,17 +267,17 @@
 }
 
 .controls-list {
-  text-decoration: none;
   line-height: 1.2em;
 }
 
 .controls-list li {
+  text-decoration: none;
   font-size: 1.5em;
   color: #fff;
 }
 
 .list-title {
-  font-size: 2.1em;
+  font-size: 1.5em;
   color: #fff;
   font-weight: bold;
 }
