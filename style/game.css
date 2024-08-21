@@ -268,6 +268,7 @@
 .controls-list {
   margin: 0;
   line-height: 1.2;
+  padding: 0;
 }
 
 .controls-list li {
@@ -279,6 +280,7 @@
 .list-title {
   font-size: 1.5em;
   color: #fff;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
