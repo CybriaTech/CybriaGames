@@ -223,7 +223,6 @@
 #description-area {
   max-width: 1200px;
   text-align: left;
-  margin: 0 auto;
   background-color: #0095FF;
   border-radius: 10px;
   padding: 20px;
@@ -267,6 +266,7 @@
 }
 
 .controls-list {
+  margin: 0;
   line-height: 1.2em;
 }
 
