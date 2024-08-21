@@ -228,8 +228,8 @@
   border-radius: 10px;
   padding: 20px; 
   width: 1250px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 90%;
 }
 
 .game-title {
