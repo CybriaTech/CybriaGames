@@ -286,7 +286,8 @@
 }
 
 #simple-info,
-#complex-info {
+#complex-info,
+.description-txt {
   margin-top: 20px;
   margin-bottom: 20px;
 }
