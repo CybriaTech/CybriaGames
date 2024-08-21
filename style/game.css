@@ -268,7 +268,7 @@
 .controls-list {
   margin: 0;
   line-height: 1.2;
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
 }
 
 .controls-list li {
