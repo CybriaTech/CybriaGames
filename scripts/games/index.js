@@ -89,7 +89,7 @@ async function gengame() {
             document.body.innerHTML = '';
 
             const tempframe = document.createElement('iframe');
-            tempframe.src = game.source;
+            tempframe.src = 'game.html';
             tempframe.style.position = 'fixed';
             tempframe.style.top = '0';
             tempframe.style.left = '0';
