@@ -86,7 +86,7 @@ async function gengame() {
         const game = games.find(game => game.location.toLowerCase() === gloc.toLowerCase());
 
         if (game) {
-            document.body.innerHTML = '';
+            document.getElementById('main-area').innerHTML = '';
 
             const tempframe = document.createElement('iframe');
             tempframe.src = 'game.html';
@@ -98,7 +98,7 @@ async function gengame() {
             tempframe.style.border = 'none';
             tempframe.allowFullscreen = true;
 
-            document.body.appendChild(tempframe);
+            document.getElementById('main-area').appendChild(tempframe);
 
             document.querySelector('.game-index-title').textContent = game.title;
             document.querySelector('.game-title').textContent = game.title;
