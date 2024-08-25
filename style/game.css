@@ -301,3 +301,51 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+#similar {
+  width: 300px;
+  background-color: #2e2e2e;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.sim-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#similar-games {
+  display: flex;
+  flex-direction: column;
+}
+
+.similar-game {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.similar-img {
+  width: 50px;
+  height: 75px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.similar-games-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+.similar-games-creator {
+  font-size: 12px;
+  color: #aaa;
+}
