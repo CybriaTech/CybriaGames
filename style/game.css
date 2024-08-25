@@ -1,24 +1,21 @@
 #game-body {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 auto;
-  width: 1250px;
+  flex-direction: column;
 }
 
 #game-frame {
-  width: 950px;
+  margin-right: 90%;
+  margin-left: 10%;
   position: relative;
   float: left;
   flex-direction: column;
   justify-content: flex-start;
-  margin-right: 20px;
 }
 
 .frame {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 100%;
+  width: 1250px;
   height: 750px;
   border: none;
   position: relative;
@@ -303,52 +300,4 @@
 .description-txt {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-#similar {
-  width: 300px;
-  background-color: #2e2e2e;
-  padding: 10px;
-  border-radius: 5px;
-  color: #fff;
-  font-family: Arial, sans-serif;
-}
-
-.sim-title {
-  font-size: 1.6em;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#similar-games {
-  display: flex;
-  flex-direction: column;
-}
-
-.similar-game {
-  display: flex;
-  align-items: center;
-  background-color: #1a1a1a;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-.similar-img {
-  width: 50px;
-  height: 75px;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.similar-games-title {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #ddd;
-}
-
-.similar-games-creator {
-  font-size: 12px;
-  color: #aaa;
 }
