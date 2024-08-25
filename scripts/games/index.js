@@ -95,6 +95,7 @@ async function gengame() {
             tempframe.style.left = '0';
             tempframe.style.width = '100vw';
             tempframe.style.height = '100vh';
+            tempframe.style.zIndex = '997';
             tempframe.style.border = 'none';
             tempframe.allowFullscreen = true;
 
