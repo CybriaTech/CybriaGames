@@ -1,9 +1,12 @@
 #proxy-console {
   width: 100vw;
   height: 100vh;
-  margin: 10%;
+  margin: 5%;
   border-radius: 12px;
   background-color: #22272E;
   top: 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
   left: 0;
 }
