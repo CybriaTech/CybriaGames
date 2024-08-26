@@ -1,5 +1,5 @@
 #proxy-console {
-  width: 100%;
+  max-width: calc(100% - 30px);
   height: 100vh;
   margin: 5%;
   border-radius: 12px;
