@@ -9,6 +9,17 @@
         <meta name="author" content="CybriaTech">
         <link rel="stylesheet" href="/style/game.css">
         <link rel="stylesheet" href="/style/all.css">
+        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P8QQRX5QCQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P8QQRX5QCQ');
+</script>
         <link rel="icon" href="/images/cybriagames/favicon-circle.png">
     </head>
     <body>
@@ -73,5 +84,73 @@
     <script src="/scripts/inject/footer.js"></script>
         <script src="/scripts/games/index.js"></script>
                 <script src="/scripts/main/emergency.js"></script>
+                <script>
+import firebaseConfig from '/json/fb.feedback.json';
+import gdb from '/json/games.json';
+
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
+const likeamount = document.querySelector('.like-amount');
+const dislikeamount = document.querySelector('.dislike-amount');
+
+function decodeURIComponentSafe(encodedUri) {
+    try {
+        return decodeURIComponent(encodedUri);
+    } catch (e) {
+        console.error('Error decoding URI:', e);
+        return encodedUri;
+    }
+}
+
+const params = new URLSearchParams(window.location.search);
+const gamelocen = params.get('location');
+const gloc = decodeURIComponentSafe(gamelocen);
+
+if (!gloc) {
+    console.error('Game Location Not Found');
+    throw new Error('A Game Location Didnt Exist');
+}
+
+const likeRef = database.ref('games/' + gloc + '/likes');
+const dislikeRef = database.ref('games/' + gloc + '/dislikes');
+
+function formatnum(number) {
+    if (number > 999) {
+        return (number / 1000).toFixed(1) + 'K';
+    }
+    return number;
+}
+
+function changenum() {
+    likeRef.once('value', (snapshot) => {
+        const likeCount = snapshot.val() || 0;
+        likeamount.textContent = formatnum(likeCount);
+    });
+
+    dislikeRef.once('value', (snapshot) => {
+        const dislikeCount = snapshot.val() || 0;
+        dislikeamount.textContent = formatnum(dislikeCount);
+    });
+}
+
+function like() {
+    likeRef.transaction((currentLikes) => {
+        return (currentLikes || 0) + 1;
+    }).then(() => {
+        changenum();
+    });
+}
+
+function dislike() {
+    dislikeRef.transaction((currentDislikes) => {
+        return (currentDislikes || 0) + 1;
+    }).then(() => {
+        changenum();
+    });
+}
+
+document.addEventListener('DOMContentLoaded', changenum);
+                </script>
     </body>
 </html>
