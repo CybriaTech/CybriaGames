@@ -88,13 +88,13 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('list-creator').innerHTML = `<strong>Game Creator:</strong> ${game.creator}`;
         document.getElementById('list-technology').innerHTML = `<strong>Technology:</strong> <span class="technology-tag">${game.technology}</span>`;
         
-        const keywordsHtml = game.keywords.map(keyword => `<span class="keyword-tag">${keyword}</span>`).join('');
-        document.getElementById('list-keywords').innerHTML = `<strong>Keywords:</strong> ${keywordsHtml}`;
+        const keywordssnippet = game.keywords.map(keyword => `<span class="keyword-tag">${keyword}</span>`).join('');
+        document.getElementById('list-keywords').innerHTML = `<strong>Keywords:</strong> ${keywordssnippet}`;
         
         document.querySelector('.description-txt').innerHTML = `<strong>Description:</strong> ${game.description}`;
         
-        const controlsHtml = game.keys.map(key => `<li><p>${key}</p></li>`).join('');
-        document.querySelector('.controls-list').innerHTML = controlsHtml;
+        const controlssnippet = game.keys.map(key => `<li><p>${key}</p></li>`).join('');
+        document.querySelector('.controls-list').innerHTML = controlssnippet;
         
         document.getElementById('frame').src = game.source;
     }
