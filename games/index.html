@@ -51,6 +51,64 @@
           <div class="spaces" style="margin: 5%;"></div>
                 <script src="/scripts/main/emergency.js"></script>
                 <script src="/scripts/inject/games.js"></script>
+                <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const gdb = '/json/games.json';
+
+    function genembed() {
+        const embedsnippet = `
+            <div id="embed-screen" class="embed-screen">
+                <div id="embed-body" class="embed-body">
+                    <button id="close" class="close-btn">
+                        <svg class="fa-embed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
+                        </svg>
+                    </button>
+                    <p class="embed-title">Embed Game</p>
+                    <div class="copy-area">
+                        <input class="embed-code" id="embed-code" type="text" readonly>
+                        <button class="copy-btn" id="copy-btn" onclick="copy()">
+                            <svg class="embed-fa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+        return embedsnippet;
+    }
+
+    function modifygdb(game) {
+        if (!document.getElementById('embed-screen')) {
+            document.getElementById('main-area').innerHTML = genembed() + document.getElementById('main-area').innerHTML;
+        }
+
+        document.querySelector('.game-title strong').textContent = game.title;
+        document.getElementById('list-creator').innerHTML = `<strong>Game Creator:</strong> ${game.creator}`;
+        document.getElementById('list-technology').innerHTML = `<strong>Technology:</strong> <span class="technology-tag">${game.technology}</span>`;
+        
+        const keywordsHtml = game.keywords.map(keyword => `<span class="keyword-tag">${keyword}</span>`).join('');
+        document.getElementById('list-keywords').innerHTML = `<strong>Keywords:</strong> ${keywordsHtml}`;
+        
+        document.querySelector('.description-txt').innerHTML = `<strong>Description:</strong> ${game.description}`;
+        
+        const controlsHtml = game.keys.map(key => `<li><p>${key}</p></li>`).join('');
+        document.querySelector('.controls-list').innerHTML = controlsHtml;
+        
+        document.getElementById('frame').src = game.source;
+    }
+
+    fetch(gdb)
+        .then(response => response.json())
+        .then(data => {
+            const game = data.games[0];
+            modifygdb(game);
+        })
+        .catch(error => {
+            console.error('Failed to get json:', error);
+        });
+                </script>
                 <script src="/scripts/games/index.js"></script>
     <script src="/scripts/inject/footer.js"></script>
     </body>
