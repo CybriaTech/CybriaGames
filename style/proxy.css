@@ -15,13 +15,14 @@
 .injectedlinks {
   font-size: 1.9em;
   overflow-y: auto;
-  margin-top: 0;
   width: 100%;
+  position: relative;
   margin: 5px 15px 5px 15px;
 }
 
 .linkanchor {
   text-align: left;
+  margin-top: 0;
   text-decoration: none;
   color: #fff;
   padding: 5px 0;
