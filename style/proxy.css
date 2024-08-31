@@ -14,9 +14,7 @@
 }
 
 .injectedlinks {
-  display: flex;
   font-size: 1.9em;
-  flex-direction: column;
   margin: 15px;
 }
 
