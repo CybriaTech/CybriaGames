@@ -11,10 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     const links = data[0][proxyid];
                     if (links) {
                         console.innerHTML = '';
-                        links.forEach(link => {
-                            const injectlinks = document.createElement('div');
-                            injectlinks.classList.add('injectedlinks');
 
+                        const injectlinks = document.createElement('div');
+                        injectlinks.classList.add('injectedlinks');
+                        
+                        links.forEach(link => {
                             const linkanchor = document.createElement('a');
                             linkanchor.classList.add('linkanchor');
                             linkanchor.href = link;
