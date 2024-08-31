@@ -21,7 +21,7 @@
 
 #p-menu {
   display: flex;
-  width: 30%;
+  width: 20%;
   flex-direction: column;
   margin: 0 0 15px 0;
 }
@@ -41,7 +41,7 @@
   background-color: #22272E;
   color: #fff;
   padding: 20px;
-  margin-top: 15px;
+  margin-top: 5px;
   height: calc(25vh - 30px);
   border-radius: 12px;
 }
