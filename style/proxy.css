@@ -12,26 +12,18 @@
   overflow-x: hidden;
 }
 
-.injectedlinks,
-.linkanchor {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
 .injectedlinks {
   display: flex;
   font-size: 1.9em;
   flex-direction: column;
-  margin: 15px !important;
+  margin: 15px;
 }
 
 .linkanchor {
   text-align: left;
   text-decoration: none;
   color: #fff;
-  padding: 5px 0 !important;
+  padding: 5px 0;
   transition: color 0.3s ease;
   width: 100%;
   display: block;
