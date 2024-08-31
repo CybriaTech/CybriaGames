@@ -17,7 +17,7 @@
   flex-direction: column;
   position: relative;
   font-size: 1.9em;
-  align-items: flex-end !important;
+  align-items: flex-start !important;
   margin: 15px;
 }
 
