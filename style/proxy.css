@@ -14,8 +14,8 @@
   background-color: #22272E;
   color: #fff;
   width: auto;
-  height: auto;
-  max-height: 100vh;
+  max-width: calc(100% - 5px);
+  height: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
