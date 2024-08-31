@@ -13,10 +13,9 @@
 }
 
 .injectedlinks {
-  display: block;
-  flex-direction: column;
+  display: flex;
   font-size: 1.9em;
-  jutsify-content: flex-start;
+  align-items: center;
   margin: 15px;
 }
 
