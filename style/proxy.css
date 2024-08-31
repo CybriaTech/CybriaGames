@@ -8,8 +8,17 @@
   display: flex;
   justify-content: flex-end;
   border-radius: 12px;
-  overflow: hidden;
+  overflow-y: auto;
 }
+
+.injectedlinks {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.9em;
+  margin: 15px;
+}
+
 
 #main-area {
   display: flex;
