@@ -8,7 +8,8 @@
   top: 0;
   flex: 1;
   flex-direction: column;
-  overflow: visible;
+  position: absolute;
+  overflow: hidden;
   display: flex;
   left: 0;
 }
@@ -17,7 +18,6 @@
   display: flex;
   justify-content: column;
   align-items: center;
-  position: fixed;
 }
 
 #proxy-menu,
