@@ -1,7 +1,3 @@
-body {
-  position: absolute;
-}
-
 #proxy-console {
   width: 100%;
   height: auto;
@@ -21,6 +17,7 @@ body {
   display: flex;
   justify-content: column;
   align-items: center;
+  position: absolute;
 }
 
 #proxy-menu,
