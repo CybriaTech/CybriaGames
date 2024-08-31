@@ -12,8 +12,8 @@
 }
 
 .injectedlinks {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   font-size: 1.9em;
   align-items: flex-start;
   margin: 15px;
@@ -23,7 +23,7 @@
   text-decoration: none;
   color: #fff;
   padding: 5px 0;
-  display: inline-block;
+  display: block;
   transition: color 0.3s ease;
 }
 
