@@ -25,8 +25,11 @@
 .proxy-button {
   border-radius: 12px;
   background-color: #1C2128;
-  width: 80%;
+  width: auto;
   color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
   height: auto;
   max-height: 100vh;
   font-size: 1.7em;
