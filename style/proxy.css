@@ -25,6 +25,7 @@
   padding: 20px;
   display: flex;
   height: calc(75vh - 30px);
+  overflow-y: auto;
   margin: 15px 0 15px 0;
   flex-direction: column;
   border-radius: 12px;
