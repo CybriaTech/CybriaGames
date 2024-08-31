@@ -8,7 +8,7 @@
   background-color: #22272E;
   border-radius: 12px;
   position: absolute;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 #main-area {
