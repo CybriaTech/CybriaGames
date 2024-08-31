@@ -15,7 +15,8 @@
 
 .injectedlinks {
   font-size: 1.9em;
-  margin: 15px;
+  overflow-y: auto;
+  margin: 0 15px 0 15px;
 }
 
 .linkanchor {
