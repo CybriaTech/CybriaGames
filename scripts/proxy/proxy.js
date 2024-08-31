@@ -14,7 +14,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         links.forEach(link => {
                             const injectlinks = document.createElement('div');
                             injectlinks.classList.add('injectedlinks');
-                            injectlinks.textContent = link;
+
+                            const linkanchor = document.createElement('a');
+                            linkanchor.classList.add('linkanchor');
+                            linkanchor.href = link;
+                            linkanchor.textContent = link;
+                            linkanchor.target = "_blank";
+                            
+                            injectlinks.appendChild(linkanchor);
                             console.appendChild(injectlinks);
                         });
                     }
