@@ -16,12 +16,19 @@
   color: #fff;
   width: auto;
   max-width: calc(100% - 5px);
-  height: 100vh;
   padding: 20px;
   display: flex;
   margin: 15px 0 15px 0;
   flex-direction: column;
   border-radius: 12px;
+}
+
+#proxy-menu {
+  height: 100vh;
+}
+
+#proxy-options {
+  height: 100%;
 }
 
 .proxy-button {
