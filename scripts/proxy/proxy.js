@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         console.innerHTML = '';
                         links.forEach(link => {
                             const injectlinks = document.createElement('div');
+                            injectlinks.classList.add('injectedlinks');
                             injectlinks.textContent = link;
                             console.appendChild(injectlinks);
                         });
