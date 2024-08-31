@@ -13,10 +13,11 @@
 }
 
 .injectedlinks {
-  display: flex !important;
-  flex-direction: column !important;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
   font-size: 1.9em;
-  align-items: flex-end;
+  align-items: flex-end !important;
   margin: 15px;
 }
 
