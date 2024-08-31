@@ -20,6 +20,7 @@
 
 #p-menu {
   display: flex;
+  width: 30%;
   flex-direction: column;
   margin: 0 0 15px 0;
 }
@@ -28,7 +29,6 @@
 #proxy-menu {
   background-color: #22272E;
   color: #fff;
-  width: 30%;
   padding: 20px;
   height: calc(75vh - 30px);
   overflow-y: auto;
@@ -39,7 +39,6 @@
 #proxy-options {
   background-color: #22272E;
   color: #fff;
-  width: 30%;
   padding: 20px;
   margin-top: 15px;
   height: calc(25vh - 30px);
