@@ -51,11 +51,16 @@
   color: #fff;
   border: none;
   align-items: center;
+  transition: background-color 0.3s ease;
   cursor: pointer;
   padding: 15px;
   height: auto;
   font-size: 1.7em;
   font-weight: 750;
+}
+
+.proxy-button:hover {
+  background-color: #555;
 }
 
 .proxy-button.active {
