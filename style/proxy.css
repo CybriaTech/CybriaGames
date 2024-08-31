@@ -14,7 +14,7 @@
 
 .injectedlinks {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   position: fixed;
   font-size: 1.9em;
   align-items: flex-start;
@@ -24,8 +24,9 @@
 .linkanchor {
   text-decoration: none;
   color: #fff;
+  display: flex;
+  flex-direction: column;
   padding: 5px 0;
-  display: block;
   transition: color 0.3s ease;
 }
 
