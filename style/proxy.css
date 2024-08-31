@@ -10,18 +10,33 @@
   left: 0;
 }
 
-#proxy-menu,
-#proxy-options {
+#main-area {
+  display: flex;
+  align-items: flex-start;
+}
+
+#proxy-menu {
   background-color: #22272E;
   color: #fff;
-  width: auto;
-  max-width: calc(100% - 5px);
+  width: 30%;
   padding: 20px;
   display: flex;
-  height: 100%;
+  height: calc(75vh - 30px);
   margin: 15px 0 15px 0;
   flex-direction: column;
   border-radius: 12px;
+}
+
+#proxy-options {
+  background-color: #22272E;
+  color: #fff;
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: calc(25vh - 30px);
+  border-radius: 12px;
+  margin-top: 15px;
 }
 
 .proxy-button {
@@ -37,4 +52,16 @@
   height: auto;
   font-size: 1.7em;
   font-weight: 750;
+}
+
+@media screen and (max-width: 768px) {
+  #proxy-menu,
+  #proxy-options {
+    width: 100%;
+    height: auto;
+  }
+  
+  #main-area {
+    flex-direction: column;
+  }
 }
