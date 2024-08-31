@@ -13,11 +13,10 @@
 #proxy-menu {
   background-color: #22272E;
   color: #fff;
-  width: auto;
-  height: 100%;
+  max-width: calc(100% - 5px);
+  height: 100vh;
   padding: 20px;
   display: flex;
-  max-width: 100vw;
   flex-direction: column;
   border-radius: 12px;
 }
