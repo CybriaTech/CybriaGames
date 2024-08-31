@@ -5,6 +5,7 @@
   max-width: calc(100% - 30px);
   height: 100vh;
   background-color: #22272E;
+  left: 0;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -17,6 +18,7 @@
 
 #proxy-menu,
 #proxy-options {
+  justify-content: flex-end;
   display: flex;
   flex-direction: column;
   width: 100%;
