@@ -23,6 +23,7 @@
 }
 
 .proxy-button {
+  margin: 5px 0 5px 0;
   border-radius: 12px;
   background-color: #1C2128;
   width: auto;
