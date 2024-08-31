@@ -4,7 +4,7 @@ Im cloning proxies into Vercel using my own proxy for sites that don't have much
 
 If you have any concerns, write an issue!
 
-# Specter Managed Proxy Links
+# X-88 Managed Proxy Links
 
 - https://skibidi-biden.vercel.app
 - https://miniature-spoon-chi.vercel.app/
