@@ -9,10 +9,10 @@
   justify-content: flex-end;
   border-radius: 12px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .injectedlinks {
-  overflow: hidden;
   display: flex !important;
   flex-direction: column !important;
   font-size: 1.9em;
