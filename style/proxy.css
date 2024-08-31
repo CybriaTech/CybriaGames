@@ -5,7 +5,8 @@
   max-width: calc(100% - 30px);
   height: 100vh;
   background-color: #22272E;
-  left: 0;
+  display: flex;
+  justify-content: flex-end;
   border-radius: 12px;
   overflow: hidden;
 }
