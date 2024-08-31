@@ -18,16 +18,21 @@
   align-items: flex-start;
 }
 
+#proxy-menu,
+#proxy-options {
+  display: flex;
+  flex-direction: column;
+}
+  
+
 #proxy-menu {
   background-color: #22272E;
   color: #fff;
   width: 30%;
   padding: 20px;
-  display: flex;
   height: calc(75vh - 30px);
   overflow-y: auto;
   margin: 15px 0 15px 0;
-  flex-direction: column;
   border-radius: 12px;
 }
 
@@ -36,8 +41,6 @@
   color: #fff;
   width: 30%;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
   height: calc(25vh - 30px);
   border-radius: 12px;
   margin-top: 15px;
