@@ -63,10 +63,6 @@
   background-color: #555;
 }
 
-.proxy-button.active {
-  background-color: #555;
-}
-
 @media screen and (max-width: 768px) {
   #proxy-menu,
   #proxy-options {
