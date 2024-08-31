@@ -12,6 +12,7 @@
 }
 
 .injectedlinks {
+  overflow: hidden;
   display: flex !important;
   flex-direction: column !important;
   font-size: 1.9em;
