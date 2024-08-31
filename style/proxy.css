@@ -12,6 +12,14 @@
   overflow-x: hidden;
 }
 
+.injectedlinks,
+.linkanchor {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 .injectedlinks {
   display: flex;
   font-size: 1.9em;
