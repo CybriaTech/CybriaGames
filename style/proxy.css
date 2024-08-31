@@ -2,12 +2,10 @@
   flex: 1;
   padding: 20px;
   margin: 2% 20px 5% 20px;
-  max-height: 100vh;
   max-width: calc(100% - 30px);
   height: 100%;
   background-color: #22272E;
   border-radius: 12px;
-  position: absolute;
   overflow: hidden;
 }
 
