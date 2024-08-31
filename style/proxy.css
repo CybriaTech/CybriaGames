@@ -13,7 +13,7 @@
 }
 
 .injectedlinks {
-  display: flex;
+  display: block;
   flex-direction: column;
   font-size: 1.9em;
   jutsify-content: flex-start;
@@ -23,9 +23,6 @@
 .linkanchor {
   text-decoration: none;
   color: #fff;
-  position: relative;
-  display: flex;
-  flex-direction: column;
   padding: 5px 0;
   transition: color 0.3s ease;
 }
