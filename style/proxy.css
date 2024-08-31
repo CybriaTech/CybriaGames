@@ -13,8 +13,8 @@
 
 #main-area {
   display: flex;
-  justify-content: column;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 #proxy-menu,
@@ -68,9 +68,11 @@
 
 @media screen and (max-width: 768px) {
   #proxy-menu,
-  #proxy-options {
+  #proxy-options,
+  #proxy-console {
     width: 100%;
     height: auto;
+    margin: 0;
   }
   
   #main-area {
