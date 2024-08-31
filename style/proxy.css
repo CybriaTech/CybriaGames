@@ -12,7 +12,6 @@
 }
 
 .injectedlinks {
-  color: #fff;
   display: flex;
   flex-direction: column;
   font-size: 1.9em;
@@ -20,6 +19,12 @@
   margin: 15px;
 }
 
+.linkanchor {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  display: block;
+}
 
 #main-area {
   display: flex;
