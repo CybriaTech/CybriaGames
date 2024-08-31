@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     if (links) {
                         console.innerHTML = '';
                         links.forEach(link => {
-                            const injectlinks = document.createElement('div');
+                            const injectlinks = document.createElement('a');
+                            injectedlinks.href = link;
                             injectlinks.classList.add('injectedlinks');
                             injectlinks.textContent = link;
                             console.appendChild(injectlinks);
