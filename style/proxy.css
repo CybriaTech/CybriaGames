@@ -9,3 +9,31 @@
   display: flex;
   left: 0;
 }
+
+#proxy-menu {
+  background-color: #22272E;
+  color: #fff;
+  width: auto;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  max-width: 100vw;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.proxy-button {
+  border-radius: 12px;
+  background-color: #1C2128;
+  width: 80%;
+  color: #fff;
+  height: auto;
+  max-height: 100vh;
+  font-size: 1.7em;
+  font-weight: 750;
+}
+
+.proxy-img {
+  width: 20px;
+  object-fit: cover;
+}
