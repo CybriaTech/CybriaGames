@@ -7,6 +7,7 @@
   height: 100%;
   background-color: #22272E;
   border-radius: 12px;
+  position: absolute;
   overflow-y: auto;
 }
 
