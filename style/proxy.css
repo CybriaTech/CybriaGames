@@ -21,7 +21,6 @@
 #p-menu {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin: 0 0 15px 0;
 }
   
