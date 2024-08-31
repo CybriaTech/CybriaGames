@@ -25,6 +25,8 @@
   color: #fff;
   padding: 5px 0;
   transition: color 0.3s ease;
+  width: 100%;
+  display: block;
 }
 
 .linkanchor:hover {
