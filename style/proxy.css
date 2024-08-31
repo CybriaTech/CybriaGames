@@ -24,14 +24,14 @@
   display: flex;
   font-size: 1.9em;
   flex-direction: column;
-  margin: 15px;
+  margin: 15px !important;
 }
 
 .linkanchor {
   text-align: left;
   text-decoration: none;
   color: #fff;
-  padding: 5px 0;
+  padding: 5px 0 !important;
   transition: color 0.3s ease;
   width: 100%;
   display: block;
