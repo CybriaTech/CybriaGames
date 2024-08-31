@@ -10,7 +10,8 @@
   left: 0;
 }
 
-#proxy-menu {
+#proxy-menu,
+#proxy-options {
   background-color: #22272E;
   color: #fff;
   width: auto;
