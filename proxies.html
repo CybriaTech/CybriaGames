@@ -54,7 +54,7 @@
                 <div id="proxy-options">
                   <button class="proxy-button" onclick="filter()">Filter All Links</button>  
                   <button class="proxy-button" onclick="report()">Report Links</button>   
-                  <button class="proxy-button" onclick="copy()">Copy All</button>  
+                  <button class="proxy-button" id="copy" onclick="copy()">Copy All</button>  
                 </div>
             </div>
             </div>
@@ -62,5 +62,26 @@
         <script src="/scripts/main/emergency.js"></script>
         <script src="/scripts/inject/footer.js"></script>
         <script src="/scripts/proxy/proxy.js"></script>
+    <script>
+        function copy() {
+            const linkspace = document.querySelector('.injectedlinks');
+            const copylink = linkspace.innerText;
+
+            const textarea = document.createElement('textarea');
+            textarea.value = copylink;
+            document.body.appendChild(textarea);
+
+            textarea.select();
+            document.execCommand('copy');
+
+            document.body.removeChild(textarea);
+
+            const button = document.getElementById('copy');
+            button.textContent = 'Copied!';
+            setTimeout(() => {
+                button.textContent = 'Copy All';
+            }, 2000);
+        }
+    </script>
     </body>
 </html>
