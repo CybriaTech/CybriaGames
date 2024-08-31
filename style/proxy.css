@@ -14,10 +14,10 @@
 
 .injectedlinks {
   display: flex;
-  flex-direction: column;
-  position: relative;
+  flex-direction: column-reverse;
+  position: fixed;
   font-size: 1.9em;
-  align-items: flex-start !important;
+  align-items: flex-start;
   margin: 15px;
 }
 
