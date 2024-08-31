@@ -8,7 +8,7 @@
   top: 0;
   flex: 1;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   left: 0;
 }
@@ -23,6 +23,8 @@
 #proxy-options {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin: 0 0 15px 0;
 }
   
 
