@@ -1,7 +1,7 @@
 #proxy-console {
   flex: 1;
   padding: 20px;
-  margin: 0 0 15px 0;
+  margin: 15px;
   max-width: calc(100vw - 30px);
   height: 100vh;
   background-color: #22272E;
@@ -16,6 +16,7 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row-reverse;
+  margin: 20px;
 }
 
 #p-menu {
