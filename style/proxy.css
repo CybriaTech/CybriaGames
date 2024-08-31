@@ -13,7 +13,7 @@
 #proxy-menu {
   background-color: #22272E;
   color: #fff;
-  max-width: calc(100% - 5px);
+  width: 100vw;
   height: auto;
   max-height: 100vh;
   padding: 20px;
