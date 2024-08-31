@@ -14,8 +14,8 @@
 
 #main-area {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: column;
+  align-items: center;
 }
 
 #proxy-menu,
