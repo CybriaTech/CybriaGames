@@ -16,8 +16,9 @@
 .injectedlinks {
   font-size: 1.9em;
   overflow-y: auto;
+  position: absolute;
+  top: 0;
   width: 100%;
-  margin-bottom: auto;
   margin: 5px 15px 5px 15px;
 }
 
