@@ -29,10 +29,10 @@
   width: auto;
   color: #fff;
   border: none;
+  align-items: center;
   cursor: pointer;
   padding: 15px;
   height: auto;
-  max-height: 100vh;
   font-size: 1.7em;
   font-weight: 750;
 }
