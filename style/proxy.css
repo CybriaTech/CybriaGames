@@ -2,7 +2,7 @@
   flex: 1;
   padding: 20px;
   margin: 20px;
-  max-width: calc(100% - 30px);
+  max-width: calc(100vw - 30px);
   height: 100vh;
   background-color: #22272E;
   display: flex;
