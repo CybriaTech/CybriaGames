@@ -167,13 +167,22 @@
 
 #report-bar {
   width: 100%;
-  background-color: #22272E;
-  height: 45px;
+  height: 50px;
   background: none;
   border: none;
   font-size: 1.7em;
   color: #fff;
+}
+
+.report-area {
+  background-color: #353D47;
+  border-radius: 6px;
+  width: 100%;
+  height: 50px;
   margin: 15px;
+  position: relative;
+  align-items: center;
+  display: flex;
 }
 
 #report-bar:focus {
