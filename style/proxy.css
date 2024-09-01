@@ -171,3 +171,9 @@
   outline: none;
   border: none;
 }
+
+#report-bar::placeholder {
+  color: #555;
+  font-size: 1.5em;
+  align-items: center;
+}
