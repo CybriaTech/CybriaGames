@@ -18,6 +18,8 @@
   width: 100%;
   position: relative;
   align-self: flex-start;
+  box-sizing: border-box; 
+  padding: 5px 0;
   margin: 5px 15px 5px 15px;
 }
 
