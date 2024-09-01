@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             linkanchor.target = "_blank";
                             
                             injectlinks.appendChild(linkanchor);
+                            console.innerHTML = '';
                             console.appendChild(injectlinks);
                         });
                     }
