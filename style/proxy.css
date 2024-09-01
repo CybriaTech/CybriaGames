@@ -167,9 +167,8 @@
 
 #report-bar {
   width: 100%;
-  height: 50px;
+  height: auto;
   background: none;
-  margin: 15px;
   border: none;
   font-size: 1.7em;
   color: #fff;
@@ -179,8 +178,10 @@
   background-color: #353D47;
   border-radius: 6px;
   width: 100%;
-  height: 50px;
+  max-width: 100vw;
+  height: auto;
   margin: 15px;
+  padding: 10px;
   position: relative;
   align-items: center;
   font-size: 1.7em;
