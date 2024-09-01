@@ -172,7 +172,7 @@
   border: none;
   margin-left: 10px;
   margin-right: auto;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #fff;
 }
 
@@ -185,8 +185,7 @@
   padding: 10px;
   position: relative;
   align-items: center;
-  font-size: 1.5em;
-  margin: 15px;
+  margin: 15px 0 15px 0;
   display: flex;
 }
 
