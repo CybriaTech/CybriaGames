@@ -166,14 +166,13 @@
 }
 
 #report-bar {
-  width: 370px;
-  height: 30px;
+  width: 100%;
+  height: 45px;
   background: none;
   border: none;
   font-size: 1.7em;
   color: #fff;
-  margin-left: 10px;
-  margin-right: auto;
+  margin: 15px;
 }
 
 #report-bar:focus {
