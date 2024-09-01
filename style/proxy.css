@@ -6,10 +6,11 @@
   height: 100vh;
   background-color: #22272E;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-radius: 12px;
   overflow: hidden;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .injectedlinks {
