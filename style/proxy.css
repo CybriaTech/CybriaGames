@@ -17,13 +17,14 @@
   overflow-y: auto;
   width: 100%;
   position: relative;
-  margin: 0 15px 5px 15px;
+  margin: 5px 15px 5px 15px;
 }
 
 .linkanchor {
   text-align: left;
   margin-top: 0;
   text-decoration: none;
+  top: 0;
   color: #fff;
   padding: 5px 0;
   transition: color 0.3s ease;
