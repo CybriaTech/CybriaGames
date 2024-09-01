@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                         const injectlinks = document.createElement('div');
                         injectlinks.classList.add('injectedlinks');
+                        injectLinks.style.marginTop = '0';
                         
                         links.forEach(link => {
                             const linkanchor = document.createElement('a');
