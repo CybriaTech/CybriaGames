@@ -137,7 +137,7 @@
   margin-bottom: 0;
 }
 
-.close-btn {
+#close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -154,6 +154,15 @@
   to {
     transform: scale(1);
   }
+}
+
+.fa-embed path {
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.fa-embed:hover path {
+  fill: #ff0000;
 }
 
 #report-bar {
