@@ -7,14 +7,9 @@
   background-color: #22272E;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
   border-radius: 12px;
   overflow: hidden;
-  flex-direction: column-reverse;
-}
-
-#proxy-console .injectedlinks {
-  order: -1;
+  flex-direction: column;
 }
 
 .injectedlinks {
