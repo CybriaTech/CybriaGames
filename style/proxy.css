@@ -174,8 +174,6 @@
   margin-right: auto;
   font-size: 1.7em;
   color: #fff;
-  justify-content: center;
-  align-items: center;
 }
 
 .report-area {
@@ -188,6 +186,7 @@
   margin: 15px;
   position: relative;
   align-items: center;
+  justify-content: center;
   display: flex;
 }
 
