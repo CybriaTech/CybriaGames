@@ -125,7 +125,7 @@
   background-color: #1C2128;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px #555;
   max-width: 80%;
   text-align: center;
   position: relative;
