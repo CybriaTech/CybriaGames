@@ -13,6 +13,10 @@
   flex-direction: column-reverse;
 }
 
+#proxy-console .injectedlinks {
+  order: -1;
+}
+
 .injectedlinks {
   font-size: 1.9em;
   overflow-y: auto;
