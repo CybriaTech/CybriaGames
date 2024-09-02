@@ -71,3 +71,23 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+
+function copy() {
+    const linkspace = document.querySelector('.injectedlinks');
+    const copylink = linkspace.innerText;
+
+    const textarea = document.createElement('textarea');
+    textarea.value = copylink;
+    document.body.appendChild(textarea);
+
+    textarea.select();
+    document.execCommand('copy');
+
+    document.body.removeChild(textarea);
+
+    const button = document.getElementById('copy');
+    button.textContent = 'Copied!';
+    setTimeout(() => {
+        button.textContent = 'Copy All';
+    }, 1000);
+}
