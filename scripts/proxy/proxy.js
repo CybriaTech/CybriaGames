@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => {
             console.error('JSON is unreachable:', error);
         });
+});
 
 function copy() {
     const linkspace = document.querySelector('.injectedlinks');
