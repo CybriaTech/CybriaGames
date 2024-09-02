@@ -15,7 +15,7 @@ function filter() {
         "https://cors.timmytamle569.workers.dev/"
     ];
 
-    const links = console.querySelectorAll('.injectedlinks');
+    const links = console.querySelectorAll('.linkanchor');
 
     for (let link of links) {
         let url = link.innerText.trim();
