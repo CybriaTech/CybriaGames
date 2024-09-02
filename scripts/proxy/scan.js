@@ -3,7 +3,7 @@ async function scan(url, proxy) {
         const response = await fetch(proxy + url);
         return response.status;
     } catch (error) {
-        console.error(`Error fetching ${url} via ${proxy}:`, error);
+        console.error(`Couldn't scan ${url} via ${proxy}:`, error);
         return null;
     }
 }
