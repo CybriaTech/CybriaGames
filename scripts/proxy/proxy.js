@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("filter").addEventListener("click", filter);
     const console = document.getElementById("proxy-console");
     const button = document.querySelectorAll(".proxy-button");
 
