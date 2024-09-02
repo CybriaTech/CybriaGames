@@ -48,18 +48,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     async function filter() {
-        const corsProxyList = [
+        const corsproxy = [
             "https://cors-anywhere.herokuapp.com/",
             "https://cors.timmytamle569.workers.dev/"
         ];
 
-        const links = consoleElement.querySelectorAll('.linkanchor');
+        const links = console.querySelectorAll('.linkanchor');
 
         for (let link of links) {
             let url = link.innerText.trim();
             let status = null;
 
-            for (let proxy of corsProxyList) {
+            for (let proxy of corsproxy) {
                 status = await scan(url, proxy);
                 if (status !== null) break;
             }
