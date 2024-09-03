@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const links = document.querySelectorAll(".linkanchor");
         links.forEach(link => {
             const corsproxy = [
-                'https://cors-anywhere.herokuapp.com/',
                 'https://cors.timmytamle569.workers.dev'
             ];
 
