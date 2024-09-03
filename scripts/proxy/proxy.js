@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(url, { method: 'HEAD' })
             .then(response => {
                 if ([200, 203, 403].includes(response.status)) {
+                } else if (response.status === 404 && link.href.endsWith('.workers.dev')) {
                 } else {
                     link.id = 'fails';
                     link.style.display = 'none';
