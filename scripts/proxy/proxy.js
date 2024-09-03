@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(url, { method: 'GET' })
             .then(response => {
 
-                if (response.status === 404 && link.href.endsWith('.workers.dev')) {
+                if (response.status === 404 && link.href.endsWith('.workers.dev/')) {
                     link.id = 'workers';
                     link.style.display = 'block';
                 }
