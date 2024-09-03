@@ -61,7 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(response => {
 
                 if (response.status === 404 && link.href.endsWith('.workers.dev')) {
-                    return;
+                    link.id = 'workers';
+                    link.style.display = 'block';
                 }
                 
                 if ([200, 203, 403].includes(response.status)) {
