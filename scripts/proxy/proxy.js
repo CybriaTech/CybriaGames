@@ -34,6 +34,43 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => {
             console.error('JSON is unreachable:', error);
         });
+
+    function filter() {
+        const links = document.querySelectorAll(".linkanchor");
+        links.forEach(link => {
+            const corsproxy = [
+                'https://cors-anywhere.herokuapp.com/',
+                'https://cors.timmytamle569.workers.dev'
+            ];
+
+            scancors(link, corsproxy);
+        });
+    }
+
+    function scancors(link, proxies) {
+        if (proxies.length === 0) {
+            link.id = 'fails';
+            link.style.display = 'none';
+            console.error('No available CORS proxies for:', link.href);
+            return;
+        }
+
+        const proxy = proxies[0];
+        const url = proxy + link.href;
+
+        fetch(url, { method: 'HEAD' })
+            .then(response => {
+                if ([200, 203, 403].includes(response.status)) {
+                } else {
+                    link.id = 'fails';
+                    link.style.display = 'none';
+                }
+            })
+            .catch(error => {
+                console.error('CORS Proxy Is Blocked:', proxy, 'Next Proxy', link.href);
+                scancors(link, proxies.slice(1));
+            });
+    }
 });
 
 function copy() {
