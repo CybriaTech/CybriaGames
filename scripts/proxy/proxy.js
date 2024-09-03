@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const proxy = proxies[0];
         const url = proxy + link.href;
 
-        fetch(url, { method: 'HEAD' })
+        fetch(url, { method: 'GET' })
             .then(response => {
 
                 if (response.status === 404 && link.href.endsWith('.workers.dev')) {
