@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const links = document.querySelectorAll(".linkanchor");
         links.forEach(link => {
             const corsproxy = [
-                'https://cors.timmytamle569.workers.dev/'
+                'https://cors.timmytamle569.workers.dev/',
+                'https://cors-anywhere.herokuapp.com/'
             ];
 
             scancors(link, corsproxy);
@@ -56,6 +57,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const proxy = proxies[0];
         const url = proxy + link.href;
+
+        let delay = 0;
+
+        if (proxy.includes('.herokuapp.com')) {
+            delay = 2000;
+        }
 
         fetch(url, { method: 'GET' })
             .then(response => {
