@@ -175,5 +175,16 @@
     "keywords": ["Multiplayer", "Adventure", "Action"],
     "technology": "Unity/WebGL",
     "keys": ["W A S D/Arrow Keys - Move", "Space - Jump", "Right Click/Double Tap - Interact", "Left CTRL - Crouch", "E - Inventory", "Left Click/Tap - Attack/Break", "Q - Drop Item"]
+  },
+  {
+    "title": "EaglercraftX 1.8",
+    "logo": "/images/games/eagler-1.8.png",
+    "creator": "LAX1DUDE and ayunami2000",
+    "description": "Eaglercraft is an awesome browser-based voxel game that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It even supports multiplayer, so you can game with players from around the world.",
+    "location": "eagler 1.8",
+    "source": "/games/eagler-1.8",
+    "keywords": ["Multiplayer", "Adventure", "Action"],
+    "technology": "Unity/WebGL",
+    "keys": ["W A S D/Arrow Keys - Move", "Space - Jump", "Right Click/Double Tap - Interact", "Left CTRL - Crouch", "E - Inventory", "Left Click/Tap - Attack/Break", "Q - Drop Item"]
   }
 ]
