@@ -41,8 +41,6 @@ async function inject() {
                 gameframe.src = game.source;
             });
 
-            document.getElementById('returnbtn').addEventListener("click", closegme);
-
             function closegme {
                 garea.style.display = 'none';
             }
