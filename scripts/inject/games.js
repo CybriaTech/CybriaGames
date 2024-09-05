@@ -42,10 +42,8 @@ async function inject() {
             });
 
             function closegme() {
-                const garea = document.getElementById('garea');
-                if (garea) {
-                    garea.style.display = 'none';
-                }
+                gameframe.style.display = 'none';
+                gcontrols.style.display = 'none';
             }
 
             allsec.appendChild(gamebtn);
