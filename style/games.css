@@ -20,8 +20,8 @@ form {
 }
 
 #gcontrols {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   padding: 20px;
   margin: 7px;
   top: 0;
@@ -35,11 +35,15 @@ form {
 #returnbtn,
 #fullbtn {
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   border-radius: 50%;
   padding: 5px;
   gap: 10px;
+}
+
+#fa-index {
+  width: 25px;
 }
 
 #fa-index path {
