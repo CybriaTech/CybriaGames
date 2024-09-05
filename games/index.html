@@ -76,6 +76,28 @@ function closegme() {
         gameframe.src = '/';
     }
 }
+
+let idletime;
+const timetm = 3000;
+
+function resetidle() {
+    const gcontrols = document.getElementById('gcontrols');
+    if (gcontrols.classList.contains('hidden')) {
+        gcontrols.classList.remove('hidden');
+    }
+
+    clearTimeout(idletime);
+    idletime = setTimeout(() => {
+        gcontrols.classList.add('hidden');
+    }, timetm);
+}
+
+window.addEventListener('mousemove', resetidle);
+window.addEventListener('mousedown', resetidle);
+window.addEventListener('keydown', resetidle);
+window.addEventListener('touchstart', resetidle);
+
+resetidle();
                     </script>
     </body>
 </html>
