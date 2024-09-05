@@ -41,13 +41,6 @@ async function inject() {
                 gameframe.src = game.source;
             });
 
-            function closegme() {
-                const garea = document.getElementById('garea');
-                if (garea) {
-                    garea.parentNode.removeChild(garea);
-                }
-            }
-
             allsec.appendChild(gamebtn);
         });
     } catch (error) {
