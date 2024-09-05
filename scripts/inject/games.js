@@ -36,7 +36,7 @@ async function inject() {
                 const gcontrols = document.getElementById('gcontrols');
                 const garea = document.getElementById("garea");
 
-                document.getElementByid('main-area').style.display = 'none';
+                document.getElementById('main-area').style.display = 'none';
 
                 garea.style.display = 'block';
 
