@@ -44,6 +44,7 @@ async function inject() {
 
                 gameframe.style.display = 'block';
                 gcontrols.style.display = 'flex';
+                document.body.style.overflow = 'none';
 
                 gameframe.src = game.source;
             });
