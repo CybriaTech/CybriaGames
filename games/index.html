@@ -64,6 +64,13 @@ function fullscreen() {
         }
     }
 }
+
+function closegme() {
+    const garea = document.getElementById('garea');
+    if (garea) {
+        garea.parentNode.removeChild(garea);
+    }
+}
                     </script>
     </body>
 </html>
