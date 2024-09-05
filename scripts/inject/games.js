@@ -37,7 +37,6 @@ async function inject() {
                 const garea = document.getElementById("garea");
 
                 document.getElementById('main-area').style.display = 'none';
-                document.getElementById('space').style.display = 'none';
                 document.querySelector('header').style.display = 'none';
                 document.querySelector('footer').style.display = 'none';
 
