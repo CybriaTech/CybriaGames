@@ -68,6 +68,7 @@ function closegme() {
     if (garea) {
         garea.style.display = 'none';
         document.getElementById('main-area').style.display = 'block';
+        document.body.style.overflow = 'visible';
         document.querySelector('header').style.display = 'flex';
         document.querySelector('footer').style.display = 'flex';
     }
