@@ -34,9 +34,9 @@ async function inject() {
             gamebtn.addEventListener('click', () => {
                 const gameframe = document.getElementById('gframe');
                 const gcontrols = document.getElementById('gcontrols');
+                const garea = document.getElementByid("garea");
 
-                gameframe.style.display = 'block';
-                gcontrols.style.display = 'block';
+                garea.style.display = 'block';
 
                 gameframe.src = game.source;
             });
@@ -44,8 +44,7 @@ async function inject() {
             gcontrols.addEventListener("click", closegme);
 
             function closegme {
-                gameframe.style.display = 'none';
-                gcontrols.style.display = 'none';
+                garea.style.display = 'none';
             }
 
             allsec.appendChild(gamebtn);
