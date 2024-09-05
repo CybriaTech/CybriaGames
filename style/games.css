@@ -46,10 +46,8 @@ form {
   width: 40px;
   border: none;
   background-color: #1C2128;
-  height: auto;
   border-radius: 50%;
-  width: 40px;
-  padding: 10px;
+  padding: auto;
   gap: 10px;
 }
 
