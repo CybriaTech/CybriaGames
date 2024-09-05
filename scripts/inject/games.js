@@ -41,7 +41,7 @@ async function inject() {
                 gameframe.src = game.source;
             });
 
-            function closegme {
+            function closegme() {
                 garea.style.display = 'none';
             }
 
