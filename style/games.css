@@ -15,11 +15,16 @@ form {
 
 #gframe {
   display: none;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #fff;
   z-index: 9999999;
   border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #gcontrols {
