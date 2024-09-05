@@ -46,13 +46,13 @@ form {
   background-color: #1C2128;
   height: auto;
   border-radius: 50%;
+  width: 50px;
   padding: 5px;
   gap: 10px;
 }
 
 #fa-index path {
   fill: #fff;
-  width: 1.7em;
   transition: fill 0.3s ease;
 }
 
