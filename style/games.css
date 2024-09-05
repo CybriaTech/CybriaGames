@@ -17,6 +17,7 @@ form {
 #gframe {
   width: 100%;
   height: 100vh;
+  background-color: #fff;
 }
 
 #gcontrols {
