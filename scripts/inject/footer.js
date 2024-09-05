@@ -1,4 +1,5 @@
 document.write(`
+<div class="space" style="margin: 5%;"></div>
     <footer>
         <div class="footer-1">
             <p class="footer-title">Other</p>
