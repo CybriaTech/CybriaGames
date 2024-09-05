@@ -23,7 +23,7 @@ form {
 }
 
 #gcontrols {
-  height: 45px;
+  height: 30px;
   max-height: 100%;
   max-width: 100%;
   padding: 20px;
@@ -43,11 +43,11 @@ form {
 #returnbtn,
 #fullbtn {
   cursor: pointer;
-  width: 40px;
+  max-width: 100vw;
   border: none;
   background-color: #1C2128;
   border-radius: 50%;
-  padding: auto;
+  padding: 5px;
   gap: 10px;
 }
 
