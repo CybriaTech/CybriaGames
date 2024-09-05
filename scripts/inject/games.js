@@ -34,7 +34,7 @@ async function inject() {
             gamebtn.addEventListener('click', () => {
                 const gameframe = document.getElementById('gframe');
                 const gcontrols = document.getElementById('gcontrols');
-                const garea = document.getElementByid("garea");
+                const garea = document.getElementById("garea");
 
                 garea.style.display = 'block';
 
