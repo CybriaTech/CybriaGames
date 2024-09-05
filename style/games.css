@@ -7,6 +7,50 @@ form {
   margin-top: 20px;
 }
 
+#garea {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+}
+
+#gframe {
+  width: 100%;
+  height: 100%;
+}
+
+#gcontrols {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 7px;
+  top: 0;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  background-color: #22272E;
+  border-radius: 7px;
+}
+
+#returnbtn,
+#fullbtn {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 5px;
+  gap: 10px;
+}
+
+#fa-index path {
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+#fa-index:hover path {
+  fill: #000;
+}
+
 .search {
   color: #ffffff;
   font-size: 1.9em;
