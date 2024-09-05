@@ -25,6 +25,7 @@ form {
   height: auto;
   padding: 20px;
   margin: 7px;
+  display: none;
   top: 0;
   left: 0;
   justify-content: center;
