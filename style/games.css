@@ -28,10 +28,10 @@ form {
   margin: 7px;
   display: none;
   top: 0;
-  left: 0;
+  right: 0;
   justify-content: center;
   color: #fff;
-  z-index: 1000000;
+  z-index: 99999999;
   position: fixed;
   background-color: #22272E;
   border-radius: 7px;
@@ -51,7 +51,7 @@ form {
 
 #fa-index path {
   fill: #fff;
-  width: 50px;
+  width: 1.7em;
   transition: fill 0.3s ease;
 }
 
