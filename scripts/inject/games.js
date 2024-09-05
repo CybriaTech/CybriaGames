@@ -32,8 +32,21 @@ async function inject() {
             gamebtn.appendChild(metaspin);
 
             gamebtn.addEventListener('click', () => {
-                window.location.href = game.source;
+                const gameframe = document.getElementById('gframe');
+                const gcontrols = document.getElementById('gcontrols');
+
+                gameframe.style.display = 'block';
+                gcontrols.style.display = 'block';
+
+                gameframe.src = game.source;
             });
+
+            gcontrols.addEventListener("click", closegme);
+
+            function closegme {
+                gameframe.style.display = 'none';
+                gcontrols.style.display = 'none';
+            }
 
             allsec.appendChild(gamebtn);
         });
