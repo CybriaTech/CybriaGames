@@ -19,6 +19,7 @@ form {
   height: 100vh;
   background-color: #fff;
   z-index: 9999999;
+  border: none;
 }
 
 #gcontrols {
