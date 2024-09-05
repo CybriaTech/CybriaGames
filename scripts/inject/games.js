@@ -43,6 +43,7 @@ async function inject() {
                 garea.style.display = 'block';
 
                 gameframe.style.display = 'block';
+                document.body.style.overflow = 'hidden';
                 gcontrols.style.display = 'flex';
 
                 gameframe.src = game.source;
