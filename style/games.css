@@ -41,7 +41,8 @@ form {
 }
 
 #returnbtn,
-#fullbtn {
+#fullbtn,
+#redirbtn {
   cursor: pointer;
   width: 40px;
   border: none;
