@@ -37,10 +37,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function filter() {
         const links = document.querySelectorAll(".linkanchor");
+        const overlay = document.getElementById("loading-overlay");
+        overlay.style.display = 'flex';
+        
         links.forEach(link => {
             const corsproxy = [
                 'https://cors.timmytamle569.workers.dev/'
             ];
+
+            scancors(link, corsproxy, () => {
+                overlay.style.display = 'none';
+            });
 
             scancors(link, corsproxy);
         });
@@ -57,6 +64,21 @@ document.addEventListener("DOMContentLoaded", function() {
         const proxy = proxies[0];
         const url = proxy + link.href;
 
+        const createoverlay = (proxy) => {
+            const message = document.getElementById("overlay-message");
+            if (proxy.includes('workers.dev')) {
+                message.textContent = 'Filtering Links with Cloudflare Workers, speed: Fast';
+            } else if (proxy.includes('herokuapp.com')) {
+                message.textContent = 'Filtering Links with Heroku, speed: Slow';
+            } else if (proxy.includes('onrender.com')) {
+                message.textContent = 'Filtering Links with Render, speed: Medium/Slow';
+            } else {
+                message.textContent = 'Filtering Links with Unknown Server';
+            }
+        };
+
+         createoverlay(proxy);
+
         fetch(url, { method: 'GET' })
             .then(response => {
 
@@ -66,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 
                 if ([200, 203, 403].includes(response.status)) {
+                    link.id = 'works';
                 } else {
                     link.id = 'fails';
                     link.style.display = 'none';
@@ -77,6 +100,8 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 });
+
+
 
 function copy() {
     const linkspace = document.querySelector('.injectedlinks');
