@@ -42,7 +42,10 @@ async function inject() {
             });
 
             function closegme() {
-                garea.style.display = 'none';
+                const garea = document.getElementById('garea');
+                if (garea) {
+                    garea.style.display = 'none';
+                }
             }
 
             allsec.appendChild(gamebtn);
