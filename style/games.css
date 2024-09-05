@@ -23,14 +23,15 @@ form {
 }
 
 #gcontrols {
-  height: auto;
+  height: 50px;
   max-height: 100%;
   max-width: 100%;
   padding: 20px;
   margin: 7px;
   display: none;
   top: 0;
-  right: 0;
+  left: 0;
+  align-items: center;
   justify-content: center;
   color: #fff;
   z-index: 99999999;
@@ -42,12 +43,12 @@ form {
 #returnbtn,
 #fullbtn {
   cursor: pointer;
-  width: auto;
+  width: 40px;
   border: none;
   background-color: #1C2128;
   height: auto;
   border-radius: 50%;
-  width: 50px;
+  width: 40px;
   padding: 5px;
   gap: 10px;
 }
