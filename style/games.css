@@ -8,13 +8,13 @@ form {
 }
 
 #garea {
-  display: none;
   width: 100%;
   height: 100vh;
   z-index: 9999999;
 }
 
 #gframe {
+  display: none;
   width: 100%;
   height: 100vh;
   background-color: #fff;
@@ -26,9 +26,12 @@ form {
   padding: 20px;
   margin: 7px;
   top: 0;
+  left: 0;
   justify-content: center;
   display: flex;
   color: #fff;
+  z-index: 1000000;
+  position: fixed;
   background-color: #22272E;
   border-radius: 7px;
 }
