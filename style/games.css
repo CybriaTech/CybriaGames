@@ -43,7 +43,7 @@ form {
 #returnbtn,
 #fullbtn {
   cursor: pointer;
-  max-width: 100vw;
+  width: 40px;
   border: none;
   background-color: #1C2128;
   border-radius: 50%;
