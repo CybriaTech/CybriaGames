@@ -48,10 +48,6 @@ async function inject() {
                 gameframe.src = game.source;
             });
 
-            function redir() {
-                window.open(game.source, '_blank');
-            }
-
             allsec.appendChild(gamebtn);
         });
     } catch (error) {
