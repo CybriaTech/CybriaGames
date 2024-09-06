@@ -44,7 +44,7 @@ async function inject() {
 
                 gameframe.style.display = 'block';
                 gcontrols.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
+                document.body.style.overflow = 'none';
 
                 gameframe.src = game.source;
             });
@@ -56,7 +56,6 @@ async function inject() {
                     const ifrscr = ifrdoc.createElement('script');
                     ifrscr.textContent = `
                     document.addEventListener('keydown', function(event) {
-                        console.log('Shortcut works in iframe');
                         if (event.altKey && event.key === 'm') {
                             parent.postMessage('refocus', '*');
                         }
@@ -73,11 +72,10 @@ async function inject() {
 
             allsec.appendChild(gamebtn);
 
-            function refocus(event) {
+            function handleKeydown(event) {
                 if (event.altKey && event.key === 'm') {
                     
                 event.preventDefault();
-                event.stopPropagation();
         
                 if (gcontrols.style.display === 'none' || gcontrols.style.display === '') {
                     gcontrols.style.display = 'flex';
@@ -87,11 +85,11 @@ async function inject() {
                 }
             }
 
-            window.addEventListener('keydown', refocus);
+            window.addEventListener('keydown', handleKeydown);
 
             window.addEventListener('message', function(event) {
                 if (event.data === 'refocus') {
-                    refocus({ altKey: true, key: 'm', preventDefault: () => {} });
+                    handleKeydown({ altKey: true, key: 'm', preventDefault: () => {} });
                 }
             });
         });
