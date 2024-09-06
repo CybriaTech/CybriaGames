@@ -716,7 +716,7 @@ var Godot = (function() {
                   this.config.update(override);
                   // Add main-pack argument.
                   const exe = this.config.executable;
-                  const pack = this.config.mainPack || `https://media.githubusercontent.com/media/EmulatorOS/theatre/master/public/html5/assessment/index.pck`;
+                  const pack = this.config.mainPack || `https://html-classic.itch.zone/html/5392404/Web5/index.pck`;
                   this.config.args = ['--main-pack', pack].concat(this.config.args);
                   // Start and init with execName as loadPath if not inited.
                   const me = this;
