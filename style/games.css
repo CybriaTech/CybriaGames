@@ -41,7 +41,7 @@ form {
   color: #fff;
   z-index: 99999999;
   position: fixed;
-  background-color: #22272E;
+  background-color: #1C2128;
   border-radius: 7px;
 }
 
@@ -50,7 +50,7 @@ form {
   cursor: pointer;
   width: 40px;
   border: none;
-  background-color: #1C2128;
+  background-color: #22272E;
   border-radius: 50%;
   padding: 5px;
   gap: 10px;
