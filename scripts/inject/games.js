@@ -55,6 +55,8 @@ async function inject() {
             function handleKeydown(event) {
                 if (event.altKey && event.key === 'm') {
                     
+                console.log('Shortcut successful');
+                    
                 event.preventDefault();
         
                 if (gcontrols.style.display === 'none' || gcontrols.style.display === '') {
