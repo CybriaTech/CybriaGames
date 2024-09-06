@@ -66,15 +66,9 @@ async function inject() {
 
             window.addEventListener('keydown', handleKeydown);
 
-            document.addEventListener('focusin', function() {
-                if (event.target.tagName === 'IFRAME' && event.target.id === 'gframe') {
-                    event.target.contentWindow.addEventListener('keydown', handleKeydown);
-                }
-            });
-
-            window.addEventListener('focusout', function(event) {
-                if (event.target.tagName === 'IFRAME' && event.target.id === 'gframe') {
-                    event.target.contentWindow.removeEventListener('keydown', handleKeydown);
+            window.addEventListener('message', function(event) {
+                if (event.data === 'refocus') {
+                    handleKeydown({ altKey: true, key: 'm', preventDefault: () => {} });
                 }
             });
         });
