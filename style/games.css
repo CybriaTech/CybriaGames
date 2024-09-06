@@ -13,6 +13,11 @@ form {
   z-index: 9999999;
 }
 
+.gtxt {
+  color: #fff;
+  font-size: 1.7em;
+}
+
 #gframe {
   display: none;
   width: 100vw;
