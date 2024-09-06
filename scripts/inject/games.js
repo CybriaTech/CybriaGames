@@ -44,18 +44,36 @@ async function inject() {
 
                 gameframe.style.display = 'block';
                 gcontrols.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
+                document.body.style.overflow = 'none';
 
                 gameframe.src = game.source;
-                gameframe.focus();
             });
+
+            function addscr() {
+                const gameframe = document.getElementById('gframe');
+                gameframe.addEventListener('load', function() {
+                    const ifrdoc = gameframe.contentDocument || iframe.contentWindow.document;
+                    const ifrscr = ifrdoc.createElement('script');
+                    ifrscr.textContent = `
+                    document.addEventListener('keydown', function(event) {
+                        if (event.altKey && event.key === 'm') {
+                            parent.postMessage('refocus', '*');
+                        }
+                    });
+                    window.addEventListener('focus', function() {
+                        parent.postMessage('refocus', '*');
+                    });
+                   `;
+                    ifrdoc.head.appendChild(ifrscr);
+                });
+            }
+
+            addscr();
 
             allsec.appendChild(gamebtn);
 
             function handleKeydown(event) {
                 if (event.altKey && event.key === 'm') {
-                    
-                console.log('Shortcut successful');
                     
                 event.preventDefault();
         
@@ -66,28 +84,6 @@ async function inject() {
                 }
                 }
             }
-
-            function addscr() {
-                const gameframe = document.getElementById('gframe');
-                gameframe.addEventListener('load', function() {
-                    gameframe.focus()
-                    const ifrdoc = gameframe.contentDocument || gameframe.contentWindow.document;
-                    const ifrscr = ifrdoc.createElement('script');
-                    ifrscr.textContent = `
-                        document.addEventListener('keydown', function(event) {
-                            if (event.altKey && event.key === 'm') {
-                                parent.postMessage('refocus', '*');
-                            }
-                        });
-                        window.addEventListener('focus', function() {
-                            parent.postMessage('refocus', '*');
-                        });
-                    `;
-                    ifrdoc.head.appendChild(ifrscr);
-                });
-            }
-
-            addscr();
 
             window.addEventListener('keydown', handleKeydown);
 
