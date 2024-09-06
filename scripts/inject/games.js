@@ -67,13 +67,13 @@ async function inject() {
             window.addEventListener('keydown', handleKeydown);
 
             document.addEventListener('focusin', function() {
-                if (event.target.tagName === 'IFRAME') {
+                if (event.target.tagName === 'IFRAME' && event.target.id === 'gframe') {
                     event.target.contentWindow.addEventListener('keydown', handleKeydown);
                 }
             });
 
             window.addEventListener('focusout', function(event) {
-                if (event.target.tagName === 'IFRAME') {
+                if (event.target.tagName === 'IFRAME' && event.target.id === 'gframe') {
                     event.target.contentWindow.removeEventListener('keydown', handleKeydown);
                 }
             });
