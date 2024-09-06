@@ -71,6 +71,10 @@ form {
   background-color: #555;
 }
 
+#fa-index {
+  width: 40px !important;
+}
+
 #fa-index path {
   fill: #fff;
   transition: fill 0.3s ease;
