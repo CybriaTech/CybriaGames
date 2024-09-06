@@ -49,6 +49,26 @@ async function inject() {
                 gameframe.src = game.source;
             });
 
+            function addscr() {
+                gameframe.addEventListener('load', function() {
+                    const ifrdoc = gameframe.contentDocument || iframe.contentWindow.document;
+                    const ifrscr = ifrdoc.createElement('script');
+                    ifrscr.textContent = `
+                    document.addEventListener('keydown', function(event) {
+                        if (event.altKey && event.key === 'm') {
+                            parent.postMessage('refocus', '*');
+                        }
+                    });
+                    window.addEventListener('focus', function() {
+                        parent.postMessage('refocus', '*');
+                    });
+                   `;
+                    ifrdoc.head.appendChild(ifrscr);
+                });
+            }
+
+            addscr();
+
             allsec.appendChild(gamebtn);
 
             function handleKeydown(event) {
