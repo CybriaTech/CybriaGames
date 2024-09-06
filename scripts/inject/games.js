@@ -73,7 +73,7 @@ async function inject() {
 
             allsec.appendChild(gamebtn);
 
-            function handleKeydown(event) {
+            function refocus(event) {
                 if (event.altKey && event.key === 'm') {
                     
                 event.preventDefault();
@@ -86,11 +86,11 @@ async function inject() {
                 }
             }
 
-            window.addEventListener('keydown', handleKeydown);
+            window.addEventListener('keydown', refocus);
 
             window.addEventListener('message', function(event) {
                 if (event.data === 'refocus') {
-                    handleKeydown({ altKey: true, key: 'm', preventDefault: () => {} });
+                    refocus({ altKey: true, key: 'm', preventDefault: () => {} });
                 }
             });
         });
