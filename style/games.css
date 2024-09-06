@@ -73,7 +73,7 @@ form {
 
 #returnbtn svg,
 #fullbtn svg {
-  width: 40px;
+  width: 30px !important;
 }
 
 #fa-index path {
