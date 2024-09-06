@@ -55,8 +55,9 @@ form {
 #returnbtn,
 #fullbtn {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
+  align-items: center;
   border: none;
   background-color: #22272E;
   border-radius: 50%;
