@@ -51,7 +51,7 @@ async function inject() {
 
             allsec.appendChild(gamebtn);
 
-            function keybinds(event) {
+            function handleKeydown(event) {
                 if (event.altKey && event.key === 'm') {
                     
                 event.preventDefault();
@@ -64,12 +64,17 @@ async function inject() {
                 }
             }
 
-            window.addEventListener('keydown', keybinds);
+            window.addEventListener('keydown', handleKeydown);
 
             document.addEventListener('focusin', function() {
+                if (event.target.tagName === 'IFRAME') {
+                    event.target.contentWindow.addEventListener('keydown', handleKeydown);
+                }
+            });
 
-                if (document.activeElement === gameframe) {
-                    gameframe.contentWindow.addEventListener('keydown', keybinds);
+            window.addEventListener('focusout', function(event) {
+                if (event.target.tagName === 'IFRAME') {
+                    event.target.contentWindow.removeEventListener('keydown', handleKeydown);
                 }
             });
         });
