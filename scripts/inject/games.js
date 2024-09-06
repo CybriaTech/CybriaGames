@@ -50,6 +50,20 @@ async function inject() {
             });
 
             allsec.appendChild(gamebtn);
+
+            document.addEventListener('keydown', function(event) {
+                if (event.altKey && event.key === 'm') {
+                    
+                event.preventDefault();
+        
+                if (gcontrols.style.display === 'none' || gcontrols.style.display === '') {
+                    gcontrols.style.display = 'block';
+                } else {
+                    gcontrols.style.display = 'none';
+                }
+                }
+            });
+
         });
     } catch (error) {
         console.error('Err:', error);
