@@ -70,6 +70,7 @@ async function inject() {
             function addscr() {
                 const gameframe = document.getElementById('gframe');
                 gameframe.addEventListener('load', function() {
+                    gameframe.focus()
                     const ifrdoc = gameframe.contentDocument || gameframe.contentWindow.document;
                     const ifrscr = ifrdoc.createElement('script');
                     ifrscr.textContent = `
