@@ -51,7 +51,7 @@ async function inject() {
 
             allsec.appendChild(gamebtn);
 
-            document.addEventListener('keydown', function(event) {
+            function keybinds(event) {
                 if (event.altKey && event.key === 'm') {
                     
                 event.preventDefault();
@@ -62,8 +62,16 @@ async function inject() {
                     gcontrols.style.display = 'none';
                 }
                 }
-            });
+            }
 
+            window.addEventListener('keydown', keybinds);
+
+            document.addEventListener('focusin', function() {
+
+                if (document.activeElement === gameframe) {
+                    gameframe.contentWindow.addEventListener('keydown', keybinds);
+                }
+            });
         });
     } catch (error) {
         console.error('Err:', error);
