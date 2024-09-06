@@ -48,14 +48,14 @@ async function inject() {
 
                 gameframe.src = game.source;
                 gameframe.focus();
-            });
 
-            function addscr() {
-                const gameframe = document.getElementById('gframe');
-                gameframe.addEventListener('load', function() {
-                    const ifrdoc = gameframe.contentDocument || iframe.contentWindow.document;
-                    const ifrscr = ifrdoc.createElement('script');
-                    ifrscr.textContent = `
+                function addscr() {
+                    const gameframe = document.getElementById('gframe');
+                    gameframe.addEventListener('load', function() {
+                        f
+                       const ifrdoc = gameframe.contentDocument || iframe.contentWindow.document;
+                       const ifrscr = ifrdoc.createElement('script');
+                       ifrscr.textContent = `
                     document.addEventListener('keydown', function(event) {
                         if (event.altKey && event.key === 'm') {
                             parent.postMessage('refocus', '*');
@@ -68,8 +68,7 @@ async function inject() {
                     ifrdoc.head.appendChild(ifrscr);
                 });
             }
-
-            addscr();
+            });
 
             allsec.appendChild(gamebtn);
 
