@@ -57,7 +57,7 @@ async function inject() {
                 event.preventDefault();
         
                 if (gcontrols.style.display === 'none' || gcontrols.style.display === '') {
-                    gcontrols.style.display = 'block';
+                    gcontrols.style.display = 'flex';
                 } else {
                     gcontrols.style.display = 'none';
                 }
