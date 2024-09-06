@@ -50,6 +50,7 @@ async function inject() {
             });
 
             function addscr() {
+                const gameframe = document.getElementById('gframe');
                 gameframe.addEventListener('load', function() {
                     const ifrdoc = gameframe.contentDocument || iframe.contentWindow.document;
                     const ifrscr = ifrdoc.createElement('script');
