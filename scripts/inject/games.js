@@ -77,6 +77,7 @@ async function inject() {
                 if (event.altKey && event.key === 'm') {
                     
                 event.preventDefault();
+                event.stopPropagation();
         
                 if (gcontrols.style.display === 'none' || gcontrols.style.display === '') {
                     gcontrols.style.display = 'flex';
