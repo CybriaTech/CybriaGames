@@ -56,6 +56,7 @@ async function inject() {
                     const ifrscr = ifrdoc.createElement('script');
                     ifrscr.textContent = `
                     document.addEventListener('keydown', function(event) {
+                        console.log('Shortcut works in iframe');
                         if (event.altKey && event.key === 'm') {
                             parent.postMessage('refocus', '*');
                         }
