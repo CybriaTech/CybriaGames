@@ -51,6 +51,11 @@ async function inject() {
                 document.body.style.overflow = 'none';
 
                 gameframe.src = game.source;
+
+                gameframe.onload = () => {
+                    addscr();
+                };
+            });
             });
 
             allsec.appendChild(gamebtn);
@@ -73,8 +78,6 @@ async function inject() {
                     ifrdoc.head.appendChild(ifrscr);
                 });
             }
-
-            addscr();
 
             function handleKeydown(event) {
                 if (event.altKey && event.key === 'm') {
