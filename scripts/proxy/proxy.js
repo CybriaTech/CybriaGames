@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const corsproxy = [
                 'https://cors.timmytamle569.workers.dev/',
                 'https://kors.onrender.com/',
-                'https://tcors.vercel.app/'
+                'https://tcors.vercel.app/',
+                'http://tcors.duckdns.org/'
             ];
 
             scancors(link, corsproxy);
