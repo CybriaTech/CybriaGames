@@ -6,8 +6,21 @@ async function inject() {
         cheats.sort((a, b) => a.title.localeCompare(b.title));
 
         const cheatarea = document.getElementById('cheats-area');
-
         cheatarea.innerHTML = '';
+
+        for (let cheat of cheats) {
+            if (cheat.asset.endsWith('.txt')) {
+                try {
+                    const txtresult = await fetch(cheat.asset);
+                    if (!txtresult.ok) {
+                        throw new Error(`Response is no ok: ${txtresult.statusText}`);
+                    }
+                    cheat.asset = await txtresult.text();
+                } catch (error) {
+                    console.error('DId not get txt content:', error);
+                    continue;
+                }
+            }
 
         cheats.forEach(cheat => {
             const cheatoption = document.createElement('a');
