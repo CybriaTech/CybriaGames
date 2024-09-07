@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 button.addEventListener("click", function() {
                     const proxyid = this.id;
                     const links = data[0][proxyid];
+
+                    const pagesandbox = data[0]['Page Sandbox'];
                     if (links) {
                         console.innerHTML = '';
 
@@ -61,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(url, { method: 'GET' })
             .then(response => {
 
-                if (response.status === 404 && link.href.includes('Page Sandbox')) {
+                const ignore = link.href.includes('.workers.dev/');
+
+                if (response.status === 404 && ignore) {
                     link.id = 'ignore';
                     return;
                 }
