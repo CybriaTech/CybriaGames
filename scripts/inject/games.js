@@ -7,6 +7,8 @@ async function inject() {
 
         const allsec = document.getElementById('all');
 
+        allsec.innerHTML = '';
+
         games.forEach(game => {
             const gamebtn = document.createElement('div');
             gamebtn.classList.add('game');
@@ -52,7 +54,7 @@ async function inject() {
                 gameframe.src = game.source;
             });
 
-            function addscr() {
+            gameframe.onload = () => {
                 const gameframe = document.getElementById('gframe');
                 gameframe.addEventListener('load', function() {
                     const ifrdoc = gameframe.contentDocument || iframe.contentWindow.document;
@@ -70,8 +72,6 @@ async function inject() {
                     ifrdoc.head.appendChild(ifrscr);
                 });
             }
-
-            addscr();
 
             allsec.appendChild(gamebtn);
 
