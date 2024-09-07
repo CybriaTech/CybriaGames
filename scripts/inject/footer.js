@@ -20,7 +20,7 @@ document.write(`
             <p class="footer-title">Sources</p>
             <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames" target="_blank">GitHub Repo</a>
             <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Assets" target="_blank">Game Assets</a>
-            <a class="footer-a" href="https://ctst-1h4.pages.dev/" target="_blank">Testing Site</a>
+            <a class="footer-a" href="https://cybriagames-old.pages.dev/" target="_blank">Old Site (Archived)</a>
         </div>
     </footer>
 `);
