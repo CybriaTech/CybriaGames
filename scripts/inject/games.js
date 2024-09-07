@@ -35,6 +35,8 @@ async function inject() {
             gamebtn.appendChild(img);
             gamebtn.appendChild(metaspin);
 
+            allsec.appendChild(gamebtn);
+
             gamebtn.addEventListener('click', () => {
                 const gameframe = document.getElementById('gframe');
                 const gcontrols = document.getElementById('gcontrols');
@@ -55,7 +57,6 @@ async function inject() {
                 gameframe.onload = () => {
                     ifrev(gameframe);
                 };
-            });
             });
 
             allsec.appendChild(gamebtn);
