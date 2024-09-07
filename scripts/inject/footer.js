@@ -3,7 +3,7 @@ document.write(`
     <footer>
         <div class="footer-1">
             <p class="footer-title">Other</p>
-            <a class="footer-a" href="/changelog.html">Changelog</a>
+            <a class="footer-a" href="/LICENSE.txt">License</a>
             <a class="footer-a" href="/issue.html">Report Issues</a>
             <a class="footer-a" href="/links.html">More Links</a>
         </div>
@@ -19,9 +19,9 @@ document.write(`
         </div>
         <div class="footer-4">
             <p class="footer-title">Sources</p>
-            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames" target="_blank">Github (PC)</a>
-            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Mobile" target="_blank">Github (Mobile)</a>
+            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames" target="_blank">GitHub Repo</a>
             <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Assets" target="_blank">Game Assets</a>
+            <a class="footer-a" href="https://ctst-1h4.pages.dev/" target="_blank">Testing Site</a>
         </div>
     </footer>
 `);
