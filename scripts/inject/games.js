@@ -53,53 +53,44 @@ async function inject() {
                 gameframe.src = game.source;
 
                 gameframe.onload = () => {
-                    addscr();
+                    ifrev(gameframe);
                 };
             });
             });
 
             allsec.appendChild(gamebtn);
-
-            function addscr() {
-                const gameframe = document.getElementById('gframe');
-                gameframe.addEventListener('load', function() {
-                    const ifrdoc = gameframe.contentDocument || iframe.contentWindow.document;
-                    const ifrscr = ifrdoc.createElement('script');
-                    ifrscr.textContent = `
-                    document.addEventListener('keydown', function(event) {
-                        if (event.altKey && event.key === 'm') {
-                            parent.postMessage('refocus', '*');
-                        }
-                    });
-                    window.addEventListener('focus', function() {
-                        parent.postMessage('refocus', '*');
-                    });
-                   `;
-                    ifrdoc.head.appendChild(ifrscr);
-                });
-            }
-
-            function handleKeydown(event) {
-                if (event.altKey && event.key === 'm') {
-                    
-                event.preventDefault();
-        
-                if (gcontrols.style.display === 'none' || gcontrols.style.display === '') {
-                    gcontrols.style.display = 'flex';
-                } else {
-                    gcontrols.style.display = 'none';
-                }
-                }
-            }
-
-            window.addEventListener('keydown', handleKeydown);
-
-            window.addEventListener('message', function(event) {
-                if (event.data === 'refocus') {
-                    handleKeydown({ altKey: true, key: 'm', preventDefault: () => {} });
-                }
-            });
         });
+
+        globalev();
+
+    function shortcut() {
+        const gcontrols = document.getElementById('gcontrols');
+        if (gcontrols.style.display === 'none' || gcontrols.style.display === '') {
+            gcontrols.style.display = 'flex';
+        } else {
+            gcontrols.style.display = 'none';
+        }
+    }
+
+    function globalev() {
+        document.addEventListener('keydown', (e) => {
+            if (e.altKey && e.key.toLowerCase() === 'm') {
+                e.preventDefault();
+                shortcut();
+            }
+        });
+    }
+
+    function ifrev(iframe) {
+        const ifrdoc = iframe.contentDocument || iframe.contentWindow.document;
+    
+        ifrdoc.addEventListener('keydown', (e) => {
+            if (e.altKey && e.key.toLowerCase() === 'm') {
+                e.preventDefault();
+               shortcut();
+            }
+        });
+    }
     } catch (error) {
         console.error('Err:', error);
     }
