@@ -23,7 +23,7 @@
   overflow: hidden;
   display: flex;
   z-index: 24;
-  padding: 15px;
+  padding: 5px;
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
