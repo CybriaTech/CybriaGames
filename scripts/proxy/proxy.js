@@ -61,9 +61,10 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(url, { method: 'GET' })
             .then(response => {
 
-                if (response.status === 404 && link.href.endsWith('.workers.dev/')) {
-                    link.id = 'workers';
-                    link.style.display = 'block';
+                if (response.status === 404 && link.href.includes('Page Sandbox')) {
+                    link.id = 'ignore';
+                    link.style.display = 'none';
+                    return;
                 }
                 
                 if ([200, 203, 403].includes(response.status)) {
