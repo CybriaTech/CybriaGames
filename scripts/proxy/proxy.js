@@ -66,11 +66,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const ignore = link.href.includes('.workers.dev/');
 
                 if (response.status === 404 && ignore) {
+                    link.removeAttribute("fails");
                     link.id = 'ignore';
                     return;
-                }
-                
-                if ([200, 203, 403].includes(response.status)) {
+                } else if ([200, 203, 403].includes(response.status)) {
                     link.id = 'works';
                 } else {
                     link.id = 'fails';
