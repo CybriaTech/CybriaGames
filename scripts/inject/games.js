@@ -3,6 +3,8 @@ async function inject() {
         const response = await fetch('/json/games.json');
         const games = await response.json();
 
+        games.sort((a, b) => a.title.localeCompare(b.title));
+
         const allsec = document.getElementById('all');
 
         games.forEach(game => {
