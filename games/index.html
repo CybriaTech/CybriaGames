@@ -51,6 +51,9 @@ function fullscreen() {
             gfr.webkitRequestFullscreen();
         } else if (gfr.msRequestFullscreen) {
             gfr.msRequestFullscreen();
+
+       gfr.style.width = '100vw';
+       gfr.style.height = '100vh';
         }
     } else {
         if (document.exitFullscreen) {
@@ -62,6 +65,8 @@ function fullscreen() {
         } else if (document.msExitFullscreen) {
             document.msExitFullscreen();
         }
+        gfr.style.width = '100%';
+        gfr.style.height = '100%';
     }
 }
 
