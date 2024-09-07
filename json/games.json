@@ -1,5 +1,4 @@
 
-
 [
   {
     "title": "2048",
@@ -21,6 +20,13 @@
     "creator": "Rob Kay",
     "location": "slope",
     "source": "/games/slope"
+  },
+  {
+    "title": "Assessment Examination",
+    "logo": "/images/games/assessment-exam.png",
+    "creator": "Wenderly Games",
+    "location": "assessment examination",
+    "source": "/games/assessment-examination"
   },
   {
     "title": "Time Shooter",
