@@ -24,12 +24,13 @@ async function inject() {
 
             cheatoption.appendChild(titlep);
             cheatoption.appendChild(creatorp);
-
-            cheatoption.appendChild(img);
+            
             cheatoption.appendChild(cheatoption);
 
             cheatarea.appendChild(cheatoption);
         });
+    } catch (error) {
+        console.error('Failed:', error);
     }
 }
 
