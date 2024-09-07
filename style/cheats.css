@@ -48,7 +48,8 @@
   color: #AAA;
 }
 
-#main-area {
+#cheats-area,
+.cheats-heading {
   margin-left: 2%;
   margin-right: 2%;
 }
