@@ -35,7 +35,7 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease-in-out;  
 }
 
-#cheat:hover {
+.cheat:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgb(0, 149, 255);
 }
