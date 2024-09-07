@@ -5,7 +5,7 @@ function ua() {
  const mobile = /android|iPhone|iPad|iPod|blackberry|windows phone|mobile/i.test(agent);
 
  if (mobile) {
-   window.location.href = "mobile.html";
+   window.location.href = "/mobile.html";
  }
 }
 
