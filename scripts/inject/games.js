@@ -52,7 +52,6 @@ async function inject() {
                 document.body.style.overflow = 'none';
 
                 gameframe.src = game.source;
-            });
 
             gameframe.onload = () => {
                 const gameframe = document.getElementById('gframe');
@@ -71,6 +70,7 @@ async function inject() {
                    `;
                     ifrdoc.head.appendChild(ifrscr);
                 };
+            });
             });
 
             allsec.appendChild(gamebtn);
