@@ -12,7 +12,7 @@ async function inject() {
         cheats.forEach(cheat => {
             const cheatoption = document.createElement('a');
             cheatoption.classList.add('cheat');
-            cheatoption.src = cheat.asset;
+            cheatoption.href = cheat.asset;
 
             const titlep = document.createElement('p');
             titlep.classList.add('cheat-title');
