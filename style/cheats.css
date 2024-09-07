@@ -5,6 +5,10 @@
   color: #fff;
 }
 
+#main-area {
+  min-height: 100vh;
+}
+
 #cheats-area {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
