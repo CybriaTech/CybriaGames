@@ -51,23 +51,6 @@ async function inject() {
                 document.body.style.overflow = 'none';
 
                 gameframe.src = game.source;
-
-                gameframe.onload = () => {
-                    const ifrdoc = gameframe.contentDocument || gameframe.contentWindow.document;
-                    const ifrscr = ifrdoc.createElement('script');
-                    ifrscr.textContent = `
-                        document.addEventListener('keydown', function(event) {
-                            if (event.altKey && event.key === 'm') {
-                                parent.postMessage('refocus', '*');
-                            }
-                        });
-                        window.addEventListener('focus', function() {
-                            parent.postMessage('refocus', '*');
-                        });
-                    `;
-                    ifrdoc.head.appendChild(ifrscr);
-                };
-            });
             });
 
             allsec.appendChild(gamebtn);
