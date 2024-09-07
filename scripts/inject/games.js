@@ -70,8 +70,8 @@ async function inject() {
                     });
                    `;
                     ifrdoc.head.appendChild(ifrscr);
-                });
-            }
+                };
+            });
 
             allsec.appendChild(gamebtn);
 
