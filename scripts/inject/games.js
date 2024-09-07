@@ -58,8 +58,6 @@ async function inject() {
                     ifrev(gameframe);
                 };
             });
-
-            allsec.appendChild(gamebtn);
         });
 
         globalev();
