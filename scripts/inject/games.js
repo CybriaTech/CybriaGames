@@ -17,9 +17,6 @@ async function inject() {
             img.classList.add('g-icon');
             img.src = game.logo;
             img.alt = game.title;
-            img.appendChild(lazy);
-
-            const lazy = "loading='lazy'";
 
             const metaspin = document.createElement('div');
             metaspin.classList.add('meta');
