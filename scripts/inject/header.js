@@ -11,5 +11,4 @@ document.write(`
             <!-- <a class="header-profile" style="cursor: pointer;"><img src="/images/chat/placeholder.png" class="profile-picture" alt="Profile"></a> -->
         </nav>
     </header>
-    <div class="space" style="margin: 5%;"></div>
 `);
