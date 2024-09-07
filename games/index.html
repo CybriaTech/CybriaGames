@@ -27,7 +27,7 @@
                 </div>
             </div>
                 <div id="garea">
-                    <iframe id="gframe" src="data:text/html,<p>Loading...</p>">Game Failed To Load</iframe>
+                    <iframe id="gframe">Game Failed To Load</iframe>
                     <div id="gcontrols">
                         <p class="gtxt">ALT+M to hide/show this</p>
                         <button id="returnbtn" onclick="closegme()" title="Return To Games"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></button>
@@ -75,7 +75,7 @@ function closegme() {
         document.body.style.overflow = 'visible';
 
         const gameframe = document.getElementById('gframe');
-        gameframe.src = 'data:text/html,<p>Loading...</p>';
+        gameframe.src = '';
     }
 }
                     </script>
