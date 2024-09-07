@@ -76,6 +76,7 @@ body {
    font-size: 1.4em;
    text-decoration: none;
    display: block;
+   text-align: center;
    margin-bottom: 8px;
    transition: color 0.3s ease;
   }
