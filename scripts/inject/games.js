@@ -52,8 +52,11 @@ async function inject() {
                 document.body.style.overflow = 'none';
 
                 gameframe.src = game.source;
+            });
 
-            gameframe.onload = () => {
+            allsec.appendChild(gamebtn);
+
+            function addscr() {
                 const gameframe = document.getElementById('gframe');
                 gameframe.addEventListener('load', function() {
                     const ifrdoc = gameframe.contentDocument || iframe.contentWindow.document;
@@ -71,9 +74,8 @@ async function inject() {
                     ifrdoc.head.appendChild(ifrscr);
                 };
             });
-            });
 
-            allsec.appendChild(gamebtn);
+            addscr();
 
             function handleKeydown(event) {
                 if (event.altKey && event.key === 'm') {
