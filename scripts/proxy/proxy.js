@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 'https://cors.timmytamle569.workers.dev/',
                 'https://kors.onrender.com/',
                 'https://tcors.vercel.app/',
-                'http://tcors.duckdns.org/'
+                'https://tcors.duckdns.org/',
+                'https://tcors.hopto.org/'
             ];
 
             scancors(link, corsproxy);
