@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if (response.status === 404 && link.href.includes('Page Sandbox')) {
                     link.id = 'ignore';
-                    link.style.display = 'none';
                     return;
                 }
                 
