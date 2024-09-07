@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="🕹CybriaGames is an unblocked game site hosting over 100+ unblocked games where the danger of internet restrictions dosent apply.">
+    <meta name="keywords" content="games, game, gaming, unblocked games, ubg, unblocked game, cybriagames unblocked, cybria games, cyberia games, cybriagame, cyberiagames">
+    <link rel="stylesheet" href="/style/search.css">
+    <link rel="stylesheet" href="/style/all.css">
+    <link rel="icon" href="/images/cybriagames/favicon-circle.png">
+</head>
+<body>
+        <script src="/scripts/inject/header.js"></script>
+        <div class="space" style="margin-top: 2%;"></div>
+    <div id="main-area">
+        <p class="game-title"></p>
+        <div id="search-results">
+        </div>
+    </div>
+  <div class="space" style="margin-bottom: 5%;"></div>
+        <script src="/scripts/main/emergency.js"></script>
+        <script src="/scripts/inject/footer.js"></script>
+    <script>
+        function getparam(param) {
+            const urlparams = new URLSearchParams(window.location.search);
+            return urlparams.get(param);
+        }
+
+        async function showresults(query) {
+            const searchresults = document.getElementById('search-results');
+            searchresults.innerHTML = '';
+
+            try {
+                const response = await fetch('/json/games.json');
+                const games = await response.json();
+                document.querySelector('.game-title').textContent = `Results for "${query}"`;
+                document.title = `Results for "${query} | CybriaGames"`;
+
+                const outputgmes = games.filter(game =>
+                    game.title.toLowerCase().includes(query.toLowerCase())
+                );
+
+                if (outputgmes.length > 0) {
+                    outputgmes.forEach(game => {
+                        const gamebtn = document.createElement('div');
+                        gamebtn.classList.add('game');
+
+                        const img = document.createElement('img');
+                        img.classList.add('g-icon');
+                        img.src = game.logo;
+                        img.alt = game.title;
+
+                        const metaspin = document.createElement('div');
+                        metaspin.classList.add('meta');
+
+                        const titlesec = document.createElement('div');
+                        titlesec.classList.add('title');
+                        titlesec.textContent = game.title;
+
+                        const creatorsec = document.createElement('div');
+                        creatorsec.classList.add('creator');
+                        creatorsec.textContent = `By: ${game.creator}`;
+
+                        metaspin.appendChild(titlesec);
+                        metaspin.appendChild(creatorsec);
+
+                        gamebtn.appendChild(img);
+                        gamebtn.appendChild(metaspin);
+
+                        searchresults.appendChild(gamebtn);
+                    });
+                } else {
+                    searchresults.textContent = 'No results found';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                searchresults.textContent = 'None/Error';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const query = getparam('g');
+            if (query) {
+                showresults(query);
+            }
+        });
+    </script>
+</body>
+</html>
