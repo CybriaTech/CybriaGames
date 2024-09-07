@@ -72,8 +72,8 @@ async function inject() {
                     });
                    `;
                     ifrdoc.head.appendChild(ifrscr);
-                };
-            });
+                });
+            }
 
             addscr();
 
