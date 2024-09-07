@@ -35,7 +35,7 @@
                 const response = await fetch('/json/games.json');
                 const games = await response.json();
                 document.querySelector('.game-title').textContent = `Results for "${query}"`;
-                document.title = `Results for "${query} | CybriaGames"`;
+                document.title = `Results for "${query}" | CybriaGames"`;
 
                 const outputgmes = games.filter(game =>
                     game.title.toLowerCase().includes(query.toLowerCase())
