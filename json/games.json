@@ -118,5 +118,12 @@
     "creator": "LAX1DUDE and ayunami2000",
     "location": "eagler 1.8",
     "source": "/games/eagler-1.8"
+  },
+  {
+    "title": "Raft Wars",
+    "logo": "/images/games/raft-wars.png",
+    "creator": "Martijn Kunst",
+    "location": "raft wars",
+    "source": "/games/raft-wars"
   }
 ]
