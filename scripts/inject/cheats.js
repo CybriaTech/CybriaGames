@@ -10,7 +10,7 @@ async function inject() {
         cheatarea.innerHTML = '';
 
         cheats.forEach(cheat => {
-            const cheatoption = document.createElement('div');
+            const cheatoption = document.createElement('a');
             cheatoption.classList.add('cheat');
 
             const titlep = document.createElement('p');
