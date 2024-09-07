@@ -30,5 +30,7 @@ async function inject() {
 
             cheatarea.appendChild(cheatoption);
         });
+    }
+}
 
 inject();
