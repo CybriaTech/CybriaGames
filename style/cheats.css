@@ -40,11 +40,15 @@
   font-size: 1.6em;
   margin: 0.5em 0;
   color: #fff;
-  margin-bottom: 5px;
 }
 
 .cheat-creator {
   margin-top: 5px;
   font-size: 1.3em;
   color: #AAA;
+}
+
+#main-area {
+  margin-left: 2%;
+  margin-right: 2%;
 }
