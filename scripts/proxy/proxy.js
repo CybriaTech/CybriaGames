@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(url, { method: 'GET' })
             .then(response => {
 
-                const ignore = link.href.includes('.workers.dev/') || link.href.includes('.vercel.app/');
+                const ignore = link.href.includes('.workers.dev/') || link.href.includes('http://blackity-toilet.vercel.app/');
 
                 if (response.status === 404 && ignore) {
                     link.removeAttribute("fails");
