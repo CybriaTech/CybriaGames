@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (response.status === 404 && ignore) {
                     link.removeAttribute("fails");
                     link.id = 'ignore';
+                    link.style.display = 'block';
                     return;
                 } else if ([200, 203, 403].includes(response.status)) {
                     link.id = 'works';
