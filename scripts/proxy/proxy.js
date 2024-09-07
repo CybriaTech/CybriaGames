@@ -42,7 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
         
         links.forEach(link => {
             const corsproxy = [
-                'https://cors.timmytamle569.workers.dev/'
+                'https://cors.timmytamle569.workers.dev/',
+                'https://kors.onrender.com/',
+                'https://tcors.vercel.app/'
             ];
 
             scancors(link, corsproxy);
