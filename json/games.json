@@ -125,5 +125,12 @@
     "creator": "Martijn Kunst",
     "location": "raft wars",
     "source": "/games/raft-wars"
+  },
+  {
+    "title": "Monkey Mart",
+    "logo": "/images/games/monkey-mart.png",
+    "creator": "TinyDobbinsGames",
+    "location": "monkey mart",
+    "source": "/games/monkey-mart"
   }
 ]
