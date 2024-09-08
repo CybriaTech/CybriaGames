@@ -155,5 +155,11 @@
     "logo": "/images/games/bloons-td-2.png",
     "creator": "Ninja Kiwi",
     "source": "/games/bloons-td-2"
+  },
+  {
+    "title": "Chrome Dino",
+    "logo": "/images/games/chrome-dino.png",
+    "creator": "Google LLC",
+    "source": "/games/chrome-dino"
   }
 ]
