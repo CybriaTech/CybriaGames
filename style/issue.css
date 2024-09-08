@@ -17,7 +17,6 @@
 }
 
 .issues-amount {
-  justify-content: flex-end;
   font-size: 2.6em;
   font-weight: 750;
   margin-top: 5px;
@@ -28,7 +27,6 @@
   display: flex;
   margin-bottom: 10px;
   gap: 10px;
-  justify-content: flex-start;
   align-items: center;
   height: auto;
   font-size: 2.6em;
