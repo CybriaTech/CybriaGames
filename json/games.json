@@ -132,5 +132,12 @@
     "creator": "TinyDobbinsGames",
     "location": "monkey mart",
     "source": "/games/monkey-mart"
+  },
+  {
+    "title": "Gold Miner Vegas",
+    "logo": "/images/games/gold-vegas.png",
+    "creator": "CraDiff Studio",
+    "location": "gold miner vegas",
+    "source": "/games/gold-miner-vegas"
   }
 ]
