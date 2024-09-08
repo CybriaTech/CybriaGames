@@ -17,8 +17,6 @@
 }
 
 .issues-amount {
-  display: flex;
-  align-items: center;
   font-size: 2.6em;
   font-weight: 750;
   margin-top: 5px;
@@ -27,6 +25,9 @@
 
 #closed-amount,
 #open-amount {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   margin-left: 10px;
   margin-right: 10px;
 }
