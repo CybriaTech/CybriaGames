@@ -14,7 +14,8 @@
 }
 
 #issue-body,
-#issue-main {
+#issue-main,
+.issues-list {
   margin: 0 5% 0 5%;
 }
 
