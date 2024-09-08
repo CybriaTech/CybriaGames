@@ -179,5 +179,11 @@
     "logo": "/images/games/bloons-td-3.png",
     "creator": "Ninja Kiwi",
     "source": "/games/bloons-td-3"
+  },
+  {
+    "title": "Geometry Dash Scratch",
+    "logo": "/images/games/geometry-dash-scratch.png",
+    "creator": "RobTop Games",
+    "source": "/games/geometry-dash-scratch"
   }
 ]
