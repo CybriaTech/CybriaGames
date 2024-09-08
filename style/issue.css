@@ -26,6 +26,7 @@
 
 .issue-new {
   display: flex;
+  margin-bottom: 5px;
   gap: 10px;
   justify-content: center;
   align-items: center;
