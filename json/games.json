@@ -146,5 +146,12 @@
     "creator": "Martijn Kunst",
     "location": "raft wars 2",
     "source": "/games/raft-wars-2"
+  },
+  {
+    "title": "The Impossible Quiz 2",
+    "logo": "/images/games/impossible-quiz-2.png",
+    "creator": "Splapp-me-do",
+    "location": "the impossible quiz 2",
+    "source": "/games/the-impossible-quiz-2"
   }
 ]
