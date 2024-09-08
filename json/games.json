@@ -185,5 +185,11 @@
     "logo": "/images/games/geometry-dash-scratch.png",
     "creator": "Griffpatch",
     "source": "/games/geometry-dash-scratch"
+  },
+  {
+    "title": "Google Snake",
+    "logo": "/images/games/google-snake.png",
+    "creator": "Google LLC",
+    "source": "/games/google-snake"
   }
 ]
