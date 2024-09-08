@@ -1,6 +1,7 @@
 #issue-main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: row;
   flex: 1;
 }
@@ -24,15 +25,19 @@
   color: #fff;
 }
 
+.amounts {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 #closed-amount,
 #open-amount {
-  align-items: center;
   display: flex;
   justify-content: flex-end;
-  margin: 0 10px 0 10px;
   margin-bottom: 5px;
   text-align: right;
-  width: 100%;
+  width: auto;
 }
 
 .issue-new {
