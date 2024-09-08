@@ -8,7 +8,7 @@
 
 .issue-new {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   height: auto;
