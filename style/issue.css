@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  height: 100vh;
 }
 
 .issue-new {
@@ -23,7 +24,7 @@
 }
 
 .issue-new:hover {
-  transform: scale(-3px);
+  transform: scale(1.03);
 }
 
 .fa {
