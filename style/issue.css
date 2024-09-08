@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #issue-body {
@@ -26,6 +27,7 @@
 #closed-amount,
 #open-amount {
   align-items: center;
+  display: flex;
   justify-content: flex-end;
   margin-left: 10px;
   margin-right: 10px;
