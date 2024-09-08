@@ -53,7 +53,8 @@ form {
 }
 
 #returnbtn,
-#fullbtn {
+#fullbtn,
+#refbtn {
   cursor: pointer;
   width: 45px;
   height: 45px;
@@ -67,12 +68,14 @@ form {
 }
 
 #returnbtn:hover,
-#fullbtn:hover {
+#fullbtn:hover,
+#refbtn:hover {
   background-color: #555;
 }
 
 #returnbtn svg,
-#fullbtn svg {
+#fullbtn svg,
+#refbtn svg {
   width: 30px !important;
 }
 
