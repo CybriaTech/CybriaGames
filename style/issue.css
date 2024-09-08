@@ -1,6 +1,7 @@
 #issue-main {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: row;
   width: 100%;
 }
@@ -29,9 +30,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-left: auto;
+  margin-left: 10px;
   margin-right: 10px;
-  width: 100%;
+  flex: 1;
   text-align: right;
 }
 
