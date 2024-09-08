@@ -1,3 +1,8 @@
+#issue-main {
+  display: flex;
+  flex-direction: row;
+}
+
 .issue-new {
   height: auto;
   font-size: 2.6em;
