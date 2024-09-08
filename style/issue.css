@@ -22,3 +22,7 @@
 .fa svg {
   width: 45px;
 }
+
+#main-area {
+  min-height: 100vh;
+}
