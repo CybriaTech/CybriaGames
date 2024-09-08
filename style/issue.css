@@ -17,11 +17,18 @@
 }
 
 .issues-amount {
+  display: flex;
+  align-items: center;
   font-size: 2.6em;
   font-weight: 750;
   margin-top: 5px;
   color: #fff;
-  gap: 10px;
+}
+
+#closed-amount,
+#open-amount {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .issue-new {
