@@ -153,5 +153,12 @@
     "creator": "Splapp-me-do",
     "location": "the impossible quiz 2",
     "source": "/games/the-impossible-quiz-2"
+  },
+  {
+    "title": "Gold Miner Special Edition",
+    "logo": "/images/games/gold-special.png",
+    "creator": "Intermix Network",
+    "location": "gold miner special",
+    "source": "/games/gold-miner-special"
   }
 ]
