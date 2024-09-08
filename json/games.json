@@ -4,161 +4,144 @@
     "title": "2048",
     "logo": "/images/games/2048.png",
     "creator": "Gabriele Cirulli",
-    "location": "2048",
     "source": "/games/2048"
   },
   {
     "title": "Subway Surfers Singapore",
     "logo": "/images/games/subway-surfers-1.png",
     "creator": "SYBO",
-    "location": "subway surfers singapore",
     "source": "/games/subway-singapore"
   },
   {
     "title": "Slope",
     "logo": "/images/games/slope.png",
     "creator": "Rob Kay",
-    "location": "slope",
     "source": "/games/slope"
   },
   {
     "title": "Cluster Rush",
     "logo": "/images/games/cluster-rush.png",
     "creator": "Landfall Games",
-    "location": "cluster rush",
     "source": "/games/cluster-rush"
   },
   {
     "title": "Time Shooter",
     "logo": "/images/games/time-shooter.png",
     "creator": "GoGoMan",
-    "location": "time shooter",
     "source": "/games/time-shooter"
   },
   {
     "title": "Getaway Shootout",
     "logo": "/images/games/getaway-shootout.png",
     "creator": "New Eich Games",
-    "location": "getaway shootout",
     "source": "/games/getaway-shootout"
   },
   {
     "title": "EaglercraftX 1.3",
     "logo": "/images/games/eagler-1.3.png",
     "creator": "LAX1DUDE and ayunami2000",
-    "location": "eagler 1.3",
     "source": "/games/eagler-1.3"
   },
   {
     "title": "Asteroids",
     "logo": "/images/games/asteroids.png",
     "creator": "Neave Games",
-    "location": "asteroids",
     "source": "/games/asteroids"
   },
   {
     "title": "The Impossible Quiz",
     "logo": "/images/games/the-impossible-quiz.png",
     "creator": "Splapp-me-do",
-    "location": "the impossible quiz",
     "source": "/games/the-impossible-quiz"
   },
   {
     "title": "Zombocalypse",
     "logo": "/images/games/zombocalypse.png",
     "creator": "John Funtanilla",
-    "location": "zombocalypse",
     "source": "/games/zombocalypse"
   },
   {
     "title": "Creative Kill Chamber",
     "logo": "/images/games/ckc.png",
     "creator": "ESP Animations",
-    "location": "ckc",
     "source": "/games/ckc"
   },
   {
     "title": "A Small World Cup",
     "logo": "/images/games/a-small-world-cup.png",
     "creator": "Rujo Games",
-    "location": "a small world cup",
     "source": "/games/a-small-world-cup"
   },
   {
     "title": "FNAF (Scratch)",
     "logo": "/images/games/fnaf-scratch.png",
     "creator": "PurpleLover1219",
-    "location": "fnaf scratch",
     "source": "/games/fnaf-scratch"
   },
   {
     "title": "OvO",
     "logo": "/images/games/ovo.png",
     "creator": "Dedra Games",
-    "location": "ovo",
     "source": "/games/ovo"
   },
   {
     "title": "Bloon's Tower Defense",
     "logo": "/images/games/bloons-td.png",
     "creator": "Ninja Kiwi",
-    "location": "bloons td",
     "source": "/games/bloons-td"
   },
   {
     "title": "EaglercraftX 1.5.2",
     "logo": "/images/games/eagler-1.5.png",
     "creator": "LAX1DUDE and ayunami2000",
-    "location": "eagler 1.5",
     "source": "/games/eagler-1.5"
   },
   {
     "title": "EaglercraftX 1.8",
     "logo": "/images/games/eagler-1.8.png",
     "creator": "LAX1DUDE and ayunami2000",
-    "location": "eagler 1.8",
     "source": "/games/eagler-1.8"
   },
   {
     "title": "Raft Wars",
     "logo": "/images/games/raft-wars.png",
     "creator": "Martijn Kunst",
-    "location": "raft wars",
     "source": "/games/raft-wars"
   },
   {
     "title": "Monkey Mart",
     "logo": "/images/games/monkey-mart.png",
     "creator": "TinyDobbinsGames",
-    "location": "monkey mart",
     "source": "/games/monkey-mart"
   },
   {
     "title": "Gold Miner Vegas",
     "logo": "/images/games/gold-vegas.png",
     "creator": "CraDiff Studio",
-    "location": "gold miner vegas",
     "source": "/games/gold-miner-vegas"
   },
   {
     "title": "Raft Wars 2",
     "logo": "/images/games/raft-wars-2.png",
     "creator": "Martijn Kunst",
-    "location": "raft wars 2",
     "source": "/games/raft-wars-2"
   },
   {
     "title": "The Impossible Quiz 2",
     "logo": "/images/games/impossible-quiz-2.png",
     "creator": "Splapp-me-do",
-    "location": "the impossible quiz 2",
     "source": "/games/the-impossible-quiz-2"
   },
   {
     "title": "Gold Miner Special Edition",
     "logo": "/images/games/gold-special.png",
     "creator": "Intermix Network",
-    "location": "gold miner special",
     "source": "/games/gold-miner-special"
+  },
+  {
+    "title": "Astray",
+    "logo": "/images/games/astray.png",
+    "creator": "Rye Terrell",
+    "source": "/games/astray"
   }
 ]
