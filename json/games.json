@@ -191,5 +191,11 @@
     "logo": "/images/games/google-snake.png",
     "creator": "Google LLC",
     "source": "/games/google-snake"
+  },
+  {
+    "title": "Gold Miner",
+    "logo": "/images/games/gold-miner.png",
+    "creator": "SENSPARK",
+    "source": "/games/gold-miner"
   }
 ]
