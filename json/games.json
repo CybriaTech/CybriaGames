@@ -167,5 +167,11 @@
     "logo": "/images/games/slope-2.png",
     "creator": "Rob Kay",
     "source": "/games/slope-2"
+  },
+  {
+    "title": "FNAW",
+    "logo": "/images/games/fnaw.png",
+    "creator": "Lax1dude",
+    "source": "/games/fnaw"
   }
 ]
