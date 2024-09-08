@@ -139,5 +139,12 @@
     "creator": "CraDiff Studio",
     "location": "gold miner vegas",
     "source": "/games/gold-miner-vegas"
+  },
+  {
+    "title": "Raft Wars 2",
+    "logo": "/images/games/raft-wars-2.png",
+    "creator": "Martijn Kunst",
+    "location": "raft wars 2",
+    "source": "/games/raft-wars-2"
   }
 ]
