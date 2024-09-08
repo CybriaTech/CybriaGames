@@ -197,5 +197,11 @@
     "logo": "/images/games/gold-miner.png",
     "creator": "SENSPARK",
     "source": "/games/gold-miner"
+  },
+  {
+    "title": "Getting Over It Scratch",
+    "logo": "/images/games/getting-over-it-scratch.png",
+    "creator": "Griffpatch",
+    "source": "/games/getting-over-it-scratch"
   }
 ]
