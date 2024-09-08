@@ -149,5 +149,11 @@
     "logo": "/images/games/cubefield.png",
     "creator": "YoArcade",
     "source": "/games/cubefield"
+  },
+  {
+    "title": "Bloon's Tower Defense 2",
+    "logo": "/images/games/bloons-td-2.png",
+    "creator": "Ninja Kiwi",
+    "source": "/games/bloons-td-2"
   }
 ]
