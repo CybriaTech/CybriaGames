@@ -3,7 +3,22 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+#issue-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 100vh;
+  margin: 0 2% 0 2%;
+}
+
+.issue-amount {
+  text-align: left;
+  font-size: 2.6em;
+  font-weight: 750;
+  color: #fff;
 }
 
 .issue-new {
