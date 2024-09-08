@@ -143,5 +143,11 @@
     "logo": "/images/games/astray.png",
     "creator": "Rye Terrell",
     "source": "/games/astray"
+  },
+  {
+    "title": "Cubefield",
+    "logo": "/images/games/cubefield.png",
+    "creator": "YoArcade",
+    "source": "/games/cubefield"
   }
 ]
