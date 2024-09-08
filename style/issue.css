@@ -11,6 +11,10 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+}
+
+#issue-body,
+#issue-main {
   margin: 0 2% 0 2%;
 }
 
