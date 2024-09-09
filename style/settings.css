@@ -9,7 +9,7 @@
 }
 
 #settings-box {
-  flex: 1;
+  margin: 15px;
   padding: 20px;
   max-width: calc(100vw - 20px);
   height: 100vh;
