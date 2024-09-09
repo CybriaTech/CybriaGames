@@ -3,6 +3,20 @@
   margin-right: 8%;
 }
 
+#settings-box {
+  flex: 1;
+  padding: 20px;
+  margin: 15px;
+  max-width: calc(100vw - 30px);
+  height: 100vh;
+  background-color: #22272E;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
 #settings-area {
   background-color: #1C2128;
   color: #fff;
