@@ -10,7 +10,7 @@
 
 #settings-box {
   flex: 1;
-  margin: 15px;
+  margin: 15px 0 15px 15px;
   padding: 20px;
   max-width: calc(100vw - 50px);
   height: 100vh;
