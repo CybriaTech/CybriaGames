@@ -32,12 +32,12 @@
 .sidebar-btn {
   display: flex;
   align-items: center;
-  background-color: #22272E;
+  background-color: #0095FF;
   color: #fff;
   border: none;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 10px;
-  font-size: 26px;
+  font-size: 23px;
   cursor: pointer;
   text-align: left;
   width: 100%;
@@ -48,12 +48,12 @@
 .sidebar-btn svg {
   margin-right: 10px;
   fill: #fff;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
 }
 
 .sidebar-btn:hover {
-  background-color: #0095FF;
+  background-color: #22272E;
 }
 
 .sidebar-divider {
