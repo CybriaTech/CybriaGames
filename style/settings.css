@@ -11,7 +11,6 @@
 #settings-box {
   flex: 1;
   padding: 20px;
-  margin: 15px;
   max-width: calc(100vw - 20px);
   height: 100vh;
   background-color: #22272E;
