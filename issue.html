@@ -44,7 +44,7 @@
                             </div>
                             <p class="issue-description">Lorem Ipsum and some other text i forgot</p>
                             <div class="issue-footer">
-                                <span class="issue-author">Posted by: Me!1!</span>
+                                <span class="issue-author"></span>
                                 <span class="issue-date">Created: Sept 08, 2024</span>
                             </div>
                         </div>
@@ -55,5 +55,18 @@
                 <script src="/scripts/fb/issue.js"></script>
     <script src="/scripts/inject/footer.js"></script>
         <script src="/scripts/main/ua.js"></script>
+                <script>
+const urip = document.querySelector("issue-author");
+
+fetch("https://api.ipify.org/?format=json")
+  .then(response => response.json())
+  .then(data => {
+    urip.innerText = 'Posted By:' + data.ip;
+  })
+  .catch(error => {
+    urip.innerText = "Err.";
+    console.error(error);
+  });
+                </script>
     </body>
 </html>
