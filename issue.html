@@ -61,7 +61,7 @@ const urip = document.querySelector(".issue-author");
 fetch("https://api.ipify.org/?format=json")
   .then(response => response.json())
   .then(data => {
-    urip.innerText = 'Posted By:' + data.ip;
+    urip.innerText = 'Posted By: ' + data.ip;
   })
   .catch(error => {
     urip.innerText = "Err.";
