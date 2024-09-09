@@ -9,9 +9,10 @@
 }
 
 #settings-box {
+  flex: 1;
   margin: 15px;
   padding: 20px;
-  max-width: calc(100vw - 20px);
+  max-width: calc(100vw - 50px);
   height: 100vh;
   background-color: #22272E;
   display: flex;
