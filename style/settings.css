@@ -1,0 +1,56 @@
+#settings-area {
+  background-color: #1C2128;
+  color: #fff;
+}
+
+#sidebar {
+  width: 200px;
+  background-color: #1C2128;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar-comp {
+  margin-bottom: 20px;
+}
+
+.sidebar-title {
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  background-color: #22272E;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-btn svg {
+  margin-right: 10px;
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-btn:hover {
+  background-color: #0095FF;
+}
+
+.sidebar-divider {
+  border: 1px solid #22272E;
+  margin: 1px 0;
+}
