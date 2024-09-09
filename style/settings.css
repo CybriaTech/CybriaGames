@@ -1,3 +1,8 @@
+#main-area {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
 #settings-area {
   background-color: #1C2128;
   color: #fff;
@@ -21,6 +26,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 1.2em;
+  text-align: left;
 }
 
 .sidebar-btn {
@@ -29,9 +35,9 @@
   background-color: #22272E;
   color: #fff;
   border: none;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 26px;
   cursor: pointer;
   text-align: left;
   width: 100%;
