@@ -100,14 +100,14 @@
 }
 
 .issue-title {
-  font-size: 1.2rem;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 .issue-status {
   padding: 5px 10px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .issue-status.open {
@@ -121,8 +121,9 @@
 }
 
 .issue-description {
-  font-size: 1rem;
+  font-size: 1.2em;
   color: #ddd;
+  text-align: left;
   margin-bottom: 15px;
 }
 
