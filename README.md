@@ -16,9 +16,8 @@
 
 <p align="center">Due to the sheer size of CybriaGames, sometimes the repo may be incapable of deployment, so try the portable version instead (beta testing)</p>
 
-<h2 align="center">Free Services</h2>
-
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/MyBooty165/verbose-garbanzo)
 [![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/MyBooty165/verbose-garbanzo)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/MyBooty165/verbose-garbanzo)
-[![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/CybriaTech/CybriaGames) (Main repo)
+[![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/CybriaTech/CybriaGames)
+[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/MyBooty165/verbose-garbanzo)
