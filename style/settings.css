@@ -63,6 +63,10 @@
   transition: background-color 0.3s ease;
 }
 
+.sidebar-btn.active {
+  background-color: #22272E;
+}
+
 .sidebar-btn svg {
   margin-right: 10px;
   fill: #fff;
