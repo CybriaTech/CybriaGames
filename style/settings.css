@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: row-reverse;
+  flex-direction: row;
   margin-left: 8%;
   margin: 20px;
   margin-right: 8%;
@@ -12,7 +12,7 @@
   flex: 1;
   padding: 20px;
   margin: 15px;
-  max-width: calc(100vw - 30px);
+  max-width: calc(100vw - 20px);
   height: 100vh;
   background-color: #22272E;
   display: flex;
