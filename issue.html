@@ -26,6 +26,26 @@
 <script src="/scripts/inject/header.js"></script>
 <div class="space" style="margin: 5%;"></div>
             <div id="main-area">
+                <div class="issue-create">
+                    <button id="close" class="close-btn"><svg class="fa-embed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></button>
+                    <p class="create-title" style="text-align: center; color: #fff; font-weight: 600; font-size: 2.5em;">Create An Issue</p>
+                    <div id="issue-info">
+                        <label class="issue-label" for="issue-title">Add A Title</label>
+                        <input class="issue-title" type="text" placeholder="Your Title">
+                        <label class="issue-label" for="issue-tag">Issue Tag</label>
+                        <select class="issue-tag">
+                            <option>Proxy Link</option>
+                            <option>Game</option>
+                            <option>Proxy Filter</option>
+                            <option>CybriaGames Link</option>
+                            <option>Widgetbot Chat</option>
+                            <option>Website</option>
+                        </select>
+                        <label class="issue-label" for="issue-description">Add A Description</label>
+                        <textarea class="issue-description" placeholder="Your Description"></textarea>
+                        <button class="issue-submit" onclick="submit()">Submit Your Issue</button>
+                    </div>
+                </div>
               <div id="issue-main">
                 <button class="issue-new"><svg class="fa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"/></svg> Create A New Issue</button>
                 <div class="amounts">
