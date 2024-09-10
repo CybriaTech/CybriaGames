@@ -51,4 +51,4 @@ function cloaknt() {
       link.href = "/images/cloak/new-tab-page.png";
     }
   }
-})();
+}
