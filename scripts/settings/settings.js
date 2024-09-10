@@ -31,7 +31,7 @@ function redircloak(title, iconUrl) {
 
             doc.body.appendChild(iframe);
 
-            location.replace("about:blank");
+            location.replace("https://www.google.com");
         }
     }
 }
