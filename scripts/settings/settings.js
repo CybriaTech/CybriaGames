@@ -1,4 +1,4 @@
-function ab() {
+function redircloak(title, iconUrl) {
     let inFrame;
     
     try {
@@ -31,7 +31,11 @@ function ab() {
 
             doc.body.appendChild(iframe);
 
-            location.replace("https://www.google.com");
+            location.replace("about:blank");
         }
     }
+}
+
+function ab() {
+    redircloak("about:blank", "/images/cloak/about-blank.png");
 }
