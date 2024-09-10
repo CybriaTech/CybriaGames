@@ -11,7 +11,6 @@
 #settings-box {
   margin: 35px 0 15px 15px;
   padding: 20px;
-  flex-direction: column;
   width: 75vw;
   height: 100vh;
   background-color: #1C2128;
@@ -158,6 +157,11 @@
 
 #ab-cloak {
   width: 250px;
+}
+
+#tab-cloak {
+  display: flex;
+  flex-direction: column;
 }
 
 
