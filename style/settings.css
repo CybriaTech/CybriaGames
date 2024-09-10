@@ -157,6 +157,12 @@
 
 #ab-cloak {
   width: 250px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+#ab-cloak:hover {
+  transform: scale(1.03);
 }
 
 #tab-cloak {
