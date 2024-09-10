@@ -144,6 +144,11 @@
   height: 100%;
   border-radius: 12px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tab-cloak:hover {
+  transform: scale(1.03);
 }
 
 .tab-cloak-img {
