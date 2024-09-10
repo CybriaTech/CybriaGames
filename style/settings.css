@@ -191,6 +191,7 @@
   display: flex;
   overflow: hidden;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
