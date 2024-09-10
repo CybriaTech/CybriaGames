@@ -31,7 +31,7 @@ function ab() {
 
             doc.body.appendChild(iframe);
 
-            location.replace("about:blank");
+            location.replace("https://www.google.com");
         }
     }
 }
