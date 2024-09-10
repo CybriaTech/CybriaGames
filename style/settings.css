@@ -170,7 +170,7 @@
   flex-direction: column;
 }
 
-#providedcloakers {
+.tab-cloak-slot {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
