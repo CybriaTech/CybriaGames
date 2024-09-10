@@ -155,4 +155,9 @@
   width: 250px;
 }
 
+#tabcloak {
+  display: flex;
+  flex-direction: row;
+}
+
 
