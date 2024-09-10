@@ -89,6 +89,7 @@
   display: flex;
   font-size: 2.3em;
   width: 100%;
+  margin-bottom: 10px;
   color: #fff;
 }
 
@@ -109,7 +110,7 @@
   height: auto;
   padding-top: 5px;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 5px;
   max-height: 100vh;
   align-items: center;
 }
