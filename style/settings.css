@@ -198,7 +198,7 @@
 .settings-actions {
   display: flex;
   overflow: visible;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
