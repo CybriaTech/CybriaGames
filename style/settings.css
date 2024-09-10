@@ -130,8 +130,9 @@
   background-color: #22272E;
 }
 
-.settings-input::focus {
+.settings-input:focus {
   outline: none;
+  border-color: transparent;
 }
 
 .tab-cloak-btn {
