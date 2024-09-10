@@ -103,13 +103,14 @@
 .settings-input-label {
   font-size: 1.5em;
   color: #fff;
+  margin-bottom: 2px;
   text-align: center;
 }
 
 .settings-input {
-  width: auto;
+  width: 75%;
   height: auto;
-  max-width: 100vw;
+  border: none;
   color: #555;
   font-size: 1.6em;
   max-height: 100vh;
