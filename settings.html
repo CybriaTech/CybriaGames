@@ -57,6 +57,9 @@
     <script>
 document.addEventListener('DOMContentLoaded', () => {
   var options = document.querySelectorAll('.sidebar-btn');
+  var main = document.getElementById('tab_cloak');
+
+  main.classList.add('active');
 
   options.forEach(option => {
         option.addEventListener('click', () => {
