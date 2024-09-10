@@ -183,6 +183,7 @@
   margin: 5px 0 5px 0;
   flex-direction: row;
   overflow-x: auto;
+  z-index: 9999;
   overflow-y: hidden;
 }
 
