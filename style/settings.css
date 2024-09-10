@@ -101,11 +101,9 @@
   height: auto;
   padding-top: 5px;
   margin-bottom: 15px;
-  transition: transform 0.3s ease;
   margin-top: 15px;
   max-height: 100vh;
   align-items: center;
-  cursor: pointer;
 }
 
 .settings-input-box:hover {
@@ -162,6 +160,7 @@
 
 #ab-cloak {
   width: 250px;
+  cursor: pointer;
   align-items: center;
   transition: transform 0.3s ease;
 }
