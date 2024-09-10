@@ -43,12 +43,18 @@ function ab() {
 function cloaknt() {
   document.title = "New Tab";
   var links = document.getElementsByTagName("link");
+  var chromeosua = navigator.userAgent.includes("CrOS");
   for (var i = 0, len = links.length; i < len; i++) {
     var link = links[i];
     if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
       link.type = "image/x-icon";
       link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/new-tab-page.png";
+
+      if (chromeosua) {
+        link.href = "/images/cloak/favi/new-tab-page.png";
+      } else {
+        link.href = "/images/cloak/favi/new-tab-chrome.png";
+      }
     }
   }
 }
