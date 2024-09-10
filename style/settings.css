@@ -179,8 +179,6 @@
   padding: 2px;
   width: 250px;
   text-align: center;
-  display: flex;
-  flex-direction: row;
   cursor: pointer;
   align-items: center;
   transition: transform 0.3s ease;
