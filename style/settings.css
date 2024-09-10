@@ -170,4 +170,9 @@
   flex-direction: column;
 }
 
+#providedcloakers {
+  display: flex;
+  flex-direction: row;
+}
+
 
