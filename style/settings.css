@@ -94,6 +94,7 @@
 }
 
 .settings-input-box {
+  box-shadow: 0 0 7px #22272E;
   background-color: #1C2128;
   border-radius: 10px;
   width: 400px;
