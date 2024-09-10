@@ -109,6 +109,10 @@
   text-align: center;
 }
 
+.settings-input-box-label {
+  align-items: center;
+}
+
 .settings-input {
   width: auto;
   height: auto;
@@ -138,7 +142,6 @@
 
 #ab-cloak {
   width: 250px;
-  align-items: center;
 }
 
 
