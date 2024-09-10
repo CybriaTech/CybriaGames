@@ -39,3 +39,7 @@ function redircloak(title, iconUrl) {
 function ab() {
     redircloak("about:blank", "/images/cloak/about-blank.png");
 }
+
+function ntc() {
+    redircloak("New Tab", "/images/cloak/favi/new-tab-page.png");
+}
