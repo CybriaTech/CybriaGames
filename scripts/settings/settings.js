@@ -62,3 +62,16 @@ function cloaknt() {
     }
   }
 }
+
+function cloakab() {
+  document.title = "about:blank";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/about-blank.png";
+    }
+  }
+}
