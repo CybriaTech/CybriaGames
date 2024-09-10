@@ -110,7 +110,7 @@
 }
 
 .settings-input {
-  width: 40%;
+  width: 400px;
   height: auto;
   border-radius: 10px;
   border: none;
@@ -135,6 +135,5 @@
   object-fit: cover;
   border-radius: 12px;
 }
-
 
 
