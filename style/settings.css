@@ -171,6 +171,7 @@
 
 .tab-cloak-slot {
   display: flex;
+  margin: 5px 0 5px 0;
   flex-direction: row;
   overflow-x: auto;
 }
