@@ -106,10 +106,6 @@
   align-items: center;
 }
 
-.settings-input-box:hover {
-  transform: scale(1.03);
-}
-
 .settings-input-label {
   font-size: 1.8em;
   color: #fff;
