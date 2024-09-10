@@ -173,6 +173,13 @@
 }
 
 #ab-cloak {
+  box-sizing: border-box;
+  box-shadow: 0 0 7px #555;
+  background-color: #1C2128;
+  border-radius: 10px;
+  height: auto;
+  padding: 2px;
+  max-height: 100vh;
   width: 250px;
   cursor: pointer;
   align-items: center;
