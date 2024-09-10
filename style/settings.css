@@ -98,6 +98,7 @@
   margin-bottom: 15px;
   margin-top: 15px;
   max-height: 100vh;
+  align-items: center;
   cursor: pointer;
   padding: 15px;
 }
