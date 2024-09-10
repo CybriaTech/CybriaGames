@@ -48,7 +48,7 @@ function cloaknt() {
     if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
       link.type = "image/x-icon";
       link.rel = "shortcut icon";
-      link.href = "/images/cloak/new-tab-page.png";
+      link.href = "/images/cloak/favi/new-tab-page.png";
     }
   }
 }
