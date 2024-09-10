@@ -144,6 +144,9 @@
   height: 100%;
   border-radius: 12px;
   cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 0 7px #555;
   transition: transform 0.3s ease;
 }
 
