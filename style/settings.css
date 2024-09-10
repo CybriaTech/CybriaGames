@@ -98,7 +98,6 @@
   margin-top: 15px;
   max-height: 100vh;
   display: flex;
-  flex-direction: row;
   align-items: center;
   cursor: pointer;
   padding: 15px;
