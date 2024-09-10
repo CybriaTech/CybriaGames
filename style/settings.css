@@ -92,6 +92,13 @@
   color: #fff;
 }
 
+.settings-actions-subtitle {
+  text-align: left;
+  display: flex;
+  font-size: 2em;
+  color: #fff;
+}
+
 .settings-input-box {
   box-sizing: border-box;
   box-shadow: 0 0 7px #555;
