@@ -13,7 +13,8 @@
   padding: 20px;
   width: 75vw;
   height: 100vh;
-  background-color: #22272E;
+  background-color: #1C2128;
+  border-left: 1px solid #22272E;
   display: flex;
   justify-content: flex-start;
   border-radius: 12px;
