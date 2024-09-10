@@ -122,12 +122,16 @@
   height: auto;
   border-radius: 10px;
   border: none;
-  color: #555;
+  color: #fff;
   font-size: 1.6em;
   max-height: 100vh;
   padding: 10px;
   margin: 0 15px 30px 15px;
   background-color: #22272E;
+}
+
+.settings-input::focus {
+  outline: none;
 }
 
 .tab-cloak-btn {
