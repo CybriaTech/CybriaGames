@@ -112,6 +112,8 @@
 .settings-input-box-label {
   align-items: center;
   font-size: 1.8em;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .settings-input {
