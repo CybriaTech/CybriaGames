@@ -39,3 +39,16 @@ function redircloak(title, iconUrl) {
 function ab() {
     redircloak("about:blank", "/images/cloak/about-blank.png");
 }
+
+function cloaknt() {
+  document.title = "New Tab";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/new-tab-page.png";
+    }
+  }
+})();
