@@ -55,6 +55,10 @@ function cloaknt() {
       } else {
         link.href = "/images/cloak/favi/new-tab-chrome.png";
       }
+
+      if (!document.querySelector("link[rel='icon']")) {
+          document.head.appendChild(link);
+      }
     }
   }
 }
