@@ -92,7 +92,7 @@
 .settings-input-box {
   background-color: #1C2128;
   border-radius: 10px;
-  width: 100%;
+  width: auto;
   height: auto;
   margin-bottom: 15px;
   margin-top: 15px;
