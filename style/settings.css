@@ -97,6 +97,7 @@
   display: flex;
   font-size: 2em;
   color: #fff;
+  margin-bottom: 5px;
 }
 
 .settings-input-box {
@@ -200,7 +201,7 @@
   overflow: visible;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 
