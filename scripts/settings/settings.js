@@ -1,3 +1,5 @@
+let deftitle = document.title;
+
 function redircloak(title, iconUrl) {
     let inFrame;
     
@@ -41,6 +43,7 @@ function ab() {
 }
 
 function cloaknt() {
+  if (!deftitle) deftitle = document.title;
   document.title = "New Tab";
   var links = document.getElementsByTagName("link");
   var chromeosua = navigator.userAgent.includes("CrOS");
@@ -64,6 +67,7 @@ function cloaknt() {
 }
 
 function cloakab() {
+  if (!deftitle) deftitle = document.title;
   document.title = "about:blank";
   var links = document.getElementsByTagName("link");
   for (var i = 0, len = links.length; i < len; i++) {
@@ -79,6 +83,10 @@ function cloakab() {
 function def() {
   var defa = "/images/cybriagames/favicon-circle.png";
   var link = document.querySelector("link[rel='icon']");
+
+  if (deftitle) {
+      document.title = deftitle;
+  }
 
   var link = document.querySelector("link[rel='icon']") || document.createElement("link");
   link.type = "image/x-icon";
