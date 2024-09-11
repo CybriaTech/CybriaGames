@@ -209,11 +209,10 @@ titleinput.addEventListener('keypress', function(event) {
 
 function scrollsettings(settingsid) {
     const settingspage = document.getElementById(settingsid);
-    const mainarea = document.getElementById('main-area');
     
-    if (mainarea && settingspage) {
-      settingspage.scrollIntoView({
-        top: settingspage.offsetTop,
+    if (settingspage) {
+      settingspage.scrollTo({
+        top: settingspage.scrollHeight,
         behavior: 'smooth'
       });
     }
