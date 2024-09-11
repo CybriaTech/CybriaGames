@@ -18,7 +18,8 @@
   display: flex;
   justify-content: flex-start;
   border-radius: 12px;
-  overflow: visible;
+  overflow-y: auto;
+  overflow-x: hidden;
   flex-direction: column;
 }
 
