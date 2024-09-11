@@ -1,4 +1,6 @@
 let deftitle = document.title;
+const faviinput = document.getElementById('favi-input');
+const titleinput = document.getElementById('title-input');
 
 function redircloak(title, iconUrl) {
     let inFrame;
@@ -97,3 +99,45 @@ function def() {
       document.head.appendChild(link);
   }
 }
+
+function customfavi(url) {
+    if (!url.startsWith('https://')) {
+        alert('Make sure it\'s a URL');
+        return;
+    }
+
+    let img = new Image();
+    img.onload = function() {
+        let link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+            link = document.createElement('link');
+            link.rel = 'icon';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+        link.href = url;
+    };
+    img.onerror = function() {
+        alert('Your URL is not an image.');
+    };
+    img.src = url;
+}
+
+function customtitle(custom_title) {
+    if (!deftitle) deftitle = document.title;
+    document.title = custom_title;
+}
+
+faviinput.addEventListener('input', function() {
+    const url = faviinput.value;
+    if (url) {
+        customfavi(url);
+    }
+});
+
+titleinput.addEventListener('input', function() {
+    const custom_title = titleinput.value;
+    if (custom_title) {
+        customtitle(custom_title);
+    }
+});
+
