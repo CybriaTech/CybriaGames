@@ -121,7 +121,7 @@ function cloakdgoc() {
 function cloakgslide() {
     cloak({
         title: "Google Slides",
-        iconUrl: "/images/cloak/favi/google-slides.png"
+        favicon: "/images/cloak/favi/google-slides.png"
     });
 }
 
@@ -135,7 +135,7 @@ function def() {
   var link = document.querySelector("link[rel='icon']") || document.createElement("link");
   link.type = "image/x-icon";
   link.rel = "icon";
-  link.href = state.favicon;
+  link.href = "";
 
   if (!document.querySelector("link[rel='icon']")) {
       document.head.appendChild(link);
