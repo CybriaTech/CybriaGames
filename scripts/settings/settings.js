@@ -82,6 +82,118 @@ function cloakab() {
   }
 }
 
+function cloakkhan() {
+  if (!deftitle) deftitle = document.title;
+  document.title = "Dashboard | Khan Academy";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/khan-academy.png";
+    }
+  }
+}
+
+function cloakggle() {
+  if (!deftitle) deftitle = document.title;
+  document.title = "Google";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/google.png";
+    }
+  }
+}
+
+function cloakkhan() {
+  if (!deftitle) deftitle = document.title;
+  document.title = "Dashboard | Khan Academy";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/khan-academy.png";
+    }
+  }
+}
+
+function cloakschoology() {
+  if (!deftitle) deftitle = document.title;
+  document.title = "Home | Schoology";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/schoology.png";
+    }
+  }
+}
+
+function cloakgclass() {
+  if (!deftitle) deftitle = document.title;
+  document.title = "Home";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/google-classroom.png";
+    }
+  }
+}
+
+function cloakdgoc() {
+  if (!deftitle) deftitle = document.title;
+  document.title = "Google Docs";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/google-docs.png";
+    }
+  }
+}
+
+function cloakschoology() {
+  if (!deftitle) deftitle = document.title;
+  document.title = "Home | Schoology";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/schoology.png";
+    }
+  }
+}
+
+function cloakgslide() {
+  if (!deftitle) deftitle = document.title;
+  document.title = "Google Slides";
+  var links = document.getElementsByTagName("link");
+  for (var i = 0, len = links.length; i < len; i++) {
+    var link = links[i];
+    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+      link.type = "image/x-icon";
+      link.rel = "shortcut icon";
+      link.href = "/images/cloak/favi/google-slides.png";
+    }
+  }
+}
+
 function def() {
   var defa = "/images/cybriagames/favicon-circle.png";
   var link = document.querySelector("link[rel='icon']");
