@@ -24,8 +24,9 @@
 
 .settings-disclaimer {
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.3em;
   color: #ff0000
+  margin: 3px;
 }
 
 #settings-area {
