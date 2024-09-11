@@ -75,3 +75,12 @@ function cloakab() {
     }
   }
 }
+
+function default() {
+  var default = "/images/cybriagames/favicon-circle.png";
+  var link = document.querySelector("link[rel='icon']");
+
+  if (link && default) {
+    link.href = default;
+  }
+}
