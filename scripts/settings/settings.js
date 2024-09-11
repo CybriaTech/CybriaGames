@@ -63,7 +63,7 @@ function cloak(state) {
         if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
             link.type = "image/x-icon";
             link.rel = "shortcut icon";
-            link.href = origfavi;
+            link.href = state.favicon;
         }
     }
     savechanges(state);
