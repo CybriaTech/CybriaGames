@@ -232,4 +232,12 @@
   height: 100vh;
 }
 
+.settingtab.visible {
+  display: block;
+}
+
+.settingtab.hidden {
+  display: none;
+}
+
 
