@@ -210,11 +210,16 @@ titleinput.addEventListener('keypress', function(event) {
 function switch(settingsid) {
     const settingspage = document.getElementById(settingsid);
 
-    settingspage.forEach(section => {
-        section.style.display = 'none';
-    });
+    const currentlyshown = document.querySelector('.settingtab.visible');
+    
+    if (currentlyshown) {
+        currentlyshown.classList.remove('visible');
+        currentlyshown.classList.add('hidden');
+    }
     
     if (settingspage) {
-        settingspage.style.display = 'block';
+        settingspage.classList.remove('hidden');
+        settingspage.classList.add('visible');
     }
-  }
+}
+
