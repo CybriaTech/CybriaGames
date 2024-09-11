@@ -208,10 +208,14 @@ titleinput.addEventListener('keypress', function(event) {
 });
 
 function scrollsettings(settingsid) {
+    const mainpage = document.getElementById('main-area');
     const settingspage = document.getElementById(settingsid);
     
     if (settingspage) {
+      const mainrect = mainpage.getBoundingClientRect();
+      const settingspagerect = targetElement.getBoundingClientRect();
       settingspage.scrollIntoView({
+        top: settingspagerect.top - mainrect.top + mainpage.scrollTop,
         behavior: 'smooth'
       });
     }
