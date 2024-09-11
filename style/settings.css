@@ -22,6 +22,12 @@
   flex-direction: column;
 }
 
+.settings-disclaimer {
+  text-align: center;
+  font-size: 1.7em;
+  color: #ff0000
+}
+
 #settings-area {
   background-color: #1C2128;
   color: #fff;
