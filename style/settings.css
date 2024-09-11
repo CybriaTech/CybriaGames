@@ -103,7 +103,9 @@
 }
 
 #favi-input,
-#title-input {
+#title-input,
+#panickey-input,
+#panicloc-input {
   margin-bottom: 10px;
 }
 
