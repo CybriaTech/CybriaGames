@@ -135,7 +135,7 @@ function def() {
   var link = document.querySelector("link[rel='icon']") || document.createElement("link");
   link.type = "image/x-icon";
   link.rel = "icon";
-  link.href = "";
+  link.href = "/images/cybriagames/favicon-circle.png";
 
   if (!document.querySelector("link[rel='icon']")) {
       document.head.appendChild(link);
