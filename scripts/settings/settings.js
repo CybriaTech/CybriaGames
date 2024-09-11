@@ -54,6 +54,7 @@ function ab() {
 }
 
 function cloak(state) {
+    var origfavi = "/images/cybriagames/favicon-circle.png";
     if (!deftitle) deftitle = document.title;
     document.title = state.title;
     var links = document.getElementsByTagName("link");
@@ -62,7 +63,7 @@ function cloak(state) {
         if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
             link.type = "image/x-icon";
             link.rel = "shortcut icon";
-            link.href = state.favicon;
+            link.href = origfavi;
         }
     }
     savechanges(state);
