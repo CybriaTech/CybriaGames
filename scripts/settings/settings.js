@@ -207,13 +207,14 @@ titleinput.addEventListener('keypress', function(event) {
     }
 });
 
-function scrollsettings(settingsid) {
+function switch(settingsid) {
     const settingspage = document.getElementById(settingsid);
+
+    settingspage.forEach(section => {
+        section.style.display = 'none';
+    });
     
     if (settingspage) {
-      settingspage.scrollIntoView({
-        top: settingspage.offsetTop,
-        behavior: 'smooth'
-      });
+        settingspage.style.display = 'block';
     }
   }
