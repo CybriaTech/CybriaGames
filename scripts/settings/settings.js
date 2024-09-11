@@ -117,25 +117,11 @@ function cloakdgoc() {
     });
 }
 
-function cloakschoology() {
+function cloakgslide() {
     cloak({
         title: "Google Slides",
-        favicon: "/images/cloak/favi/google-slides.png"
+        iconUrl: "/images/cloak/favi/google-slides.png"
     });
-}
-
-function cloakgslide() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "Google Slides";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/google-slides.png";
-    }
-  }
 }
 
 function def() {
