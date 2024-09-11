@@ -211,7 +211,7 @@ function scrollsettings(settingsid) {
     const settingspage = document.getElementById(settingsid);
     
     if (settingspage) {
-      settingspage.scrollTo({
+      settingspage.scrollIntoView({
         top: settingspage.offsetTop,
         behavior: 'smooth'
       });
