@@ -80,7 +80,12 @@ function def() {
   var defa = "/images/cybriagames/favicon-circle.png";
   var link = document.querySelector("link[rel='icon']");
 
-  if (link && defa) {
-    link.href = defa;
+  var link = document.querySelector("link[rel='icon']") || document.createElement("link");
+  link.type = "image/x-icon";
+  link.rel = "icon";
+  link.href = defa;
+
+  if (!document.querySelector("link[rel='icon']")) {
+      document.head.appendChild(link);
   }
 }
