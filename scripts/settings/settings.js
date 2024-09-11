@@ -126,17 +126,16 @@ function cloakgslide() {
 }
 
 function def() {
-  var defa = "/images/cybriagames/favicon-circle.png";
   var link = document.querySelector("link[rel='icon']");
 
   if (deftitle) {
-      document.title = deftitle;
+      document.title = "Refresh The Page";
   }
 
   var link = document.querySelector("link[rel='icon']") || document.createElement("link");
   link.type = "image/x-icon";
   link.rel = "icon";
-  link.href = defa;
+  link.href = "";
 
   if (!document.querySelector("link[rel='icon']")) {
       document.head.appendChild(link);
