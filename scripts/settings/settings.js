@@ -2,7 +2,16 @@ let deftitle = document.title;
 const faviinput = document.getElementById('favi-input');
 const titleinput = document.getElementById('title-input');
 
-function redircloak(title, iconUrl) {
+function savechanges(state) {
+    localStorage.setItem('cloakState', JSON.stringify(state));
+}
+
+function loadchanges() {
+    const state = localStorage.getItem('cloakState');
+    return state ? JSON.parse(state) : {};
+}
+
+function redircloak(title, favicon) {
     let inFrame;
     
     try {
@@ -22,7 +31,7 @@ function redircloak(title, iconUrl) {
 
             const link = doc.createElement("link");
             link.rel = "icon";
-            link.href = iconUrl;
+            link.href = favicon;
             doc.head.appendChild(link);
 
             const iframe = doc.createElement("iframe");
@@ -44,140 +53,75 @@ function ab() {
     redircloak("about:blank", "/images/cloak/about-blank.png");
 }
 
-function cloaknt() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "New Tab";
-  var links = document.getElementsByTagName("link");
-  var chromeosua = navigator.userAgent.includes("CrOS");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-
-      if (chromeosua) {
-        link.href = "/images/cloak/favi/new-tab-page.png";
-      } else {
-        link.href = "/images/cloak/favi/new-tab-chrome.png";
-      }
-
-      if (!document.querySelector("link[rel='icon']")) {
-          document.head.appendChild(link);
-      }
+function cloak(state) {
+    if (!deftitle) deftitle = document.title;
+    document.title = state.title;
+    var links = document.getElementsByTagName("link");
+    for (var i = 0, len = links.length; i < len; i++) {
+        var link = links[i];
+        if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
+            link.type = "image/x-icon";
+            link.rel = "shortcut icon";
+            link.href = state.favicon;
+        }
     }
-  }
+    savechanges(state);
+}
+
+function cloaknt() {
+    cloak({
+        title: "New Tab",
+        favicon: navigator.userAgent.includes("CrOS") ? "/images/cloak/favi/new-tab-page.png" : "/images/cloak/favi/new-tab-chrome.png"
+    });
 }
 
 function cloakab() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "about:blank";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/about-blank.png";
-    }
-  }
+    cloak({
+        title: "about:blank",
+        favicon: "/images/cloak/favi/about-blank.png"
+    });
 }
 
 function cloakkhan() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "Dashboard | Khan Academy";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/khan-academy.png";
-    }
-  }
+    cloak({
+        title: "Dashboard | Khan Academy",
+        favicon: "/images/cloak/favi/khan-academy.png"
+    });
 }
 
 function cloakggle() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "Google";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/google.png";
-    }
-  }
-}
-
-function cloakkhan() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "Dashboard | Khan Academy";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/khan-academy.png";
-    }
-  }
+    cloak({
+        title: "Google",
+        favicon: "/images/cloak/favi/google.png"
+    });
 }
 
 function cloakschoology() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "Home | Schoology";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/schoology.png";
-    }
-  }
+    cloak({
+        title: "Home | Schoology",
+        favicon: "/images/cloak/favi/schoology.png"
+    });
 }
 
 function cloakgclass() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "Home";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/google-classroom.png";
-    }
-  }
+    cloak({
+        title: "Home",
+        favicon: "/images/cloak/favi/google-classroom.png"
+    });
 }
 
 function cloakdgoc() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "Google Docs";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/google-docs.png";
-    }
-  }
+    cloak({
+        title: "Google Docs",
+        favicon: "/images/cloak/favi/google-docs.png"
+    });
 }
 
 function cloakschoology() {
-  if (!deftitle) deftitle = document.title;
-  document.title = "Home | Schoology";
-  var links = document.getElementsByTagName("link");
-  for (var i = 0, len = links.length; i < len; i++) {
-    var link = links[i];
-    if (link.rel.toLowerCase() == "icon" || link.rel.toLowerCase() == "shortcut icon") {
-      link.type = "image/x-icon";
-      link.rel = "shortcut icon";
-      link.href = "/images/cloak/favi/schoology.png";
-    }
-  }
+    cloak({
+        title: "Google Slides",
+        favicon: "/images/cloak/favi/google-slides.png"
+    });
 }
 
 function cloakgslide() {
@@ -210,6 +154,10 @@ function def() {
   if (!document.querySelector("link[rel='icon']")) {
       document.head.appendChild(link);
   }
+savechanges({
+    title: deftitle,
+    favicon: defa
+   });
 }
 
 function customfavi(url) {
@@ -237,7 +185,18 @@ function customfavi(url) {
 function customtitle(custom_title) {
     if (!deftitle) deftitle = document.title;
     document.title = custom_title;
+    savechanges({
+        title: custom_title,
+        favicon: localStorage.getItem('favicon') || '/images/cybriagames/favicon-circle.png'
+    });
 }
+
+window.addEventListener('load', function() {
+    const state = loadchanges();
+    if (state.title && state.favicon) {
+        cloak(state);
+    }
+});
 
 faviinput.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
