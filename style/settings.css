@@ -26,7 +26,7 @@
   text-align: center;
   font-size: 1.3em;
   color: #ff0000;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #settings-area {
@@ -102,7 +102,7 @@
 
 #favi-input,
 #title-input {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .settings-actions-subtitle {
