@@ -127,17 +127,20 @@ function customtitle(custom_title) {
     document.title = custom_title;
 }
 
-faviinput.addEventListener('input', function() {
-    const url = faviinput.value;
-    if (url) {
-        customfavi(url);
+faviinput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        const url = faviinput.value;
+        if (url) {
+            customfavi(url);
+        }
     }
 });
 
-titleinput.addEventListener('input', function() {
-    const custom_title = titleinput.value;
-    if (custom_title) {
-        customtitle(custom_title);
+titleinput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        const custom_title = titleinput.value;
+        if (custom_title) {
+            customtitle(custom_title);
+        }
     }
 });
-
