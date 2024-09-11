@@ -225,7 +225,8 @@
   gap: 10px;
 }
 
-#tabcloak {
+#tabcloak,
+#emergency {
   height: 100%;
 }
 
