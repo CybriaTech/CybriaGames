@@ -97,6 +97,13 @@ function cloakggle() {
     });
 }
 
+function cloakbing() {
+    cloak({
+        title: "Bing",
+        favicon: "/images/cloak/favi/bing.png"
+    });
+}
+
 function cloakschoology() {
     cloak({
         title: "Home | Schoology",
