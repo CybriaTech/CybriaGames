@@ -77,10 +77,10 @@ function cloakab() {
 }
 
 function def() {
-  var default = "/images/cybriagames/favicon-circle.png";
+  var defa = "/images/cybriagames/favicon-circle.png";
   var link = document.querySelector("link[rel='icon']");
 
-  if (link && def) {
-    link.href = def;
+  if (link && defa) {
+    link.href = defa;
   }
 }
