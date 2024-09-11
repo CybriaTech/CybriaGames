@@ -140,10 +140,8 @@ function def() {
   if (!document.querySelector("link[rel='icon']")) {
       document.head.appendChild(link);
   }
-savechanges({
-    title: deftitle,
-    favicon: defa
-   });
+
+localStorage.removeItem('cloakState');
 }
 
 function customfavi(url) {
