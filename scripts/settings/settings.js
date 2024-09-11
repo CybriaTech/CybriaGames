@@ -212,7 +212,7 @@ function scrollsettings(settingsid) {
     
     if (settingspage) {
       settingspage.scrollTo({
-        top: settingspage.scrollHeight,
+        top: settingspage.offsetTop,
         behavior: 'smooth'
       });
     }
