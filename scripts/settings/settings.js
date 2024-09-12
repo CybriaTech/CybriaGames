@@ -208,6 +208,49 @@ titleinput.addEventListener('keypress', function(event) {
     }
 });
 
+const defaultkey = '`';
+const defaultloc = 'https://google.com';
+
+let panickey = localStorage.getItem('panickey') || defaultkey;
+let panicloc = localStorage.getItem('panicloc') || defaultloc;
+
+function initpanic() {
+    const keyinput = document.getElementById('panickey-input');
+    const locinput = document.getElementById('panicloc-input');
+    
+    if (keyinput) {
+        keyinput.value = panickey;
+        keyinput.addEventListener('input', (e) => {
+            const value = e.target.value;
+            if (value.length === 1) {
+                panickey = value;
+                localStorage.setItem('panickey', panickey);
+            }
+        });
+    }
+
+    if (locinput) {
+        locinput.value = panicloc;
+        locinput.addEventListener('input', (e) => {
+            const value = e.target.value;
+            if (value) {
+                panicloc = value;
+                localStorage.setItem('panicloc', panicloc);
+            }
+        });
+    }
+}
+        
+window.addEventListener('load', initpanic);
+
+document.addEventListener('keydown', (e) => {
+    localStorage.setItem('panickey', panickey);
+    if (e.key === panickey) {
+        localStorage.setItem('panicloc', panicloc);
+        window.location.href = panicloc;
+    }
+});
+
 function rev() {
     localStorage.removeItem('panicloc');
     localStorage.removeItem('panickey');
