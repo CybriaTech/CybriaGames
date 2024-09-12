@@ -243,13 +243,11 @@ function initpanic() {
         
 window.addEventListener('load', initpanic);
 
-document.addEventListener('keydown', (e) => {
-    localStorage.getItem("panickey");
-    if (e.key === panickey) {
-        window.location.href = panicloc;
-        localStorage.getItem("panicloc");
-    }
-});
+const activeElement = document.activeElement;
+if (activeElement.tagName !== 'INPUT' && e.key === panickey) {
+    window.location.href = panicloc;
+}
+
 
 function rev() {
     const locinput = document.getElementById('panicloc-input');
