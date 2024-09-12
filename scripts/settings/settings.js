@@ -210,7 +210,7 @@ titleinput.addEventListener('keypress', function(event) {
 function switch(settingsid) {
     const settingspage = document.getElementById(settingsid);
 
-    const currentlyshown = document.querySelector('.settingtab.visible');
+    const currentlyshown = document.querySelector('.visible');
     
     if (currentlyshown) {
         currentlyshown.classList.remove('visible');
