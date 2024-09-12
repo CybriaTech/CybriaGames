@@ -217,33 +217,31 @@ let panicloc = localStorage.getItem('panicloc') || defaultloc;
 const keyinput = document.getElementById('panickey-input');
 const locinput = document.getElementById('panicloc-input');
 
-if (keyinput) {
-    keyinput.addEventListener('input', (e) => {
-        const value = e.target.value;
-        if (value.length === 1) {
-            panickey = value;
-            localStorage.setItem('panickey', panickey);
-        }
-    });
-
-    window.addEventListener('load', () => {
+function initpanic() {
+    if (keyinput) {
         keyinput.value = panickey;
-    });
-}
+        keyinput.addEventListener('input', (e) => {
+            const value = e.target.value;
+            if (value.length === 1) {
+                panickey = value;
+                localStorage.setItem('panickey', panickey);
+            }
+        });
+    }
 
-if (locinput) {
-    locinput.addEventListener('input', (e) => {
-        const value = e.target.value;
-        if (value) {
-            panicloc = value;
-            localStorage.setItem('panicloc', panicloc);
-        }
-    });
-
-    window.addEventListener('load', () => {
+    if (locinput) {
         locinput.value = panicloc;
-    });
+        locinput.addEventListener('input', (e) => {
+            const value = e.target.value;
+            if (value) {
+                panicloc = value;
+                localStorage.setItem('panicloc', panicloc);
+            }
+        });
+    }
 }
+
+window.addEventListener('load', initpanic);
 
 document.addEventListener('keydown', (e) => {
     localStorage.setItem('panickey', panickey);
