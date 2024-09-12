@@ -252,3 +252,11 @@ document.addEventListener('keydown', (e) => {
         window.location.href = panicloc;
     }
 });
+
+function rev() {
+    localStorage.removeItem('panicloc');
+    localStorage.removeItem('panickey');
+    locinput.value = panicloc;
+    panickey.value = panickey;
+}
+    
