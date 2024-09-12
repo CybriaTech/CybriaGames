@@ -206,15 +206,3 @@ titleinput.addEventListener('keypress', function(event) {
         }
     }
 });
-
-function scrollsettings(settingsid) {
-    const settingspage = document.getElementById(settingsid);
-    
-    if (settingspage) {
-      settingspage.scrollIntoView({
-        top: settingspage.offsetTop,
-        behavior: 'smooth'
-      });
-    }
-  }
-
