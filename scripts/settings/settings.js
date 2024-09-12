@@ -247,3 +247,9 @@ window.addEventListener('load', () => {
     locinput.value = panicloc;
 });
 
+document.addEventListener('keydown', (e) => {
+    if (e.key === panickey) {
+        window.location.href = panicloc;
+    }
+});
+
