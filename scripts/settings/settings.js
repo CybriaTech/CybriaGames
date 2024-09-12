@@ -208,7 +208,7 @@ titleinput.addEventListener('keypress', function(event) {
 });
 
 function switch(settingsid) {
-    const settingspage = document.getElementById(settingsid);
+    const settingspage = document.querySelector('.hidden');
 
     const currentlyshown = document.querySelector('.visible');
     
