@@ -244,7 +244,7 @@ function initpanic() {
 window.addEventListener('load', initpanic);
 
 document.addEventListener('keydown', (e) => {
-    const ae = document.ae;
+    const ae = document.activeElement;
     
     if (ae.tagName !== 'INPUT' && e.key === panickey) {
         window.location.href = panicloc;
