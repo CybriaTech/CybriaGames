@@ -234,7 +234,9 @@ locinput.addEventListener('input', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
+    localStorage.setItem('panickey', panickey);
     if (e.key === panickey) {
+        localStorage.setItem('panicloc', panicloc);
         window.location.href = panicloc;
     }
 });
@@ -242,10 +244,4 @@ document.addEventListener('keydown', (e) => {
 window.addEventListener('load', () => {
     keyinput.value = panickey;
     locinput.value = panicloc;
-});
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === panickey) {
-        window.location.href = panicloc;
-    }
 });
