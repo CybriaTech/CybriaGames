@@ -243,8 +243,3 @@ document.addEventListener('keydown', (e) => {
         window.location.href = panicloc;
     }
 });
-
-window.addEventListener('load', () => {
-    keyinput.value = panickey;
-    locinput.value = panicloc;
-});
