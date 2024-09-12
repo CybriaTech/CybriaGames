@@ -214,10 +214,10 @@ const defaultloc = 'https://google.com';
 let panickey = localStorage.getItem('panickey') || defaultkey;
 let panicloc = localStorage.getItem('panicloc') || defaultloc;
 
-const keyinput = document.getElementById('panickey-input');
-const locinput = document.getElementById('panicloc-input');
-
 function initpanic() {
+    const keyinput = document.getElementById('panickey-input');
+    const locinput = document.getElementById('panicloc-input');
+    
     if (keyinput) {
         keyinput.value = panickey;
         keyinput.addEventListener('input', (e) => {
