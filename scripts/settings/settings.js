@@ -137,9 +137,8 @@ function def() {
 
   if (deftitle) {
       document.title = "Saving Changes...";
+      window.location.reload;
   }
-
-  window.location.reload;
 
   var link = document.querySelector("link[rel='icon']") || document.createElement("link");
   link.type = "image/x-icon";
