@@ -217,21 +217,33 @@ let panicloc = localStorage.getItem('panicloc') || defaultloc;
 const keyinput = document.getElementById('panickey-input');
 const locinput = document.getElementById('panicloc-input');
 
-keyinput.addEventListener('input', (e) => {
-    const value = e.target.value;
-    if (value.length === 1) {
-        panickey = value;
-        localStorage.setItem('panickey', panickey);
-    }
-});
+if (keyinput) {
+    keyinput.addEventListener('input', (e) => {
+        const value = e.target.value;
+        if (value.length === 1) {
+            panickey = value;
+            localStorage.setItem('panickey', panickey);
+        }
+    });
 
-locinput.addEventListener('input', (e) => {
-    const value = e.target.value;
-    if (value) {
-        panicloc = value;
-        localStorage.setItem('panicloc', panicloc);
-    }
-});
+    window.addEventListener('load', () => {
+        keyinput.value = panickey;
+    });
+}
+
+if (locinput) {
+    locinput.addEventListener('input', (e) => {
+        const value = e.target.value;
+        if (value) {
+            panicloc = value;
+            localStorage.setItem('panicloc', panicloc);
+        }
+    });
+
+    window.addEventListener('load', () => {
+        locinput.value = panicloc;
+    });
+}
 
 document.addEventListener('keydown', (e) => {
     localStorage.setItem('panickey', panickey);
@@ -239,9 +251,4 @@ document.addEventListener('keydown', (e) => {
         localStorage.setItem('panicloc', panicloc);
         window.location.href = panicloc;
     }
-});
-
-window.addEventListener('load', () => {
-    keyinput.value = panickey;
-    locinput.value = panicloc;
 });
