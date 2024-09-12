@@ -250,6 +250,8 @@ document.addEventListener('keydown', (e) => {
 });
 
 function rev() {
+    const locinput = document.getElementById('panicloc-input');
+    
     localStorage.removeItem('panicloc');
     localStorage.removeItem('panickey');
     locinput.value = panicloc;
