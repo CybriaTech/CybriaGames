@@ -236,10 +236,10 @@ if (keyInput && locInput) {
             localStorage.setItem('panicloc', panicloc);
         }
     });
-} else {
-    document.addEventListener('keydown', (e) => {
-        if (e.key === panickey) {
-            window.location.href = panicloc;
-        }
-    });
 }
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === panickey) {
+        window.location.href = panicloc;
+    }
+});
