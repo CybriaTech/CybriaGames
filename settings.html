@@ -129,6 +129,7 @@
                     </div>
               </div>
         <div class="space" style="margin-bottom: 5%;"></div>
+        <script src="/scripts/settings/panic.js"></script>
         <script src="/scripts/settings/settings.js"></script>
         <script src="/scripts/main/ua.js"></script>
         <script src="/scripts/inject/footer.js"></script>
@@ -181,14 +182,6 @@ function initpanic() {
 }
 
 window.addEventListener('load', initpanic);
-
-document.addEventListener('keydown', (e) => {
-    localStorage.setItem('panickey', panickey);
-    if (e.key === panickey) {
-        localStorage.setItem('panicloc', panicloc);
-        window.location.href = panicloc;
-    }
-});
     </script>
     </body>
 </html>
