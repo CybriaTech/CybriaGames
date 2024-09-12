@@ -215,7 +215,6 @@ let panickey = localStorage.getItem('panickey') || defaultkey;
 let panicloc = localStorage.getItem('panicloc') || defaultloc;
 
 function initpanic() {
-    console.log("Test 1 Success");
     const keyinput = document.getElementById('panickey-input');
     const locinput = document.getElementById('panicloc-input');
     
@@ -226,7 +225,6 @@ function initpanic() {
             if (value.length === 1) {
                 panickey = value;
                 localStorage.setItem('panickey', panickey);
-                console.log("Test 2 Success");
             }
         });
     }
@@ -238,7 +236,6 @@ function initpanic() {
             if (value) {
                 panicloc = value;
                 localStorage.setItem('panicloc', panicloc);
-                console.log("Test 3 Success");
             }
         });
     }
@@ -247,10 +244,10 @@ function initpanic() {
 window.addEventListener('load', initpanic);
 
 document.addEventListener('keydown', (e) => {
-    console.log("Test 4 Success");
+    localStorage.getItem("panickey");
     if (e.key === panickey) {
         window.location.href = panicloc;
-        console.log("Test 5 Success");
+        localStorage.getItem("panicloc");
     }
 });
 
