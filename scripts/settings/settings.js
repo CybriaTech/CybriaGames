@@ -207,19 +207,14 @@ titleinput.addEventListener('keypress', function(event) {
     }
 });
 
-function switch(settingsid) {
-    const settingspage = document.querySelector('.hidden');
-
-    const currentlyshown = document.querySelector('.visible');
-    
-    if (currentlyshown) {
-        currentlyshown.classList.remove('visible');
-        currentlyshown.classList.add('hidden');
-    }
+function scrollsettings(settingsid) {
+    const settingspage = document.getElementById(settingsid);
     
     if (settingspage) {
-        settingspage.classList.remove('hidden');
-        settingspage.classList.add('visible');
+      settingspage.scrollIntoView({
+        top: settingspage.offsetTop,
+        behavior: 'smooth'
+      });
     }
-}
+  }
 
