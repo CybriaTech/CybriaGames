@@ -217,24 +217,26 @@ let panicloc = localStorage.getItem('panicloc') || defaultloc;
 const keyinput = document.getElementById('panickey-input');
 const locinput = document.getElementById('panicloc-input');
 
-keyinput.value = panickey;
-locinput.value = panicloc;
+if (keyInput && locInput) {
+    keyInput.value = panickey;
+    locInput.value = panicloc;
 
-keyinput.addEventListener('input', (e) => {
-    const value = e.target.value;
-    if (value.length === 1) {
-        panickey = value;
-        localStorage.setItem('panickey', panickey);
-    }
-});
+    keyInput.addEventListener('input', (e) => {
+        const value = e.target.value;
+        if (value.length === 1) {
+            panickey = value;
+            localStorage.setItem('panickey', panickey);
+        }
+    });
 
-locinput.addEventListener('input', (e) => {
-    const value = e.target.value;
-    if (value) {
-        panicloc = value;
-        localStorage.setItem('panicloc', panicloc);
-    }
-});
+    locInput.addEventListener('input', (e) => {
+        const value = e.target.value;
+        if (value) {
+            panicloc = value;
+            localStorage.setItem('panicloc', panicloc);
+        }
+    });
+}
 
 document.addEventListener('keydown', (e) => {
     if (e.key === panickey) {
@@ -246,10 +248,3 @@ window.addEventListener('load', () => {
     keyinput.value = panickey;
     locinput.value = panicloc;
 });
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === panickey) {
-        window.location.href = panicloc;
-    }
-});
-
