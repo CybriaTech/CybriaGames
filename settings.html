@@ -38,7 +38,6 @@
                     <p class="sidebar-title">Appearance</p>
                     <button class="sidebar-btn" id="page_themes"><svg class="fa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M162.4 6c-1.5-3.6-5-6-8.9-6l-19 0c-3.9 0-7.5 2.4-8.9 6L104.9 57.7c-3.2 8-14.6 8-17.8 0L66.4 6c-1.5-3.6-5-6-8.9-6L48 0C21.5 0 0 21.5 0 48L0 224l0 22.4L0 256l9.6 0 364.8 0 9.6 0 0-9.6 0-22.4 0-176c0-26.5-21.5-48-48-48L230.5 0c-3.9 0-7.5 2.4-8.9 6L200.9 57.7c-3.2 8-14.6 8-17.8 0L162.4 6zM0 288l0 32c0 35.3 28.7 64 64 64l64 0 0 64c0 35.3 28.7 64 64 64s64-28.7 64-64l0-64 64 0c35.3 0 64-28.7 64-64l0-32L0 288zM192 432a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"/></svg> Themes</button>
                     <button class="sidebar-btn" id="page_style"><svg class="fa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M339.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L568.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S517.7-4.4 499.1 9.6L262.4 187.2c-24 18-38.2 46.1-38.4 76.1L339.3 367.1zm-19.6 25.4l-116-104.4C143.9 290.3 96 339.6 96 400c0 3.9 .2 7.8 .6 11.6C98.4 429.1 86.4 448 68.8 448L64 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg> Page Style</button>
-                    <button class="sidebar-btn" id="page_bg"><svg class="fa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M448 80c8.8 0 16 7.2 16 16l0 319.8-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3L48 96c0-8.8 7.2-16 16-16l384 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg> Backgrounds</button>
                   </div>
                   <hr class="sidebar-divider">
                   <div id="sidebar-comp">
@@ -126,6 +125,34 @@
                     </div>
                     </div>
                 </div>
+                <div id="themes">
+                    <h1 class="settings-box-title" style="margin-top: 10%;">Themes</h1>
+                    <hr style="margin: 5px 2% 5px 0; width: 75%;">
+                    <div class="settings-actions">
+                        <p class="settings-actions-subtitle" style="width: 100%; margin-top: 10px;">Page Themes</p>
+                    <div class="settings-input-box">
+                        <p class="settings-input-label">Select A Theme</p>
+                        <select class="select-settings">
+                            <option>Default</option>
+                            <option>Selenite</option>
+                            <option>Mocha</option>
+                            <option>Latte</option>
+                            <option>Macchiato</option>
+                            <option>Ugly</option>
+                            <option>Space</option>
+                            <option>Light Themed</option>
+                        </select>
+                    </div>
+                    <div class="settings-input-box">
+                        <p class="settings-input-label">Custom Background Color</p>
+                        <div id="colorpicker">
+                            <input id="color_picker">
+                            <p id="colorhex">#ffffff</p>
+                        </div>
+                        <p class="settings-disclaimer">Custom Option Is Being Fixed! Use Default</p>
+                    </div>
+                    </div>
+                </div>
                     </div>
               </div>
         <div class="space" style="margin-bottom: 5%;"></div>
@@ -145,6 +172,17 @@ document.addEventListener('DOMContentLoaded', () => {
             option.classList.add('active');
         });
     });
+});
+
+const colorpicker = document.getElementById('color_picker');
+const hex = document.getElementById('colorhex');
+
+const defaulthex = '#ffffff';
+hex.textContent = defaulthex;
+
+colorpicker.addEventListener('input', (event) => {
+    const chosenhex = event.target.value;;
+    hex.textContent = chosenhex;
 });
     </script>
     </body>
