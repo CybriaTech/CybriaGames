@@ -233,4 +233,14 @@
   height: 100vh;
 }
 
+#colorpicker {
+  background-color: #22272E;
+  border-radius: 12px;
+  width: 85%;
+  height: 85%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 
