@@ -240,6 +240,7 @@
   height: 85%;
   display: flex;
   text-align: center;
+  flex-direction: column;
   justify-content: center;
 }
 
