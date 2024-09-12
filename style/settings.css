@@ -243,4 +243,15 @@
   justify-content: center;
 }
 
+#color_picker {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
 
+#colorhex {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8em;
+}
