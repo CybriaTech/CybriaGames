@@ -136,8 +136,10 @@ function def() {
   var link = document.querySelector("link[rel='icon']");
 
   if (deftitle) {
-      document.title = "Refresh The Page";
+      document.title = "Saving Changes...";
   }
+
+  window.reload;
 
   var link = document.querySelector("link[rel='icon']") || document.createElement("link");
   link.type = "image/x-icon";
