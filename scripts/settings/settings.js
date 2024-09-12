@@ -244,9 +244,7 @@ function initpanic() {
 window.addEventListener('load', initpanic);
 
 document.addEventListener('keydown', (e) => {
-    localStorage.setItem('panickey', panickey);
     if (e.key === panickey) {
-        localStorage.setItem('panicloc', panicloc);
         window.location.href = panicloc;
     }
 });
