@@ -207,3 +207,43 @@ titleinput.addEventListener('keypress', function(event) {
         }
     }
 });
+
+const defaultkey = '`';
+const defaultloc = 'https://google.com';
+
+let panickey = localStorage.getItem('panickey') || defaultkey;
+let panicloc = localStorage.getItem('panicloc') || defaultloc;
+
+const keyinput = document.getElementById('panickey-input');
+const locinput = document.getElementById('panicloc-input');
+
+keyinput.value = panickey;
+locinput.value = panicloc;
+
+keyinput.addEventListener('input', (e) => {
+    const value = e.target.value;
+    if (value.length === 1) {
+        panickey = value;
+        localStorage.setItem('panickey', panickey);
+    }
+});
+
+locinput.addEventListener('input', (e) => {
+    const value = e.target.value;
+    if (value) {
+        panicloc = value;
+        localStorage.setItem('panicloc', panicloc);
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === panickey) {
+        window.location.href = panicloc;
+    }
+});
+
+window.addEventListener('load', () => {
+    keyinput.value = panickey;
+    locinput.value = panicloc;
+});
+
