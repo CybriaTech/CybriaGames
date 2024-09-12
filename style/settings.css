@@ -122,7 +122,7 @@
   box-shadow: 0 0 7px #555;
   background-color: #1C2128;
   border-radius: 10px;
-  width: 600px;
+  width: 500px;
   height: auto;
   padding-top: 5px;
   margin-bottom: 15px;
@@ -148,7 +148,7 @@
 }
 
 .settings-input {
-  width: auto;
+  width: 75%;
   height: auto;
   border-radius: 10px;
   border: none;
