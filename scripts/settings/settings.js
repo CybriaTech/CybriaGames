@@ -258,5 +258,7 @@ function rev() {
     localStorage.removeItem('panickey');
     locinput.value = panicloc;
     panickey.value = panickey;
+    document.title = "Saving Changes...";
+    window.location.href = window.location.href;
 }
     
