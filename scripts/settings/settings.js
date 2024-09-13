@@ -272,36 +272,12 @@ document.querySelector(".select-settings").addEventListener("change", function()
 });
 
 function lightmode() {
-    document.body.style.backgroundColor = "#ffffff";
-    document.body.style.color = "#000000";
+  const body = document.body;
+  const logo = document.querySelector('.header-img');
+  const currenttheme = body.dataset.theme || 'light';
     
-    document.querySelector('.header').style.backgroundColor = "#ffffff";
-    document.querySelector('.footer').style.backgroundColor = "#ffffff";
+  body.dataset.theme = 'light';
+  logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
+
+  body.classList.toggle('light-mode');
 }
-
-function intersections(entries, observer) {
-    entries.forEach(entry => {
-        const certainbtn = document.querySelector(`.sidebar-btn[data-target="#${entry.target.id}"]`);
-
-        if (entry.isIntersecting) {
-            document.querySelectorAll('.sidebar-btn').forEach(btn => btn.classList.remove('active'));
-
-            if (certainbtn) {
-                certainbtn.classList.add('active');
-            }
-        }
-    });
-}
-
-const observeroption = {
-    root: null,
-    threshold: 0.5
-};
-
-const observer = new IntersectionObserver(intersettingspages, observeroption);
-
-const settingspages = document.querySelectorAll('#tabcloak, #emergencykeys, #themes');
-settingspages.forEach(settingspages => {
-    observer.observe(settingspages);
-});
-
