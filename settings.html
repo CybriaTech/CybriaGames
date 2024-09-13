@@ -113,12 +113,12 @@
                     <div class="settings-input-box">
                         <p class="settings-input-label">Panic Key</p>
                         <input class="settings-input" id="panickey-input" type="text" maxlength="1" readonly>
-                        <p class="settings-disclaimer">Custom Option Is Being Fixed! Use Default</p>
+                        <p class="settings-disclaimer">Custom Option Is Being Fixed! DO NOT USE</p>
                     </div>
                     <div class="settings-input-box">
                         <p class="settings-input-label">Panic Location</p>
                         <input class="settings-input" id="panicloc-input" type="text" readonly>
-                        <p class="settings-disclaimer">Custom Option Is Being Fixed! Use Default</p>
+                        <p class="settings-disclaimer">Custom Option Is Being Fixed! DO NOT USE</p>
                     </div>
                     <div id="ab-cloak" onclick="rev()">
                         <p class="settings-input-box-label" style="padding: 5px;">Revert To Default Keys</p>
@@ -146,7 +146,14 @@
                     <div class="settings-input-box">
                         <p class="settings-input-label">Custom Background Color</p>
                         <div id="colorpicker">
-                            <input id="color_picker" value="#ffffff" type="color">
+                            <input id="color_picker" class="forbg" value="#ffffff" type="color">
+                            <p id="colorhex">#ffffff</p>
+                        </div>
+                    </div>
+                    <div class="settings-input-box">
+                        <p class="settings-input-label">Custom Text Color</p>
+                        <div id="colorpicker">
+                            <input id="color_picker" class="fortext" value="#ffffff" type="color">
                             <p id="colorhex">#ffffff</p>
                         </div>
                     </div>
