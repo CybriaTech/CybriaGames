@@ -247,6 +247,7 @@
 #color_picker {
   cursor: pointer;
   border: none;
+  margin: 15px;
   width: 100%;
   height: 100%;
 }
