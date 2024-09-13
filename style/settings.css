@@ -240,7 +240,7 @@
   max-height: 100vh;
   padding: 10px;
   display: flex;
-  margin: 25px;
+  margin: 0 25px;
   box-sizing: border-box;
   text-align: center;
   flex-direction: column;
