@@ -242,6 +242,7 @@
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #color_picker {
