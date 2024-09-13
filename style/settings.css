@@ -236,8 +236,9 @@
 #colorpicker {
   background-color: #22272E;
   border-radius: 12px;
-  width: 85%;
-  height: 85%;
+  max-width: 100vw;
+  max-height: 100vh;
+  padding: 10px;
   display: flex;
   box-sizing: border-box;
   text-align: center;
