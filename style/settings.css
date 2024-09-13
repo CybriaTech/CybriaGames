@@ -250,7 +250,8 @@
   cursor: pointer;
   border: none;
   width: 100%;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   box-sizing: border-box;
   height: 20vh;
 }
