@@ -282,6 +282,7 @@ function lightmode() {
   body.classList.toggle('light-mode');
   header.classList.add('light-mode');
   footer.classList.add('light-mode');
+  nav.classList.add('light-mode');
   localStorage.setItem('theme', 'light');
 }
 
