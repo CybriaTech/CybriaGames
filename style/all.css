@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
   }
 
-  header {
+  #header {
     background-color: #1C2128;
     color: #fff;
     box-shadow: 0 0 7px #000;
@@ -53,7 +53,7 @@ body {
    color: #0095ff;
   }
 
-  footer {
+  #footer {
    background-color: #1C2128;
    z-index: 99999;
    box-shadow: 0 0 7px #000;
@@ -101,8 +101,8 @@ body {
    align-items: center;
   }
 
-  header.light-mode,
-  footer.light-mode,
+  #header.light-mode,
+  #footer.light-mode,
   body.light-mode {
    background-color: #fff;
    color: #000;
