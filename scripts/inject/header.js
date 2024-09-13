@@ -1,5 +1,5 @@
 document.write(`
-    <header>
+    <header id="header">
         <img class="header-img" alt="CYBRIAGAMES" src="/images/cybriagames/logo-name2half.png" onclick="window.location.href='/'">
         <nav class="header-links">
             <a class="header-link" href="/">Home</a>
