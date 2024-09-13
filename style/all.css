@@ -139,19 +139,21 @@ body {
    color: #555555;
   }
 
-  .header-links.light-mode,
-  .footer-a.light-mode,
+  body.light-mode .header-link {
+   color: #000;
+  }
+
+  body.light-mode .footer-a {
+   color: #000;
+  }
+
   .game.light-mode,
   .homebtn.light-mode,
   .search.light-mode,
   .submit.light-mode, 
   #header.light-mode,
   #footer.light-mode,
-  body.light-mode,
-  .footer-1.light-mode,
-  .footer-2.light-mode,
-  .footer-3.light-mode,
-  .footer-4.light-mode {
+  body.light-mode {
    color: #000;
   }
 
