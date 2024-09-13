@@ -281,3 +281,10 @@ function lightmode() {
 
   body.classList.toggle('light-mode');
 }
+
+function changemode() {
+    var selector = document.getElementById("mode").value;
+    if (selector === "Light") {
+        lightmode();
+    }
+}
