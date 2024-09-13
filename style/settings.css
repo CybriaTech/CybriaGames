@@ -242,6 +242,7 @@
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -250,8 +251,9 @@
   margin-right: 20px;
   margin-left: 20px;
   border: none;
-  width: 100%;
+  width: 70%;
   height: 95%;
+  margin-bottom: 10px;
 }
 
 #colorhex {
