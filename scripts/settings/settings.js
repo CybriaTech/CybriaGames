@@ -278,3 +278,30 @@ function lightmode() {
     document.querySelector('.header').style.backgroundColor = "#ffffff";
     document.querySelector('.footer').style.backgroundColor = "#ffffff";
 }
+
+function intersections(entries, observer) {
+    entries.forEach(entry => {
+        const certainbtn = document.querySelector(`.sidebar-btn[data-target="#${entry.target.id}"]`);
+
+        if (entry.isIntersecting) {
+            document.querySelectorAll('.sidebar-btn').forEach(btn => btn.classList.remove('active'));
+
+            if (certainbtn) {
+                certainbtn.classList.add('active');
+            }
+        }
+    });
+}
+
+const observeroption = {
+    root: null,
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver(intersettingspages, observeroption);
+
+const settingspages = document.querySelectorAll('#tabcloak, #emergencykeys, #themes');
+settingspages.forEach(settingspages => {
+    observer.observe(settingspages);
+});
+
