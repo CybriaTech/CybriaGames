@@ -1,5 +1,5 @@
 document.write(`
-    <footer>
+    <footer id="footer">
         <div class="footer-1">
             <p class="footer-title">Other</p>
             <a class="footer-a" href="/suggestions.html">Suggestions</a>
