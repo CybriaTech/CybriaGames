@@ -239,6 +239,7 @@
   width: 85%;
   height: 85%;
   display: flex;
+  box-sizing: border-box;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -248,12 +249,11 @@
 
 #color_picker {
   cursor: pointer;
-  margin-right: 20px;
-  margin-left: 20px;
   border: none;
-  width: 70%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
   height: 95%;
-  margin-bottom: 10px;
 }
 
 #colorhex {
