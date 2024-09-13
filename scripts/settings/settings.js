@@ -285,7 +285,7 @@ function lightmode() {
   localStorage.setItem('theme', 'light');
 }
 
-function darkmode()
+function darkmode() {
   var body = document.body;
   var logo = document.querySelector('.header-img');
   var currenttheme = body.dataset.theme || 'dark';
