@@ -263,19 +263,19 @@ function rev() {
     window.location.href = window.location.href;
 }
 
-  document.querySelector(".select-settings").addEventListener("change", function() {
+document.querySelector(".select-settings").addEventListener("change", function() {
     const svalue = this.value;
 
     if (svalue === "Light") {
-      lightmode();
+        lightmode();
     }
-  });
+});
 
 function lightmode() {
     document.body.style.backgroundColor = "#ffffff";
     document.body.style.color = "#000000";
     
-    document.querySelector('.header').style.backgroundColor = "#f0f0f0";
-    document.querySelector('.footer').style.backgroundColor = "#f0f0f0";
+    document.querySelector('.header').style.backgroundColor = "#ffffff";
+    document.querySelector('.footer').style.backgroundColor = "#ffffff";
 }
     
