@@ -148,10 +148,10 @@ body {
   #header.light-mode,
   #footer.light-mode,
   body.light-mode,
-  .footer-1,
-  .footer-2,
-  .footer-3,
-  .footer-4 {
+  .footer-1.light-mode,
+  .footer-2.light-mode,
+  .footer-3.light-mode,
+  .footer-4.light-mode {
    color: #000;
   }
 
