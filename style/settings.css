@@ -250,14 +250,14 @@
   cursor: pointer;
   border: none;
   width: 100%;
-  margin: 0;
+  margin: 20px;
   box-sizing: border-box;
-  height: 10vh;
+  height: 20vh;
 }
 
 #colorhex {
-  margin-top: 10px;
+  margin: 10px;
   color: #fff;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.3em;
 }
