@@ -147,7 +147,11 @@ body {
   .submit.light-mode, 
   #header.light-mode,
   #footer.light-mode,
-  body.light-mode {
+  body.light-mode,
+  .footer-1,
+  .footer-2,
+  .footer-3,
+  .footer-4 {
    color: #000;
   }
 
