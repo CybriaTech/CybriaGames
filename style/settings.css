@@ -251,6 +251,7 @@
   border: none;
   width: 80%;
   display: block;
+  margin: 20px 20px 0 20px;
   box-sizing: border-box;
   height: 20vh;
 }
