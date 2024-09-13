@@ -279,25 +279,12 @@ function lightmode() {
     document.querySelector('.footer').style.backgroundColor = "#ffffff";
 }
 
-function invp(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-function doscroll() {
-    const settingspages = document.querySelectorAll('#tabcloak, #emergencykeys, #themes');
-    const sidebarbtn = document.querySelectorAll('.sidebar-btn');
-
-    settingspages.forEach(section => {
-        if (invp(section)) {
-            const certainbtn = document.querySelector(`.sidebar-btn[data-target="#${section.id}"]`);
-
-            sidebarbtn.forEach(btn => btn.classList.remove('active'));
+function intersects(entries, observer) {
+    entries.forEach(entry => {
+        const certainbtn = document.querySelector(`.sidebar-btn[data-target="#${entry.target.id}"]`);
+        
+        if (entry.isIntersecting) {
+            document.querySelectorAll('.sidebar-btn').forEach(btn => btn.classList.remove('active'));
 
             if (certainbtn) {
                 certainbtn.classList.add('active');
@@ -306,6 +293,15 @@ function doscroll() {
     });
 }
 
-window.addEventListener('scroll', doscroll);
+const observer = {
+    root: null,
+    threshold: 0.6
+};
 
-    
+const observer = new IntersectionObserver(intersects, observer);
+
+const settingspages = document.querySelectorAll('#tabcloak, #emergencykeys, #themes');
+settingspages.forEach(section => {
+    observer.observe(section);
+});
+
