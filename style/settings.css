@@ -247,9 +247,11 @@
 
 #color_picker {
   cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
   border: none;
   width: 100%;
-  height: auto;
+  height: 95%;
 }
 
 #colorhex {
