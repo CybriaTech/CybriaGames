@@ -278,4 +278,34 @@ function lightmode() {
     document.querySelector('.header').style.backgroundColor = "#ffffff";
     document.querySelector('.footer').style.backgroundColor = "#ffffff";
 }
+
+function invp(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function doscroll() {
+    const settingspages = document.querySelectorAll('#tabcloak, #emergencykeys, #themes');
+    const sidebarbtn = document.querySelectorAll('.sidebar-btn');
+
+    settingspages.forEach(section => {
+        if (invp(section)) {
+            const certainbtn = document.querySelector(`.sidebar-btn[data-target="#${section.id}"]`);
+
+            sidebarbtn.forEach(btn => btn.classList.remove('active'));
+
+            if (certainbtn) {
+                certainbtn.classList.add('active');
+            }
+        }
+    });
+}
+
+window.addEventListener('scroll', doscroll);
+
     
