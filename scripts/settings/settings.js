@@ -280,6 +280,7 @@ function lightmode() {
   logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
 
   body.classList.toggle('light-mode');
+  localStorage.setItem('theme', 'light');
 }
 
 function changemode() {
@@ -288,3 +289,15 @@ function changemode() {
         lightmode();
     }
 }
+
+function models() {
+    const savedmode = localStorage.getItem('theme');
+    if (savedmode === 'light') {
+        lightmode()
+        document.getElementById("mode").value = 'Light';
+    }
+}
+
+window.onload = function() {
+    models();
+};
