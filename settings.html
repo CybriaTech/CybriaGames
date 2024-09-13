@@ -191,7 +191,7 @@ colorpicker.addEventListener('input', (event) => {
     hex.textContent = chosenhex;
 });
 
-var colorpick = document.querySelector(".colorpick-eyedropper-input-trigger");
+var colorpick = document.getElementById("colorpicker");
 
 while (colorpick.length > 0) {
     colorpick[0].parentNode.removeChild(colorpick[0]);
