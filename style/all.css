@@ -6,6 +6,7 @@ body {
     align-items: center;
     color: #fff;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
     margin: 0;
     min-height: 100vh;
   }
@@ -15,6 +16,7 @@ body {
     color: #fff;
     box-shadow: 0 0 7px #000;
     align-items: center;
+    transition: background-color 0.3s, color 0.3s;
     padding: 5px 20px;
     display: flex;
     z-index: 999999;
@@ -57,6 +59,7 @@ body {
    box-shadow: 0 0 7px #000;
    display: flex;
    bottom: 0;
+   transition: background-color 0.3s, color 0.3s;
    width: 100%;
    flex-direction: row;
    position: relative;
@@ -97,22 +100,3 @@ body {
    display: flex;
    align-items: center;
   }
-
-  .profile-picture {
-   width: 40px;
-   border-radius: 50%;
-   align-items: center;
-   margin: 8px;
-   object-fit: cover;
-  }
-
-  .header-profile {
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   align-items: center;
-   background-color: #4a4a4a;
-   display: flex;
-   justify-content: center;
-  }
-
