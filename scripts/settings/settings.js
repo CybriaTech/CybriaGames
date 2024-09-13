@@ -272,9 +272,9 @@ document.querySelector(".select-settings").addEventListener("change", function()
 });
 
 function lightmode() {
-  const body = document.body;
-  const logo = document.querySelector('.header-img');
-  const currenttheme = body.dataset.theme || 'light';
+  var body = document.body;
+  var logo = document.querySelector('.header-img');
+  var currenttheme = body.dataset.theme || 'light';
     
   body.dataset.theme = 'light';
   logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
@@ -282,14 +282,30 @@ function lightmode() {
   body.classList.toggle('light-mode');
   header.classList.add('light-mode');
   footer.classList.add('light-mode');
-  nav.classList.add('light-mode');
   localStorage.setItem('theme', 'light');
+}
+
+function darkmode()
+  var body = document.body;
+  var logo = document.querySelector('.header-img');
+  var currenttheme = body.dataset.theme || 'dark';
+    
+  body.dataset.theme = 'dark';
+  logo.src = '/images/cybriagames/logo-name2half.png';
+
+  body.classList.toggle('dark-mode');
+  header.classList.add('dark-mode');
+  footer.classList.add('dark-mode');
+  localStorage.removeItem('theme', 'light');
+  localStorage.setItem('theme', 'dark');
 }
 
 function changemode() {
     var selector = document.getElementById("mode").value;
     if (selector === "Light") {
         lightmode();
+    } else if (selector === "Dark") {
+        darkmode();
     }
 }
 
