@@ -268,8 +268,9 @@
 .select-settings {
   border: none;
   border-radius: 6px;
-  height: 65px;
+  height: 50px;
   color: #fff;
-  font-size: 1.5em;
-  background-color: #1C2128;
+  width: auto;
+  font-size: 1.8em;
+  background-color: #22272E;
 }
