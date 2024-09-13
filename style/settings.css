@@ -242,7 +242,7 @@
   box-sizing: border-box;
   text-align: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
