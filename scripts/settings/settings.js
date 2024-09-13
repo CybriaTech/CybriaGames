@@ -293,9 +293,9 @@ function darkmode()
   body.dataset.theme = 'dark';
   logo.src = '/images/cybriagames/logo-name2half.png';
 
-  body.classList.toggle('dark-mode');
-  header.classList.add('dark-mode');
-  footer.classList.add('dark-mode');
+  body.classList.remove('light-mode');
+  header.classList.remove('light-mode');
+  footer.classList.remove('light-mode');
   localStorage.removeItem('theme', 'light');
   localStorage.setItem('theme', 'dark');
 }
