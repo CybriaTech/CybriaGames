@@ -280,6 +280,8 @@ function lightmode() {
   logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
 
   body.classList.toggle('light-mode');
+  header.classList.add('light-mode');
+  footer.classList.add('light-mode');
   localStorage.setItem('theme', 'light');
 }
 
