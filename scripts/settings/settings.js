@@ -304,7 +304,9 @@ function changemode() {
     var selector = document.getElementById("mode").value;
     if (selector === "Light") {
         lightmode();
-    } else if (selector === "Dark") {
+    }
+
+    if (selector === "Dark") {
         darkmode();
     }
 }
