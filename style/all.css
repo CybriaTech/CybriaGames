@@ -100,3 +100,46 @@ body {
    display: flex;
    align-items: center;
   }
+
+  header.light-mode,
+  footer.light-mode,
+  body.light-mode {
+   background-color: #fff;
+   color: #000;
+  }
+
+  .int-desc.light-mode {
+   color: #3c3832;
+  }
+
+  .search.light-mode,
+  .submit.light-mode {
+   background-color: #ddd8d1;
+   color: #000;
+  }
+
+  .submit path.light-mode {
+   fill: #000;
+  }
+
+  .homebtn.light-mode {
+   border: 3px solid #000;
+   color: #000;
+  }
+
+  .game.light-mode {
+   border: 1px solid #333333;
+   color: #000;
+   background-color: #cac2b8;
+  }
+
+  .game.light-mode {
+   border: 1px solid #333333;
+   color: #000;
+   background-color: #cac2b8;
+  }
+
+  .creator.light-mode {
+   color: #555555;
+  }
+
