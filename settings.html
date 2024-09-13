@@ -161,7 +161,7 @@
                         <p class="settings-input-label">Custom Text Color</p>
                         <div id="colorpicker">
                             <input id="color_picker" class="fortext" value="#ffffff" type="color">
-                            <p id="colorhex" class="hex2">#ffffff</p>
+                            <p id="colorhex">#ffffff</p>
                         </div>
                     </div>
                     </div>
@@ -189,17 +189,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const colorpicker = document.getElementById('color_picker');
 const hex = document.getElementById('colorhex');
-const hex2 = document.querySelector('.hex2');
 
 const defaulthex = '#ffffff';
 hex.textContent = defaulthex;
-hex2.textContent = defaulthex;
 
-colorpicker.addEventListener('input', (event) => {
-    const chosenhex = event.target.value;
-    hex.textContent = chosenhex;
-    hex2.textContent = chosenhex;
-});
+function hexcolor() {
+    const colorhex = colorPicker.value;
+    colorpicker.style.backgroundColor = colorhex;
+    hex.textContent = `${colorhex}`;
+}
+colorPicker.addEventListener('input', hexcolor);
     </script>
     </body>
 </html>
