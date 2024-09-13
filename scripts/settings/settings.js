@@ -293,7 +293,7 @@ function changemode() {
 function models() {
     const savedmode = localStorage.getItem('theme');
     if (savedmode === 'light') {
-        lightmode()
+        lightmode();
         document.getElementById("mode").value = 'Light';
     }
 }
