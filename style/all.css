@@ -112,35 +112,30 @@ body {
    color: #0095ff;
   }
 
-  .int-desc.light-mode {
+  body.light-mode .int-desc {
    color: #3c3832;
   }
 
-  .search.light-mode,
-  .submit.light-mode {
+  body.light-mode .search,
+  body.light-mode .submit {
    background-color: #ddd8d1;
   }
 
-  .submit path.light-mode {
+  body.light-mode .submit path {
    fill: #000;
   }
 
-  .homebtn.light-mode {
+  body.light-mode .homebtn {
    border: 3px solid #000;
   }
 
-  .game.light-mode {
+  body.light-mode .game {
    border: 1px solid #333333;
    color: #000;
    background-color: #cac2b8;
   }
 
-  .game.light-mode {
-   border: 1px solid #333333;
-   background-color: #cac2b8;
-  }
-
-  .creator.light-mode {
+  body.light-mode .creator {
    color: #555555;
   }
 
