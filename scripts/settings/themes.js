@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function lightmode() {
   var body = document.body;
-  var logo = document.querySelector('.header-img');
+  var logo = document.querySelector('.header-img', '.title-img');
   var currenttheme = body.dataset.theme || 'light';
     
   body.dataset.theme = 'light';
