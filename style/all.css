@@ -118,7 +118,13 @@ body {
 
   body.light-mode .search,
   body.light-mode .submit {
-   background-color: #ddd8d1;
+   background-color: #fff;
+   box-shadow: 0 0 7px #000;
+   color: #000;
+  }
+
+  body.light-mode .search::placeholder {
+   color: #000;
   }
 
   body.light-mode .submit path {
@@ -132,7 +138,7 @@ body {
   body.light-mode .game {
    border: 1px solid #333333;
    color: #000;
-   background-color: #cac2b8;
+   background-color: #f0eded;
   }
 
   body.light-mode .creator {
@@ -195,12 +201,13 @@ body {
    color: #000;
   }
 
-  .game.light-mode,
-  .homebtn.light-mode,
-  .search.light-mode,
-  .submit.light-mode, 
-  #header.light-mode,
-  #footer.light-mode,
+  body.light-mode .game,
+  body.light-mode .homebtn,
+  body.light-mode .search,
+  body.light-mode .submit, 
+  body.light-mode #header,
+  body.light-mode #footer,
+  body.light-mode .title,
   body.light-mode {
    color: #000;
   }
@@ -208,7 +215,7 @@ body {
   body.light-mode .settings-input,
   body.light-mode #colorpicker,
   body.light-mode .select-settings {
-   background-color: #ddd8d1;
+   background-color: #f0eded;
    color: #000;
   }
 
