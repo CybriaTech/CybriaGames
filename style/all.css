@@ -222,3 +222,19 @@ body {
    color: #000;
   }
 
+  body.light-mode .cheats-heading {
+   color: #000;
+  }
+
+  body.light-mode .cheat {
+   background-color: #f0eded;
+  }
+
+  body.light-mode .cheat-title {
+   color: #000;
+  }
+
+  body.light-mode .cheat-creator {
+   color: #555555;
+  }
+
