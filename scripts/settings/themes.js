@@ -212,3 +212,11 @@ function r34() {
 function updatetheme(value) {
     document.getElementById("theme").value = value;
 }
+
+function changetheme() {
+    var selector = document.getElementById("theme").value;
+    if (selector === "Rule 34") {
+        r34();
+    } else if (selector === "Selenite") {
+    }
+}
