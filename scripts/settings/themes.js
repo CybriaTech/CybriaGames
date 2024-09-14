@@ -111,7 +111,7 @@ function adjustrbghex(rgb, adjustment) {
 function addbgcolor(selectedbgcolor) {
     document.body.style.backgroundColor = selectedbgcolor;
 
-    const custombgitems = ['#header', '#footer', '#settings-box', '.settings-input-box', '.sidebar-btn'];
+    const custombgitems = ['#header', '#footer', '#settings-box', '.settings-input-box', '.sidebar-btn', '#ab-cloak'];
     custombgitems.forEach(selector => {
         const items = document.querySelectorAll(selector);
         items.forEach(el => {
