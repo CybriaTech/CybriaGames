@@ -154,6 +154,7 @@
   border: none;
   color: #fff;
   font-size: 1.8em;
+  box-shadow: 0 0 3px #555;
   max-height: 100vh;
   padding: 12px;
   margin: 0 5px 30px 5px;
@@ -270,6 +271,7 @@
 }
 
 .select-settings {
+  box-shadow: 0 0 3px #555;
   border: none;
   border-radius: 6px;
   height: 50px;
