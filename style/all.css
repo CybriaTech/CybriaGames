@@ -178,14 +178,11 @@ body {
    background-color: #000;
   }
 
-  body.light-mode .tab-cloak-slot
-  body.light-mode .tab-cloak-btn
+  body.light-mode .tab-cloak-slot,
+  body.light-mode .tab-cloak-btn,
+  body.light-mode #ab-cloak,
   body.light-mode .settings-input-box,
   body.light-mode .settings-input {
-   background-color: #fff;
-  }
-
-  body.light-mode #ab-cloak {
    background-color: #fff;
   }
 
