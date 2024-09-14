@@ -238,3 +238,21 @@ body {
    color: #555555;
   }
 
+  body.light-mode .proxy-button,
+  body.light-mode #proxy-options,
+  body.light-mode #proxy-console {
+   color: #000;
+   background-color: #fff;
+  }
+
+  body.light-mode .proxy-button:hover {
+   background-color: #555;
+  }
+
+  body.light-mode #proxy-menu {
+   background-color: #f0eded;
+  }
+
+  body.light-mode .linkanchor {
+   color: #000;
+  }
