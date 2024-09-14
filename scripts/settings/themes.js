@@ -108,6 +108,22 @@ function adjustrbghex(rgb, adjustment) {
     };
 }
 
+function calcbright(r, g, b) {
+    return Math.sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);
+}
+
+function addboxshadow(bgcolor) {
+    const boxshadowstuff = ['#header', '#footer'];
+    const rgb = hextorbgconvert(bgcolor);
+    const brightness = calcbright(rgb.r, rgb.g, rgb.b);
+
+    const boxshadowcolor = brightness > 128 ? 'rgba(0, 0, 0, 0.3)' : 'rgba(255, 255, 255, 0.3)';
+    
+    document.querySelectorAll(boxshadowstuff).forEach(el => {
+        el.style.boxShadow = `0px 0 7px ${boxshadowcolor}`;
+    });
+}
+
 function addbgcolor(selectedbgcolor) {
     document.body.style.backgroundColor = selectedbgcolor;
 
