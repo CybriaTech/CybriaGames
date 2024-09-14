@@ -297,6 +297,11 @@ body {
    color: #000;
   }
 
+  body.rule34-mode .header-link:hover,
+  body.rule34-mode .footer-a:hover {
+   color: #0095ff;
+  }
+
   body.rule34-mode .header-link {
    color: #000;
   }
