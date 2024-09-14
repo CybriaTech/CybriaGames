@@ -255,7 +255,10 @@ body {
 
   body.light-mode .linkanchor {
    color: #000;
-   transition: color 0.3s ease;
+  }
+
+  body.light-mode .linkanchor:hover {
+   color: #0095FF;
   }
 
   body.light-mode .gtxt {
@@ -271,7 +274,12 @@ body {
   body.light-mode #fullbtn,
   body.light-mode #refbtn {
    background-color: #f0eded;
-   transition: background-color 0.3s ease;
+  }
+
+  body.light-mode #returnbtn:hover,
+  body.light-mode #fullbtn:hover,
+  body.light-mode #refbtn:hover {
+   background-color: #555;
   }
 
   body.light-mode #returnbtn path,
