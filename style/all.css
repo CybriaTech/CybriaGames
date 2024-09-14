@@ -311,6 +311,10 @@ body {
    color: #000;
   }
 
+  body.rule34-mode .header-img {
+   display: none;
+  }
+
   body.selenite-mode #header,
   body.selenite-mode #footer {
    justify-content: center;
