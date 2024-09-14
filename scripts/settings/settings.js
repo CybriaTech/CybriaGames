@@ -314,7 +314,7 @@ function changemode() {
 }
 
 function applyls() {
-    const selectsettings = document.querySelector(".select-settings");
+    const selectsettings = document.getElementById("mode");
     const savedmode = localStorage.getItem('theme');
     if (savedmode === 'light') {
         lightmode();
