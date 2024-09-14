@@ -292,22 +292,20 @@ body {
   }
 
   body.rule34-mode,
-  body.rule34-mode #header,
-  body.rule34-mode #footer {
+  body.rule34-mode #header {
    background-color: #AAE5A4;
    color: #000;
   }
 
-  body.rule34-mode .header-link:hover,
-  body.rule34-mode .footer-a:hover {
+  body.rule34-mode #footer {
+   display: none;
+  }
+
+  body.rule34-mode .header-link:hover {
    color: #0095ff;
   }
 
   body.rule34-mode .header-link {
-   color: #000;
-  }
-
-  body.rule34-mode .footer-a {
    color: #000;
   }
 
