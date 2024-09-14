@@ -156,6 +156,10 @@ body {
    color: #000;
   }
 
+  body.light-mode .sidebar-btn:hover {
+   background-color: #ddd8d1;
+  }
+
   body.light-mode .sidebar-btn path {
    fill: #000000;
   }
