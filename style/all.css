@@ -347,4 +347,7 @@ body {
    color: #fff;
    font-size: 16px;
    font-weight: 700;
+   text-align: center;
+   margin-right: 2rem;
+   margin-left: 1rem;
   }
