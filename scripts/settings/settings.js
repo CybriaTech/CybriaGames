@@ -302,6 +302,7 @@ function darkmode() {
   header.classList.remove('light-mode');
   footer.classList.remove('light-mode');
   localStorage.removeItem('theme', 'light');
+  document.document.getElementById("mode").value = 'Dark';
 }
 
 function changemode() {
@@ -318,6 +319,9 @@ function applyls() {
     const savedmode = localStorage.getItem('theme');
     if (savedmode === 'light') {
         lightmode();
-        document.querySelector(".select-settings").value = 'Light';
+    } else if (savedmode === 'dark') {
+        darkmode();
+    } else {
+        darkmode();
     }
 }
