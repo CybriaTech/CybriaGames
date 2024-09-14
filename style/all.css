@@ -312,6 +312,8 @@ body {
 
   body.selenite-mode #header,
   body.selenite-mode #footer {
+   padding: 0.7rem;
+   justify-content: center;
    background-color: #240046;
    color: #fff;
   }
@@ -326,6 +328,7 @@ body {
   }
 
   body.selenite-mode #header {
+   position: fixed;
    border-bottom-left-radius: 20px;
    border-bottom-right-radius: 20px;
    box-shadow: rgb(36, 0, 70) 0px 5px 10px 0px;
@@ -337,3 +340,9 @@ body {
    border-top-right-radius: 20px;
   }
 
+  body.selenite-mode .header-link,
+  body.selenite-mode .footer-a {
+   color: #fff;
+   font-size: 16px;
+   font-weight: 700;
+  }
