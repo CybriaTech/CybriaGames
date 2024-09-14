@@ -201,7 +201,8 @@ body {
    color: #000;
   }
 
-  body.light-mode .settings-input {
+  body.light-mode .settings-input,
+  body.light-mode #colorpicker {
    background-color: #ddd8d1;
    color: #000;
   }
