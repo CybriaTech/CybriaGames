@@ -108,6 +108,30 @@ function adjustrbghex(rgb, adjustment) {
     };
 }
 
+function calclum(rgb) {
+    const a = [rgb.r, rgb.g, rgb.b].map(function (v) {
+        v /= 255;
+        return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
+}
+
+function calcboxshadow(bgColor) {
+    const rbgcolor = hexToRGB(bgColor);
+    const luminance = calclum(rbgcolor);
+    const shadowadjust = luminance > 0.5 ? -30 : 30;
+    const shadowcolor = adjustrbgcolor(rbgcolor, shadowadjust);
+    const shadowhex = rgbToHex(shadowcolor.r, shadowcolor.g, shadowcolor.b);
+
+    const headerfooter = ['#header', '#footer'];
+    headerfooter.forEach(selector => {
+        const items = document.querySelectorAll(selector);
+        items.forEach(el => {
+            el.style.boxShadow = `0 0 7px ${shadowhex}`;
+        });
+    });
+}
+
 function addbgcolor(selectedbgcolor) {
     document.body.style.backgroundColor = selectedbgcolor;
 
@@ -130,6 +154,8 @@ function addbgcolor(selectedbgcolor) {
             el.style.backgroundColor = outputsubtractedrbg;
         });
     });
+
+    calcboxshadow(selectedColor);
 }
 
 function savetols(color) {
