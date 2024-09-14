@@ -212,7 +212,7 @@ body {
   }
 
   body.light-mode .settings-input,
-  body.light-mode #colorpickerbg
+  body.light-mode #colorpickerbg,
   body.light-mode #colorpickertxt,
   body.light-mode .select-settings {
    background-color: #f0eded;
