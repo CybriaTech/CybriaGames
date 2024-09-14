@@ -334,6 +334,8 @@ body {
 
   body.selenite-mode #header {
    position: fixed;
+   padding-top: 0;
+   padding-bottom: 0;
    top: 0;
    height: 45px;
    border-radius: 0 0 20px 20px;
