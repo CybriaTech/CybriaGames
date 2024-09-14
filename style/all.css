@@ -309,6 +309,10 @@ body {
    color: #000;
   }
 
+  .r34title {
+   color: #010299;
+  }
+
   body.rule34-mode .header-img {
    display: none;
   }
