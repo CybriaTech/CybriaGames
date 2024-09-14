@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('theme', 'light');
         } else if (svalue === "Dark") {
             darkmode();
+            localStorage.setItem('theme', 'dark');
         }
     });
 });
