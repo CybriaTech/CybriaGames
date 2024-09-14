@@ -241,6 +241,7 @@
   max-height: 100vh;
   padding: 10px;
   display: flex;
+  box-shadow: 0 0 3px #000;
   margin: 0 25px;
   box-sizing: border-box;
   text-align: center;
