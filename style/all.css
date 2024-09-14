@@ -333,6 +333,7 @@ body {
   body.selenite-mode #header {
    position: fixed;
    top: 0;
+   height: auto;
    border-radius: 0 0 20px 20px;
    box-shadow: rgb(36, 0, 70) 0px 5px 10px 0px;
   }
