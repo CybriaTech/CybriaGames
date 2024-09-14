@@ -111,7 +111,7 @@ function adjustrbghex(rgb, adjustment) {
 function addbgcolor(selectedbgcolor) {
     document.body.style.backgroundColor = selectedbgcolor;
 
-    const custombgitems = ['#header', '#footer'];
+    const custombgitems = ['#header', '#footer', '#settings-box', '.settings-input-box', '.sidebar-btn'];
     custombgitems.forEach(selector => {
         const items = document.querySelectorAll(selector);
         items.forEach(el => {
@@ -119,7 +119,7 @@ function addbgcolor(selectedbgcolor) {
         });
     });
 
-    const custombglightitems = ['#colorpickerbg', '#colorpickertxt', '.settings-input', 'select-settings'];
+    const custombglightitems = ['#colorpickerbg', '#colorpickertxt', '.settings-input', '.select-settings'];
     const rbghex = hextorbgconvert(selectedbgcolor);
     const subtractioncolor = adjustrbghex(rbghex, -6);
     const outputsubtractedrbg = rbgtohexconvert(subtractioncolor.r, subtractioncolor.g, subtractioncolor.b);
