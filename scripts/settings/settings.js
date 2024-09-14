@@ -266,10 +266,11 @@ function rev() {
 document.addEventListener('DOMContentLoaded', function() {
     applyls();
 
-    document.querySelector(".select-settings").addEventListener("change", function() {
+    document.document.getElementById("mode").addEventListener("change", function() {
         const svalue = this.value;
         if (svalue === "Light") {
             lightmode();
+            localStorage.setItem('theme', 'light');
         } else if (svalue === "Dark") {
             darkmode();
         }
