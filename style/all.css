@@ -151,6 +151,22 @@ body {
    color: #aaaaaa;
   }
 
+  body.light-mode hr {
+   color: #ddd8d1;
+  }
+
+  body.light-mode .sidebar-btn {
+   background-color: #fff;
+  }
+
+  body.light-mode .sidebar-btn path {
+   fill: #000000;
+  }
+
+  body.light-mode .sidebar-btn:hover {
+   background-color: #ddd8d1;
+  }
+
   .game.light-mode,
   .homebtn.light-mode,
   .search.light-mode,
