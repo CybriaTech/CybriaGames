@@ -147,6 +147,10 @@ body {
    color: #000;
   }
 
+  body.light-mode .sidebar-title {
+   color: #aaaaaa;
+  }
+
   .game.light-mode,
   .homebtn.light-mode,
   .search.light-mode,
