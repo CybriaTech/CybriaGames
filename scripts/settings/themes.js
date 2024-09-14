@@ -193,9 +193,11 @@ function r34() {
     
   if (logo) {
     logo.src = '/images/cybriagames/logo-name2half-r34.png';
+    logo.style.display = 'flex';
   }
   if (homelogo) {
     homelogo.src = '/images/cybriagames/logo-name2half-r34.png';
+    homelogo.style.display = 'flex';
   }
 
   body.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
@@ -219,10 +221,10 @@ function selenite() {
   body.dataset.theme = 'r34';
     
   if (logo) {
-    logo.src = '/images/cybriagames/logo-name2half.png';
+    logo.style.display = 'none';
   }
   if (homelogo) {
-    homelogo.src = '/images/cybriagames/logo-name2half.png';
+    homelogo.style.display = 'none';
   }
 
   body.classList.remove('light-mode', 'dark-mode', 'rule34-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
