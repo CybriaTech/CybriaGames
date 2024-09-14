@@ -293,7 +293,7 @@ body {
    color: #fff;
   }
 
-  body.selenite #header,
+/* body.selenite #header,
   body.selenite #footer, {
    background-color: #240046;
    box-shadow: rgb(36, 0, 70) 0px 5px 10px 0px;
@@ -308,3 +308,19 @@ body {
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
   }
+
+  body.r34 #header,
+  body.r34 #footer, {
+   background-color: #AAE5A4;
+   color: #000;
+  }
+
+  body.r34 #header {
+   background-color: #AAE5A4;
+   color: #000;
+  }
+
+  body.r34 #footer {
+   background-color: #AAE5A4;
+   color: #000;
+  } */
