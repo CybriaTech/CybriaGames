@@ -88,7 +88,7 @@ function applyls() {
     }
 }
 
-function hextorbgconvert(hex) {
+/* function hextorbgconvert(hex) {
     let bigint = parseInt(hex.slice(1), 16);
     let r = (bigint >> 16) & 255;
     let g = (bigint >> 8) & 255;
@@ -174,10 +174,9 @@ document.getElementById('color_picker_bg').addEventListener('input', function() 
 
 document.addEventListener('DOMContentLoaded', function() {
     loadcustomls();
-});
+}); */
 
 function reverts() {
-    localStorage.removeItem('custombgcolor');
     localStorage.removeItem('theme', 'light');
     window.location.reload();
 }
