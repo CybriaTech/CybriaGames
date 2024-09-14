@@ -329,6 +329,7 @@ body {
   body.selenite-mode {
    background-color: #10002B;
    color: #fff;
+   box-sizing: border-box;
    font-family: 'Prompt', sans-serif;
   }
 
