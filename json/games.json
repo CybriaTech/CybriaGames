@@ -215,5 +215,11 @@
     "logo": "/images/games/bloons-td-5.png",
     "creator": "Ninja Kiwi",
     "source": "/games/bloons-td-5"
+  },
+  {
+    "title": "World's Hardest Game",
+    "logo": "/images/games/whg.png",
+    "creator": "Snubby Land",
+    "source": "/games/whg"
   }
 ]
