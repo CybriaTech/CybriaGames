@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     applyls();
 
-    document.document.getElementById("mode").addEventListener("change", function() {
+    document.getElementById("mode").addEventListener("change", function() {
         const svalue = this.value;
         if (svalue === "Light") {
             lightmode();
@@ -119,8 +119,10 @@ function addboxshadow(bgcolor) {
 
     const boxshadowcolor = brightness > 128 ? 'rgba(0, 0, 0, 0.3)' : 'rgba(255, 255, 255, 0.3)';
     
-    document.querySelectorAll(boxshadowstuff).forEach(el => {
-        el.style.boxShadow = `0px 0 7px ${boxshadowcolor}`;
+    boxshadowstuff.forEach(selector => {
+        document.querySelectorAll(selector).forEach(el => {
+        el.style.boxShadow = `0 0 7px ${boxshadowcolor}`;
+        });
     });
 }
 
