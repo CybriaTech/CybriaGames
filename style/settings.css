@@ -233,7 +233,8 @@
   height: 100vh;
 }
 
-#colorpicker {
+#colorpicker_bg,
+#colorpicker_txt {
   background-color: #22272E;
   border-radius: 12px;
   max-width: 100vw;
