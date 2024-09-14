@@ -48,10 +48,10 @@ function darkmode() {
   body.dataset.theme = 'dark';
     
   if (logo) {
-    logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
+    logo.src = '/images/cybriagames/logo-name2half.png';
   }
   if (homelogo) {
-    homelogo.src = '/images/cybriagames/logo-name2half-lightmode.png';
+    homelogo.src = '/images/cybriagames/logo-name2half.png';
   }
 
   body.classList.remove('light-mode');
