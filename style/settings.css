@@ -38,7 +38,7 @@
 
 #sidebar {
   width: 200px;
-  background-color: #1C2128;
+  background-color: transparent;
   padding: 20px;
   display: flex;
   flex-direction: column;
