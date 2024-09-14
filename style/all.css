@@ -157,6 +157,7 @@ body {
 
   body.light-mode .sidebar-btn {
    background-color: #fff;
+   color: #000;
   }
 
   body.light-mode .sidebar-btn path {
