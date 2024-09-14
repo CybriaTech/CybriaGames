@@ -227,5 +227,11 @@
     "logo": "/images/games/tube-jumpers.png",
     "creator": "Pat Eichler",
     "source": "/games/tube-jumpers"
+  },
+  {
+    "title": "Tunnel Rush",
+    "logo": "/images/games/tunnel-rush.png",
+    "creator": "Deer Cat",
+    "source": "/games/tunnel-rush"
   }
 ]
