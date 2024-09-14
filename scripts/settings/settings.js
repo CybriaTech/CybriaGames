@@ -263,12 +263,17 @@ function rev() {
     window.location.href = window.location.href;
 }
 
-document.querySelector(".select-settings").addEventListener("change", function() {
-    const svalue = this.value;
+document.addEventListener('DOMContentLoaded', function() {
+    applyls();
 
-    if (svalue === "Light") {
-        lightmode();
-    }
+    document.querySelector(".select-settings").addEventListener("change", function() {
+        const svalue = this.value;
+        if (svalue === "Light") {
+            lightmode();
+        } else if (svalue === "Dark") {
+            darkmode();
+        }
+    });
 });
 
 function lightmode() {
@@ -309,14 +314,13 @@ function changemode() {
     }
 }
 
-function models() {
+function applyls() {
     const savedmode = localStorage.getItem('theme');
     if (savedmode === 'light') {
         lightmode();
-        document.getElementById("mode").value = 'Light';
+        document.querySelector(".select-settings").value = 'Light';
+    } else if (savedmode === 'dark') {
+        darkmode();
+        document.querySelector(".select-settings").value = 'Dark';
     }
 }
-
-window.onload = function() {
-    models();
-};
