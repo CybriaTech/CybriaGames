@@ -325,6 +325,7 @@ function applyls() {
     const savedmode = localStorage.getItem('theme');
     if (savedmode === 'light') {
         lightmode();
+        localStorage.setItem('theme', 'light');
     } else if (savedmode === 'dark') {
         darkmode();
     } else {
