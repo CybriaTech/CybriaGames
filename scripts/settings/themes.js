@@ -157,3 +157,8 @@ document.getElementById('color_picker_bg').addEventListener('input', function() 
 document.addEventListener('DOMContentLoaded', function() {
     loadcustomls();
 });
+
+function reverts() {
+    localStorage.removeItem('custombgcolor');
+    localStorage.removeItem('theme', 'light');
+}
