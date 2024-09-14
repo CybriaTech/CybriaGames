@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const colorpicker = document.getElementById('color_picker');
 const hex = document.getElementById('colorhex');
 
-const defaulthex = '#ffffff';
+const defaulthex = colorpicker.value;
 hex.textContent = defaulthex;
 
 function hexcolor() {
