@@ -313,7 +313,7 @@ body {
 
   body.selenite-mode #header,
   body.selenite-mode #footer {
-   padding: 0.7rem;
+   padding: 0.3rem;
    justify-content: center;
    background-color: #240046;
    color: #fff;
