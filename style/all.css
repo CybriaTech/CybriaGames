@@ -332,15 +332,14 @@ body {
 
   body.selenite-mode #header {
    position: fixed;
-   border-bottom-left-radius: 20px;
-   border-bottom-right-radius: 20px;
+   top: 0;
+   border-radius: 0 0 20px 20px;
    box-shadow: rgb(36, 0, 70) 0px 5px 10px 0px;
   }
 
   body.selenite-mode #footer {
-   box-shadow: rgb(36, 0, 70) 0px -5px 10px 0px
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
+   bottom: 0;
+   border-radius: 20px 20px 0 0;
   }
 
   body.selenite-mode .header-link,
