@@ -314,9 +314,16 @@ function changemode() {
 }
 
 function applyls() {
+    const selectsettings = document.querySelector(".select-settings");
     const savedmode = localStorage.getItem('theme');
-    if (savedmode === 'light') {
+    if (savedTheme === 'light') {
         lightmode();
-        document.querySelector(".select-settings").value = 'Light';
+        selectsettings.value = 'Light';
+    } else if (savedTheme === 'dark') {
+        darkmode();
+        selectsettings.value = 'Dark';
+    } else {
+        lightmode();
+        selectsettings.value = 'Light';
     }
 }
