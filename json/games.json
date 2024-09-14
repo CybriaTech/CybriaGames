@@ -221,5 +221,11 @@
     "logo": "/images/games/whg.png",
     "creator": "Snubby Land",
     "source": "/games/whg"
+  },
+  {
+    "title": "Tube Jumpers",
+    "logo": "/images/games/tube-jumpers.png",
+    "creator": "Pat Eichler",
+    "source": "/games/tube-jumpers"
   }
 ]
