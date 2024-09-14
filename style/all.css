@@ -151,10 +151,6 @@ body {
    color: #aaaaaa;
   }
 
-  body.light-mode hr {
-   color: #ddd8d1;
-  }
-
   body.light-mode .sidebar-btn {
    background-color: #fff;
    color: #000;
@@ -164,8 +160,17 @@ body {
    fill: #000000;
   }
 
-  body.light-mode .sidebar-btn:hover {
-   background-color: #ddd8d1;
+  body.light-mode .sidebar-btn path {
+   fill: #000000;
+  }
+
+  body.light-mode #settings-box {
+   background-color: #fff;
+   color: #000;
+  }
+
+  body.light-mode #settings-box hr {
+   background-color: #000;
   }
 
   .game.light-mode,
