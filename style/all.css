@@ -196,7 +196,8 @@ body {
   }
 
   body.light-mode .settings-input-label,
-  body.light-mode #colorhex {
+  body.light-mode #colorhex_txt,
+  body.light-mode #colorhex_bg {
    color: #000;
   }
 
