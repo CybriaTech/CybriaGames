@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const svalue = this.value;
         if (svalue === "Light") {
             lightmode();
-            localStorage.setItem('theme', 'light');
+            localStorage.setItem('mode', 'light');
         } else if (svalue === "Dark") {
             darkmode();
-            localStorage.setItem('theme', 'dark');
+            localStorage.setItem('mode', 'dark');
         }
     });
 });
@@ -17,11 +17,11 @@ function lightmode() {
   var body = document.body;
   var logo = document.querySelector('.header-img');
   var homelogo = document.querySelector('.title-img');
-  var currenttheme = body.dataset.theme || 'light';
+  var currenttheme = body.dataset.mode || 'light';
   var header = document.getElementById('header');
   var footer = document.getElementById('footer');
     
-  body.dataset.theme = 'light';
+  body.dataset.mode = 'light';
 
   if (logo) {
     logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
@@ -33,7 +33,7 @@ function lightmode() {
   body.classList.toggle('light-mode');
   header.classList.add('light-mode');
   footer.classList.add('light-mode');
-  localStorage.setItem('theme', 'light');
+  localStorage.setItem('mode', 'light');
   updateselect('Light');
 }
 
@@ -41,11 +41,11 @@ function darkmode() {
   var body = document.body;
   var logo = document.querySelector('.header-img');
   var homelogo = document.querySelector('.title-img');
-  var currenttheme = body.dataset.theme || 'dark';
+  var currenttheme = body.dataset.mode || 'dark';
   var header = document.getElementById('header');
   var footer = document.getElementById('footer');
     
-  body.dataset.theme = 'dark';
+  body.dataset.mode = 'dark';
     
   if (logo) {
     logo.src = '/images/cybriagames/logo-name2half.png';
@@ -57,7 +57,7 @@ function darkmode() {
   body.classList.remove('light-mode');
   header.classList.remove('light-mode');
   footer.classList.remove('light-mode');
-  localStorage.removeItem('theme', 'light');
+  localStorage.removeItem('mode', 'light');
   document.document.getElementById("mode").value = 'Dark';
   updateselect('Dark');
 }
@@ -77,10 +77,10 @@ function updateselect(value) {
 
 function applyls() {
     const selectsettings = document.getElementById("mode");
-    const savedmode = localStorage.getItem('theme');
+    const savedmode = localStorage.getItem('mode');
     if (savedmode === 'light') {
         lightmode();
-        localStorage.setItem('theme', 'light');
+        localStorage.setItem('mode', 'light');
     } else if (savedmode === 'dark') {
         darkmode();
     } else {
@@ -177,6 +177,38 @@ document.addEventListener('DOMContentLoaded', function() {
 }); */
 
 function reverts() {
-    localStorage.removeItem('theme', 'light');
+    localStorage.removeItem('mode', 'light');
     window.location.reload();
+}
+
+function r34() {
+  var body = document.body;
+  var logo = document.querySelector('.header-img');
+  var homelogo = document.querySelector('.title-img');
+  var currenttheme = body.dataset.theme || 'r34';
+  var header = document.getElementById('header');
+  var footer = document.getElementById('footer');
+    
+  body.dataset.theme = 'r34';
+    
+  if (logo) {
+    logo.src = '/images/cybriagames/logo-name2half-r34.png';
+  }
+  if (homelogo) {
+    homelogo.src = '/images/cybriagames/logo-name2half-r34.png';
+  }
+
+  body.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  header.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  footer.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  body.classList.add('rule34-mode');
+  header.classList.add('rule34-mode');
+  footer.classList.add('rule34-mode');
+  localStorage.removeItem('theme', 'r34');
+  document.document.getElementById("theme").value = 'Rule 34';
+  updatetheme('Rule 34');
+}
+
+function updatetheme(value) {
+    document.getElementById("theme").value = value;
 }
