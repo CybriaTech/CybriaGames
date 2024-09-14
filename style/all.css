@@ -169,6 +169,11 @@ body {
    color: #000;
   }
 
+  body.light-mode .settings-box-title,
+  body.light-mode .settings-actions-subtitle {
+   color: #000;
+  }
+
   body.light-mode #settings-box hr {
    background-color: #000;
   }
