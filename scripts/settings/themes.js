@@ -14,11 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function lightmode() {
   var body = document.body;
-  var logo = document.querySelector('.header-img', '.title-img');
+  var logo = document.querySelector('.header-img');
+  var homelogo = document.querySelector('.title-img');
   var currenttheme = body.dataset.theme || 'light';
     
   body.dataset.theme = 'light';
   logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
+  homelogo.src = '/images/cybriagames/logo-name2half-lightmode.png';
 
   body.classList.toggle('light-mode');
   header.classList.add('light-mode');
@@ -29,11 +31,13 @@ function lightmode() {
 
 function darkmode() {
   var body = document.body;
-  var logo = document.querySelector('.header-img', '.title-img');
+  var logo = document.querySelector('.header-img');
+  var homelogo = document.querySelector('.title-img');
   var currenttheme = body.dataset.theme || 'dark';
     
   body.dataset.theme = 'dark';
   logo.src = '/images/cybriagames/logo-name2half.png';
+  homelogo.src = '/images/cybriagames/logo-name2half.png';
 
   body.classList.remove('light-mode');
   header.classList.remove('light-mode');
