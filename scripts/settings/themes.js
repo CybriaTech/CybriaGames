@@ -204,9 +204,35 @@ function r34() {
   body.classList.add('rule34-mode');
   header.classList.add('rule34-mode');
   footer.classList.add('rule34-mode');
-  localStorage.removeItem('theme', 'r34');
   document.document.getElementById("theme").value = 'Rule 34';
   updatetheme('Rule 34');
+}
+
+function selenite() {
+  var body = document.body;
+  var logo = document.querySelector('.header-img');
+  var homelogo = document.querySelector('.title-img');
+  var currenttheme = body.dataset.theme || 'selenite';
+  var header = document.getElementById('header');
+  var footer = document.getElementById('footer');
+    
+  body.dataset.theme = 'r34';
+    
+  if (logo) {
+    logo.src = '/images/cybriagames/logo-name2half.png';
+  }
+  if (homelogo) {
+    homelogo.src = '/images/cybriagames/logo-name2half.png';
+  }
+
+  body.classList.remove('light-mode', 'dark-mode', 'rule34-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  header.classList.remove('light-mode', 'dark-mode', 'rule34-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  footer.classList.remove('light-mode', 'dark-mode', 'rule34-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  body.classList.add('selenite-mode');
+  header.classList.add('selenite-mode');
+  footer.classList.add('selenite-mode');
+  document.document.getElementById("theme").value = 'Selenite';
+  updatetheme('Selenite');
 }
 
 function updatetheme(value) {
@@ -218,5 +244,6 @@ function changetheme() {
     if (selector === "Rule 34") {
         r34();
     } else if (selector === "Selenite") {
+        selenite();
     }
 }
