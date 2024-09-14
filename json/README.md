@@ -17,4 +17,4 @@ If you have any concerns, write an issue!
 - https://my-name-is-shadow.vercel.app/ (Yes im an Eminence in Shadow fan)
 - https://mellatic.vercel.app/
 - https://nomoreblok.vercel.app/ (Down)
-- https://register.deleesportsmedicine.com/
+- https://super-duper-potato-orcin.vercel.app/
