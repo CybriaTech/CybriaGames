@@ -152,16 +152,16 @@
                     </div>
                     <div class="settings-input-box">
                         <p class="settings-input-label">Custom Background Color</p>
-                        <div id="colorpicker">
-                            <input id="color_picker" class="forbg" value="#ffffff" type="color">
-                            <p id="colorhex">#ffffff</p>
+                        <div id="colorpickerbg">
+                            <input id="color_picker_bg" class="forbg" value="#ffffff" type="color">
+                            <p id="colorhex_bg">#ffffff</p>
                         </div>
                     </div>
                     <div class="settings-input-box">
                         <p class="settings-input-label">Custom Text Color</p>
-                        <div id="colorpicker">
-                            <input id="color_picker" class="fortext" value="#ffffff" type="color">
-                            <p id="colorhex">#ffffff</p>
+                        <div id="colorpickerbg">
+                            <input id="color_picker_txt" class="fortext" value="#ffffff" type="color">
+                            <p id="colorhex_txt">#ffffff</p>
                         </div>
                     </div>
                     </div>
@@ -188,16 +188,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const colorpicker = document.getElementById('color_picker');
-const hex = document.getElementById('colorhex');
+const colorpickerbg = document.getElementById('color_picker_bg');
+const colorpickertxt = document.getElementById('color_picker_txt');
+const hexbg = document.getElementById('colorhex_bg');
+const hextxt = document.getElementById('colorhex_txt');
 
-hex.textContent = colorpicker.value;
+hexbg.textContent = colorpickerbg.value;
+hextxt.textContent = colorpickertxt.value;
 
-function hexcolor() {
-    const colorhex = colorpicker.value;
-    hex.textContent = colorhex;
+function hexbackground() {
+    const colorhex = colorpickerbg.value;
+    hexbg.textContent = colorhex;
 }
-colorpicker.addEventListener('input', hexcolor);
+colorpickerbg.addEventListener('input', hexbackground);
+
+function hextext() {
+    const colorhex = colorpickertxt.value;
+    hextxt.textContent = colorhex;
+}
+colorpickertxt.addEventListener('input', hextext);
     </script>
     </body>
 </html>
