@@ -288,12 +288,12 @@ body {
    fill: #000;
   }
 
-  body.selenite {
+  /* body.selenite {
    background-color: #10002B;
    color: #fff;
   }
 
-/* body.selenite #header,
+  body.selenite #header,
   body.selenite #footer, {
    background-color: #240046;
    box-shadow: rgb(36, 0, 70) 0px 5px 10px 0px;
