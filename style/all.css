@@ -297,6 +297,14 @@ body {
    color: #000;
   }
 
+  body.rule34-mode .header-link {
+   color: #000;
+  }
+
+  body.rule34-mode .footer-a {
+   color: #000;
+  }
+
   body.selenite-mode #header,
   body.selenite-mode #footer {
    background-color: #240046;
