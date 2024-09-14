@@ -192,12 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
 const colorpicker = document.getElementById('color_picker');
 const hex = document.getElementById('colorhex');
 
-const defaulthex = colorpicker.value;
-hex.textContent = defaulthex;
+hex.textContent = colorPicker.value;
 
 function hexcolor() {
     const colorhex = colorpicker.value;
-    hex.textContent = `${colorhex}`;
+    hex.textContent = colorhex;
 }
 colorpicker.addEventListener('input', hexcolor);
     </script>
