@@ -121,7 +121,7 @@ function addbgcolor(selectedbgcolor) {
 
     const custombglightitems = ['#colorpickerbg', '#colorpickertxt', '.settings-input', '.select-settings'];
     const rbghex = hextorbgconvert(selectedbgcolor);
-    const subtractioncolor = adjustrbghex(rbghex, -6);
+    const subtractioncolor = adjustrbghex(rbghex, -24);
     const outputsubtractedrbg = rbgtohexconvert(subtractioncolor.r, subtractioncolor.g, subtractioncolor.b);
 
     custombglightitems.forEach(selector => {
