@@ -290,9 +290,9 @@ body {
    fill: #000;
   }
 
-  body.selenite-mode#header,
-  body.selenite-mode #footer,
-  body.rule34-mode {
+  body.rule34-mode,
+  body.rule34-mode #header,
+  body.rule34-mode #footer {
    background-color: #AAE5A4;
    color: #000;
   }
