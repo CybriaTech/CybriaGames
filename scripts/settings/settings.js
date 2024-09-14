@@ -288,6 +288,7 @@ function lightmode() {
   header.classList.add('light-mode');
   footer.classList.add('light-mode');
   localStorage.setItem('theme', 'light');
+  updateselect('Light');
 }
 
 function darkmode() {
@@ -303,6 +304,7 @@ function darkmode() {
   footer.classList.remove('light-mode');
   localStorage.removeItem('theme', 'light');
   document.document.getElementById("mode").value = 'Dark';
+  updateselect('Dark');
 }
 
 function changemode() {
@@ -312,6 +314,10 @@ function changemode() {
     } else if (selector === "Dark") {
         darkmode();
     }
+}
+
+function updateselect(value) {
+    document.getElementById("mode").value = value;
 }
 
 function applyls() {
