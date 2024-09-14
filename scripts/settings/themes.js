@@ -190,13 +190,6 @@ function r34() {
   var footer = document.getElementById('footer');
     
   body.dataset.theme = 'r34';
-    
-  if (logo) {
-    logo.src = '/images/cybriagames/logo-name2half-r34.png';
-  }
-  if (homelogo) {
-    homelogo.src = '/images/cybriagames/logo-name2half-r34.png';
-  }
 
   body.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   header.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
