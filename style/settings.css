@@ -258,7 +258,8 @@
   height: 20vh;
 }
 
-#colorhex {
+#colorhex_bg,
+#colorhex_txt {
   margin: 10px;
   color: #fff;
   text-align: center;
