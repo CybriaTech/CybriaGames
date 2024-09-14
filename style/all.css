@@ -316,6 +316,10 @@ body {
    color: #fff;
   }
 
+  body.selenite-mode .header-img {
+   display: none;
+  }
+
   body.selenite-mode {
    background-color: #10002B;
    color: #fff;
