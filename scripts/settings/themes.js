@@ -29,7 +29,7 @@ function lightmode() {
 
 function darkmode() {
   var body = document.body;
-  var logo = document.querySelector('.header-img');
+  var logo = document.querySelector('.header-img', '.title-img');
   var currenttheme = body.dataset.theme || 'dark';
     
   body.dataset.theme = 'dark';
