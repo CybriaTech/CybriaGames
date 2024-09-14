@@ -188,6 +188,9 @@ function r34() {
   var currenttheme = body.dataset.theme || 'r34';
   var header = document.getElementById('header');
   var footer = document.getElementById('footer');
+
+  var r34title = document.createElement("p");
+  r34title.classList.add("r34title");
     
   body.dataset.theme = 'r34';
 
