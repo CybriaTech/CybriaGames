@@ -316,10 +316,10 @@ function changemode() {
 function applyls() {
     const selectsettings = document.querySelector(".select-settings");
     const savedmode = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
+    if (savedmode === 'light') {
         lightmode();
         selectsettings.value = 'Light';
-    } else if (savedTheme === 'dark') {
+    } else if (savedmode === 'dark') {
         darkmode();
         selectsettings.value = 'Dark';
     } else {
