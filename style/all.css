@@ -118,8 +118,7 @@ body {
 
   body.light-mode .search,
   body.light-mode .submit {
-   background-color: #fff;
-   box-shadow: 0 0 7px #000;
+   background-color: #f0eded;
    color: #000;
   }
 
