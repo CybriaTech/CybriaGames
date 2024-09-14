@@ -318,12 +318,6 @@ function applyls() {
     const savedmode = localStorage.getItem('theme');
     if (savedmode === 'light') {
         lightmode();
-        selectsettings.value = 'Light';
-    } else if (savedmode === 'dark') {
-        darkmode();
-        selectsettings.value = 'Dark';
-    } else {
-        lightmode();
-        selectsettings.value = 'Light';
+        document.querySelector(".select-settings").value = 'Light';
     }
 }
