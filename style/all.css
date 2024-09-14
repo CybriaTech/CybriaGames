@@ -257,3 +257,25 @@ body {
    color: #000;
    transition: color 0.3s ease;
   }
+
+  body.light-mode .gtxt {
+   color: #000;
+  }
+
+  body.light-mode #gcontrols {
+   background-color: #fff;
+   box-shadow: 0 0 7px #000;
+  }
+
+  body.light-mode #returnbtn,
+  body.light-mode #fullbtn,
+  body.light-mode #refbtn {
+   background-color: #f0eded;
+   transition: background-color 0.3s ease;
+  }
+
+  body.light-mode #returnbtn path,
+  body.light-mode #fullbtn path,
+  body.light-mode #refbtn path {
+   fill: #000;
+  }
