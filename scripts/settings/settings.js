@@ -302,7 +302,6 @@ function darkmode() {
   header.classList.remove('light-mode');
   footer.classList.remove('light-mode');
   localStorage.removeItem('theme', 'light');
-  localStorage.setItem('theme', 'dark');
 }
 
 function changemode() {
