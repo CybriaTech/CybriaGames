@@ -316,6 +316,9 @@ body {
    justify-content: center;
    background-color: #240046;
    color: #fff;
+   display: flex;
+   width: 100%;
+   z-index: 1;
   }
 
   body.selenite-mode .header-img {
