@@ -319,8 +319,5 @@ function applyls() {
     if (savedmode === 'light') {
         lightmode();
         document.querySelector(".select-settings").value = 'Light';
-    } else if (savedmode === 'dark') {
-        darkmode();
-        document.querySelector(".select-settings").value = 'Dark';
     }
 }
