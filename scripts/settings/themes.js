@@ -161,4 +161,5 @@ document.addEventListener('DOMContentLoaded', function() {
 function reverts() {
     localStorage.removeItem('custombgcolor');
     localStorage.removeItem('theme', 'light');
+    window.location.href = window.location.href;
 }
