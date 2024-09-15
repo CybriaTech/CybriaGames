@@ -216,6 +216,7 @@ function reverts() {
     var homelogo = document.querySelector('.title-img');
     var header = document.getElementById('header');
     var footer = document.getElementById('footer');
+    window.location.reload();
 
     body.classList.remove('selenite-mode', 'light-mode', 'dark-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
     header.classList.remove('selenite-mode', 'light-mode', 'dark-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
