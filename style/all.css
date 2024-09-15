@@ -477,11 +477,6 @@ body {
    border: none;
   }
 
-  body.selenite-mode #game-section {
-   width: 100%;
-   justify-content: center;
-  }
-
   body.selenite-mode .game:hover {
    transform: scale(1.1);
    filter: brightness(85%);
