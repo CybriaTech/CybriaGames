@@ -209,11 +209,14 @@ function r34() {
 
 function selenite() {
   var body = document.body;
+  var remove1 = document.querySelector('.r34title);
   var logo = document.querySelector('.header-img');
   var homelogo = document.querySelector('.title-img');
   var currenttheme = body.dataset.theme || 'selenite';
   var header = document.getElementById('header');
   var footer = document.getElementById('footer');
+
+  remove1.style.display = 'none';
     
   body.dataset.theme = 'selenite';
 
