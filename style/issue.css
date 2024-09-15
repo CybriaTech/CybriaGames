@@ -125,6 +125,7 @@
   font-size: 1.2em;
   text-align: left;
   display: flex;
+  box-sizing: border-box;
   flex-direction: row;
   width: 100%;
   margin-bottom: 15px;
