@@ -2,22 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
     applyls();
     applytheme();
 
-    document.getElementById("mode").addEventListener("change", function () {
+    document.getElementById("mode").addEventListener("change", function() {
         const svalue = this.value;
         if (svalue === "Light") {
             lightmode();
+            localStorage.setItem('mode', 'light');
         } else if (svalue === "Dark") {
             darkmode();
-        }
-    });
-
-    document.getElementById("theme").addEventListener("change", function () {
-        const tvalue = this.value;
-        if (tvalue === "Selenite") {
-            selenite();
-        } else if (tvalue === "Default") {
-            themedef();
-            localStorage.removeItem('theme');
+            localStorage.setItem('mode', 'dark');
         }
     });
 });
@@ -33,8 +25,7 @@ function lightmode() {
   body.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   header.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   footer.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-
-  document.getElementById("theme").value = 'Default';
+  localStorage.removeItem('theme');
     
   body.dataset.mode = 'light';
 
@@ -49,7 +40,6 @@ function lightmode() {
   header.classList.add('light-mode');
   footer.classList.add('light-mode');
   localStorage.setItem('mode', 'light');
-  localStorage.removeItem('theme');
   updateselect('Light');
 }
 
@@ -57,14 +47,16 @@ function darkmode() {
   var body = document.body;
   var logo = document.querySelector('.header-img');
   var homelogo = document.querySelector('.title-img');
+  var currentmode = body.dataset.mode || 'dark';
   var header = document.getElementById('header');
   var footer = document.getElementById('footer');
 
   body.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   header.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   footer.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-
-  document.getElementById("theme").value = 'Default';
+  localStorage.removeItem('theme');
+    
+  body.dataset.mode = 'dark';
     
   if (logo) {
     logo.src = '/images/cybriagames/logo-name2half.png';
@@ -77,8 +69,7 @@ function darkmode() {
   header.classList.remove('light-mode');
   footer.classList.remove('light-mode');
   localStorage.removeItem('mode', 'light');
-  document.getElementById("mode").value = 'Dark';
-  localStorage.removeItem('theme');
+  document.document.getElementById("mode").value = 'Dark';
   updateselect('Dark');
 }
 
