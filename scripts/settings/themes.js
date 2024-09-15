@@ -206,7 +206,7 @@ function selenite() {
   body.classList.add('selenite-mode');
   header.classList.add('selenite-mode');
   footer.classList.add('selenite-mode');
-  document.document.getElementById("theme").value = 'Selenite';
+  document.getElementById("theme").value = 'Selenite';
   localStorage.setItem('theme', 'selenite');
   updatetheme('Selenite');
 }
