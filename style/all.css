@@ -471,8 +471,8 @@ body {
   body.selenite-mode #all {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(13vw, 2fr));
-   grid-gap: 7px;
-   margin: 0 10% 0 10%;
+   grid-gap: 8px;
+   margin: 0 11% 0 11%;
    justify-content: space-evenly;
   }
 
