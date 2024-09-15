@@ -33,6 +33,8 @@ function lightmode() {
   body.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   header.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   footer.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+
+  document.getElementById("theme").value = 'Default';
     
   body.dataset.mode = 'light';
 
@@ -60,6 +62,8 @@ function darkmode() {
   body.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   header.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   footer.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+
+  document.getElementById("theme").value = 'Default';
     
   if (logo) {
     logo.src = '/images/cybriagames/logo-name2half.png';
