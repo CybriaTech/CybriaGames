@@ -301,6 +301,12 @@ body {
    display: none;
   }
 
+  body.rule34-mode .header-link {
+   font-size: 15px;
+   font-weight: 400;
+   text-align: left;
+  }
+
   body.rule34-mode .header-link:hover {
    color: #0095ff;
   }
@@ -310,7 +316,9 @@ body {
   }
 
   .r34title {
-   color: #010299;
+   color: rgb(0, 0, 153);
+   font-size: 24px;
+   font-weight: 700;
   }
 
   body.rule34-mode .header-img {
