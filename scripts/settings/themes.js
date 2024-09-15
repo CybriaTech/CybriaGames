@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (tvalue === "Selenite") {
             selenite();
         } else if (tvalue === "Default") {
-            themedef();
+            reverts();
         }
     });
 });
@@ -210,7 +210,7 @@ function selenite() {
   updatetheme('Selenite');
 }
 
-function themedef() {
+function reverts() {
     var body = document.body;
     var logo = document.querySelector('.header-img');
     var homelogo = document.querySelector('.title-img');
@@ -245,6 +245,6 @@ function applytheme() {
         selenite();
         localStorage.setItem('theme', 'selenite');
     } else {
-        themedef();
+        reverts();
     }
 }
