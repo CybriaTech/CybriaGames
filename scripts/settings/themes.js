@@ -210,8 +210,7 @@ function updatetheme(value) {
 
 function changetheme() {
     var selector = document.getElementById("theme").value;
-    if (selector === "Rule 34") {
-        r34();
+    if (selector === "Default") {
     } else if (selector === "Selenite") {
         selenite();
     }
