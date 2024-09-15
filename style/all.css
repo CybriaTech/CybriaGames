@@ -441,3 +441,13 @@ body {
   body.selenite-mode #space-above {
    margin-top: 7%;
   }
+
+  body.selenite-mode .cheat {
+   background-color: rgb(36, 0, 70);
+   box-shadow: rgb(36, 0, 70) 0px 0px 5px 5px;
+   color: #fff;
+  }
+
+  body.selenite-mode .cheat-title {
+   text-decoration: underline;
+  }
