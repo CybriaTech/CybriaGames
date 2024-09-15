@@ -480,7 +480,7 @@ body {
    width: 15vw;
    height: auto;
    border-radius: 20px;
-   display: flex;
+   display: inline-block;
    position: relative;
    overflow: hidden;
    z-index: 24;
