@@ -424,5 +424,9 @@ body {
   }
 
   body.selenite-mode #spacet {
-   margin-top: 7%;
+   margin: 7%;
+  }
+
+  body.selenite-mode #spacet-index {
+   margin: 10%;
   }
