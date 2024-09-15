@@ -411,6 +411,7 @@ body {
   }
 
   body.selenite-mode .submit {
+   height: 10.6vh;
    border-top: 2px solid rgb(90, 24, 154);
    border-bottom: 2px solid rgb(90, 24, 154);
    border-left: 2px solid rgb(90, 24, 154);
