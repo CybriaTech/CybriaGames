@@ -482,7 +482,6 @@ body {
    position: relative;
    overflow: hidden;
    z-index: 24;
-   justify-content: space-between;
    flex-direction: column;
    background-color: rgb(36, 0, 70);
    margin: 15px;
