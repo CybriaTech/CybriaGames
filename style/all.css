@@ -471,7 +471,7 @@ body {
   body.selenite-mode #all {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-   grid-gap: 20px;
+   grid-gap: 15px;
    margin: 0 3% 0 3%;
    justify-content: space-evenly;
   }
@@ -516,7 +516,9 @@ body {
    float: right;
    font-weight: 700;
    align-items: center;
-   margin: 0;
+   margin-right: 10px;
+   margin-top: 3px;
+   margin-bottom: 3px;
   }
 
   body.selenite-mode .creator {
