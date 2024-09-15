@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 
+@font-face {
+  font-family: 'Tahoma';
+  src: url('/path-to-your-font/tahoma.ttf') format('truetype');
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1C2128;
@@ -297,6 +302,27 @@ body {
    color: #000;
   }
 
+  body.rule34-mode #header {
+   display: block;
+   font-family: Verdana, sans-serif;
+   font-size: 12.8px;
+   height: 109px;
+   margin: 0 0 12.8px 0;
+   padding: 0;
+   width: 100%;
+  }
+
+  body.rule34-mode .header-links {
+   display: block;
+   font-family: verdana, sans-serif;
+   font-size: 12.8px;
+   height: 36px;
+   list-style-type: disc;
+   margin: 0;
+   padding: 5px 20px 3px 10px;
+   width: 100%;
+  }
+
   body.rule34-mode #footer {
    display: none;
   }
@@ -317,8 +343,15 @@ body {
 
   .r34title {
    color: rgb(0, 0, 153);
-   font-size: 24px;
    font-weight: 700;
+   background: url(/images/themes/cybria34.png) no-repeat 120px;
+   display: block;
+   font-family: Tahoma;
+   font-weight: 700;
+   height: 28px;
+   margin: 0;
+   padding: 10px 20px 1px 20px;
+   width: 100%;
   }
 
   body.rule34-mode .header-img {
