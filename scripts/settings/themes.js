@@ -2,27 +2,23 @@ document.addEventListener('DOMContentLoaded', function() {
     applyls();
     applytheme();
 
-    const modearea = document.getElementById("mode");
-    const themearea = document.getElementById("theme");
+    document.getElementById("mode").addEventListener("change", function () {
+        const svalue = this.value;
+        if (svalue === "Light") {
+            lightmode();
+        } else if (svalue === "Dark") {
+            darkmode();
+        }
+    });
 
-    if (modearea) {
-        modearea.addEventListener("change", function() {
-            const svalue = this.value;
-            if (svalue === "Light") {
-                lightmode();
-                localStorage.setItem('mode', 'light');
-            } else if (svalue === "Dark") {
-                darkmode();
-                localStorage.setItem('mode', 'dark');
-            }
-        });
-    }
-
-    if (themearea) {
-        themearea.addEventListener("change", function() {
-            changetheme();
-        });
-    }
+    document.getElementById("theme").addEventListener("change", function () {
+        const tvalue = this.value;
+        if (tvalue === "Selenite") {
+            selenite();
+        } else if (tvalue === "Default") {
+            themedef();
+        }
+    });
 });
 
 function lightmode() {
@@ -233,5 +229,6 @@ function applytheme() {
         selenite();
         localStorage.setItem('theme', 'selenite');
     } else {
+        themedef();
     }
 }
