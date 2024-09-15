@@ -496,7 +496,7 @@ body {
   }
 
   body.selenite-mode .title {
-   font-size: 12px;
+   font-size: 14px;
    float: right;
    font-weight: 700;
    margin-right: 10px;
@@ -505,11 +505,5 @@ body {
   }
 
   body.selenite-mode .creator {
-   font-size: 12px;
-   float: left;
-   font-weight: 700;
-   margin-right: 10px;
-   margin-top: 3px;
-   color: #fff;
-   margin-bottom: 3px;
+    display: none;
   }
