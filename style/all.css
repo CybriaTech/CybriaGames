@@ -340,6 +340,12 @@ body {
    text-align: center;
    margin-right: 2rem;
    margin-left: 1rem;
+   transition: text-shadow 0.5s ease;
+  }
+
+  body.selenite-mode .header-link:hover,
+  body.selenite-mode .footer-a:hover {
+   text-shadow: 2px 2px 6px #fff;
   }
 
   body.selenite-mode #settings-box {
