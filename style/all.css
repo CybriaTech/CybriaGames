@@ -482,6 +482,7 @@ body {
    position: relative;
    overflow: hidden;
    z-index: 24;
+   justify-content: space-between;
    flex-direction: column;
    background-color: rgb(36, 0, 70);
    margin: 15px;
@@ -516,6 +517,8 @@ body {
    align-items: center;
    margin-top: 3px;
    margin-bottom: 3px;
+   justify-content: center;
+   height: 40px;
   }
 
   body.selenite-mode .creator {
