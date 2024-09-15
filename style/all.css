@@ -404,6 +404,14 @@ body {
    background-color: #3C096C;
   }
 
+  body.selenite-mode .search {
+   border: 2px 0 2px 2px solid rgb(90, 24, 154);
+  }
+
+  body.selenite-mode .submit {
+   border: 2px 2px 2px 0 solid rgb(90, 24, 154);
+  }
+
   body.selenite-mode .search::placeholder,
   body.selenite-mode .int-desc {
    color: #fff;
