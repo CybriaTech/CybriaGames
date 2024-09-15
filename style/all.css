@@ -313,11 +313,12 @@ body {
   }
 
   body.rule34-mode .header-links {
-   display: block;
+   display: flex;
+   justify-content: left;
    font-family: verdana, sans-serif;
-   font-size: 12.8px;
-   height: 36px;
-   list-style-type: disc;
+   font-size: 13px;
+   height: 40px;
+   list-style: none;
    margin: 0;
    padding: 5px 20px 3px 10px;
    width: 100%;
@@ -331,6 +332,7 @@ body {
    font-size: 15px;
    font-weight: 400;
    text-align: left;
+   margin-right: 15px;
   }
 
   body.rule34-mode .header-link:hover {
@@ -344,7 +346,9 @@ body {
   .r34title {
    color: rgb(0, 0, 153);
    font-weight: 700;
-   background: url(/images/themes/cybria34.png) no-repeat 120px;
+   background: url(/images/themes/cybria34.png);
+   background-repeat: no-repeat;
+   background-position: center left;
    display: block;
    font-family: Tahoma;
    font-size: 35px;
