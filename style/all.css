@@ -486,7 +486,6 @@ body {
    z-index: 24;
    flex-direction: column;
    background-color: rgb(36, 0, 70);
-   justify-content: center;
    margin: 15px;
    align-items: center;
    cursor: pointer;
@@ -517,7 +516,7 @@ body {
    float: right;
    font-weight: 700;
    align-items: center;
-   margin: 10px;
+   margin: 0;
   }
 
   body.selenite-mode .creator {
