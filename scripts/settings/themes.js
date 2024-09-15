@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     applyls();
+    applytheme();
 
     document.getElementById("mode").addEventListener("change", function() {
         const svalue = this.value;
@@ -210,5 +211,16 @@ function changetheme() {
     if (selector === "Default") {
     } else if (selector === "Selenite") {
         selenite();
+    }
+}
+
+function applytheme() {
+    const themesettings = document.getElementById("theme");
+    const savedtheme = localStorage.getItem('theme');
+    if (savedtheme === 'selenite') {
+        selenite();
+        localStorage.setItem('theme', 'selenite');
+    } else {
+        darkmode();
     }
 }
