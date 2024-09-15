@@ -75,3 +75,31 @@ function reverts() {
     settheme('Default');
 }
 
+function changeparticles() {
+    
+    const chosenparticle = document.getElementById('particles').value;
+
+    if (chosenparticle === 'None') {
+        particlesJS(document.body, null);
+        document.body.style.background = '';
+    } else {
+        let particleConfig;
+
+        switch (chosenparticle) {
+                case 'Graphs':
+                    particleConfig = {
+                        "particles": {
+                            "number": { "value": 50 },
+                            "color": { "value": "#00ff00" },
+                            "shape": {
+                                "type": "polygon",
+                                "polygon": { "nb_sides": 6 }
+                            }
+                        }
+                    };
+            }
+
+            particlesJS('particles-js', particleConfig);
+        }
+    }
+
