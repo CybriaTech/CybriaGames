@@ -210,6 +210,22 @@ function selenite() {
   updatetheme('Selenite');
 }
 
+function themedef() {
+    var body = document.body;
+    var logo = document.querySelector('.header-img');
+    var homelogo = document.querySelector('.title-img');
+    var header = document.getElementById('header');
+    var footer = document.getElementById('footer');
+
+    body.classList.remove('selenite-mode', 'light-mode', 'dark-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+    header.classList.remove('selenite-mode', 'light-mode', 'dark-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+    footer.classList.remove('selenite-mode', 'light-mode', 'dark-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+    
+    localStorage.removeItem('theme');
+    document.getElementById("theme").value = 'Default';
+}
+
+
 function updatetheme(value) {
     document.getElementById("theme").value = value;
 }
