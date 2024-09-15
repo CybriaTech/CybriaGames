@@ -521,3 +521,8 @@ body {
   body.selenite-mode .creator {
     display: none;
   }
+
+  body.selenite-mode .game-title {
+    font-size: 43px;
+    font-weight: 700;
+  }
