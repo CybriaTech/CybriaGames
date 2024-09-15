@@ -17,6 +17,10 @@ body {
     min-height: 100vh;
   }
 
+#spacet-index {
+  margin-top: 3%;
+}
+
   #header {
     background-color: #1C2128;
     color: #fff;
