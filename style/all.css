@@ -428,9 +428,9 @@ body {
   }
 
   body.selenite-mode #spacet {
-   margin: 7%;
+   margin: 0;
   }
 
   body.selenite-mode #spacet-index {
-   margin: 10%;
+   margin: 0;
   }
