@@ -318,6 +318,7 @@ body {
 
   body.selenite-mode {
    background-color: #10002B;
+   background-size: cover;
    color: #fff;
    font-family: 'Prompt', sans-serif;
   }
@@ -469,13 +470,13 @@ body {
 
   body.selenite-mode #all {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-   grid-gap: 15px;
+   grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+   grid-gap: 20px;
    justify-content: space-evenly;
   }
 
   body.selenite-mode .game {
-   width: 130px;
+   width: 15%;
    height: auto;
    border-radius: 20px;
    display: flex;
