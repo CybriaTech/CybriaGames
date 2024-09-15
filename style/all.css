@@ -511,7 +511,7 @@ body {
   }
 
   body.selenite-mode .title {
-   font-size: 12px;
+   font-size: 14px;
    font-weight: 700;
    float: right;
    justify-content: flex-end;
@@ -519,7 +519,7 @@ body {
    display: flex;
    height: auto;
    width: 100%;
-   margin: 10px 0 0 0;   
+   margin: 15px 0 0 0;   
   }
 
   body.selenite-mode .creator {
