@@ -519,10 +519,11 @@ body {
   }
 
   body.selenite-mode .creator {
-    display: none;
+   display: none;
   }
 
   body.selenite-mode .game-title {
-    font-size: 43px;
-    font-weight: 700;
+   font-size: 43px;
+   font-weight: 700;
+   text-align: center;
   }
