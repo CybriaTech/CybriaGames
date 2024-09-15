@@ -515,10 +515,9 @@ body {
    font-size: 14px;
    float: right;
    font-weight: 700;
-   margin-right: 10px;
    align-items: center;
-   margin-top: 3px;
-   margin-bottom: 3px;
+   justify-content: center;
+   margin: 0;
   }
 
   body.selenite-mode .creator {
