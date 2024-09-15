@@ -427,10 +427,12 @@ body {
    background-color: #240046;
   }
 
-  body.selenite-mode #spacet {
+  body.selenite-mode #spacet,
+  body.selenite-mode #spacet-index{
    margin: 0;
   }
 
-  body.selenite-mode #spacet-index {
-   margin: 0;
+  body.selenite-mode .title-img,
+  body.selenite-mode #space-above, {
+   margin-top: 5%;
   }
