@@ -128,7 +128,8 @@ body {
    color: #000;
   }
 
-  body.light-mode .search::placeholder {
+  body.light-mode .search::placeholder,
+  body.light-mode .game-title {
    color: #000;
   }
 
