@@ -432,7 +432,10 @@ body {
    margin: 0;
   }
 
-  body.selenite-mode .title-img,
-  body.selenite-mode #space-above, {
+  body.selenite-mode .title-img {
    margin-top: 10%;
+  }
+
+  body.selenite-mode #space-above {
+   margin-bottom: 10%;
   }
