@@ -99,7 +99,7 @@ function changeparticles() {
                     };
             }
 
-            particlesJS('particles-js', particleConfig);
+            particlesJS(document.body, particleConfig);
         }
     }
 
