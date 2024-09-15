@@ -472,7 +472,7 @@ body {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(14vw, 2fr));
    grid-gap: 8px;
-   margin: 0 11% 0 11%;
+   margin: 0 10% 0 10%;
    justify-content: space-evenly;
   }
 
@@ -484,6 +484,7 @@ body {
    overflow: hidden;
    margin: 15px 0 15px 0;
    justify-content: space-between;
+   height: auto;
    z-index: 24;
    flex-direction: column;
    background-color: rgb(36, 0, 70);
