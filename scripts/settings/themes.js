@@ -181,32 +181,6 @@ function reverts() {
     window.location.reload();
 }
 
-function r34() {
-  var body = document.body;
-  var logo = document.querySelector('.header-img');
-  var homelogo = document.querySelector('.title-img');
-  var currenttheme = body.dataset.theme || 'r34';
-  var header = document.getElementById('header');
-  var footer = document.getElementById('footer');
-
-  var r34title = document.createElement("h2");
-  r34title.classList.add("r34title");
-  r34title.textContent = 'Cybria34';
-
-  header.appendChild(r34title);
-    
-  body.dataset.theme = 'r34';
-
-  body.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-  header.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-  footer.classList.remove('light-mode', 'dark-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-  body.classList.add('rule34-mode');
-  header.classList.add('rule34-mode');
-  footer.classList.add('rule34-mode');
-  document.document.getElementById("theme").value = 'Rule 34';
-  updatetheme('Rule 34');
-}
-
 function selenite() {
   var body = document.body;
   var remove1 = document.querySelector('.r34title');
@@ -220,9 +194,9 @@ function selenite() {
     
   body.dataset.theme = 'selenite';
 
-  body.classList.remove('light-mode', 'dark-mode', 'rule34-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-  header.classList.remove('light-mode', 'dark-mode', 'rule34-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-  footer.classList.remove('light-mode', 'dark-mode', 'rule34-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  body.classList.remove('light-mode', 'dark-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  header.classList.remove('light-mode', 'dark-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+  footer.classList.remove('light-mode', 'dark-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
   body.classList.add('selenite-mode');
   header.classList.add('selenite-mode');
   footer.classList.add('selenite-mode');
