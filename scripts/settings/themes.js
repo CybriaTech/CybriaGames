@@ -185,11 +185,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadcustomls();
 }); */
 
-function themedef() {
-    localStorage.removeItem('mode', 'light');
-    window.location.reload();
-}
-
 function selenite() {
   var body = document.body;
   var logo = document.querySelector('.header-img');
