@@ -12,6 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('mode', 'dark');
         }
     });
+
+    document.getElementById("theme").addEventListener("change", function() {
+        const tvalue = this.value;
+        if (tvalue === "Selenite") {
+            selenite();
+            localStorage.setItem('theme', 'selenite');
+        } else if (tvalue === "Default") {
+            themedef();
+            localStorage.removeItem('mode');
+        }
+    });
 });
 
 function lightmode() {
@@ -221,6 +232,5 @@ function applytheme() {
         selenite();
         localStorage.setItem('theme', 'selenite');
     } else {
-        darkmode();
     }
 }
