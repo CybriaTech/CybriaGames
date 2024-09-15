@@ -466,7 +466,7 @@ body {
   }
 
   body.selenite-mode .game {
-   width: 15%;
+   width: 15vw;
    border-radius: 20px;
    display: inline-block;
    background-color: rgb(36, 0, 70);
