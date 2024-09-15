@@ -49,6 +49,7 @@ function lightmode() {
   header.classList.add('light-mode');
   footer.classList.add('light-mode');
   localStorage.setItem('mode', 'light');
+  localStorage.setItem('theme');
   updateselect('Light');
 }
 
@@ -77,6 +78,7 @@ function darkmode() {
   footer.classList.remove('light-mode');
   localStorage.removeItem('mode', 'light');
   document.getElementById("mode").value = 'Dark';
+  localStorage.setItem('theme');
   updateselect('Dark');
 }
 
