@@ -53,16 +53,16 @@ function settheme(theme) {
         body.classList.add('space-mode');
         header.classList.add('space-mode');
         footer.classList.add('space-mode');
-    } else if (mode === 'Light') {
+    } else if (theme === 'Light') {
         body.classList.add('light-mode');
         header.classList.add('light-mode');
         footer.classList.add('light-mode');
         if (logo) logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
         if (homelogo) homelogo.src = '/images/cybriagames/logo-name2half-lightmode.png';
-    } else if (mode === 'Dark') {
-        body.classList.add('dark-mode');
-        header.classList.add('dark-mode');
-        footer.classList.add('dark-mode');
+    } else if (theme === 'Dark') {
+        body.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+        header.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+        footer.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
         if (logo) logo.src = '/images/cybriagames/logo-name2half.png';
         if (homelogo) homelogo.src = '/images/cybriagames/logo-name2half.png';
     }
