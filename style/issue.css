@@ -121,11 +121,13 @@
   color: #fff;
 }
 
-.issue-description {
+.issue-tags {
   font-size: 1.2em;
-  color: #ddd;
+  color: #fff;
   text-align: left;
   margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 12px;
 }
 
 .issue-footer {
@@ -140,3 +142,6 @@
   font-weight: 300;
 }
 
+.issue-create {
+  display: none;
+}
