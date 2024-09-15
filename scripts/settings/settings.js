@@ -136,7 +136,7 @@ function def() {
   var link = document.querySelector("link[rel='icon']");
 
   if (deftitle) {
-      window.location.href = window.location.href;
+      window.location.reload();
   }
 
   var link = document.querySelector("link[rel='icon']") || document.createElement("link");
@@ -258,5 +258,5 @@ function rev() {
     localStorage.removeItem('panickey');
     locinput.value = panicloc;
     panickey.value = panickey;
-    window.location.href = window.location.href;
+    window.location.reload();
 }
