@@ -343,17 +343,18 @@ body {
   }
 
   body.selenite-mode #settings-box {
-   background-color: #240046;
+   background-color: #10002B;
    color: #fff;
   }
 
   body.selenite-mode #ab-cloak,
   body.selenite-mode .settings-input-box {
-   background-color: #3C096C;
+   background-color: #240046;
   }
 
   body.selenite-mode .select-settings,
   body.selenite-mode .settings-input,
   body.selenite-mode .tab-cloak-btn {
-   background-color: #240046;
+   background-color: #3C096C;
+   border: 2px solid rgb(90, 24, 154);
   }
