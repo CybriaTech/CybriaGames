@@ -318,6 +318,7 @@ body {
   body.selenite-mode #header {
    justify-content: center;
    position: fixed;
+   z-index: 999999999;
    padding-top: 0;
    padding-bottom: 0;
    top: 0;
@@ -384,8 +385,8 @@ body {
   }
 
   body.selenite-mode .homebtn:hover {
-   background-color: #10002B;
-   border: 3px solid #240046;
+   background-color: #3C096C;
+   border: 3px solid rgb(90, 24, 154);
   }
 
   body.selenite-mode .sidebar-btn path {
@@ -404,5 +405,5 @@ body {
 
   body.selenite-mode strong,
   body.selenite-mode .subtitle {
-   color: #240046;
+   color: #3C096C;
   }
