@@ -513,7 +513,7 @@ body {
 
   body.selenite-mode .title {
    font-size: 14px;
-   float: left;
+   float: right;
    font-weight: 700;
    align-items: center;
    display: flex;
