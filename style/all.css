@@ -430,7 +430,6 @@ body {
 
   body.selenite-mode .proxy-button {
    background-color: #3C096C;
-   border: 2.5px solid rgb(90, 24, 154);
   }
 
   body.selenite-mode .proxy-button:hover {
