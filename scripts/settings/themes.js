@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (tvalue === "Selenite") {
             selenite();
         } else if (tvalue === "Default") {
-            reverts();
+            themedef();
         }
     });
 });
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadcustomls();
 }); */
 
-function reverts() {
+function themedef() {
     localStorage.removeItem('mode', 'light');
     window.location.reload();
 }
@@ -210,7 +210,7 @@ function selenite() {
   updatetheme('Selenite');
 }
 
-function reverts() {
+function themedef() {
     var body = document.body;
     var logo = document.querySelector('.header-img');
     var homelogo = document.querySelector('.title-img');
@@ -246,6 +246,6 @@ function applytheme() {
         selenite();
         localStorage.setItem('theme', 'selenite');
     } else {
-        reverts();
+        themedef();
     }
 }
