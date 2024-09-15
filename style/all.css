@@ -470,15 +470,14 @@ body {
 
   body.selenite-mode #all {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(13vw, 2fr));
+   grid-template-columns: repeat(auto-fill, minmax(14vw, 2fr));
    grid-gap: 8px;
    margin: 0 11% 0 11%;
    justify-content: space-evenly;
   }
 
   body.selenite-mode .game {
-   width: 13vw;
-   height: auto;
+   width: 14vw;
    border-radius: 20px;
    display: flex;
    position: relative;
