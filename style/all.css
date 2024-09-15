@@ -358,3 +358,24 @@ body {
    background-color: #3C096C;
    border: 2px solid rgb(90, 24, 154);
   }
+
+  body.selenite-mode .sidebar-title {
+   color: #fff;
+  }
+
+  body.selenite-mode hr {
+   background-color: #fff;
+  }
+
+  body.selenite-mode .sidebar-btn {
+   background-color: #10002B;
+   color: #000;
+  }
+
+  body.selenite-mode .sidebar-btn:hover {
+   background-color: #240046;
+  }
+
+  body.selenite-mode .sidebar-btn path {
+   fill: #ffffff;
+  }
