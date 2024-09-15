@@ -26,7 +26,7 @@ function lightmode() {
   var body = document.body;
   var logo = document.querySelector('.header-img');
   var homelogo = document.querySelector('.title-img');
-  var currenttheme = body.dataset.mode || 'light';
+  var currentmode = body.dataset.mode || 'light';
   var header = document.getElementById('header');
   var footer = document.getElementById('footer');
     
@@ -50,11 +50,8 @@ function darkmode() {
   var body = document.body;
   var logo = document.querySelector('.header-img');
   var homelogo = document.querySelector('.title-img');
-  var currenttheme = body.dataset.mode || 'dark';
   var header = document.getElementById('header');
   var footer = document.getElementById('footer');
-    
-  body.dataset.mode = 'dark';
     
   if (logo) {
     logo.src = '/images/cybriagames/logo-name2half.png';
