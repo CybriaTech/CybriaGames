@@ -369,7 +369,7 @@ body {
 
   body.selenite-mode .sidebar-btn {
    background-color: #10002B;
-   color: #000;
+   color: #fff;
   }
 
   body.selenite-mode .sidebar-btn:hover {
