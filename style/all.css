@@ -313,7 +313,6 @@ body {
   body.selenite-mode {
    background-color: #10002B;
    color: #fff;
-   box-sizing: border-box;
    font-family: 'Prompt', sans-serif;
   }
 
@@ -322,6 +321,7 @@ body {
    padding-top: 0;
    padding-bottom: 0;
    top: 0;
+   box-sizing: border-box;
    height: 45px;
    border-radius: 0 0 20px 20px;
    box-shadow: rgb(36, 0, 70) 0px 5px 10px 0px;
