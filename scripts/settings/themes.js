@@ -66,7 +66,7 @@ function darkmode() {
   header.classList.remove('light-mode');
   footer.classList.remove('light-mode');
   localStorage.removeItem('mode', 'light');
-  document.document.getElementById("mode").value = 'Dark';
+  document.getElementById("mode").value = 'Dark';
   updateselect('Dark');
 }
 
