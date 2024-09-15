@@ -421,3 +421,7 @@ body {
   body.selenite-mode #proxy-options {
    background-color: #240046;
   }
+
+  body.selenite-mode #spacet {
+   margin-top: 7%;
+  }
