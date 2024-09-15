@@ -2,27 +2,27 @@ document.addEventListener('DOMContentLoaded', function() {
     applyls();
     applytheme();
 
-    document.getElementById("mode").addEventListener("change", function() {
-        const svalue = this.value;
-        if (svalue === "Light") {
-            lightmode();
-            localStorage.setItem('mode', 'light');
-        } else if (svalue === "Dark") {
-            darkmode();
-            localStorage.setItem('mode', 'dark');
-        }
-    });
+    const modearea = document.getElementById("mode");
+    const themearea = document.getElementById("theme");
 
-    document.getElementById("theme").addEventListener("change", function() {
-        const tvalue = this.value;
-        if (tvalue === "Selenite") {
-            selenite();
-            localStorage.setItem('theme', 'selenite');
-        } else if (tvalue === "Default") {
-            themedef();
-            localStorage.removeItem('mode');
-        }
-    });
+    if (modearea) {
+        modearea.addEventListener("change", function() {
+            const svalue = this.value;
+            if (svalue === "Light") {
+                lightmode();
+                localStorage.setItem('mode', 'light');
+            } else if (svalue === "Dark") {
+                darkmode();
+                localStorage.setItem('mode', 'dark');
+            }
+        });
+    }
+
+    if (themearea) {
+        themearea.addEventListener("change", function() {
+            changetheme();
+        });
+    }
 });
 
 function lightmode() {
@@ -210,6 +210,7 @@ function selenite() {
   header.classList.add('selenite-mode');
   footer.classList.add('selenite-mode');
   document.document.getElementById("theme").value = 'Selenite';
+  localStorage.setItem('theme', 'selenite');
   updatetheme('Selenite');
 }
 
