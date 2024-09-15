@@ -429,11 +429,12 @@ body {
   }
 
   body.selenite-mode #spacet,
-  body.selenite-mode #spacet-index{
+  body.selenite-mode #spacet-index {
    margin: 0;
   }
 
-  body.selenite-mode .title-img {
+  body.selenite-mode .title-img,
+  body.selenite-mode #search-space {
    margin-top: 10%;
   }
 
