@@ -191,6 +191,7 @@ function r34() {
 
   var r34title = document.createElement("p");
   r34title.classList.add("r34title");
+  r34title.textContent = 'Cybria34';
     
   body.dataset.theme = 'r34';
 
