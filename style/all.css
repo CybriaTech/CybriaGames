@@ -40,7 +40,6 @@ body {
     align-items: center;
     cursor: pointer;
     width: 310px;
-    margin-top: 3%;
     z-index: 999999;
     justify-content: flex-start;
   }
