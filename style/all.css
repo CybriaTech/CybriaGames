@@ -472,7 +472,7 @@ body {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(13vw, 1fr));
    grid-gap: 7px;
-   margin: 0 5% 0 5%;
+   margin: 0 7% 0 7%;
    justify-content: space-evenly;
   }
 
