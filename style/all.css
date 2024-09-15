@@ -488,6 +488,7 @@ body {
    background-color: rgb(36, 0, 70);
    justify-content: center;
    margin: 15px;
+   align-items: center;
    cursor: pointer;
    box-shadow: 0px 0px 5px 5px rgb(36, 0, 70);
    border: none;
