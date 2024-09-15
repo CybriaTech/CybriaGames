@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             selenite();
         } else if (tvalue === "Default") {
             themedef();
+            localStorage.removeItem('theme');
         }
     });
 });
