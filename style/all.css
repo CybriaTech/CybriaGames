@@ -531,3 +531,19 @@ body {
    font-weight: 700;
    text-align: center;
   }
+
+  body.selenite-mode .gcontrols {
+   background-color: #240046;
+  }
+
+  body.selenite-mode #returnbtn,
+  body.selenite-mode #fullbtn,
+  body.selenite-mode #refbtn {
+   background-color: #3C096C;
+  }
+
+  body.selenite-mode #returnbtn:hover,
+  body.selenite-mode #fullbtn:hover,
+  body.selenite-mode #refbtn:hover {
+   background-color: #10002B;
+  }
