@@ -189,7 +189,7 @@ function r34() {
   var header = document.getElementById('header');
   var footer = document.getElementById('footer');
 
-  var r34title = document.createElement("p");
+  var r34title = document.createElement("h2");
   r34title.classList.add("r34title");
   r34title.textContent = 'Cybria34';
 
