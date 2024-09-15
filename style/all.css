@@ -298,7 +298,6 @@ body {
 
   body.selenite-mode #header,
   body.selenite-mode #footer {
-   justify-content: center;
    background-color: #240046;
    color: #fff;
    display: flex;
@@ -317,6 +316,7 @@ body {
   }
 
   body.selenite-mode #header {
+   justify-content: center;
    position: fixed;
    padding-top: 0;
    padding-bottom: 0;
@@ -378,10 +378,31 @@ body {
    color: #fff;
   }
 
-  body.selenite-mode .sidebar-btn:hover {
+  body.selenite-mode .sidebar-btn:hover,
+  body.selenite-mode .homebtn {
    background-color: #240046;
+  }
+
+  body.selenite-mode .homebtn:hover {
+   background-color: #10002B;
+   border: 3px solid #240046;
   }
 
   body.selenite-mode .sidebar-btn path {
    fill: #ffffff;
+  }
+
+  body.selenite-mode .search,
+  body.selenite-mode .submit {
+   background-color: #3C096C;
+  }
+
+  body.selenite-mode .search::placeholder,
+  body.selenite-mode .int-desc {
+   color: #fff;
+  }
+
+  body.selenite-mode strong,
+  body.selenite-mode .subtitle {
+   color: #240046;
   }
