@@ -405,11 +405,15 @@ body {
   }
 
   body.selenite-mode .search {
-   border: 2px 0 2px 2px solid rgb(90, 24, 154);
+   border-top: 2px solid rgb(90, 24, 154);
+   border-right: 2px solid rgb(90, 24, 154);
+   border-bottom: 2px solid rgb(90, 24, 154);
   }
 
   body.selenite-mode .submit {
-   border: 2px 2px 2px 0 solid rgb(90, 24, 154);
+   border-top: 2px solid rgb(90, 24, 154);
+   border-bottom: 2px solid rgb(90, 24, 154);
+   border-left: 2px solid rgb(90, 24, 154);
   }
 
   body.selenite-mode .search::placeholder,
