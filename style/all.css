@@ -475,7 +475,7 @@ body {
   }
 
   body.selenite-mode .game {
-   width: 15vw;
+   width: 130px;
    height: auto;
    border-radius: 20px;
    display: flex;
