@@ -77,8 +77,10 @@ function changemode() {
     var selector = document.getElementById("mode").value;
     if (selector === "Light") {
         lightmode();
+        document.getElementById("theme").value = 'Default';
     } else if (selector === "Dark") {
         darkmode();
+        document.getElementById("theme").value = 'Default';
     }
 }
 
