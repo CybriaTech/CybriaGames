@@ -519,8 +519,6 @@ body {
    align-items: center;
    margin-top: 3px;
    margin-bottom: 3px;
-   justify-content: center;
-   height: 40px;
   }
 
   body.selenite-mode .creator {
