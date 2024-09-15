@@ -407,3 +407,17 @@ body {
   body.selenite-mode .subtitle {
    color: #3C096C;
   }
+
+  body.selenite-mode .proxy-button {
+   background-color: #3C096C;
+  }
+
+  body.selenite-mode .proxy-button:hover {
+   background-color: #240046;
+  }
+
+  body.selenite-mode #proxy-console,
+  body.selenite-mode #proxy-menu,
+  body.selenite-mode #proxy-options {
+   background-color: #240046;
+  }
