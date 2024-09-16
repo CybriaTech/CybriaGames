@@ -542,3 +542,7 @@ body {
   body.selenite-mode #refbtn:hover {
    background-color: #10002B;
   }
+
+  body.selenite-mode #links {
+   background-color: #240046;
+  }
