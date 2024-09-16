@@ -1,0 +1,29 @@
+#main-area {
+  min-height: 100vh;
+  margin: 3%;
+}
+
+.links-heading {
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.3em;
+}
+
+#links {
+  background-color: #22272E;
+  border-radius: 16px;
+  height: 100%;
+  padding: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+  font-size: 1.8em;
+}
+
+.link:hover {
+  color: #0095FF;
+}
