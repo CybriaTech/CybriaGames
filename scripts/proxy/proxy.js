@@ -46,7 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 'https://kors.onrender.com/',
                 'https://tcors.vercel.app/',
                 'https://tcors.duckdns.org/',
-                'https://tcors.hopto.org/'
+                'https://tcors.hopto.org/',
+                'https://tcors.mywire.org/',
+                'tcors.loseyourip.com'
             ];
 
             scancors(link, corsproxy);
