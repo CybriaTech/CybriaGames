@@ -99,16 +99,24 @@ fetch("https://api.ipify.org/?format=json")
 
 function createissue() {
     const issuecreate = document.querySelector(".issue-create");
-    const issuebody = document.getElementById("issue-main");
+    const issuemain = document.getElementById("issue-main");
+    const issuebody = document.getElementById("issue-body");
+    const anhr = document.querySelector("hr");
     issuecreate.style.display = "block";
-    issuebody.style.display = "none";
+    issuemain.style.display = "none";
+    anhr.style.display = "none';
+    issuebody.style.display = "none';
 }
 
 function closeissue() {
     const issuecreate = document.querySelector(".issue-create");
-    const issuebody = document.getElementById("issue-main");
+    const issuemain = document.getElementById("issue-main");
+    const issuebody = document.getElementById("issue-body");
+    const anhr = document.querySelector("hr");
     issuecreate.style.display = "none";
-    issuebody.style.display = "flex";
+    issuemain.style.display = "flex";
+    anhr.style.display = "block';
+    issuebody.style.display = "flex';
 }
                 </script>
     </body>
