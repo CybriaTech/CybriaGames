@@ -548,6 +548,6 @@ body {
   }
 
 
-  body.selenite-mode .settings-box-title {
+  body.selenite-mode #specific-spacing {
    margin-top: 30%;
   }
