@@ -114,6 +114,7 @@ function closeissue() {
         const title = document.querySelector('.issue-title').value;
         const tag = document.querySelector('.issue-tag').value;
         const description = document.querySelector('.issue-description').value;
+        window.location.reload();
 
         if (!title || !description) {
           return;
