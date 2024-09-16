@@ -248,7 +248,7 @@ body {
    color: #000;
   }
 
-  body.light-mode.link:hover {
+  body.light-mode .link:hover {
    color: #0095FF;
   }
 
