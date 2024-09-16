@@ -6,6 +6,11 @@
   flex: 1;
 }
 
+#tags-area {
+  display: flex;
+  gap: 10px;
+}
+
 #issue-body {
   display: flex;
   align-items: center;
