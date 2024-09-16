@@ -48,7 +48,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 'https://tcors.duckdns.org/',
                 'https://tcors.hopto.org/',
                 'https://tcors.mywire.org/',
-                'tcors.loseyourip.com'
+                'https://tcors.loseyourip.com/',
+                'https://tcors.ddnsfree.com/',
+                'https://tcors.accesscam.org/',
+                'https://tcors.camdvr.org/',
+                'https://tcors.webredirect.org'
             ];
 
             scancors(link, corsproxy);
