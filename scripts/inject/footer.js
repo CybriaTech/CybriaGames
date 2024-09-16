@@ -2,8 +2,6 @@ document.write(`
     <footer id="footer">
         <div class="footer-1">
             <p class="footer-title">Other</p>
-            <a class="footer-a" href="/suggestions.html">Suggestions</a>
-            <a class="footer-a" href="/issue.html">Report Issues</a>
             <a class="footer-a" href="/links.html">More Links</a>
         </div>
         <div class="footer-2">
