@@ -234,7 +234,7 @@
   height: 100vh;
 }
 
-#colorpickerbg,
+/* #colorpickerbg,
 #colorpickertxt {
   background-color: #22272E;
   border-radius: 12px;
@@ -268,7 +268,7 @@
   color: #fff;
   text-align: center;
   font-size: 2.3em;
-}
+} */
 
 .select-settings {
   box-shadow: 0 0 3px #555;
@@ -281,4 +281,32 @@
   cursor: pointer;
   margin-bottom: 10px;
   background-color: #22272E;
+}
+
+@media (max-width: 1200px) {
+  .settings-box-title {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .settings-box-title {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .settings-box-title {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .settings-box-title {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+  }
 }
