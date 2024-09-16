@@ -239,6 +239,19 @@ body {
    background-color: #f0eded;
   }
 
+  body.light-mode #links {
+   background-color: #f0eded;
+  }
+
+  body.light-mode .link,
+  body.light-mode .links-heading {
+   color: #000;
+  }
+
+  body.light-mode.link:hover {
+   color: #0095FF;
+  }
+
   body.light-mode .cheat-title {
    color: #000;
   }
