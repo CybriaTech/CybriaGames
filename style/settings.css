@@ -293,7 +293,7 @@
 @media (max-width: 992px) {
   .settings-box-title {
     font-size: 2.5em;
-    margin-bottom: 15px;
+    margin-top: 5px;
   }
 }
 
@@ -301,6 +301,10 @@
   .settings-box-title {
     font-size: 2.2em;
     margin-bottom: 20px;
+  }
+
+  .ab-cloak {
+    argin-top: 10px;
   }
 }
 
