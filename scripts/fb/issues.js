@@ -4,7 +4,7 @@
       firebase.initializeApp(firebaseConfig);
       const database = firebase.database();
 
-      async function submit() {
+      async function submitissue() {
         const title = document.querySelector('.issue-title').value;
         const tag = document.querySelector('.issue-tag').value;
         const description = document.querySelector('.issue-description').value;
