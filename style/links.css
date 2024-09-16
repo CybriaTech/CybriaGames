@@ -11,6 +11,8 @@
 }
 
 #links {
+  display: flex;
+  flex-direction: column;
   background-color: #22272E;
   border-radius: 16px;
   height: 100%;
