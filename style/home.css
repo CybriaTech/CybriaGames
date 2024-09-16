@@ -54,7 +54,7 @@ form {
   border: none;
   background-color: #22272E;
   font-size: 3.2em;
-  padding: 5px 50px 5px 0;
+  padding: 0 50px 0 0;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -75,7 +75,6 @@ form {
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-  padding: 5px 0 5px 0;
   display: flex;
   align-items: center;
   border: 1px 0 0 1px solid #fff;
