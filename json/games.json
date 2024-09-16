@@ -233,5 +233,11 @@
     "logo": "/images/games/tunnel-rush.png",
     "creator": "Deer Cat",
     "source": "/games/tunnel-rush"
+  },
+  {
+    "title": "100ng",
+    "logo": "/images/games/100ng.png",
+    "creator": "Benji Kay",
+    "source": "/games/100ng"
   }
 ]
