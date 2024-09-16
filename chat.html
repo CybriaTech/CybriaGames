@@ -31,7 +31,13 @@
     </div>
 </main>
         <script>
+function clearembed() {
+    const mainspace = document.querySelector('main');
+    mainspace.innerHTML = '';
+}
+            
 function widgetbot() {
+    clearembed();
     var widgetbotembed = document.createElement('iframe');
     widgetbotembed.src = "https://e.widgetbot.io/channels/1154632402942050394/1154632891310030878";
     widgetbotembed.width = "100%";
@@ -46,6 +52,7 @@ function widgetbot() {
 }
 
 function deadsimplechat() {
+    clearembed();
     var deadsimplechatembed = document.createElement('iframe');
     deadsimplechatembed.src = "https://deadsimplechat.com/t63n2jyL7";
     deadsimplechatembed.width = "100%";
