@@ -99,12 +99,16 @@ fetch("https://api.ipify.org/?format=json")
 
 function createissue() {
     const issuecreate = document.querySelector(".issue-create");
+    const issuebody = document.getElementById("issue-main");
     issuecreate.style.display = "block";
+    issuebody.style.display = "none";
 }
 
 function closeissue() {
     const issuecreate = document.querySelector(".issue-create");
+    const issuebody = document.getElementById("issue-main");
     issuecreate.style.display = "none";
+    issuebody.style.display = "flex";
 }
                 </script>
     </body>
