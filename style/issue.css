@@ -152,13 +152,10 @@
 }
 
 .issue-create {
-  display: none;
-}
-
-.issue-create {
   background-color: #1C2128;
   border-radius: 8px;
   padding: 20px;
+  display: none;
   max-width: 500px;
   font-family: Arial, sans-serif;
   color: #fff;
