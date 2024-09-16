@@ -546,3 +546,8 @@ body {
   body.selenite-mode #links {
    background-color: #240046;
   }
+
+
+  body.selenite-mode .settings-box-title {
+   margin-top: 30%;
+  }
