@@ -13,9 +13,12 @@
 
 #links {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   background-color: #22272E;
   border-radius: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   height: 100%;
   padding: 15px;
 }
