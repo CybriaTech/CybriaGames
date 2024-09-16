@@ -127,10 +127,10 @@
   display: flex;
   box-sizing: border-box;
   flex-direction: row;
-  width: 100%;
+  width: auto;
+  flex: 1;
   margin-bottom: 15px;
   padding: 8px;
-  overflow: hidden;
   border-radius: 7px;
 }
 
