@@ -13,19 +13,19 @@
 
 #links {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   background-color: #22272E;
-  border-radius: 16px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   height: 100%;
+  text-align: left;
   padding: 15px;
 }
 
 .link {
   text-decoration: none;
   color: #fff;
+  border-radius: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   transition: color 0.3s ease;
   font-size: 1.8em;
 }
