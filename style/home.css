@@ -49,7 +49,7 @@ form {
   color: #ffffff;
   font-size: 1.9em;
   width: 50vw;
-  height: 10vh;
+  height: 85px;
   border-radius: 0 35px 35px 0;
   border: none;
   background-color: #22272E;
@@ -69,7 +69,7 @@ form {
 
 .submit {
   width: 5vw;
-  height: 10.2vh;
+  height: 85px;
   background-color: #22272E;
   border: none;
   color: #fff;
