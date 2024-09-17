@@ -902,11 +902,11 @@ body {
    top: 0;
    box-sizing: border-box;
    height: 57px;
-   box-shadow: 0 0 7px #121211;
+   box-shadow: 0 0 7px #242422;
   }
 
   body.space-mode #footer {
-   box-shadow: 0 0 7px #121211;
+   box-shadow: 0 0 7px #242422;
    bottom: 0;
   }
 
