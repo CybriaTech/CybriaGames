@@ -881,7 +881,7 @@ body {
 
   body.space-mode #header,
   body.space-mode #footer {
-   background-color: #040402;
+   background-color: rgb(40,40,40);
    color: #fff;
    display: flex;
    width: 100%;
