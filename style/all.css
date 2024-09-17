@@ -624,7 +624,7 @@ body {
 
   body.ugly-mode #footer {
    bottom: 0;
-   border-radius: 50%;
+   border-radius: 0;
   }
 
   body.ugly-mode .header-link,
