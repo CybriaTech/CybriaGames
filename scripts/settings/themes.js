@@ -53,7 +53,6 @@ function settheme(theme) {
         footer.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
         if (logo) logo.src = '/images/cybriagames/logo-name2half.png';
         if (homelogo) homelogo.src = '/images/cybriagames/logo-name2half.png';
-    },
     } else if (theme === 'Flames') {
         body.classList.add('flames-mode');
         header.classList.add('flames-mode');
