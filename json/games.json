@@ -239,5 +239,11 @@
     "logo": "/images/games/100ng.png",
     "creator": "Benji Kay",
     "source": "/games/100ng"
+  },
+  {
+    "title": "Creative Kill Chamber 2",
+    "logo": "/images/games/ckc2.png",
+    "creator": "ESP Animations",
+    "source": "/games/ckc2"
   }
 ]
