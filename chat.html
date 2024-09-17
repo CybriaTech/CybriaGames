@@ -26,7 +26,7 @@
   <main>
     <div id="chat-options">
         <p class="chat-options-title">Select Chatroom Provider</p>
-        <button class="chat-button" onclick="widgetbot()">Widgetbot (Default)</button>
+        <button class="chat-button" onclick="javascript:document.getElementById('chat-options').style.display = 'none';">Widgetbot (Default)</button>
         <button class="chat-button" onclick="deadsimplechat()">DeadSimpleChat</button>
     </div>
 <widgetbot
@@ -40,10 +40,6 @@
 function clearembed() {
     const mainspace = document.querySelector('main');
     mainspace.innerHTML = '';
-}
-            
-function widgetbot() {
-    document.getElementById("chat-options").style.display = "none";
 }
 
 function deadsimplechat() {
