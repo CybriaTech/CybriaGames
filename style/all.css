@@ -934,8 +934,16 @@ body {
    color: #fff;
   }
 
-  body.space-mode .sidebar-btn:hover {
+  body.space-mode .sidebar-btn:hover,
+  body.space-mode .settings-input {
    background-color: #262626;
   }
+
+  body.space-mode .settings-input-box,
+  body.space-mode #ab-cloak {
+   background-color: #030303;
+  }
+
+
 
 
