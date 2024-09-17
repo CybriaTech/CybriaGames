@@ -743,7 +743,7 @@ body {
    width: 125px;
    border-radius: 5px;
    display: flex;
-   position: absolute;
+   position: fixed;
    overflow: hidden;
    margin: 12px 0 12px 0;
    justify-content: space-between;
