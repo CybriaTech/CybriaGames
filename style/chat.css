@@ -47,4 +47,8 @@
   font-size: 1.2em;
   font-weight: bold;
 }
+
+#main-area {
+  min-height: 100vh;
+}
   
