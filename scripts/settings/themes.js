@@ -72,10 +72,10 @@ function spaceparticle() {
 particlesJS("space-particles", {
   "particles": {
     "number": {
-      "value": 355,
+      "value": 500,
       "density": {
         "enable": true,
-        "value_area": 789.1476416322727
+        "value_area": 1200
       }
     },
     "color": {
@@ -125,11 +125,11 @@ particlesJS("space-particles", {
     },
     "move": {
       "enable": true,
-      "speed": 0.2,
+      "speed": 0.5,
       "direction": "none",
       "random": true,
       "straight": false,
-      "out_mode": "out",
+      "out_mode": "bounce",
       "bounce": false,
       "attract": {
         "enable": false,
