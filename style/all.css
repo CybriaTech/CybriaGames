@@ -888,10 +888,6 @@ body {
    z-index: 1;
   }
 
-  body.space-mode .header-img {
-   display: none;
-  }
-
   body.space-mode {
    background-color: #000;
    background-image: url('/images/themes/space.png');
@@ -903,37 +899,29 @@ body {
   }
 
   body.space-mode #header {
-   justify-content: center;
-   position: fixed;
+   justify-content: space-between;
    z-index: 999999999;
-   padding-top: 0;
-   padding-bottom: 0;
+   padding: 5px 20px;
    top: 0;
    box-sizing: border-box;
-   height: 45px;
-   border-radius: 0 0 20px 20px;
-   box-shadow: rgb(36, 0, 70) 0px 5px 10px 0px;
+   height: 57px;
+   box-shadow: 0 0 7px #fff;
   }
 
   body.space-mode #footer {
+   box-shadow: 0 0 7px #fff;
    bottom: 0;
-   border-radius: 20px 20px 0 0;
   }
 
   body.space-mode .header-link,
   body.space-mode .footer-a {
    color: #fff;
-   font-size: 16px;
-   font-weight: 700;
    text-align: center;
-   margin-right: 2rem;
-   margin-left: 1rem;
-   transition: text-shadow 0.5s ease;
   }
 
   body.space-mode .header-link:hover,
   body.space-mode .footer-a:hover {
-   text-shadow: 2px 2px 6px #fff;
+   color: #0095ff;
   }
 
 
