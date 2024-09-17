@@ -580,5 +580,263 @@ body {
    border: 3px solid rgb(90, 24, 154);
   }
 
+/* Ugly Mode */
+
+  body.ugly-mode #header,
+  body.ugly-mode #footer {
+   background-color: #99dbbe;
+   color: #0c863d;
+   display: flex;
+   width: 150%;
+   z-index: 1;
+  }
+
+  body.ugly-mode .header-img {
+   display: none;
+  }
+
+  body.ugly-mode {
+   background-color: #021b92;
+   background-size: cover;
+   color: #a82dbf;
+   font-family: 'Prompt', sans-serif;
+  }
+
+  body.ugly-mode #header {
+   justify-content: center;
+   position: fixed;
+   z-index: 999999999;
+   padding-top: 0;
+   padding-bottom: 0;
+   top: 0;
+   box-sizing: border-box;
+   height: 42px;
+   background-color: #1d16d3;
+   border-radius: 0 0 20px 20px;
+   box-shadow: #299214 0px 2px 15px 0px;
+  }
+
+  body.ugly-mode #footer {
+   bottom: 0;
+   border-radius: 20px 20px 0 0;
+  }
+
+  body.ugly-mode .header-link,
+  body.ugly-mode .footer-a {
+   color: #99322e;
+   font-size: 16px;
+   font-weight: 900;
+   text-align: center;
+   margin-right: 2rem;
+   margin-left: 1rem;
+   transition: text-shadow 0.2s ease;
+  }
+
+  body.ugly-mode .header-link:hover,
+  body.ugly-mode .footer-a:hover {
+   text-shadow: 2px 2px 6px #900428;
+  }
+
+  body.ugly-mode #settings-box {
+   background-color: #c96099;
+   color: #a0dca0;
+  }
+
+  body.ugly-mode #ab-cloak,
+  body.ugly-mode .settings-input-box {
+   background-color: #2fdf2d;
+  }
+
+  body.ugly-mode .select-settings,
+  body.ugly-mode .settings-input,
+  body.ugly-mode .tab-cloak-btn {
+   background-color: #3C096C;
+   border: 2px solid #d8fc19;
+  }
+
+  body.ugly-mode .sidebar-title {
+   color: #e99b09;
+  }
+
+  body.ugly-mode hr {
+   background-color: #69120d;
+  }
+
+  body.ugly-mode .sidebar-btn {
+   background-color: #be6241;
+   color: #d402bb;
+  }
+
+  body.ugly-mode .sidebar-btn:hover,
+  body.ugly-mode .homebtn {
+   background-color: #e66d9f;
+  }
+
+  body.ugly-mode .homebtn:hover {
+   background-color: #3C096C;
+   border: 9px solid #b6bf94;
+  }
+
+  body.ugly-mode .sidebar-btn path {
+   fill: #4abe96;
+  }
+
+  body.ugly-mode .search,
+  body.ugly-mode .submit {
+   background-color: #c894dd;
+  }
+
+  body.ugly-mode .search::placeholder,
+  body.ugly-mode .int-desc {
+   color: #69921e;
+  }
+
+  body.ugly-mode strong,
+  body.ugly-mode .subtitle {
+   color: #159214;
+  }
+
+  body.ugly-mode .proxy-button {
+   background-color: #ba9c69;
+  }
+
+  body.ugly-mode .proxy-button:hover {
+   background-color: #b1121a;
+  }
+
+  body.ugly-mode #proxy-console,
+  body.ugly-mode #proxy-menu,
+  body.ugly-mode #proxy-options {
+   background-color: #4b4ce6;
+  }
+
+  body.ugly-mode #spacet,
+  body.ugly-mode #spacet-index {
+   margin: 0;
+  }
+
+  body.ugly-mode .title-img,
+  body.ugly-mode #search-space {
+   margin-top: 15%;
+  }
+
+  body.ugly-mode #space-above {
+   margin-top: 9%;
+  }
+
+  body.ugly-mode .cheat {
+   background-color: #40b329;
+   box-shadow: #9d21c8 0px 0px 2px 2px;
+   color: #8169a6;
+  }
+
+  body.ugly-mode .cheat-title {
+   text-decoration: underline;
+  }
+
+  body.ugly-mode #all {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(14vw, 2fr));
+   grid-gap: 8px;
+   margin: 0 15% 0 15%;
+   justify-content: space-evenly;
+  }
+
+  body.ugly-mode .game {
+   width: 14vw;
+   border-radius: 20px;
+   display: flex;
+   position: relative;
+   overflow: hidden;
+   margin: 12px 0 12px 0;
+   justify-content: space-between;
+   height: auto;
+   z-index: 24;
+   flex-direction: column;
+   background-color: #8fc240;
+   cursor: pointer;
+   box-shadow: 0px 0px 2px 2px #3a6260;
+   border: none;
+  }
+
+  body.ugly-mode .game:hover {
+   transform: scale(1.1);
+   filter: brightness(82%);
+   box-shadow: 0px 0px 2px 2px #e81415;
+  }
+
+  body.ugly-mode .g-icon {
+   width: 150%;
+   border-radius: 20px;
+   aspect-ratio: 1 / 1;
+  }
+
+  body.ugly-mode .g-icon {
+   width: 150%;
+   border-radius: 20px;
+   aspect-ratio: 1 / 1;
+  }
+
+  body.ugly-mode .title {
+   font-size: 14px;
+   font-weight: 900;
+   float: right;
+   font-family: 'Prompt', sans-serif;
+   justify-content: flex-end;
+   align-items: center;
+   display: flex;
+   height: auto;
+   width: 150%;
+   margin: 12px 0 0 0;   
+  }
+
+  body.ugly-mode .creator {
+   display: none;
+  }
+
+  body.ugly-mode .game-title {
+   font-size: 49px;
+   font-weight: 900;
+   text-align: center;
+  }
+
+  body.ugly-mode #gcontrols {
+   background-color: #348fec;
+  }
+
+  body.ugly-mode #returnbtn,
+  body.ugly-mode #fullbtn,
+  body.ugly-mode #refbtn {
+   background-color: #12e1a0;
+  }
+
+  body.ugly-mode #returnbtn:hover,
+  body.ugly-mode #fullbtn:hover,
+  body.ugly-mode #refbtn:hover {
+   background-color: #1e69ff;
+  }
+
+  body.ugly-mode #links {
+   background-color: #8df164;
+  }
+
+  body.ugly-mode #specific-spacing {
+   margin-top: 30%;
+  }
+
+  body.ugly-mode #chat-options {
+   background-color: #ca9ca4;
+  }
+
+  body.ugly-mode .chat-button {
+   background-color: #cb8602;
+  }
+
+  body.ugly-mode .chat-button:hover {
+   background-color: #a24906;
+   border: 9px solid #0aed62;
+  }
+
+
 
 
