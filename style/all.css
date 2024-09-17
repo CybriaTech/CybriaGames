@@ -928,6 +928,10 @@ body {
    height: 100%;
   }
 
-
+  body.space-mode #settings-box,
+  body.space-mode .sidebar-btn {
+   background-color: transparent;
+   color: #fff;
+  }
 
 
