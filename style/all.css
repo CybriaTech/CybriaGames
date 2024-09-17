@@ -934,4 +934,8 @@ body {
    color: #fff;
   }
 
+  body.space-mode .sidebar-btn:hover {
+   background-color: #262626;
+  }
+
 
