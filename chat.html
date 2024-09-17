@@ -40,10 +40,8 @@ function clearembed() {
 function widgetbot() {
     clearembed();
     var widgetbotembed = document.createElement('iframe');
+    widgetbotembed.classList.add("chatframe");
     widgetbotembed.src = "https://e.widgetbot.io/channels/1154632402942050394/1154632891310030878";
-    widgetbotembed.width = "100%";
-    widgetbotembed.height = "100vh";
-    widgetbotembed.border = "none";
 
     document.querySelector("main").appendChild(widgetbotembed);
 
@@ -56,10 +54,8 @@ function widgetbot() {
 function deadsimplechat() {
     clearembed();
     var deadsimplechatembed = document.createElement('iframe');
+    deadsimplechatembed.classList.add("chatframe");
     deadsimplechatembed.src = "https://deadsimplechat.com/t63n2jyL7";
-    deadsimplechatembed.width = "100%";
-    deadsimplechatembed.height = "100vh";
-    deadsimplechatembed.border = "none";
 
     document.querySelector("main").appendChild(deadsimplechatembed);
 
