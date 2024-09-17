@@ -25,9 +25,9 @@ function settheme(theme) {
 
     body.dataset.theme = theme;
 
-    body.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-    header.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-    footer.classList.remove('selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+    body.classList.remove('selenite-mode', 'light-mode', 'ugly-mode', 'space-mode');
+    header.classList.remove('selenite-mode', 'light-mode', 'ugly-mode', 'space-mode');
+    footer.classList.remove('selenite-mode', 'light-mode', 'ugly-mode', 'space-mode');
 
     if (theme === 'Selenite') {
         body.classList.add('selenite-mode');
@@ -48,15 +48,19 @@ function settheme(theme) {
         if (logo) logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
         if (homelogo) homelogo.src = '/images/cybriagames/logo-name2half-lightmode.png';
     } else if (theme === 'Dark') {
-        body.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-        header.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
-        footer.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'latte-mode', 'macchiato-mode', 'ugly-mode', 'space-mode');
+        body.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'ugly-mode', 'space-mode');
+        header.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'ugly-mode', 'space-mode');
+        footer.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'ugly-mode', 'space-mode');
         if (logo) logo.src = '/images/cybriagames/logo-name2half.png';
         if (homelogo) homelogo.src = '/images/cybriagames/logo-name2half.png';
     } else if (theme === 'Flames') {
         body.classList.add('flames-mode');
         header.classList.add('flames-mode');
         footer.classList.add('flames-mode');
+    } else if (theme === 'Oceans') {
+        body.classList.add('oceans-mode');
+        header.classList.add('oceans-mode');
+        footer.classList.add('oceans-mode');
     }
 
     localStorage.setItem('theme', theme);
