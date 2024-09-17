@@ -592,6 +592,10 @@ body {
    z-index: 1;
   }
 
+  body.ugly-mode .int-desc {
+   font-size: 42px;
+  }
+
   body.ugly-mode .header-img {
    position: absolute;
    margin: 20px;
@@ -626,7 +630,7 @@ body {
   body.ugly-mode .header-link,
   body.ugly-mode .footer-a {
    color: #99322e;
-   font-size: 16px;
+   font-size: 2.3em;
    font-weight: 900;
    text-align: center;
    margin-right: 2rem;
@@ -644,6 +648,12 @@ body {
    color: #a0dca0;
   }
 
+  body.ugly-mode .homebtn {
+   padding: 0;
+   font-size: 1em;
+   border: none;
+  }
+
   body.ugly-mode #ab-cloak,
   body.ugly-mode .settings-input-box {
    background-color: #2fdf2d;
@@ -654,6 +664,7 @@ body {
   body.ugly-mode .tab-cloak-btn {
    background-color: #3C096C;
    border: 2px solid #d8fc19;
+   font-size: 12px;
   }
 
   body.ugly-mode .sidebar-title {
@@ -685,6 +696,8 @@ body {
 
   body.ugly-mode .search,
   body.ugly-mode .submit {
+   height: 10vh;
+   border: 5px solid #601582;
    background-color: #c894dd;
   }
 
@@ -743,13 +756,13 @@ body {
    width: 125px;
    border-radius: 5px;
    display: flex;
-   position: fixed;
+   position: relative;
    overflow: hidden;
    margin: 12px 0 12px 0;
    justify-content: space-between;
    height: 111px;
    z-index: 24;
-   flex-direction: row;
+   flex-direction: column;
    background-color: #8fc240;
    cursor: pointer;
    box-shadow: 0px 0px 23px 2px #3a6260;
