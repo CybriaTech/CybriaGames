@@ -38,9 +38,11 @@ function clearembed() {
             
 function widgetbot() {
     clearembed();
-    var widgetbotembed = document.createElement('iframe');
-    widgetbotembed.classList.add("chatframe");
-    widgetbotembed.src = "https://e.widgetbot.io/channels/1154632402942050394/1154632891310030878";
+    var widgetbotembed = document.createElement('widgetbot');
+    widgetbot.setAttribute('server', '1154632402942050394');
+    widgetbot.setAttribute('channel', '1154632891310030878');
+    widgetbot.setAttribute('width', '100%');
+    widgetbot.setAttribute('height', '100vh');
 
     document.querySelector("main").appendChild(widgetbotembed);
 
