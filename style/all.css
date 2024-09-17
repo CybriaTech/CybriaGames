@@ -593,7 +593,8 @@ body {
   }
 
   body.ugly-mode .header-img {
-   display: none;
+   position: absolute;
+   margin: 20px;
   }
 
   body.ugly-mode {
@@ -611,15 +612,15 @@ body {
    padding-bottom: 0;
    top: 0;
    box-sizing: border-box;
-   height: 42px;
+   height: 100%;
    background-color: #1d16d3;
-   border-radius: 0 0 20px 20px;
+   border-radius: 50%;
    box-shadow: #299214 0px 2px 15px 0px;
   }
 
   body.ugly-mode #footer {
    bottom: 0;
-   border-radius: 20px 20px 0 0;
+   border-radius: 50%;
   }
 
   body.ugly-mode .header-link,
