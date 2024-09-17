@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -599,7 +600,7 @@ body {
    background-color: #021b92;
    background-size: cover;
    color: #a82dbf;
-   font-family: 'Prompt', sans-serif;
+   font-family: 'Gasoek One', sans-serif;
   }
 
   body.ugly-mode #header {
@@ -781,7 +782,7 @@ body {
    font-size: 14px;
    font-weight: 900;
    float: right;
-   font-family: 'Prompt', sans-serif;
+   font-family: 'Gasoek One', sans-serif;
    justify-content: flex-end;
    align-items: center;
    display: flex;
