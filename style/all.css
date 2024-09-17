@@ -248,6 +248,21 @@ body {
    color: #000;
   }
 
+  body.light-mode #chat-options {
+   background-color: #fff;
+   box-shadow: 0 0 7px #000;
+   color: #000;
+  }
+
+  body.light-mode .chat-options-title {
+   color: #000;
+  }
+
+  body.light-mode .chat-button {
+   background-color: #f0eded;
+   border: 3px solid #000;
+  }
+
   body.light-mode .link:hover {
    color: #0095FF;
   }
@@ -527,7 +542,7 @@ body {
    text-align: center;
   }
 
-  body.selenite-mode .gcontrols {
+  body.selenite-mode #gcontrols {
    background-color: #240046;
   }
 
@@ -547,7 +562,22 @@ body {
    background-color: #240046;
   }
 
-
   body.selenite-mode #specific-spacing {
    margin-top: 30%;
   }
+
+  body.selenite-mode #chat-options {
+   background-color: #240046;
+  }
+
+  body.selenite-mode .chat-button {
+   background-color: #240046;
+  }
+
+  body.selenite-mode .chat-button:hover {
+   background-color: #3C096C;
+   border: 3px solid rgb(90, 24, 154);
+  }
+
+
+
