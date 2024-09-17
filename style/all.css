@@ -261,6 +261,7 @@ body {
   body.light-mode .chat-button {
    background-color: #f0eded;
    border: 3px solid #000;
+   color: #000;
   }
 
   body.light-mode .link:hover {
