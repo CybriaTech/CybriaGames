@@ -29,6 +29,13 @@
         <button class="chat-button" onclick="widgetbot()">Widgetbot</button>
         <button class="chat-button" onclick="deadsimplechat()">DeadSimpleChat</button>
     </div>
+<widgetbot
+    server="1154632402942050394"
+    channel="1154632891310030878"
+    width="100%"
+    height="100vh"
+    style="display: none;"
+></widgetbot>
 </main>
         <script>
 function clearembed() {
@@ -38,13 +45,8 @@ function clearembed() {
             
 function widgetbot() {
     clearembed();
-    var widgetbotembed = document.createElement('widgetbot');
-    widgetbot.setAttribute('server', '1154632402942050394');
-    widgetbot.setAttribute('channel', '1154632891310030878');
-    widgetbot.setAttribute('width', '100%');
-    widgetbot.setAttribute('height', '100vh');
-
-    document.querySelector("main").appendChild(widgetbotembed);
+    var widgetbotembed = document.querySelector('widgetbot');
+    widgetbotembed.style.display = "block";
 
     var deadsimplechatembed = document.querySelector('iframe[src="https://deadsimplechat.com/t63n2jyL7"]');
     if (deadsimplechatembed) {
@@ -60,9 +62,9 @@ function deadsimplechat() {
 
     document.querySelector("main").appendChild(deadsimplechatembed);
 
-    var widgetbotembed = document.querySelector('iframe[src^="https://e.widgetbot.io"]');
+    var widgetbotembed = document.querySelector('widgetbot');
     if (widgetbotembed) {
-        widgetbotembed.remove();
+        widgetbotembed.style.display = "none";
     }
 }
         </script>   
