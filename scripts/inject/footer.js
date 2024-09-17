@@ -3,7 +3,7 @@ document.write(`
         <div class="footer-1">
             <p class="footer-title">Other</p>
             <a class="footer-a" href="/links.html">More Links</a>
-            <a class="footer-a" href="/faq.html">FaQ</a>
+            <a class="footer-a" href="/faq.html">FaQ Page</a>
         </div>
         <div class="footer-2">
             <p class="footer-title">Developers</p>
