@@ -664,19 +664,27 @@ body {
   body.ugly-mode .tab-cloak-btn {
    background-color: #3C096C;
    border: 2px solid #d8fc19;
+   padding: 0;
+   margin: 0;
+   text-decoration: underline;
    font-size: 12px;
   }
 
   body.ugly-mode .sidebar-title {
    color: #e99b09;
+   font-size: 0.9em;
   }
 
   body.ugly-mode hr {
+   height: 0.5%;
    background-color: #69120d;
   }
 
   body.ugly-mode .sidebar-btn {
    background-color: #be6241;
+   padding: 0;
+   margin: 0;
+   font-size: 20px;
    color: #d402bb;
   }
 
@@ -712,6 +720,7 @@ body {
   }
 
   body.ugly-mode .proxy-button {
+   width: 2vw;
    background-color: #ba9c69;
   }
 
@@ -722,6 +731,8 @@ body {
   body.ugly-mode #proxy-console,
   body.ugly-mode #proxy-menu,
   body.ugly-mode #proxy-options {
+   position: absolute;
+   flex-direction: row;
    background-color: #4b4ce6;
   }
 
@@ -741,13 +752,14 @@ body {
 
   body.ugly-mode .cheat {
    position: absolute;
+   padding: 0;
    background-color: #40b329;
    box-shadow: #9d21c8 0px 0px 2px 2px;
    color: #8169a6;
   }
 
   body.ugly-mode #all {
-   display: flex;
+   display: inline-block;
    margin: 0 15% 0 15%;
    justify-content: center;
   }
@@ -800,7 +812,7 @@ body {
   }
 
   body.ugly-mode .creator {
-   display: none;
+   font-size: 1.7em;
   }
 
   body.ugly-mode .game-title {
@@ -810,12 +822,16 @@ body {
   }
 
   body.ugly-mode #gcontrols {
+   margin: 0;
+   padding: 0;
    background-color: #348fec;
   }
 
   body.ugly-mode #returnbtn,
   body.ugly-mode #fullbtn,
   body.ugly-mode #refbtn {
+   border-radius: 5px;
+   padding: 0;
    background-color: #12e1a0;
   }
 
@@ -834,11 +850,16 @@ body {
   }
 
   body.ugly-mode #chat-options {
+   margin: 0;
+   padding: 0;
    background-color: #ca9ca4;
   }
 
   body.ugly-mode .chat-button {
    background-color: #cb8602;
+   padding: 0;
+   font-size: 18px;
+   border: none;
   }
 
   body.ugly-mode .chat-button:hover {
