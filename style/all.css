@@ -867,6 +867,16 @@ body {
    border: 9px solid #0aed62;
   }
 
+  body.ugly-mode .settings-input-label {
+   font-size: 1em;
+   margin: 0;
+  }
+
+  body.ugly-mode .settings-box-title {
+   font-size: 1.3em;
+   margin: 0;
+  }
+
 
 
 
