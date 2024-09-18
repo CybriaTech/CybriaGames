@@ -926,7 +926,9 @@ body {
   }
 
   body.space-mode #settings-box,
-  body.space-mode .sidebar-btn {
+  body.space-mode .sidebar-btn,
+  body.space-mode #chat-options,
+  body.space-mode .game {
    background-color: transparent;
    color: #fff;
   }
@@ -935,13 +937,21 @@ body {
   body.space-mode .settings-input,
   body.space-mode .select-settings,
   body.space-mode .search,
-  body.space-mode .submit {
+  body.space-mode .submit,
+  body.space-mode #proxy-console,
+  body.space-mode #proxy-menu,
+  body.space-mode #proxy-options, {
    background-color: #1f1f1f;
   }
 
   body.space-mode .settings-input-box,
-  body.space-mode #ab-cloak {
+  body.space-mode #ab-cloak,
+  body.space-mode .proxy-button {
    background-color: #030303;
+  }
+
+  body.space-mode .proxy-button:hover {
+   background-color: #1a1a1a;
   }
 
   body.space-mode #spacem {
