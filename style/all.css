@@ -938,16 +938,16 @@ body {
   body.space-mode .select-settings,
   body.space-mode .search,
   body.space-mode .submit,
-  body.space-mode #proxy-console,
-  body.space-mode #proxy-menu,
-  body.space-mode #proxy-options, {
+  body.space-mode .proxy-button {
    background-color: #1f1f1f;
   }
 
   body.space-mode .settings-input-box,
   body.space-mode #ab-cloak,
-  body.space-mode .proxy-button,
-  body.space-mode #links {
+  body.space-mode #links,
+  body.space-mode #proxy-console,
+  body.space-mode #proxy-menu,
+  body.space-mode #proxy-options {
    background-color: #030303;
   }
 
