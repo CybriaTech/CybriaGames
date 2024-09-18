@@ -257,5 +257,11 @@
     "logo": "/images/games/drift-boss.png",
     "creator": "MarketJS",
     "source": "/games/drift-boss"
+  },
+  {
+    "title": "Fruit Ninja",
+    "logo": "/images/games/fruit-ninja.png",
+    "creator": "Halfbrick Studios",
+    "source": "/games/fruit-ninja"
   }
 ]
