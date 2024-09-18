@@ -510,6 +510,10 @@ body {
    box-shadow: 0px 0px 5px 5px rgb(36, 0, 70);
   }
 
+  body.selenite-mode .settings-box-title {
+   margin-top: 10%;
+  }
+
   body.selenite-mode .g-icon {
    width: 100%;
    border-radius: 20px;
@@ -944,6 +948,10 @@ body {
   body.space-mode #ab-cloak {
    background-color: #030303;
   }
+
+  body.space-mode .settings-box-title {
+   margin-top: 10%;
+ }
 
 
 
