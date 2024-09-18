@@ -14,6 +14,10 @@ body {
     min-height: 100vh;
   }
 
+#specific-spacing {
+  z-index: 1000;
+}
+
 #spacet-index,
 #spacet {
   margin-top: 3%;
@@ -569,10 +573,6 @@ body {
    background-color: #240046;
   }
 
-  body.selenite-mode #specific-spacing {
-   margin-top: 30%;
-  }
-
   body.selenite-mode #chat-options {
    background-color: #240046;
   }
@@ -848,10 +848,6 @@ body {
 
   body.ugly-mode #links {
    background-color: #8df164;
-  }
-
-  body.ugly-mode #specific-spacing {
-   margin-top: 30%;
   }
 
   body.ugly-mode #chat-options {
