@@ -14,11 +14,6 @@ body {
     min-height: 100vh;
   }
 
-#specific-spacing {
-  z-index: 1000;
-  display: block;
-}
-
 #spacet-index,
 #spacet {
   margin-top: 3%;
@@ -947,6 +942,11 @@ body {
   body.space-mode #ab-cloak {
    background-color: #030303;
   }
+
+  body.space-mode #spacem {
+   margin-top: 10%;
+  }
+
 
 
 
