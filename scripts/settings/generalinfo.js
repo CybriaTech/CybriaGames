@@ -3,8 +3,8 @@ async function generalinfo() {
         const response = await fetch('/cybriagames.config.json');
         const configdata = await response.json();
 
-        document.getElementById('infotitle').textContent = configdata[0].Title;
-        document.getElementById('infocreated').textContent = configdata[0].Created;
+        document.getElementById('infotitle').textContent = `Title: ${configdata[0].Title}`;
+        document.getElementById('infocreated').textContent = `Created: ${configdata[0].Created}`;
         document.getElementById('infover').textContent = `Version: ${configdata[0].Version}`;
 
         const gamejson = await fetch(configdata[0].Games);
