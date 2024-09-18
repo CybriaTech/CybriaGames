@@ -940,7 +940,9 @@ body {
 
   body.space-mode .sidebar-btn:hover,
   body.space-mode .settings-input,
-  body.space-mode .select-settings {
+  body.space-mode .select-settings,
+  body.space-mode .search,
+  body.space-mode .submit {
    background-color: #1f1f1f;
   }
 
