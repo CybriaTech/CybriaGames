@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+* {
+    overflow: visible !important;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1C2128;
@@ -944,11 +948,6 @@ body {
   body.space-mode #ab-cloak {
    background-color: #030303;
   }
-
-  body.space-mode .settings-box-title {
-   margin-top: 10%;
- }
-
 
 
 
