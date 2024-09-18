@@ -29,13 +29,16 @@ function settheme(theme) {
     header.classList.remove('selenite-mode', 'light-mode', 'ugly-mode', 'space-mode');
     footer.classList.remove('selenite-mode', 'light-mode', 'ugly-mode', 'space-mode');
 
+    const spacemode = document.getElementById('space-particles');
+    if (spacemode) {
+        spacemode.innerHTML = '';
+    }
+
     if (theme === 'Selenite') {
-        document.getElementById("space-particles").style.display = "none";
         body.classList.add('selenite-mode');
         header.classList.add('selenite-mode');
         footer.classList.add('selenite-mode');
     } else if (theme === 'Ugly') {
-        document.getElementById("space-particles").style.display = "none";
         body.classList.add('ugly-mode');
         header.classList.add('ugly-mode');
         footer.classList.add('ugly-mode');
@@ -45,26 +48,22 @@ function settheme(theme) {
         footer.classList.add('space-mode');
         spaceparticle();
     } else if (theme === 'Light') {
-        document.getElementById("space-particles").style.display = "none";
         body.classList.add('light-mode');
         header.classList.add('light-mode');
         footer.classList.add('light-mode');
         if (logo) logo.src = '/images/cybriagames/logo-name2half-lightmode.png';
         if (homelogo) homelogo.src = '/images/cybriagames/logo-name2half-lightmode.png';
     } else if (theme === 'Dark') {
-        document.getElementById("space-particles").style.display = "none";
         body.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'ugly-mode', 'space-mode');
         header.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'ugly-mode', 'space-mode');
         footer.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'ugly-mode', 'space-mode');
         if (logo) logo.src = '/images/cybriagames/logo-name2half.png';
         if (homelogo) homelogo.src = '/images/cybriagames/logo-name2half.png';
     } else if (theme === 'Flames') {
-        document.getElementById("space-particles").style.display = "none";
         body.classList.add('flames-mode');
         header.classList.add('flames-mode');
         footer.classList.add('flames-mode');
     } else if (theme === 'Oceans') {
-        document.getElementById("space-particles").style.display = "none";
         body.classList.add('oceans-mode');
         header.classList.add('oceans-mode');
         footer.classList.add('oceans-mode');
@@ -75,7 +74,6 @@ function settheme(theme) {
 }
 
 function spaceparticle() {
-document.getElementById("space-particles").style.display = "block";
 particlesJS("space-particles", {
   "particles": {
     "number": {
