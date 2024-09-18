@@ -190,3 +190,10 @@ function reverts() {
     settheme('Default');
 }
 
+function clearparticles() {
+    const particlesarea = document.getElementById('particles-js');
+    if (particlesarea) {
+        particlesarea.innerHTML = '';
+    }
+}
+
