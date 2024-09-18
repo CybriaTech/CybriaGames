@@ -251,5 +251,11 @@
     "logo": "/images/games/toss-the-turtle.png",
     "creator": "GonzoSSM",
     "source": "/games/toss-the-turtle"
+  },
+  {
+    "title": "Drift Boss",
+    "logo": "/images/games/drift-boss.png",
+    "creator": "MarketJS",
+    "source": "/games/drift-boss"
   }
 ]
