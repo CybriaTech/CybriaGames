@@ -946,7 +946,8 @@ body {
 
   body.space-mode .settings-input-box,
   body.space-mode #ab-cloak,
-  body.space-mode .proxy-button {
+  body.space-mode .proxy-button,
+  body.space-mode #links {
    background-color: #030303;
   }
 
