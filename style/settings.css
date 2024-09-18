@@ -322,7 +322,7 @@
 }
 
 #generalinfo {
-  padding: 5px;
+  padding: 10px;
 }
 
 #infotitle,
@@ -330,7 +330,6 @@
 #infover,
 #infogmes,
 #infoprox {
-  color: #555;
   font-size: 1.5em;
   text-align: left;
 }
