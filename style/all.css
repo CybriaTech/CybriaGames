@@ -935,7 +935,8 @@ body {
   }
 
   body.space-mode .sidebar-btn:hover,
-  body.space-mode .settings-input {
+  body.space-mode .settings-input,
+  body.space-mode .select-settings {
    background-color: #1f1f1f;
   }
 
