@@ -8,6 +8,13 @@
   margin-right: 4%;
 }
 
+#tabcloak,
+#emergencykeys,
+#themes {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 #settings-box {
   margin: 35px 0 15px 15px;
   padding: 20px;
