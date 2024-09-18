@@ -297,24 +297,24 @@
 
 @media (max-width: 576px) {
   #tabcloak {
-    margin-top: 40% !important;
+    margin-bottom: 40% !important;
   }
 }
 
 @media (max-width: 768px) {
   #tabcloak {
-    margin-top: 30% !important;
+    margin-bottom: 30% !important;
   }
 }
 
 @media (max-width: 992px) {
   #tabcloak {
-    margin-top: 20% !important;
+    margin-bottom: 20% !important;
   }
 }
 
 @media (max-width: 1200px) {
   #tabcloak {
-    margin-top: 10% !important;
+    margin-bottom: 10% !important;
   }
 }
