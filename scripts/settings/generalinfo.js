@@ -14,7 +14,7 @@ async function generalinfo() {
 
         const proxyjson = await fetch(configdata[0].Proxies);
         const proxydata = await proxyjson.json();
-        const proxyvalue = Object.values(proxydata).flat().length;
+        const proxyvalue = Object.values(proxydata).reduce((acc, urls) => acc + urls.length, 0);
         document.getElementById('infoprox').textContent = `Proxies: ${proxyvalue}`;
     } catch (error) {
         console.error('Err', error);
