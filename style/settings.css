@@ -320,3 +320,17 @@
     margin-bottom: 10% !important;
   }
 }
+
+#generalinfo {
+  padding: 5px;
+}
+
+#infotitle,
+#infocreated,
+#infover,
+#infogmes,
+#infoprox {
+  color: #555;
+  font-size: 1.5em;
+  text-align: left;
+}
