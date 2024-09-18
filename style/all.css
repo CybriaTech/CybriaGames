@@ -934,7 +934,8 @@ body {
   body.space-mode .search,
   body.space-mode .submit,
   body.space-mode .proxy-button,
-  body.space-mode #chat-options {
+  body.space-mode #chat-options,
+  body.space-mode .cheat {
    background-color: #1f1f1f;
   }
 
@@ -955,6 +956,10 @@ body {
    margin-top: 10%;
   }
 
+  body.space-mode .cheat:hover {
+   transform: scale(1.05);
+   box-shadow: 0 0 10px rgb(0, 149, 255);
+  }
 
 
 
