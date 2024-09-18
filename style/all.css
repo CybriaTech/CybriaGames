@@ -927,7 +927,6 @@ body {
 
   body.space-mode #settings-box,
   body.space-mode .sidebar-btn,
-  body.space-mode #chat-options,
   body.space-mode .game {
    background-color: transparent;
    color: #fff;
@@ -938,7 +937,8 @@ body {
   body.space-mode .select-settings,
   body.space-mode .search,
   body.space-mode .submit,
-  body.space-mode .proxy-button {
+  body.space-mode .proxy-button,
+  body.space-mode #chat-options {
    background-color: #1f1f1f;
   }
 
