@@ -917,7 +917,8 @@ body {
    color: #0095ff;
   }
 
-  #space-particles {
+  #space-particles,
+  #particles-js {
    z-index: -1;
    position: fixed;
    width: 100%;
