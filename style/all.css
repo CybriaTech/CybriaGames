@@ -3,10 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* {
-    overflow: visible !important;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #1C2128;
@@ -20,6 +16,7 @@ body {
 
 #specific-spacing {
   z-index: 1000;
+  display: block;
 }
 
 #spacet-index,
