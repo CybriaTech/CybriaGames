@@ -9,7 +9,7 @@ async function generalinfo() {
         document.getElementById('infocreator').textContent = `Creator: ${configdata[0].Creator}`;
         const pageurl = window.location.origin + '/';
 
-        const officiallinks = configdata[0].officiallinks;
+        const officiallinks = configdata[0].AuthLink;
 
         const official = pageurl === officiallinks;
         document.getElementById('infoofficial').textContent = `Official: ${official}`;
