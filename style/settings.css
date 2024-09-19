@@ -329,7 +329,9 @@
 #infocreated,
 #infover,
 #infogmes,
-#infoprox {
+#infoprox,
+#infocreator,
+#infoofficial {
   font-size: 1.5em;
   text-align: left;
 }
