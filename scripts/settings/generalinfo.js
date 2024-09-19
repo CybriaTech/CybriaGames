@@ -20,13 +20,15 @@ async function generalinfo() {
 
         const countvalue = (data) => {
             let total = 0;
-            if (typeof data === 'object' && data !== null) {
-                for (const key in data) {
-                    if (Array.isArray(data[key])) {
-                        total += data[key].length;
-                    }
-                }
+        proxydata.forEach(item => {
+            for (let key in item) {
+            if (item.hasOwnProperty(key)) {
+                total += item[key].length;
             }
+          }
+        });
+        }
+    }
             return total;
         };
         
