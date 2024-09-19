@@ -16,17 +16,23 @@ async function generalinfo() {
         document.getElementById('infogmes').textContent = `Games: ${gamecount}`;
 
         const proxyjson = await fetch('/json/proxy.json');
-        .then(response => response.json())
-        .then(data => {
-            const totals = data[0];  
-            return totals;
-                });
-            });
-        })
+        const proxydata = await proxyjson.json();
+
+        const countvalue = (data) => {
+            let total = 0;
+            if (typeof data === 'object' && data !== null) {
+                for (const key in data) {
+                    if (Array.isArray(data[key])) {
+                        total += data[key].length;
+                    }
+                }
+            }
+            return total;
+        };
         
-        const totalvalues = countvalue(totals);
-        console.log('All:', totals);
-        document.getElementById('infoprox').textContent = `Proxies: ${totals}`;
+        const totalvalues = countvalue(totalvalues);
+        console.log('All:', totalvalues);
+        document.getElementById('infoprox').textContent = `Proxies: ${totalvalues}`;
     } catch (error) {
         console.error('Err', error);
     }
