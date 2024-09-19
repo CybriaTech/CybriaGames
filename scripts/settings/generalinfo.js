@@ -17,12 +17,21 @@ async function generalinfo() {
 
         const proxyjson = await fetch(configdata[0].Proxies);
         const proxydata = await proxyjson.json();
-        const proxyvalue = Object.keys(proxydata).reduce((acc, key) => {
-            const urls = proxydata[key];
-            console.log(`Proxy for ${key}:`, urls);
-            return acc + Object.keys(urls).length;
-        }, 0);
-        document.getElementById('infoprox').textContent = `Proxies: ${proxyvalue}`;
+
+        const countvalue = (data) => {
+            let total = 0;
+            if (Array.isArray(data)) {
+                total += data.length;
+            } else if (typeof data === 'object' && data !== null) {
+                for (const key in data) {
+                    total += countvalue(data[key]);
+                }
+            }
+            return total;
+        };
+        
+        const totalvalues = countvalue(proxydata);
+        document.getElementById('infoprox').textContent = `Proxies: ${totalvalues}`;
     } catch (error) {
         console.error('Err', error);
     }
