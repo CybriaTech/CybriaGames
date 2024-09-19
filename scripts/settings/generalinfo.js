@@ -15,24 +15,18 @@ async function generalinfo() {
         const gamecount = gamedata.filter(game => game.title).length;
         document.getElementById('infogmes').textContent = `Games: ${gamecount}`;
 
-        const proxyjson = await fetch(configdata[0].Proxies);
-        const proxydata = await proxyjson.json();
-
-        const countvalue = (data) => {
-            let total = 0;
-            if (typeof data === 'object' && data !== null) {
-                for (const key in data) {
-                    if (Array.isArray(data[category])) {
-                        total += data[category].length;
-                    }
-                }
-            }
-            return total;
-        };
+        const proxyjson = await fetch('/json/proxy.json');
+        .then(response => response.json())
+        .then(data => {
+            const totals = data[0];  
+            return totals;
+                });
+            });
+        })
         
-        const totalvalues = countvalue(proxydata);
-        console.log('All:', totalvalues);
-        document.getElementById('infoprox').textContent = `Proxies: ${totalvalues}`;
+        const totalvalues = countvalue(totals);
+        console.log('All:', totals);
+        document.getElementById('infoprox').textContent = `Proxies: ${totals}`;
     } catch (error) {
         console.error('Err', error);
     }
