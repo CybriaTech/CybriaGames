@@ -21,12 +21,10 @@ async function generalinfo() {
         const countvalue = (data) => {
             let total = 0;
             if (Array.isArray(data)) {
-                total += data.length;
-            } else if (typeof data === 'object' && data !== null) {
-                for (const key in data) {
-                    total += countvalue(data[key]);
-                }
+                total += data[key].length;
             }
+        }
+    }
             return total;
         };
         
