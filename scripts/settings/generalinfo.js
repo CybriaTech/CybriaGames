@@ -31,6 +31,7 @@ async function generalinfo() {
         };
         
         const totalvalues = countvalue(proxydata);
+        console.log('All:', totalvalues);
         document.getElementById('infoprox').textContent = `Proxies: ${totalvalues}`;
     } catch (error) {
         console.error('Err', error);
