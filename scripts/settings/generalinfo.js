@@ -7,7 +7,7 @@ async function generalinfo() {
         document.getElementById('infocreated').textContent = `Created: ${configdata[0].Created}`;
         document.getElementById('infover').textContent = `Version: ${configdata[0].Version}`;
         document.getElementById('infocreator').textContent = `Creator: ${configdata[0].Creator}`;
-        const pageurl = window.location.origin;
+        const pageurl = window.location.origin + '/';
 
         const officiallinks = configdata[0].officiallinks;
 
