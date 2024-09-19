@@ -22,8 +22,8 @@ async function generalinfo() {
             let total = 0;
             if (typeof data === 'object' && data !== null) {
                 for (const key in data) {
-                    if (Array.isArray(data[key])) {
-                        total += data[key].length;
+                    if (Array.isArray(data[category])) {
+                        total += data[category].length;
                     }
                 }
             }
