@@ -13,6 +13,7 @@ async function generalinfo() {
 
         const official = pageurl === officiallinks;
         document.getElementById('infoofficial').textContent = `Official: ${official}`;
+        console.log('Your Link:', pageurl);
 
         const gamejson = await fetch(configdata[0].Games);
         const gamedata = await gamejson.json();
