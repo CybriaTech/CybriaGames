@@ -4,7 +4,6 @@
     "Creator": "CybriaTech",
     "Version": "2",
     "Games": "/json/games.json",
-    "Proxies": "/json/proxy.json",
     "Created": "July 11, 2024",
     "Official": true
   }
