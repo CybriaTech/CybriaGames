@@ -21,6 +21,7 @@ async function generalinfo() {
             const urls = proxydata[key];
             console.log(`Proxy for ${key}:`, urls);
             return acc + Object.keys(urls).length;
+        }, 0);
         document.getElementById('infoprox').textContent = `Proxies: ${proxyvalue}`;
     } catch (error) {
         console.error('Err', error);
