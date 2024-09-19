@@ -269,5 +269,11 @@
     "logo": "/images/games/fnaf-2-scratch.png",
     "creator": "PurpleLover1219",
     "source": "/games/fnaf-2-scratch"
+  },
+  {
+    "title": "Drive Mad",
+    "logo": "/images/games/drive-mad.png",
+    "creator": "Fancade",
+    "source": "/games/drive-mad"
   }
 ]
