@@ -52,7 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 'https://tcors.ddnsfree.com/',
                 'https://tcors.accesscam.org/',
                 'https://tcors.camdvr.org/',
-                'https://tcors.webredirect.org'
+                'https://tcors.webredirect.org',
+                'https://tcors.freeddns.org/',
+                'https://tcors.casacam.net/'
             ];
 
             scancors(link, corsproxy);
