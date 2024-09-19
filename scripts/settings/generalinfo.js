@@ -24,7 +24,6 @@ async function generalinfo() {
                 total += data[key].length;
             }
         }
-    }
             return total;
         };
         
