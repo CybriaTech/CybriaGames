@@ -17,10 +17,10 @@ async function generalinfo() {
 
         const proxyjson = await fetch(configdata[0].Proxies);
         const proxydata = await proxyjson.json();
-        const proxyvalue = Object.values(proxydata).reduce((acc, key) => {
+        const proxyvalue = Object.keys(proxydata).reduce((acc, key) => {
             const urls = proxydata[key];
             console.log(`Proxy for ${key}:`, urls);
-            return acc + (Array.isArray(urls) ? urls.length : 0);
+            return acc + Object.keys(urls).length;
         }, 0);
         document.getElementById('infoprox').textContent = `Proxies: ${proxyvalue}`;
     } catch (error) {
