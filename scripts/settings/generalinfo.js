@@ -10,8 +10,8 @@ async function generalinfo() {
         const pagelink = window.location.origin + '/';
 
         const officiallinks = configdata[0].officiallinks;
-        const official = pagelink === officiallinks;
-        document.getElementById('infoofficial').textContent = `Official: ${official}`;
+        const official = configdata[0].Creator === 'CybriaTech';
+        document.getElementById('infoofficial').textContent = Official: ${official};
 
         const gamejson = await fetch(configdata[0].Games);
         const gamedata = await gamejson.json();
