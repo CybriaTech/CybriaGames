@@ -275,5 +275,11 @@
     "logo": "/images/games/drive-mad.png",
     "creator": "Fancade",
     "source": "/games/drive-mad"
+  },
+  {
+    "title": "A Dance Of Fire And Ice",
+    "logo": "/images/games/a-dance-of-fire-and-ice.png",
+    "creator": "7th Beat Games",
+    "source": "/games/a-dance-of-fire-and-ice"
   }
 ]
