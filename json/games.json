@@ -281,5 +281,11 @@
     "logo": "/images/games/a-dance-of-fire-and-ice.png",
     "creator": "7th Beat Games",
     "source": "/games/a-dance-of-fire-and-ice"
+  },
+  {
+    "title": "Retro Bowl",
+    "logo": "/images/games/retro-bowl.png",
+    "creator": "New Star Games",
+    "source": "/games/retro-bowl"
   }
 ]
