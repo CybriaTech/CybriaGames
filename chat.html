@@ -28,8 +28,8 @@
       <div id="space-particles"></div>
     <div id="chat-options">
         <p class="chat-options-title">Select Chatroom Provider</p>
-        <button class="chat-button" onclick="javascript:document.getElementById('chat-options').style.display = 'none';">Widgetbot (Default)</button>
-        <button class="chat-button" onclick="deadsimplechat()">DeadSimpleChat</button>
+        <button class="chat-button" onclick="chatroom('widgetbot')">Widgetbot (Default)</button>
+        <button class="chat-button" onclick="chatroom('deadsimplechat')">DeadSimpleChat</button>
     </div>
 <widgetbot
     server="1154632402942050394"
@@ -42,6 +42,15 @@
 function clearembed() {
     const mainspace = document.querySelector('main');
     mainspace.innerHTML = '';
+}
+
+function chatroom(provider) {
+    localStorage.setItem('chatroom', provider);
+    if (provider === 'deadsimplechat') {
+        deadsimplechat();
+    } else {
+        widgetbot();
+    }
 }
 
 function deadsimplechat() {
@@ -57,6 +66,28 @@ function deadsimplechat() {
         widgetbotembed.style.display = "none";
     }
 }
+
+function widgetbot() {
+    clearembed();
+    var widgetbotembed = document.createElement('widgetbot');
+    widgetbotembed.setAttribute('server', '1154632402942050394');
+    widgetbotembed.setAttribute('channel', '1154632891310030878');
+    widgetbotembed.setAttribute('width', '100%');
+    widgetbotembed.setAttribute('height', '100vh');
+
+    document.querySelector("main").appendChild(widgetbotembed);
+}
+
+function checkls() {
+    const savedchatroom = localStorage.getItem('chatroom');
+    if (savedchatroom) {
+        chatroom(savedchatroom);
+    } else {
+        widgetbot();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', checkls);
         </script>   
         <script src="/scripts/settings/settings.js"></script>
     <script src="/scripts/inject/footer.js"></script>
