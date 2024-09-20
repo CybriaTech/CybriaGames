@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById("chats").addEventListener("change", function() {
         const chats = this.value;
-        setchat(chatroom);
+        chatroom(provider);
     });
 });
 
 function chatls() {
     const chatstorage = localStorage.getItem('chatroom');
-    setchat(savedchat);
+    chatroom(savedchatroom);
 }
 
 let deftitle = document.title;
@@ -275,17 +275,6 @@ function rev() {
     window.location.reload();
 }
 
-function setchat(chatroom) {
-    body.dataset.chatroom = chatroom;
-
-    if (chatroom === 'widgetbot') {
-        localStorage.removeItem('chatroom');
-    } else if (chatroom === 'deadsimplechat') {
-        localStorage.setItem('chatroom', provider);
-    }
-    document.getElementById("chat").value = chatroom;
-}
-
 function clearembed() {
     const mainspace = document.querySelector('main');
     mainspace.innerHTML = '';
@@ -298,6 +287,7 @@ function chatroom(provider) {
     } else {
         widgetbot();
     }
+    document.getElementById("chat").value = chatroom;
 }
 
 function deadsimplechat() {
