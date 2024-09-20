@@ -306,8 +306,11 @@ function deadsimplechat() {
 
 function widgetbot() {
     clearembed();
-    localStorage.removeItem('chatroom');
-    document.querySelector("main").location.reload();
+
+    var deadsimplechatembed = document.querySelector('.chatframe');
+    if (deadsimplechatembed) {
+        deadsimplechatembed.style.display = "none";
+    }
 }
 
 function checkls() {
