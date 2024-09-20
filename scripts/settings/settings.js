@@ -316,7 +316,6 @@ function deadsimplechat() {
 
 function widgetbot() {
     clearembed();
-    document.getElementById("chat-options").style.display = "none";
     localStorage.removeItem('chatroom');
     document.querySelector("main").location.reload();
 }
