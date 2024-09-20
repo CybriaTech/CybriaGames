@@ -213,6 +213,38 @@
                         </div>
                     </div>
                     </div>
+                    <div id="configuration">
+                        <h1 class="settings-box-title">Configuration</h1>
+                        <hr style="margin: 5px 2% 5px 0; width: 75%;">
+                    <div class="settings-actions">
+                        <p class="settings-actions-subtitle" style="width: 100%; margin-top: 10px;">Page Configs</p>
+                    <div class="settings-input-box">
+                        <p class="settings-input-label">Switch CORS Proxy</p>
+                        <select class="select-settings" id="cors" onchange="switchcors()">
+                            <option value="workers.dev">Default (workers.dev)</option>
+                            <option value="onrender.com">Render</option>
+                            <option value="vercel.app">Vercel</option>
+                            <option value="duckdns.org">DuckDNS</option>
+                            <option value="hopto.org">FreeDNS 1</option>
+                            <option value="mywire.org">FreeDNS 2</option>
+                            <option value="loseyourip.com">FreeDNS 3</option>
+                            <option value="ddnsfree.com">FreeDNS 4</option>
+                            <option value="accesscam.org">FreeDNS 5</option>
+                            <option value="camdvr.org">FreeDNS 6</option>
+                            <option value="webredirect.org">FreeDNS 7</option>
+                            <option value="freeddns.org">FreeDNS 8</option>
+                            <option value="casacam.net">FreeDNS 9</option>
+                        </select>
+                    </div>
+                    <div class="settings-input-box">
+                        <p class="settings-input-label">Switch Chatrooms</p>
+                        <select class="select-settings" id="chats" onchange="switchchats()">
+                            <option value="widgetbot">Widgetbot (Default)</option>
+                            <option value="deadsimplechat">DeadSimpleChat</option>
+                        </select>
+                    </div>
+                    </div>
+                    </div>
                     </div>
               </div>
         <div class="space" style="margin-bottom: 5%;"></div>
