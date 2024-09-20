@@ -7,14 +7,6 @@ async function generalinfo() {
         document.getElementById('infocreated').textContent = `Created: ${configdata[0].Created}`;
         document.getElementById('infover').textContent = `Version: ${configdata[0].Version}`;
         document.getElementById('infocreator').textContent = `Creator: ${configdata[0].Creator}`;
-        const pageurl = `${window.location.origin}/`;
-
-        const officiallinks = configdata[0].AuthLink;
-
-        const official = pageurl === officiallinks;
-        document.getElementById('infoofficial').textContent = `Official: ${official}`;
-        console.log('Your Link:', pageurl);
-        console.log('Official:', officiallinks);
 
         const gamejson = await fetch(configdata[0].Games);
         const gamedata = await gamejson.json();
