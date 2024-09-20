@@ -11,7 +11,7 @@ async function generalinfo() {
 
         const officiallinks = configdata[0].AuthLink;
 
-        const official = pageurl === officiallink;
+        const official = pageurl === officiallinks;
         document.getElementById('infoofficial').textContent = `Official: ${official}`;
         console.log('Your Link:', pageurl);
         console.log('Official:', officiallinks);
