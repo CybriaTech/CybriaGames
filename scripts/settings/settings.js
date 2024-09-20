@@ -285,3 +285,49 @@ function setchat(chatroom) {
     }
     document.getElementById("chat").value = chatroom;
 }
+
+function clearembed() {
+    const mainspace = document.querySelector('main');
+    mainspace.innerHTML = '';
+}
+
+function chatroom(provider) {
+    localStorage.setItem('chatroom', provider);
+    if (provider === 'deadsimplechat') {
+        deadsimplechat();
+    } else {
+        widgetbot();
+    }
+}
+
+function deadsimplechat() {
+    clearembed();
+    var deadsimplechatembed = document.createElement('iframe');
+    deadsimplechatembed.classList.add("chatframe");
+    deadsimplechatembed.src = "https://deadsimplechat.com/t63n2jyL7";
+
+    document.querySelector("main").appendChild(deadsimplechatembed);
+
+    var widgetbotembed = document.querySelector('widgetbot');
+    if (widgetbotembed) {
+        widgetbotembed.style.display = "none";
+    }
+}
+
+function widgetbot() {
+    clearembed();
+    document.getElementById("chat-options").style.display = "none";
+    localStorage.removeItem('chatroom');
+    document.querySelector("main").location.reload();
+}
+
+function checkls() {
+    const savedchatroom = localStorage.getItem('chatroom');
+    if (savedchatroom) {
+        chatroom(savedchatroom);
+    } else {
+        widgetbot();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', checkls);
