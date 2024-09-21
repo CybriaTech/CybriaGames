@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     chatls();
 
     document.getElementById("chats").addEventListener("change", function() {
-        const chats = this.value;
+        const provider = this.value;
         chatroom(provider);
     });
 });
