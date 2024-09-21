@@ -72,18 +72,21 @@ document.addEventListener("DOMContentLoaded", function() {
         const proxy = proxies[0];
         const url = proxy + link.href;
         
-        fetch(url, { method: 'GET', redirect: 'manual' })
+        fetch(url, { method: 'GET' })
             .then(response => {
-                if (response.type === 'opaqueredirect' || response.url !== url) {
-                    link.id = 'fails';
-                    link.style.display = 'none';
-                    console.error('Redirects:', link.href);
-                } else if (response.ok) {
+
+                const ignore = link.href.includes('.workers.dev/') || link.href.includes('https://blackity-toilet.vercel.app/');
+
+                if (response.status === 404 && ignore) {
+                    link.removeAttribute("fails");
+                    link.id = 'ignore';
+                    link.style.display = 'block';
+                    return;
+                } else if ([200, 203, 403].includes(response.status)) {
                     link.id = 'works';
                 } else {
                     link.id = 'fails';
                     link.style.display = 'none';
-                    console.error('Blocked:', link.href);
                 }
             })
             .catch(error => {
