@@ -353,5 +353,35 @@
     "logo": "/images/games/cat-ninja.png",
     "creator": "unknown",
     "source": "/games/cat-ninja"
+  },
+  {
+    "title": "Wordle Unlimited",
+    "logo": "/images/games/wordle-unlimited.png",
+    "creator": "Wordle Unlimited",
+    "source": "/games/wordle-unlimited"
+  },
+  {
+    "title": "Amidst The Sky",
+    "logo": "/images/games/amidst-the-sky.png",
+    "creator": "Ferociter",
+    "source": "/games/amidst-the-sky"
+  },
+  {
+    "title": "Grindcraft",
+    "logo": "/images/games/grindcraft.png",
+    "creator": "Playsaurus",
+    "source": "/games/grindcraft"
+  },
+  {
+    "title": "Alien Hominid",
+    "logo": "/images/games/alien-hominid.png",
+    "creator": "Double Fine Productions",
+    "source": "/games/alien-hominid"
+  },
+  {
+    "title": "Minecraft Classic",
+    "logo": "/images/games/mc-classic.png",
+    "creator": "Mojang Studios",
+    "source": "/games/mc-classic"
   }
 ]
