@@ -287,5 +287,71 @@
     "logo": "/images/games/retro-bowl.png",
     "creator": "New Star Games",
     "source": "/games/retro-bowl"
+  },
+  {
+    "title": "Riddle School",
+    "logo": "/images/games/riddle-school.png",
+    "creator": "JonBro",
+    "source": "/games/riddle-school"
+  },
+  {
+    "title": "Riddle School 2",
+    "logo": "/images/games/riddle-school-2.png",
+    "creator": "JonBro",
+    "source": "/games/riddle-school-2"
+  },
+  {
+    "title": "Riddle School 3",
+    "logo": "/images/games/riddle-school-3.png",
+    "creator": "JonBro",
+    "source": "/games/riddle-school-3"
+  },
+  {
+    "title": "Riddle School 4",
+    "logo": "/images/games/riddle-school-4.png",
+    "creator": "JonBro",
+    "source": "/games/riddle-school-4"
+  },
+  {
+    "title": "Riddle School 5",
+    "logo": "/images/games/riddle-school-5.png",
+    "creator": "JonBro",
+    "source": "/games/riddle-school-5"
+  },
+  {
+    "title": "Super Mario 64",
+    "logo": "/images/games/sm64.png",
+    "creator": "Nintendo",
+    "source": "/games/sm64"
+  },
+  {
+    "title": "Basketbros.IO",
+    "logo": "/images/games/basketbros.png",
+    "creator": "Blue Wizard Digital",
+    "source": "/games/basketbros"
+  },
+  {
+    "title": "Paper.IO 2",
+    "logo": "/images/games/paper-io-2.png",
+    "creator": "Voodoo",
+    "source": "/games/paper-io-2"
+  },
+  {
+    "title": "Eggy Car",
+    "logo": "/images/games/eggy-car.png",
+    "creator": "Beedo Games",
+    "source": "/games/eggy-car"
+  },
+  {
+    "title": "Cat Ninja: The Quest For The Magical Energy Crystals",
+    "logo": "/images/games/cat-ninja.png",
+    "creator": "unknown",
+    "source": "/games/cat-ninja"
+  },
+  {
+    "title": "Cat Ninja: The Quest For The Magical Energy Crystals",
+    "logo": "/images/games/cat-ninja.png",
+    "creator": "unknown",
+    "source": "/games/cat-ninja"
   }
 ]
