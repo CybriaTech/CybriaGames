@@ -15,6 +15,7 @@ async function inject() {
 
             const img = document.createElement('img');
             img.classList.add('g-icon');
+            img.setAttribute('loading', 'lazy');
             img.src = game.logo;
             img.alt = game.title;
 
