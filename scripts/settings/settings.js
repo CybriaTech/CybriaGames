@@ -284,9 +284,9 @@ function chatroom(provider) {
     localStorage.setItem('chatroom', provider);
     document.getElementById('chat-options').style.display = 'none';
     if (provider === 'deadsimplechat') {
-        deadsimplechat();
+        chatroom('deadsimplechat');
     } else {
-        widgetbot();
+        chatroom('widgetbot');
     }
     document.getElementById("chat").value = chatroom;
 }
@@ -306,7 +306,7 @@ function checkls() {
     if (savedchatroom) {
         chatroom(savedchatroom);
     } else {
-        widgetbot();
+        chatroom('widgetbot');
     }
 }
 
