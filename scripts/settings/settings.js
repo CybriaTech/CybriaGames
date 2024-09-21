@@ -281,6 +281,7 @@ function clearembed() {
 }
 
 function chatroom(provider) {
+    if (!provider) return;
     localStorage.setItem('chatroom', provider);
     document.getElementById('chat-options').style.display = 'none';
     if (provider === 'deadsimplechat') {
@@ -303,11 +304,12 @@ function widgetbot() {
 
 function checkls() {
     const savedchatroom = localStorage.getItem('chatroom');
-    if (savedchatroom) {
-        chatroom(savedchatroom);
-    } else {
-        chatroom('widgetbot');
-    }
+    chatroom(savedchatroom || 'widgetbot');
+}
+
+function chatls() {
+    const chatstorage = localStorage.getItem('chatroom');
+    chatroom(chatstorage || 'widgetbot'); 
 }
 
 document.addEventListener('DOMContentLoaded', checkls);
