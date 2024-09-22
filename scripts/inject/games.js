@@ -74,7 +74,7 @@ async function inject() {
 
     function globalev() {
         document.addEventListener('keydown', (e) => {
-            if (e.altKey && e.key.toLowerCase() === 'm') {
+            if ((e.altKey || e.metaKey) && e.key.toLowerCase() === 'm') {
                 e.preventDefault();
                 shortcut();
             }
