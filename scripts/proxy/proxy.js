@@ -84,6 +84,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     return;
                 } else if ([200, 203, 403].includes(response.status)) {
                     link.id = 'works';
+                } else if (response.redirected) {
+                    link.id = 'fails';
+                    link.style.display = 'none';
                 } else {
                     link.id = 'fails';
                     link.style.display = 'none';
