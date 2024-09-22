@@ -377,5 +377,17 @@
     "logo": "/images/games/mc-classic.png",
     "creator": "Mojang Studios",
     "source": "/games/mc-classic"
+  },
+  {
+    "title": "Duck Life",
+    "logo": "/images/games/duck-life.png",
+    "creator": "Wix Games",
+    "source": "/games/duck-life"
+  },
+  {
+    "title": "Duck Life 2",
+    "logo": "/images/games/duck-life-2.png",
+    "creator": "Wix Games",
+    "source": "/games/duck-life-2"
   }
 ]
