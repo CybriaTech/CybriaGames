@@ -1,17 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    chatls();
-
-    document.getElementById("chats").addEventListener("change", function() {
-        const provider = this.value;
-        chatroom(provider);
-    });
-});
-
-function chatls() {
-    const chatstorage = localStorage.getItem('chatroom');
-    chatroom(savedchatroom);
-}
-
 let deftitle = document.title;
 const faviinput = document.getElementById('favi-input');
 const titleinput = document.getElementById('title-input');
@@ -281,15 +267,12 @@ function clearembed() {
 }
 
 function chatroom(provider) {
-    if (!provider) return;
-    localStorage.setItem('chatroom', provider);
     document.getElementById('chat-options').style.display = 'none';
     if (provider === 'deadsimplechat') {
         deadsimplechat();
     } else {
         widgetbot();
     }
-    document.getElementById("chat").value = chatroom;
 }
 
 function deadsimplechat() {
@@ -301,15 +284,3 @@ function widgetbot() {
     document.getElementById('deadsimplechat-chat').style.display = 'none';
     document.querySelector('widgetbot').style.display = 'block';
 }
-
-function checkls() {
-    const savedchatroom = localStorage.getItem('chatroom');
-    chatroom(savedchatroom || 'widgetbot');
-}
-
-function chatls() {
-    const chatstorage = localStorage.getItem('chatroom');
-    chatroom(chatstorage || 'widgetbot'); 
-}
-
-document.addEventListener('DOMContentLoaded', checkls);
