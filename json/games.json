@@ -401,5 +401,17 @@
     "logo": "/images/games/ovo2.png",
     "creator": "Dedra Games",
     "source": "/games/ovo2"
+  },
+  {
+    "title": "World's Hardest Game 2",
+    "logo": "/images/games/whg2.png",
+    "creator": "Snubby Land",
+    "source": "/games/whg2"
+  },
+  {
+    "title": "World's Hardest Game 3",
+    "logo": "/images/games/whg3.png",
+    "creator": "Snubby Land",
+    "source": "/games/whg3"
   }
 ]
