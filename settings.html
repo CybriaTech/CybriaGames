@@ -238,8 +238,22 @@
                     </div>
                     </div>
                     </div>
+                    <div id="userdata">
+                        <h1 class="settings-box-title">User Data</h1>
+                        <hr style="margin: 5px 2% 5px 0; width: 75%;">
+                    <div class="settings-actions">
+                        <p class="settings-actions-subtitle" style="width: 100%; margin-top: 10px;">Page Data</p>
+                    <div id="ab-cloak" onclick="export()">
+                        <p class="settings-input-box-label" style="padding: 5px;">Export Site Data</p>
+                    </div>
+                    <div id="ab-cloak" onclick="import()">
+                        <p class="settings-input-box-label" style="padding: 5px;">Import Site Data</p>
+                    </div>
+                    </div>
+                    </div>
                     </div>
               </div>
+        <input type="file" id="fileinput" accept=".cyg" hidden>
         <div class="space" style="margin-bottom: 5%;"></div>
         <script src="/scripts/settings/themes.js"></script>
         <script src="/scripts/settings/settings.js"></script>
