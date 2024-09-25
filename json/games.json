@@ -413,5 +413,11 @@
     "logo": "/images/games/whg3.png",
     "creator": "Snubby Land",
     "source": "/games/whg3"
+  },
+  {
+    "title": "Drift Hunters",
+    "logo": "/images/games/drift-hunters.png",
+    "creator": "Ilya Kaminetsky",
+    "source": "/games/drift-hunters"
   }
 ]
