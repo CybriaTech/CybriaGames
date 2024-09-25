@@ -26,9 +26,9 @@ function changefont(font) {
     const logo = document.querySelector('.header-img');
     const homelogo = document.querySelector('.title-img');
 
-    body.classList.remove('light-mode', 'dark-mode');
-    header.classList.remove('light-mode', 'dark-mode');
-    footer.classList.remove('light-mode', 'dark-mode');
+    body.classList.remove('nerko-one', 'playpen-sans');
+    header.classList.remove('nerko-one', 'playpen-sans');
+    footer.classList.remove('nerko-one', 'playpen-sans');
 
     body.dataset.font = font;
 
