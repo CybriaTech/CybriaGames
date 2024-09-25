@@ -16,7 +16,7 @@ function applyls() {
     const savedtheme = localStorage.getItem('theme') || 'Default';
     const savedfont = localStorage.getItem('font') || 'Default Font';
     settheme(savedtheme);
-    changefont(font);
+    changefont(savedfont);
 }
 
 function changefont(font) {
