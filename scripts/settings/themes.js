@@ -5,11 +5,43 @@ document.addEventListener('DOMContentLoaded', function() {
         const theme = this.value;
         settheme(theme);
     });
+
+    document.getElementById("font").addEventListener("change", function() {
+        const font = this.value;
+        changefont(font);
+    });
 });
 
 function applyls() {
     const savedtheme = localStorage.getItem('theme') || 'Default';
+    const savedfont = localStorage.getItem('font') || 'Default Font';
     settheme(savedtheme);
+    changefont(font);
+}
+
+function changefont(font) {
+    const body = document.body;
+    const header = document.getElementById('header');
+    const footer = document.getElementById('footer');
+    const logo = document.querySelector('.header-img');
+    const homelogo = document.querySelector('.title-img');
+
+    body.classList.remove('light-mode', 'dark-mode');
+    header.classList.remove('light-mode', 'dark-mode');
+    footer.classList.remove('light-mode', 'dark-mode');
+
+    body.dataset.font = font;
+
+    body.classList.remove('nerko-one', 'playpen-sans');
+
+    if (font === 'Nerko One') {
+        body.classList.add('nerko-one');
+    } else if (font === 'Playpen Sans') {
+        body.classList.add('playpen-sans');
+    }
+
+    localStorage.setItem('font', font);
+    document.getElementById("font").value = font;
 }
 
 function settheme(theme) {
