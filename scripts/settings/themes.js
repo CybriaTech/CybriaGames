@@ -38,6 +38,9 @@ function changefont(font) {
         body.classList.add('nerko-one');
     } else if (font === 'Playpen Sans') {
         body.classList.add('playpen-sans');
+    } else if (font === 'Default Font') {
+        body.classList.remove('playpen-sans');
+        body.classList.remove('nerko-one');
     }
 
     localStorage.setItem('font', font);
