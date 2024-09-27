@@ -318,7 +318,7 @@ function exports() {
     let blob = new Blob([encdata], { type: "text/plain" });
     let link = document.createElement('a');
     link.href = window.URL.createObjectURL(blob);
-    link.download = 'site_data.cyg';
+    link.download = 'save.cyg';
     link.click();
 }
 
