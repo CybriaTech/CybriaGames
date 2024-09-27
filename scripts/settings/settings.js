@@ -284,3 +284,80 @@ function widgetbot() {
     document.getElementById('deadsimplechat-chat').style.display = 'none';
     document.querySelector('widgetbot').style.display = 'block';
 }
+
+function fetchcookies() {
+    let cookies = document.cookie.split("; ");
+    let cookieobj = {};
+    cookies.forEach(cookie => {
+        let [name, value] = cookie.split("=");
+        cookieobj[name] = value;
+    });
+    return cookieobj;
+}
+
+function setcookie(name, value) {
+    document.cookie = `${name}=${value}; path=/;`;
+}
+
+function export() {
+    let cookies = fetchcookies();
+    let localStorageData = {};
+    for (let key in localStorage) {
+        localStorageData[key] = localStorage.getItem(key);
+    }
+
+    let data = {
+        cookies: cookies,
+        localStorage: localStorageData
+    };
+
+    let jsondata = JSON.stringify(data);
+
+    let encdata = CryptoJS.AES.encrypt(jsondata, 'cybria').toString();
+
+    let blob = new Blob([encdata], { type: "text/plain" });
+    let link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.download = 'site_data.cyg';
+    link.click();
+}
+
+function import() {
+    let input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.cyg';
+
+    input.onchange = e => {
+        let file = e.target.files[0];
+        let reader = new FileReader();
+
+        reader.onload = function(event) {
+            let encdata = event.target.result;
+
+            try {
+                let decdata = CryptoJS.AES.decrypt(encdata, 'cybria').toString(CryptoJS.enc.Utf8);
+
+                let data = JSON.parse(decdata);
+
+                for (let name in data.cookies) {
+                    setcookie(name, data.cookies[name]);
+                }
+
+                for (let key in data.localStorage) {
+                    localStorage.setItem(key, data.localStorage[key]);
+                }
+
+                console.log("good");
+            } catch (error) {
+                console.log("err");
+            }
+        };
+
+        reader.readAsText(file);
+    };
+
+    input.click();
+}
+
+document.getElementById("ab-cloak").addEventListener("click", export);
+document.getElementById("ab-cloak").addEventListener("click", import);
