@@ -359,5 +359,5 @@ function import() {
     input.click();
 }
 
-document.getElementById("ab-cloak").addEventListener("click", export);
-document.getElementById("ab-cloak").addEventListener("click", import);
+document.querySelector(".exportoption").addEventListener("click", export);
+document.querySelector(".importoption").addEventListener("click", import);
