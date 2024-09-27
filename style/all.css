@@ -965,13 +965,15 @@ body {
 
 /* Fonts */
 
-  body.nerko-one {
+  body.nerko-one,
+  body.nerko-one .sidebar-btn {
    font-family: "Nerko One", cursive;
    font-weight: 400;
    font-style: normal;
   }
 
-  body.playpen-sans {
+  body.playpen-sans,
+  body.playpen-sans .sidebar-btn {
    font-family: "Playpen Sans", cursive;
    font-weight: 400;
    font-style: normal;
