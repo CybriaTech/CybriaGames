@@ -41,6 +41,10 @@ function changefont(font) {
     } else if (font === 'Default Font') {
         body.classList.remove('playpen-sans');
         body.classList.remove('nerko-one');
+    } else if (font === 'Fascinate Inline') {
+        body.classList.add('fascinate-inline');
+    } else if (font === 'Oswald') {
+        body.classList.add('oswald');
     }
 
     localStorage.setItem('font', font);
