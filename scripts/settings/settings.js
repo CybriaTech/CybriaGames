@@ -299,7 +299,7 @@ function setcookie(name, value) {
     document.cookie = `${name}=${value}; path=/;`;
 }
 
-function export() {
+function exports() {
     let cookies = fetchcookies();
     let localStorageData = {};
     for (let key in localStorage) {
@@ -322,7 +322,7 @@ function export() {
     link.click();
 }
 
-function import() {
+function imports() {
     let input = document.createElement('input');
     input.type = 'file';
     input.accept = '.cyg';
@@ -359,5 +359,5 @@ function import() {
     input.click();
 }
 
-document.querySelector(".exportoption").addEventListener("click", export);
-document.querySelector(".importoption").addEventListener("click", import);
+document.querySelector(".exportoption").addEventListener("click", exports);
+document.querySelector(".importoption").addEventListener("click", imports);
