@@ -26,13 +26,9 @@ function changefont(font) {
     const logo = document.querySelector('.header-img');
     const homelogo = document.querySelector('.title-img');
 
-    body.classList.remove('nerko-one', 'playpen-sans');
-    header.classList.remove('nerko-one', 'playpen-sans');
-    footer.classList.remove('nerko-one', 'playpen-sans');
-
     body.dataset.font = font;
 
-    body.classList.remove('nerko-one', 'playpen-sans');
+    body.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt');
 
     if (font === 'Nerko One') {
         body.classList.add('nerko-one');
@@ -42,7 +38,10 @@ function changefont(font) {
         body.classList.add('fascinate-inline');
     } else if (font === 'Oswald') {
         body.classList.add('oswald');
+    } else if (font === 'Prompt') {
+        body.classList.add('prompt');
     }
+
 
     localStorage.setItem('font', font);
     document.getElementById("font").value = font;
