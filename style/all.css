@@ -995,6 +995,13 @@ body {
    font-style: normal;
   }
 
+  body.prompt,
+  body.prompt .sidebar-btn {
+   font-family: 'Prompt', sans-serif;
+   font-style: normal;
+  }
+
+
 
 
 
