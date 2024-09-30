@@ -28,17 +28,24 @@ function changefont(font) {
 
     body.dataset.font = font;
 
-    body.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt');
+    var removefont = function() {
+        document.body.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt');
+    };
 
     if (font === 'Nerko One') {
+        removefont();
         body.classList.add('nerko-one');
     } else if (font === 'Playpen Sans') {
+        removefont();
         body.classList.add('playpen-sans');
     } else if (font === 'Fascinate Inline') {
+        removefont();
         body.classList.add('fascinate-inline');
     } else if (font === 'Oswald') {
+        removefont();
         body.classList.add('oswald');
     } else if (font === 'Prompt') {
+        removefont();
         body.classList.add('prompt');
     }
 
