@@ -32,18 +32,18 @@ function changefont(font) {
         document.body.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt');
     };
 
+    removefont();
+
     if (font === 'Nerko One') {
-        removefont();
         body.classList.add('nerko-one');
     } else if (font === 'Playpen Sans') {
-        removefont();
         body.classList.add('playpen-sans');
     } else if (font === 'Oswald') {
-        removefont();
         body.classList.add('oswald');
     } else if (font === 'Prompt') {
-        removefont();
         body.classList.add('prompt');
+    } else if (font === 'Default Font') {
+        removefont();
     }
 
 
