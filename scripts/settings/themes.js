@@ -22,8 +22,12 @@ function applyls() {
     const savedfont = localStorage.getItem('font') || 'Default Font';
     const savedProxy = localStorage.getItem('cors') || 'https://cors.timmytamle569.workers.dev/';
 
-    const proxyElement = document.getElementById('cors');
-    proxyElement.value = Object.keys(proxyElement.options).find(key => proxyElement.options[key].value === savedProxy) || 'workers.dev';
+   const proxyselect = document.getElementById('cors');
+    Array.from(proxyselect.options).forEach(option => {
+        if (option.value === savedProxy) {
+            proxyselect.value = option.value;
+        }
+    });
     
     settheme(savedtheme);
     changefont(savedfont);
