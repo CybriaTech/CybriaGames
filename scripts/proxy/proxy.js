@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const links = document.querySelectorAll(".linkanchor");
         
         links.forEach(link => {
-            const corsproxy = localStorage.getItem('cors', proxy);
+            const corsproxy = localStorage.getItem('cors', proxy) || 'https://cors.timmytamle569.workers.dev/';
             scancors(link, corsproxy);
         });
     }
