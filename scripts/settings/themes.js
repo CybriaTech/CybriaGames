@@ -53,6 +53,7 @@ function switchcors(corsproxy) {
 
     const proxy = corslink[corsselect];
     localStorage.setItem('cors', proxy);
+    console.log('URL:' + proxy);
 }
 
 function changefont(font) {
