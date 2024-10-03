@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
         links.forEach(link => {
             const corsproxy = localStorage.getItem('cors') || 'https://cors.timmytamle569.workers.dev/';
             scancors(link, corsproxy);
-            alert(corsproxy);
         });
     }
 
@@ -57,6 +56,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const proxy = proxies[0];
         const url = proxy + link.href;
+
+       let url = proxy + link.href;
+        if (proxy.startsWith('http://') || proxy.startsWith('https://')) {
+            url = proxy + link.href;
+        } else {
+            url = 'https://' + proxy + link.href;
+        }
         
         fetch(url, { method: 'GET' })
             .then(response => {
