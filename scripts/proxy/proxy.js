@@ -53,9 +53,16 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('No available CORS proxies for:', link.href);
             return;
         }
+    }
+
+    function cleanprotocol(link) {
+        const rawlink = link.href;
+        const processedlink = rawlink.replace(window.location.protocol + "//", "");
+        return processedlink;
+    }
 
         const proxy = proxies[0]
-        const href = link.href.startsWith('http') ? link.href : 'https://' + link.href;
+        const href = processedlink.href.startsWith('http') ? processedlink.href : 'https://' + processedlink.href;
         const url = proxy + href;
         
         fetch(url, { method: 'GET' })
