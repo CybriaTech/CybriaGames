@@ -55,9 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         const proxy = proxies[0];
-
-        const formlink = link.href.replace(/^https?:\/\//, '');
-        const url = proxy.endsWith('/') ? proxy + formlink : proxy + '/' + formlink;
+        const url = proxy + link.href;
         
         fetch(url, { method: 'GET' })
             .then(response => {
