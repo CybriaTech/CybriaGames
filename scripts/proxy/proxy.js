@@ -54,8 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        const proxy = proxies[0];
-        const url = proxy + link.href;
+        const proxy = proxies[0].endsWith('/') ? proxies[0] : proxies[0] + '/';
+        const href = link.href.startsWith('http') ? link.href : 'https://' + link.href;
+        const url = proxy + href;
         
         fetch(url, { method: 'GET' })
             .then(response => {
