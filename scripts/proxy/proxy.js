@@ -78,10 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     link.style.display = 'none';
                 }
             })
-            .catch(error => {
-                console.error('CORS Proxy Is Blocked:', proxy, 'Next Proxy', link.href);
-                scancors(link, proxies.slice(1));
-            });
     }
 });
 
