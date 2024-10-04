@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             linkanchor.href = link;
                             linkanchor.textContent = link;
                             linkanchor.target = "_blank";
+
+                            console.log("Before:", link)
                             
                             injectlinks.appendChild(linkanchor);
                             console.appendChild(injectlinks);
@@ -54,9 +56,10 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        const proxy = proxies[0].endsWith('/') ? proxies[0] : proxies[0] + '/';
+        const proxy = proxies[0]
         const href = link.href.startsWith('http') ? link.href : 'https://' + link.href;
         const url = proxy + href;
+        console.log("After:", href);
         
         fetch(url, { method: 'GET' })
             .then(response => {
