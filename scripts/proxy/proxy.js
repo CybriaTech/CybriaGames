@@ -25,8 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             linkanchor.href = link;
                             linkanchor.textContent = link;
                             linkanchor.target = "_blank";
-
-                            alert("Before:", link)
                             
                             injectlinks.appendChild(linkanchor);
                             console.appendChild(injectlinks);
@@ -59,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const proxy = proxies[0]
         const href = link.href.startsWith('http') ? link.href : 'https://' + link.href;
         const url = proxy + href;
-        alert("After:", href);
         
         fetch(url, { method: 'GET' })
             .then(response => {
