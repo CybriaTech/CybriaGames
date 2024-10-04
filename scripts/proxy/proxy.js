@@ -54,13 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
     }
-
-    function cleanprotocol(link) {
+    
         const rawlink = link.href;
         const processedlink = rawlink.replace(window.location.protocol + "//", "");
-        return processedlink;
-    }
-
         const proxy = proxies[0]
         const href = processedlink.href.startsWith('http') ? processedlink.href : 'https://' + processedlink.href;
         const url = proxy + href;
