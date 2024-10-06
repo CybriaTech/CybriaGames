@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
 function applyls() {
     const savedtheme = localStorage.getItem('theme') || 'Default';
     const savedfont = localStorage.getItem('font') || 'Default Font';
-    const savedProxy = localStorage.getItem('cors') || 'https://cors.timmytamle569.workers.dev/';
+    const savedproxy = localStorage.getItem('cors') || 'https://cors.timmytamle569.workers.dev/';
 
    const proxyselect = document.getElementById('cors');
     Array.from(proxyselect.options).forEach(option => {
-        if (option.value === savedProxy) {
+        if (option.value === savedproxy) {
             proxyselect.value = option.value;
         }
     });
