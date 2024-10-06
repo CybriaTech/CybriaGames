@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const rawlink = link.href;
         const processedlink = rawlink.replace(window.location.protocol + "//", "");
         const proxy = proxies[0]
-        const href = processedlink.href.startsWith('http') ? processedlink.href : 'https://' + processedlink.href;
+        const href = 'https://' + processedlink.href;
         const url = proxy + href;
         
         fetch(url, { method: 'GET' })
