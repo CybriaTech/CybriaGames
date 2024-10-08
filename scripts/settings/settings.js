@@ -29,11 +29,6 @@ function redircloak(title, favicon) {
 
             doc.title = title;
 
-            const link = doc.createElement("link");
-            link.rel = "icon";
-            link.href = favicon;
-            doc.head.appendChild(link);
-
             const iframe = doc.createElement("iframe");
             const style = iframe.style;
             iframe.src = location.href;
