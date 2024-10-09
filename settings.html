@@ -212,7 +212,7 @@
                         <p class="settings-actions-subtitle" style="width: 100%; margin-top: 10px;">Page Configs</p>
                     <div class="settings-input-box">
                         <p class="settings-input-label">Switch CORS Proxy</p>
-                        <select class="select-settings" id="cors" onchange="switchcors()">
+                        <select class="select-settings" id="cors" onchange="switchcors()" disabled>
                             <option value="workers.dev">Default (workers.dev)</option>
                             <option value="onrender.com">Render</option>
                             <option value="vercel.app">Vercel</option>
@@ -227,6 +227,7 @@
                             <option value="freeddns.org">FreeDNS 8</option>
                             <option value="casacam.net">FreeDNS 9</option>
                         </select>
+                        <p class="settings-disclaimer">Proxy Config Is Being Fixed! DO NOT USE</p>
                     </div>
                     </div>
                     </div>
