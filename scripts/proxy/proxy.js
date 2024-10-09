@@ -41,7 +41,20 @@ document.addEventListener("DOMContentLoaded", function() {
         const links = document.querySelectorAll(".linkanchor");
         
         links.forEach(link => {
-            const corsproxy = localStorage.getItem('cors') || 'https://cors.timmytamle569.workers.dev/';
+            const corsproxy = [
+                'https://cors.timmytamle569.workers.dev/',
+                'https://kors.onrender.com/',
+                'https://tcors.vercel.app/',
+                'https://tcors.duckdns.org/',
+                'https://tcors.hopto.org/',
+                'https://tcors.mywire.org/',
+                'https://tcors.loseyourip.com/',
+                'https://tcors.accesscam.org/',
+                'https://tcors.camdvr.org/',
+                'https://tcors.webredirect.org',
+                'https://tcors.freeddns.org/',
+                'https://tcors.casacam.net/'
+            ];
             scancors(link, corsproxy);
         });
     }
@@ -54,11 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
     
-        const rawlink = link.href;
-        const processedlink = rawlink.replace(window.location.protocol + "//", "");
         const proxy = proxies[0];
-        const href = 'ttps://' + processedlink.href;
-        const url = proxy + href;
+        const url = proxy + link.href;
         
         fetch(url, { method: 'GET' })
             .then(response => {
