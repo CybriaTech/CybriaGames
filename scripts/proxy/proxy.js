@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
         const rawlink = link.href;
         const processedlink = rawlink.replace(window.location.protocol + "//", "");
-        const proxy = proxies[0]
+        const proxy = proxies[0];
         const href = 'ttps://' + processedlink.href;
         const url = proxy + href;
         
