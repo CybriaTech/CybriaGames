@@ -10,50 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const font = this.value;
         changefont(font);
     });
-
-    document.getElementById('cors').addEventListener('change', function() {
-        const corsproxy = this.value;
-        switchcors(corsproxy);
-    });
 });
 
 function applyls() {
     const savedtheme = localStorage.getItem('theme') || 'Default';
     const savedfont = localStorage.getItem('font') || 'Default Font';
-    const savedproxy = localStorage.getItem('cors') || 'https://cors.timmytamle569.workers.dev/';
-
-   const proxyselect = document.getElementById('cors');
-    Array.from(proxyselect.options).forEach(option => {
-        if (option.value === savedproxy) {
-            proxyselect.value = option.value;
-        }
-    });
     
     settheme(savedtheme);
     changefont(savedfont);
-}
-
-function switchcors(corsproxy) {
-    const corsselect = document.getElementById('cors').value;
-    const corslink = {
-        'workers.dev': 'https://cors.timmytamle569.workers.dev/',
-        'onrender.com': 'https://kors.onrender.com/',
-        'vercel.app': 'https://tcors.vercel.app/',
-        'duckdns.org': 'https://tcors.duckdns.org/',
-        'hopto.org': 'https://tcors.hopto.org/',
-        'mywire.org': 'https://tcors.mywire.org/',
-        'loseyourip.com': 'https://tcors.loseyourip.com/',
-        'ddnsfree.com': 'https://tcors.ddnsfree.com/',
-        'accesscam.org': 'https://tcors.accesscam.org/',
-        'camdvr.org': 'https://tcors.camdvr.org/',
-        'webredirect.org': 'https://tcors.webredirect.org',
-        'freeddns.org': 'https://tcors.freeddns.org/',
-        'casacam.net': 'https://tcors.casacam.net/'
-    };
-
-    const proxy = corslink[corsselect];
-    localStorage.setItem('cors', proxy);
-    console.log('URL:' + proxy);
 }
 
 function changefont(font) {
