@@ -55,6 +55,7 @@ async function inject() {
 
                 gameframe.src = game.source;
                 gameframe.setAttribute('allow', 'autoplay; fullscreen; gamepad; keyboard; clipboard-write; allow-same-origin');
+                gameframe.contentWindow.focus();
 
                 gameframe.onload = () => {
                     ifrev(gameframe);
