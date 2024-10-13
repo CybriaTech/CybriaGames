@@ -54,6 +54,7 @@ async function inject() {
                 document.body.style.overflow = 'none';
 
                 gameframe.src = game.source;
+                gameframe.setAttribute('allow', 'autoplay; fullscreen; gamepad; keyboard; clipboard-write; allow-same-origin');
 
                 gameframe.onload = () => {
                     ifrev(gameframe);
