@@ -96,4 +96,32 @@ async function inject() {
     }
 }
 
+        function initifr(iframe) {
+            const ifrwin = iframe.contentWindow || iframe.contentDocument.defaultView;
+
+            const ifrdoc = iframe.contentDocument || iframe.contentWindow.document;
+            if (!ifrdoc) {
+                console.error('Doc not available');
+                return;
+            }
+
+            const evoption = { bubbles: true, cancelable: true, keyCode: 32 };
+            const keyev = new KeyboardEvent('keydown', evoption);
+
+            const mouseevent = new MouseEvent('click', {
+                bubbles: true,
+                cancelable: true,
+                view: ifrwin
+            });
+
+            setTimeout(() => {
+                ifrdoc.dispatchEvent(keyev);
+                ifrdoc.dispatchEvent(mouseevent);
+            }, 1000);
+        }
+    } catch (error) {
+        console.error('Err:', error);
+    }
+}
+
 inject();
