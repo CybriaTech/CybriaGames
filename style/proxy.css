@@ -68,6 +68,7 @@
   padding: 20px;
   margin-top: 5px;
   height: calc(25vh - 30px);
+  overflow-y: auto;
   border-radius: 12px;
 }
 
