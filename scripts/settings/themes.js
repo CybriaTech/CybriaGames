@@ -27,10 +27,12 @@ function changefont(font) {
     const logo = document.querySelector('.header-img');
     const homelogo = document.querySelector('.title-img');
 
-    body.dataset.font = font;
+    body.dataset.font = font.toLowerCase().replace(' ', '-');
 
     var removefont = function() {
-        document.body.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt');
+        body.className = body.className.split(' ')
+            .filter(c => !c.startsWith('font-'))
+            .join(' ');
     };
 
     removefont();
