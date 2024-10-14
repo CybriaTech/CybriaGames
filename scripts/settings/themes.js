@@ -18,10 +18,10 @@ function applyls() {
     
     settheme(savedtheme);
     changefont(savedfont);
-    alert(savedfont);
 }
 
 function changefont(font) {
+    console.log('Font:', font);
     const body = document.body;
     const header = document.getElementById('header');
     const footer = document.getElementById('footer');
