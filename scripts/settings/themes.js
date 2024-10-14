@@ -18,6 +18,7 @@ function applyls() {
     
     settheme(savedtheme);
     changefont(savedfont);
+    alert(savedfont);
 }
 
 function changefont(font) {
