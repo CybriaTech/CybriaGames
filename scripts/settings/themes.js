@@ -27,7 +27,7 @@ function changefont(font) {
     const logo = document.querySelector('.header-img');
     const homelogo = document.querySelector('.title-img');
 
-    body.dataset.font = font.toLowerCase().replace(' ', '-');
+    body.dataset.font = font;
 
     var removefont = function() {
         document.body.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt');
@@ -99,14 +99,6 @@ function settheme(theme) {
         footer.classList.remove('light-mode', 'selenite-mode', 'mocha-mode', 'ugly-mode', 'space-mode');
         if (logo) logo.src = '/images/cybriagames/logo-name2half.png';
         if (homelogo) homelogo.src = '/images/cybriagames/logo-name2half.png';
-    } else if (theme === 'Flames') {
-        body.classList.add('flames-mode');
-        header.classList.add('flames-mode');
-        footer.classList.add('flames-mode');
-    } else if (theme === 'Oceans') {
-        body.classList.add('oceans-mode');
-        header.classList.add('oceans-mode');
-        footer.classList.add('oceans-mode');
     }
 
     localStorage.setItem('theme', theme);
