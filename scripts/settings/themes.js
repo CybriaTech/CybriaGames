@@ -30,9 +30,7 @@ function changefont(font) {
     body.dataset.font = font.toLowerCase().replace(' ', '-');
 
     var removefont = function() {
-        body.className = body.className.split(' ')
-            .filter(c => !c.startsWith('font-'))
-            .join(' ');
+        document.body.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt');
     };
 
     removefont();
