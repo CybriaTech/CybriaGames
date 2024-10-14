@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function applyls() {
+    console.log(savedtheme);
+    console.log(savedfont);
     const savedtheme = localStorage.getItem('theme') || 'Default';
     const savedfont = localStorage.getItem('font') || 'Default Font';
     
@@ -21,7 +23,6 @@ function applyls() {
 }
 
 function changefont(font) {
-    console.log('Font:', font);
     const body = document.body;
     const header = document.getElementById('header');
     const footer = document.getElementById('footer');
