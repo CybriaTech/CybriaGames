@@ -419,5 +419,23 @@
     "logo": "/images/games/drift-hunters.png",
     "creator": "Ilya Kaminetsky",
     "source": "/games/drift-hunters"
+  },
+  {
+    "title": "Boxing Random",
+    "logo": "/images/games/boxing-random.png",
+    "creator": "RHM Interactive",
+    "source": "/games/boxing-random"
+  },
+  {
+    "title": "Basket Random",
+    "logo": "/images/games/basket-random.png",
+    "creator": "RHM Interactive",
+    "source": "/games/basket-random"
+  },
+  {
+    "title": "Soccer Random",
+    "logo": "/images/games/soccer-random.png",
+    "creator": "RHM Interactive",
+    "source": "/games/soccer-random"
   }
 ]
