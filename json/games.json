@@ -455,5 +455,11 @@
     "logo": "/images/games/hacked-eagler.png",
     "creator": "Fatal",
     "source": "/games/dragonx-1.8"
+  },
+  {
+    "title": "Rooftop Snipers",
+    "logo": "/images/games/rooftop-snipers.png",
+    "creator": "Pat Eichler",
+    "source": "/games/rooftop-snipers"
   }
 ]
