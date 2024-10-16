@@ -437,5 +437,11 @@
     "logo": "/images/games/soccer-random.png",
     "creator": "RHM Interactive",
     "source": "/games/soccer-random"
+  },
+  {
+    "title": "Time Shooter 2",
+    "logo": "/images/games/time-shooter-2.png",
+    "creator": "GoGoMan",
+    "source": "/games/time-shooter-2"
   }
 ]
