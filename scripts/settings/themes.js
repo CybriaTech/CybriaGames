@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function applyls() {
-    console.log(savedtheme);
-    console.log(savedfont);
     const savedtheme = localStorage.getItem('theme') || 'Default';
     const savedfont = localStorage.getItem('font') || 'Default Font';
     
