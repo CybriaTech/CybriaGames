@@ -443,5 +443,17 @@
     "logo": "/images/games/time-shooter-2.png",
     "creator": "GoGoMan",
     "source": "/games/time-shooter-2"
+  },
+  {
+    "title": "PiClient 1.8",
+    "logo": "/images/games/hacked-eagler.png",
+    "creator": "unknown",
+    "source": "/games/piclient-1.8"
+  },
+  {
+    "title": "DragonX 1.8",
+    "logo": "/images/games/hacked-eagler.png",
+    "creator": "Fatal",
+    "source": "/games/dragonx-1.8"
   }
 ]
