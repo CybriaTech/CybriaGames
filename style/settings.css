@@ -8,10 +8,23 @@
   margin-right: 4%;
 }
 
-#specific-spacing {
-  margin-top: 5%;
+@media (min-width: 768px) {
+  #specific-spacing {
+    margin-top: 10%;
+  }
 }
 
+@media (min-width: 1024px) {
+  #specific-spacing {
+    margin-top: 15%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #specific-spacing {
+    margin-top: 20%;
+  }
+}
 #tabcloak,
 #emergencykeys,
 #themes,
