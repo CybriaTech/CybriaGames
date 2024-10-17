@@ -16,13 +16,13 @@
 
 @media (min-width: 1024px) {
   #specific-spacing {
-    margin-top: 25%;
+    margin-top: 15%;
   }
 }
 
 @media (min-width: 1440px) {
   #specific-spacing {
-    margin-top: 30%;
+    margin-top: 10%;
   }
 }
 
