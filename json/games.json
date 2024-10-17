@@ -461,5 +461,11 @@
     "logo": "/images/games/rooftop-snipers.png",
     "creator": "Pat Eichler",
     "source": "/games/rooftop-snipers"
+  },
+  {
+    "title": "Achievement Unlocked",
+    "logo": "/images/games/achievement-unlocked.png",
+    "creator": "Jmtb02",
+    "source": "/games/achievement-unlocked"
   }
 ]
