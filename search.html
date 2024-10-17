@@ -97,6 +97,10 @@
                         gamebtn.appendChild(metaspin);
 
                         searchresults.appendChild(gamebtn);
+
+                        gamebtn.addEventListener('click', () => {
+                            gframe();
+                        });
                     });
                 } else {
                 }
@@ -113,29 +117,29 @@
             }
         });
 
-            gamebtn.addEventListener('click', () => {
-                const gameframe = document.getElementById('gframe');
-                const gcontrols = document.getElementById('gcontrols');
-                const garea = document.getElementById("garea");
+        function gframe() {
+            const gameframe = document.getElementById('gframe');
+            const gcontrols = document.getElementById('gcontrols');
+            const garea = document.getElementById("garea");
 
-                document.getElementById('main-area').style.display = 'none';
-                document.querySelector('header').style.display = 'none';
-                document.querySelector('footer').style.display = 'none';
+            document.getElementById('main-area').style.display = 'none';
+            document.querySelector('header').style.display = 'none';
+            document.querySelector('footer').style.display = 'none';
 
-                garea.style.display = 'block';
+            garea.style.display = 'block';
 
-                gameframe.style.display = 'block';
-                gcontrols.style.display = 'flex';
-                document.body.style.overflow = 'none';
+            gameframe.style.display = 'block';
+            gcontrols.style.display = 'flex';
+            document.body.style.overflow = 'none';
 
-                gameframe.src = game.source;
-                gameframe.setAttribute('allow', 'autoplay; fullscreen; gamepad; keyboard; clipboard-write; allow-same-origin');
-                gameframe.contentWindow.focus();
+            gameframe.src = game.source;
+            gameframe.setAttribute('allow', 'autoplay; fullscreen; gamepad; keyboard; clipboard-write; allow-same-origin');
+            gameframe.contentWindow.focus();
 
-                gameframe.onload = () => {
-                    ifrev(gameframe);
-                };
-            });
+            gameframe.onload = () => {
+                ifrev(gameframe);
+            };
+        }
 
         globalev();
 
