@@ -97,34 +97,6 @@
                         gamebtn.appendChild(metaspin);
 
                         searchresults.appendChild(gamebtn);
-
-                        gamebtn.addEventListener('click', () => {
-                            gframe();
-                        });
-
-                        function gframe() {
-                            const gameframe = document.getElementById('gframe');
-                            const gcontrols = document.getElementById('gcontrols');
-                            const garea = document.getElementById("garea");
-
-                            document.getElementById('main-area').style.display = 'none';
-                            document.querySelector('header').style.display = 'none';
-                            document.querySelector('footer').style.display = 'none';
-
-                            garea.style.display = 'block';
-
-                            gameframe.style.display = 'block';
-                            gcontrols.style.display = 'flex';
-                            document.body.style.overflow = 'none';
-
-                            gameframe.src = game.source;
-                            gameframe.setAttribute('allow', 'autoplay; fullscreen; gamepad; keyboard; clipboard-write; allow-same-origin');
-                            gameframe.contentWindow.focus();
-
-                            gameframe.onload = () => {
-                                ifrev(gameframe);
-                            };
-                        }
                     });
                 } else {
                 }
@@ -140,37 +112,6 @@
                 showresults(query);
             }
         });
-
-        globalev();
-
-    function shortcut() {
-        const gcontrols = document.getElementById('gcontrols');
-        if (gcontrols.style.display === 'none' || gcontrols.style.display === '') {
-            gcontrols.style.display = 'flex';
-        } else {
-            gcontrols.style.display = 'none';
-        }
-    }
-
-    function globalev() {
-        document.addEventListener('keydown', (e) => {
-            if ((e.altKey || e.metaKey) && e.key.toLowerCase() === 'm') {
-                e.preventDefault();
-                shortcut();
-            }
-        });
-    }
-
-    function ifrev(iframe) {
-        const ifrdoc = iframe.contentDocument || iframe.contentWindow.document;
-    
-        ifrdoc.addEventListener('keydown', (e) => {
-            if (e.altKey && e.key.toLowerCase() === 'm') {
-                e.preventDefault();
-               shortcut();
-            }
-        });
-    }
     </script>
 </body>
 </html>
