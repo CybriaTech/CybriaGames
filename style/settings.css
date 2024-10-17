@@ -10,19 +10,19 @@
 
 @media (min-width: 768px) {
   #specific-spacing {
-    margin-top: 20%;
+    margin-top: 25%;
   }
 }
 
 @media (min-width: 1024px) {
   #specific-spacing {
-    margin-top: 15%;
+    margin-top: 20%;
   }
 }
 
 @media (min-width: 1440px) {
   #specific-spacing {
-    margin-top: 10%;
+    margin-top: 15%;
   }
 }
 
