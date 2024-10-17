@@ -467,5 +467,11 @@
     "logo": "/images/games/achievement-unlocked.png",
     "creator": "Jmtb02",
     "source": "/games/achievement-unlocked"
+  },
+  {
+    "title": "Unfair Mario",
+    "logo": "/images/games/unfair-mario.png",
+    "creator": "unknown",
+    "source": "/games/unfair-mario"
   }
 ]
