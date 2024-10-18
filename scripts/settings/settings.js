@@ -234,15 +234,23 @@ function initpanic() {
         });
     }
 }
+
+function catchpanickey(e) {
+    try {
+        const ae = (window.top.document || document).activeElement;
+        
+        if (ae.tagName !== 'INPUT' && e.key === panicKey) {
+            window.top.location.href = panicLoc;
+        }
+    } catch (err) {
+        console.error('couldnt catch key:', err);
+    }
+}
         
 window.addEventListener('load', initpanic);
 
 document.addEventListener('keydown', (e) => {
-    const ae = document.activeElement;
-    
-    if (ae.tagName !== 'INPUT' && e.key === panickey) {
-        window.location.href = panicloc;
-    }
+    catchpanickey(e);
 });
 
 
