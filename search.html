@@ -179,6 +179,37 @@
                 gameframe.src = '';
             }
         }
+
+        function fullscreen() {
+            const gfr = document.getElementById('gframe');
+
+            if (!document.fullscreenElement) {
+                if (gfr.requestFullscreen) {
+                    gfr.requestFullscreen();
+                } else if (gfr.mozRequestFullScreen) {
+                    gfr.mozRequestFullScreen();
+                } else if (gfr.webkitRequestFullscreen) {
+                    gfr.webkitRequestFullscreen();
+                } else if (gfr.msRequestFullscreen) {
+                    gfr.msRequestFullscreen();
+
+               gfr.style.width = '100vw';
+               gfr.style.height = '100vh';
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+                gfr.style.width = '100%';
+                gfr.style.height = '100%';
+            }
+        }
     </script>
 </body>
 </html>
