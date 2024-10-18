@@ -165,6 +165,20 @@
                 }
             });
         }
+
+        function closegme() {
+            const garea = document.getElementById('garea');
+            if (garea) {
+                garea.style.display = 'none';
+                document.getElementById('main-area').style.display = 'block';
+                document.querySelector('header').style.display = 'flex';
+                document.querySelector('footer').style.display = 'flex';
+                document.body.style.overflow = 'visible';
+
+                const gameframe = document.getElementById('gframe');
+                gameframe.src = '';
+            }
+        }
     </script>
 </body>
 </html>
