@@ -239,8 +239,8 @@ function catchpanickey(e) {
     try {
         const ae = (window.top.document || document).activeElement;
         
-        if (ae.tagName !== 'INPUT' && e.key === panicKey) {
-            window.top.location.href = panicLoc;
+        if (ae.tagName !== 'INPUT' && e.key === panickey) {
+            window.top.location.href = panicloc;
         }
     } catch (err) {
         console.error('couldnt catch key:', err);
