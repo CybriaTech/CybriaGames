@@ -21,28 +21,26 @@ function applyls() {
 }
 
 function changefont(font) {
-    const body = document.body;
-    const header = document.getElementById('header');
-    const footer = document.getElementById('footer');
+    const selective = [document.body, document.getElementById('header'), document.getElementById('footer')];
     const logo = document.querySelector('.header-img');
     const homelogo = document.querySelector('.title-img');
 
-    body.dataset.font = font;
+    selective.forEach(sel => sel.dataset.font = font);
 
     var removefont = function() {
-        document.body.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt');
+        selective.forEach(sel => sel.classList.remove('nerko-one', 'playpen-sans', 'oswald', 'prompt'));
     };
 
     removefont();
 
     if (font === 'Nerko One') {
-        body.classList.add('nerko-one');
+        selective.forEach(sel => sel.classList.add('nerko-one'));
     } else if (font === 'Playpen Sans') {
-        body.classList.add('playpen-sans');
+        selective.forEach(sel => sel.classList.add('playpen-sans'));
     } else if (font === 'Oswald') {
-        body.classList.add('oswald');
+        selective.forEach(sel => sel.classList.add('oswald'));
     } else if (font === 'Prompt') {
-        body.classList.add('prompt');
+        selective.forEach(sel => sel.classList.add('prompt'));
     } else if (font === 'Default Font') {
         removefont();
     }
