@@ -119,6 +119,11 @@ body {
    background-color: #fff;
   }
 
+  body.light-mode .error-title,
+  body.light-mode .error-desc{
+   color: #fff;
+  }
+
   body.light-mode .header-link:hover,
   body.light-mode .footer-a:hover {
    color: #0095ff;
@@ -820,6 +825,13 @@ body {
    font-size: 49px;
    font-weight: 900;
    text-align: center;
+  }
+
+  body.ugly-mode .error-title,
+  body.ugly-mode .error-desc {
+   font-size: 1.3em;
+   text-align: right;
+   border: 4px solid #ff0000;
   }
 
   body.ugly-mode #gcontrols {
