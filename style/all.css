@@ -968,35 +968,45 @@ body {
 /* Fonts */
 
   body.nerko-one,
-  body.nerko-one .sidebar-btn {
+  body.nerko-one .sidebar-btn,
+  body.nerko-one #header,
+  body.nerko-one #footer {
    font-family: "Nerko One", cursive;
    font-weight: 400;
    font-style: normal;
   }
 
   body.playpen-sans,
-  body.playpen-sans .sidebar-btn {
+  body.playpen-sans .sidebar-btn,
+  body.playpen-sans #header,
+  body.playpen-sans #footer {
    font-family: "Playpen Sans", cursive;
    font-weight: 400;
    font-style: normal;
   }
 
   body.fascinate-inline,
-  body.fascinate-inline .sidebar-btn {
+  body.fascinate-inline .sidebar-btn,
+  body.fascinate-inline #header,
+  body.fascinate-inline #footer {
    font-family: "Fascinate Inline", system-ui;
    font-weight: 400;
    font-style: normal;
   }
 
   body.oswald,
-  body.oswald .sidebar-btn {
+  body.oswald .sidebar-btn,
+  body.oswald #header,
+  body.oswald #footer {
    font-family: "Oswald", sans-serif;
    font-weight: 400;
    font-style: normal;
   }
 
   body.prompt,
-  body.prompt .sidebar-btn {
+  body.prompt .sidebar-btn,
+  body.prompt #header,
+  body.prompt #footer {
    font-family: 'Prompt', sans-serif;
    font-style: normal;
   }
