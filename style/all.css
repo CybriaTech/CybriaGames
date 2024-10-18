@@ -121,7 +121,7 @@ body {
 
   body.light-mode .error-title,
   body.light-mode .error-desc{
-   color: #fff;
+   color: #000;
   }
 
   body.light-mode .header-link:hover,
