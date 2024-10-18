@@ -1,7 +1,14 @@
-.404 {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+.error-title {
+  text-align: center;
+  color: #fff;
+  font-size: 2.3em;
+  margin-bottom: 0;
+}
+
+.error-desc {
+  text-align: center;
+  font-size: 1.8em;
+  color: #fff;
 }
 
 #main-area {
