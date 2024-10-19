@@ -53,14 +53,12 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('No available CORS proxies for:', link.href);
             return;
         }
-    
-        const proxy = proxies[0];
 
         if (link.href.startsWith('hhttps')) {
             link.href = link.href.replace('hhttps', 'https');
         }
         
-        const url = proxy + link.href;
+        const url = localStorage.getItem('corsproxy') + link.href;
         
         fetch(url, { method: 'GET' })
             .then(response => {
