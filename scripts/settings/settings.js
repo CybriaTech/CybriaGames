@@ -381,7 +381,7 @@ const urls = {
     'casacam.net': 'https://tcors.casacam.net/'
 };
 
-function switchCors() {
+function switchcors() {
     const corsselect = document.getElementById('cors');
     const corsvalue = corsselect.value;
 
