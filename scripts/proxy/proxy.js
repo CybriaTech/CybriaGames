@@ -55,6 +55,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
         const proxy = proxies[0];
+
+        if (link.href.startsWith('hhttps')) {
+            link.href = link.href.replace('hhttps', 'https');
+        }
+        
         const url = proxy + link.href;
         
         fetch(url, { method: 'GET' })
