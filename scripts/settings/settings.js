@@ -390,13 +390,11 @@ function switchcors() {
 
     console.log('cors value: ', corsvalue);
     console.log('cors proxy: ', urls[corsvalue]);
-}
 
-window.onload = function() {
     const savedcors = localStorage.getItem('corsvalue');
             
     if (savedcors) {
         const corsselect = document.getElementById('cors');
         corsselect.value = savedcors;
     }
-};
+}
