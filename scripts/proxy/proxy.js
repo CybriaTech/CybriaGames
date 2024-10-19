@@ -41,20 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const links = document.querySelectorAll(".linkanchor");
         
         links.forEach(link => {
-            const corsproxy = [
-                'https://cors.timmytamle569.workers.dev/',
-                'https://kors.onrender.com/',
-                'https://tcors.vercel.app/',
-                'https://tcors.duckdns.org/',
-                'https://tcors.hopto.org/',
-                'https://tcors.mywire.org/',
-                'https://tcors.loseyourip.com/',
-                'https://tcors.accesscam.org/',
-                'https://tcors.camdvr.org/',
-                'https://tcors.webredirect.org',
-                'https://tcors.freeddns.org/',
-                'https://tcors.casacam.net/'
-            ];
+            const corsproxy = localStorage.getItem('corsproxy');
             scancors(link, corsproxy);
         });
     }
