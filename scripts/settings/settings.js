@@ -364,3 +364,39 @@ function imports() {
 
 document.querySelector(".exportoption").addEventListener("click", exports);
 document.querySelector(".importoption").addEventListener("click", imports);
+
+const urls = {
+    'workers.dev': 'https://cors.timmytamle569.workers.dev/',
+    'onrender.com': 'https://kors.onrender.com/',
+    'vercel.app': 'https://tcors.vercel.app/',
+    'duckdns.org': 'https://tcors.duckdns.org/',
+    'hopto.org': 'https://tcors.hopto.org/',
+    'mywire.org': 'https://tcors.mywire.org/',
+    'loseyourip.com': 'https://tcors.loseyourip.com/',
+    'ddnsfree.com': 'https://tcors.ddnsfree.com/',
+    'accesscam.org': 'https://tcors.accesscam.org/',
+    'camdvr.org': 'https://tcors.camdvr.org/',
+    'webredirect.org': 'https://tcors.webredirect.org',
+    'freeddns.org': 'https://tcors.freeddns.org/',
+    'casacam.net': 'https://tcors.casacam.net/'
+};
+
+function switchCors() {
+    const corsselect = document.getElementById('cors');
+    const corsvalue = corsselect.value;
+
+    localStorage.setItem('corsvalue', corsvalue);
+    localStorage.setItem('corsproxy', urls[corsvalue]);
+
+    console.log('cors value: ', corsvalue);
+    console.log('cors proxy: ', urls[corsvalue]);
+}
+
+window.onload = function() {
+    const savedcors = localStorage.getItem('corsvalue');
+            
+    if (savedcors) {
+        const corsselect = document.getElementById('cors');
+        corsselect.value = savedcors;
+    }
+};
