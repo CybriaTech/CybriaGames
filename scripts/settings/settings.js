@@ -368,7 +368,6 @@ document.querySelector(".importoption").addEventListener("click", imports);
 const urls = {
     'workers.dev': 'https://cors.timmytamle569.workers.dev/',
     'onrender.com': 'https://kors.onrender.com/',
-    'vercel.app': 'https://tcors.vercel.app/',
     'duckdns.org': 'https://tcors.duckdns.org/',
     'hopto.org': 'https://tcors.hopto.org/',
     'mywire.org': 'https://tcors.mywire.org/',
