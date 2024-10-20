@@ -5,11 +5,11 @@ async function dynamicinfo() {
   const font = document.getElementById('infofont');
   const cors = document.getElementById('infocors');
 
-  cloak.textContent = 'Cloaks:' + localstorage.getItem('cloakState');
-  keys.textContent = 'Panic Key & Location:' + localstorage.getItem('panickey') + '(Key)' + '' + localstorage.getItem('panicloc') + '(Location)';
-  themes.textContent = 'Theme:' + localstorage.getItem('theme');
-  font.textContent = 'Font:' + localstorage.getItem('font');
-  cors.textContent = 'Cors Proxy:' + localstorage.getItem('corsproxy');
+  cloak.textContent = 'Cloaks:' + localStorage.getItem('cloakState');
+  keys.textContent = 'Panic Key & Location:' + localStorage.getItem('panickey') + '(Key)' + '' + localStorage.getItem('panicloc') + '(Location)';
+  themes.textContent = 'Theme:' + localStorage.getItem('theme');
+  font.textContent = 'Font:' + localStorage.getItem('font');
+  cors.textContent = 'Cors Proxy:' + localStorage.getItem('corsproxy');
 }
 
 dynamicinfo();
