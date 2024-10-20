@@ -350,7 +350,12 @@
 #infogmes,
 #infoprox,
 #infocreator,
-#infoofficial {
+#infoofficial,
+#infocloak,
+#infokeys,
+#infothemes,
+#infofont,
+#infocors {
   font-size: 1.5em;
   text-align: left;
 }
