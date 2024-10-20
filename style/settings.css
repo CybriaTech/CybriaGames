@@ -350,7 +350,6 @@
 #infogmes,
 #infoprox,
 #infocreator,
-#infoofficial,
 #infocloak,
 #infokeys,
 #infothemes,
@@ -358,4 +357,12 @@
 #infocors {
   font-size: 1.5em;
   text-align: left;
+}
+
+#infocloak,
+#infokeys,
+#infothemes,
+#infofont,
+#infocors {
+  padding: 5px;
 }
