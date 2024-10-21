@@ -391,9 +391,4 @@ function switchcors() {
     console.log('cors proxy: ', urls[corsvalue]);
 
     const savedcors = localStorage.getItem('corsvalue');
-            
-    if (savedcors) {
-        const corsselect = document.getElementById('cors');
-        corsselect.value = savedcors;
-    }
 }
