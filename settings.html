@@ -221,7 +221,7 @@
                         <p class="settings-actions-subtitle" style="width: 100%; margin-top: 10px;">Page Configs</p>
                     <div class="settings-input-box">
                         <p class="settings-input-label">Switch CORS Proxy</p>
-                        <select class="select-settings" id="cors" onchange="switchcors()" onload="if (savedcors) { const corsselect = document.getElementById('cors'); corsselect.value = savedcors; }">
+                        <select class="select-settings" id="cors" onchange="switchcors()">
                             <option value="workers.dev">Default (workers.dev)</option>
                             <option value="onrender.com">Render</option>
                             <option value="duckdns.org">DuckDNS</option>
