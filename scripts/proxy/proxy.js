@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             })
             .catch(error => {
-                alert(localStorage.getItem('corsproxy'); + 'Is blocked, select another one');
+                console.log('Cors Proxy is blocked');
             });
     }
 });
