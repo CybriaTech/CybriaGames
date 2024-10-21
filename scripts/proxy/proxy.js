@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
             })
             .catch(error => {
                 alert(localStorage.getItem('corsproxy'); + 'Is blocked, select another one');
-                scancors(link, proxies.slice(1));
             });
     }
 });
