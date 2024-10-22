@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    selectonload();
+});
+
 let deftitle = document.title;
 const faviinput = document.getElementById('favi-input');
 const titleinput = document.getElementById('title-input');
@@ -391,9 +395,10 @@ function switchcors() {
     console.log('cors proxy: ', urls[corsvalue]);
 
     const savedcors = localStorage.getItem('corsvalue');
-            
+}
+
+function selectonload() {
     if (savedcors) {
-        const corsselect = document.getElementById('cors');
-        corsselect.value = savedcors;
+        document.getElementById('cors').value = localStorage.getItem('corsvalue');
     }
 }
