@@ -398,7 +398,5 @@ function switchcors() {
 }
 
 function selectonload() {
-    if (savedcors) {
-        document.getElementById('cors').value = localStorage.getItem('corsvalue');
-    }
+    document.getElementById('cors').value = localStorage.getItem('corsvalue');
 }
