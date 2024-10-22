@@ -390,7 +390,7 @@ const urls = {
 };
 
 function selectls() {
-    const savedcors = localStorage.getItem('corsproxy') || 'https://cors.timmytamle569.workers.dev/';
+    const savedcors = localStorage.getItem('corsproxy') || 'workers.dev';
     switchcors(savedcors);
 }
 
