@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById("cors").addEventListener("change", function() {
         const cors = this.value;
-        switchcors();
+        switchcors(cors);
     });
 });
 
