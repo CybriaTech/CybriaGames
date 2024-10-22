@@ -396,8 +396,7 @@ function selectls() {
 
 function switchcors(cors) {
     const corsselect = document.getElementById('cors');
-    const corsvalue = corsselect.value;
-    localStorage.setItem('corsproxy', urls[corsvalue]);
+    localStorage.setItem('corsproxy', urls);
 
     document.getElementById("cors").value = cors;
 }
