@@ -1,12 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    selectls();
-
-    document.getElementById("cors").addEventListener("change", function() {
-        const cors = this.value;
-        switchcors(cors);
-    });
-});
-
 let deftitle = document.title;
 const faviinput = document.getElementById('favi-input');
 const titleinput = document.getElementById('title-input');
@@ -389,14 +380,20 @@ const urls = {
     'casacam.net': 'https://tcors.casacam.net/'
 };
 
-function selectls() {
-    const savedcors = localStorage.getItem('corsproxy') || 'workers.dev';
-    switchcors(savedcors);
-}
-
-function switchcors(cors) {
+function switchcors() {
     const corsselect = document.getElementById('cors');
-    localStorage.setItem('corsproxy', urls);
+    const corsvalue = corsselect.value;
 
-    document.getElementById("cors").value = cors;
+    localStorage.setItem('corsvalue', corsvalue);
+    localStorage.setItem('corsproxy', urls[corsvalue]);
+
+    console.log('cors value: ', corsvalue);
+    console.log('cors proxy: ', urls[corsvalue]);
+
+    const savedcors = localStorage.getItem('corsvalue');
+            
+    if (savedcors) {
+        const corsselect = document.getElementById('cors');
+        corsselect.value = savedcors;
+    }
 }
