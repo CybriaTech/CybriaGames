@@ -237,14 +237,14 @@ function initpanic() {
             }
         });
     }
-
-    document.addEventListener('keydown', (e) => {
-        if (e.key.toLowerCase() === localStorage.getItem('panickey').toLowerCase()) {
-            e.preventDefault();
-            window.location.href = localStorage.getItem('panicloc');
-        }
-    });
 }
+
+document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === localStorage.getItem('panickey').toLowerCase()) {
+        e.preventDefault();
+        window.location.href = localStorage.getItem('panicloc');
+    }
+});
 
 function catchpanickey(e) {
     try {
