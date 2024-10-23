@@ -1,5 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     selectonload();
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key.toLowerCase() === localStorage.getItem('panickey').toLowerCase()) {
+            e.preventDefault();
+            window.location.href = localStorage.getItem('panicloc');
+        }
+    });
 });
 
 let deftitle = document.title;
@@ -238,13 +245,6 @@ function initpanic() {
         });
     }
 }
-
-document.addEventListener('keydown', (e) => {
-    if (e.key.toLowerCase() === localStorage.getItem('panickey').toLowerCase()) {
-        e.preventDefault();
-        window.location.href = localStorage.getItem('panicloc');
-    }
-});
 
 function catchpanickey(e) {
     try {
