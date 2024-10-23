@@ -237,6 +237,13 @@ function initpanic() {
             }
         });
     }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key.toLowerCase() === panickey.toLowerCase()) {
+            e.preventDefault();
+            window.location.href = panicloc;
+        }
+    });
 }
 
 function catchpanickey(e) {
