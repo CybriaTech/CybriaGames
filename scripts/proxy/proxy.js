@@ -3,26 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const console = document.getElementById("proxy-console");
     const button = document.querySelectorAll(".proxy-button");
 
-    function testcors() {
-        const corsproxy = localStorage.getItem('corsproxy');
-        if (!corsproxy) {
-            return false;
-        }
-
-        return fetch(corsproxy + 'https://example.com', { method: 'GET' })
-            .then(response => {
-                if (!response.ok) {
-                    alert(localStorage.getItem('corsproxy') 'Is either blocked or isn\'t working, use another cors proxy!');
-                    return false;
-                }
-                return true;
-            })
-            .catch(() => {
-                alert(localStorage.getItem('corsproxy') 'Is either blocked or isn\'t working, use another cors proxy!');
-                return false;
-            });
-    }
-
     fetch('/json/proxy.json')
         .then(response => response.json())
         .then(data => {
