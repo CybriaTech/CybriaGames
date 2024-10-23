@@ -239,9 +239,9 @@ function initpanic() {
     }
 
     document.addEventListener('keydown', (e) => {
-        if (e.key.toLowerCase() === panickey.toLowerCase()) {
+        if (e.key.toLowerCase() === localStorage.getItem('panickey').toLowerCase()) {
             e.preventDefault();
-            window.location.href = panicloc;
+            window.location.href = localStorage.getItem('panicloc');
         }
     });
 }
