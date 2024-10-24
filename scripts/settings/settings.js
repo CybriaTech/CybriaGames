@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     selectonload();
-    panickey();
+    panics();
 
     document.addEventListener('keydown', (e) => {
         if (e.key.toLowerCase() === localStorage.getItem('panickey').toLowerCase()) {
@@ -247,7 +247,7 @@ function initpanic() {
     }
 }
 
-function panickey() {
+function panics() {
     document.addEventListener('keydown', (e) => {
         if (panickey.toLowerCase()) {
             e.preventDefault();
