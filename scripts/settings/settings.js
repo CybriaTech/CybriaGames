@@ -246,24 +246,6 @@ function initpanic() {
     }
 }
 
-function catchpanickey(e) {
-    try {
-        const ae = (window.top.document || document).activeElement;
-        
-        if (ae.tagName !== 'INPUT' && e.key === panickey) {
-            window.top.location.href = panicloc;
-        }
-    } catch (err) {
-        console.error('couldnt catch key:', err);
-    }
-}
-        
-window.addEventListener('load', initpanic);
-
-document.addEventListener('keydown', (e) => {
-    catchpanickey(e);
-});
-
 
 function rev() {
     const locinput = document.getElementById('panicloc-input');
