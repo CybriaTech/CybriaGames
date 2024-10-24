@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     selectonload();
+    panickey();
 
     document.addEventListener('keydown', (e) => {
         if (e.key.toLowerCase() === localStorage.getItem('panickey').toLowerCase()) {
@@ -244,6 +245,17 @@ function initpanic() {
             }
         });
     }
+}
+
+function panickey() {
+    document.addEventListener('keydown', (e) => {
+        if (panickey.toLowerCase()) {
+            e.preventDefault();
+            window.location.href = panicloc;
+        } else {
+          console.log('Error');
+        }
+    });
 }
 
 
