@@ -469,6 +469,12 @@
     "source": "/games/achievement-unlocked"
   },
   {
+    "title": "Rocket League",
+    "logo": "/images/games/rocket-league.png",
+    "creator": "Destruction Crew",
+    "source": "/games/rocketleague"
+  },
+  {
     "title": "Unfair Mario",
     "logo": "/images/games/unfair-mario.png",
     "creator": "unknown",
